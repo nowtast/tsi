@@ -1,0 +1,155 @@
+\section{Dynamics와 temporal identity 확장}
+
+Structural transition은 update를 가로질러 어떤 typed entity가 persist하는지를
+나타내는 partial identity claim이다. 이 절은 유한 action history, turnover,
+다섯 survivor defect를 명시한다.
+
+\begin{definition}[유한 action-prefix category]
+$\mathcal A$를 nonempty finite action alphabet, $H\geq0$라 하자.
+$\mathcal H_{\mathcal A}^H$의 object는 $|u|\leq H$인 모든
+$u\in\mathcal A^*$이다. $u$가 $v$의 prefix일 때에만 유일한 morphism
+$u\to v$가 있다. Empty extension이 identity이고 suffix concatenation이
+composition이다.
+\end{definition}
+
+Prefix relation은 finite poset category이다. Morphism $u\to v$는 $u$ 뒤에
+남은 suffix를 실행하는 것을 나타낸다.
+
+\begin{definition}[Tracked action history]
+Horizon $H$의 tracked action history는 functor
+$\mathcal D:\mathcal H_{\mathcal A}^H\to\StrTrack(Q,\mathcal E)$이다.
+$\mathcal D(u)$는 action word $u$에서의 state이고,
+$\mathcal D(u\to v)$는 prefix state에서 descendant state로 가는 composite
+tracked transition이다.
+\end{definition}
+
+\begin{theorem}[One-step action edge의 unique extension]
+각 $|u|\leq H$인 word에 state $\Sigma_u$를 할당하고 $|u|<H$일 때마다
+tracked transition $p_{u,a}:\Sigma_u\rightharpoonup\Sigma_{ua}$를 할당하면,
+이 one-step transition을 지정된 값으로 갖는 unique functor $\mathcal D$가
+존재한다.
+\end{theorem}
+
+\begin{proof}
+$\mathcal D(u)=\Sigma_u$로 두고 identity는 identity transition으로 보낸다.
+$v=ua_1\cdots a_k$이면
+\[
+\mathcal D(u\to v)=
+p_{ua_1\cdots a_{k-1},a_k}\circ\cdots\circ p_{u,a_1}
+\]
+로 정의한다. Associativity가 parenthesization 독립성을 주고, 중간 prefix에서
+edge list를 나누면 functoriality가 따른다. 다른 functor도 각 긴 prefix
+morphism을 같은 one-step composite로 보내야 하므로 unique하다.
+\end{proof}
+
+\begin{theorem}[Trajectory preservation along action histories]
+각 one-step edge가 topology, geometry, relation, filtration, mass 중 선택한
+layer를 survivor에서 보존하면 history composite도 같은 layer를 보존한다.
+\end{theorem}
+
+\begin{proof}
+Unique extension 정리가 history morphism을 one-step edge의 composite로
+표현한다. 다섯 layer의 composition 정리를 유한하게 반복 적용한다.
+\end{proof}
+
+\begin{definition}[Turnover와 layer defects]
+$p:\Sigma\rightharpoonup\Sigma'$이고
+$\Sigma=(F,\lambda,K,d,f,\mu)$,
+$\Sigma'=(G,\nu,L,\rho,g,\eta)$라 하자.
+\[
+b(p)=\sum_A(|F(A)|-|\dom(p_A)|+|G(A)|-|\im(p_A)|).
+\]
+또한
+\begin{align*}
+m_K(p)&=|\bar p[K|_{D_p}]\mathbin{\triangle}L|_{I_p}|,\\
+m_d(p)&=\max_{x,y\in D_p}|d(x,y)-\rho(\bar p x,\bar p y)|,\\
+m_R(p)&=\sum_{e\in Q_1}|(p_{s(e)}\times p_{t(e)})
+ [F([e])|_{D_{s(e)},D_{t(e)}}]\mathbin{\triangle}
+ G([e])|_{I_{s(e)},I_{t(e)}}|,\\
+m_f(p)&=\max_{\sigma\in K|_{D_p}}
+\begin{cases}
+|f(\sigma)-g(\bar p\sigma)|,&\bar p\sigma\in L,\\
++\infty,&\bar p\sigma\notin L,
+\end{cases}\\
+m_\mu(p)&=\sum_{x\in D_p}|\mu(x)-\eta(\bar p x)|.
+\end{align*}
+$D_p$가 empty이면 $m_d(p)=m_f(p)=m_\mu(p)=0$으로 둔다. 여기서
+$D_A=\dom(p_A)$, $I_A=\im(p_A)$이다. $+\infty$ convention은 surviving
+source simplex가 target simplex로 가지 않는 경우에도 filtration defect를
+정의한다.
+\end{definition}
+
+Generator $e:A\to B$와 tagged subset $D_A\subseteq F(A)$,
+$D_B\subseteq F(B)$에 대해 ordered simplicial-pair capacity를
+\[
+c_e(K;D_A,D_B)=
+\bigl|\{(x,y)\in D_A\times D_B:\{x,y\}\in K\}\bigr|
+\]
+로 정의한다. 이 정의는 vertex $\{x\}\in K$를 통한 loop $(x,x)$도 포함하므로
+relation이 irreflexive라고 암묵적으로 가정하지 않는다.
+
+\begin{proposition}[Compatibility가 relational defect를 제한한다]
+Compatible state 사이의 모든 tracked transition
+$p:\Sigma\rightharpoonup\Sigma'$에 대해
+\[
+m_R(p)\leq
+\sum_{e\in Q_1}\bigl(c_e(K;D_{s(e)},D_{t(e)})
++c_e(L;I_{s(e)},I_{t(e)})\bigr)
+\]
+이다. Compatibility axiom이 없으면 이 bound는 일반적으로 성립하지 않는다.
+이 bound는 capacity bound이며 tight하다고 주장하지 않는다.
+\end{proposition}
+
+\begin{proof}
+각 generator $e$에 대해 source compatibility는 restricted source relation을
+$c_e(K;D_{s(e)},D_{t(e)})$가 세는 simplicial-pair set 안에 둔다.
+$p_{s(e)}\times p_{t(e)}$의 injectivity는 그 cardinality를 보존한다. Target
+compatibility도 restricted target relation을
+$c_e(L;I_{s(e)},I_{t(e)})$가 세는 set 안에 둔다. Symmetric difference의
+cardinality는 두 operand cardinality의 합 이하이므로 generator 전체에 합하면
+bound를 얻는다.
+
+Compatibility가 없을 때의 명시적 실패 예를 구성하자. $Q$가 서로 다른 object
+$A,B$와 하나의 generator $e:A\to B$를 갖는다고 하자. 각각 고유한 type tag를
+갖는 원소들에 대해 $F(A)=\{x\}$, $F(B)=\{y\}$,
+$G(A)=\{x'\}$, $G(B)=\{y'\}$로 두고, $K$와 $L$은 각 carrier의
+vertex만 포함하게 한다. 또한 $F([e])=\{(x,y)\}$,
+$G([e])=\varnothing$로 두고 total tracked transition을 $x\mapsto x'$,
+$y\mapsto y'$로 정의한다. 그러면 두 capacity는 모두 0이지만
+\[
+m_R(p)=|\{(x',y')\}\mathbin{\triangle}\varnothing|=1
+\]
+이다. 따라서 source compatibility axiom을 제거하면 bound가 실패할 수 있다.
+\end{proof}
+
+\begin{proposition}[Tracked transition의 zero criterion]
+각 defect가 0인 것은 각각 topology, geometry, relation, filtration, mass의
+survivor 보존과 동치이며, $b(p)=0$은 모든 component가 total bijection인 것과
+동치이다. 따라서 여섯 양이 모두 0인 것은 full structural isomorphism과
+동치이다.
+\end{proposition}
+
+\begin{proof}
+다섯 layer statement는 finite symmetric difference, nonnegative maximum,
+nonnegative sum이 0일 필요충분조건이 모든 component condition이 0인 것이라는
+사실에서 따른다. $+\infty$ case는 $m_f(p)=0$이면 모든 surviving simplex가
+target simplex로 감을 보장한다. $b(p)=0$이면 finite carrier에서 각 domain과
+image가 전체이고 injectivity로 total bijection이 된다. 이를 label-preserving
+transition 정의와 결합하면 integrated structural isomorphism의 여섯 조건을
+얻는다. 역은 직접 대입하면 된다.
+\end{proof}
+
+\begin{proposition}[Survivor preservation은 vacuous할 수 있다]
+두 nonempty integrated state 사이 empty transition은 다섯 survivor layer를
+vacuously 보존하지만 turnover는 strictly positive이다.
+\end{proposition}
+
+\begin{proof}
+모든 induced survivor structure와 quantified comparison은 empty인 반면,
+endpoint carrier는 nonempty이므로 turnover sum은 positive이다.
+\end{proof}
+
+이 dynamics 확장은 local structural preservation, temporal identity, turnover를
+분리한다. Terminal state correctness가 tracking map을 식별하거나, formal action
+branch가 causal counterfactual이거나, learner가 올바른 update mechanism을
+발견한다고 주장하지 않는다.

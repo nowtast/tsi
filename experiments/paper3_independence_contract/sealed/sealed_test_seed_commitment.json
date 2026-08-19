@@ -1,0 +1,10 @@
+{
+  "algorithm": "sha256",
+  "commitment": "b4af5d120cd748e64af48378df621f04fb06cd9cd8a311d55950ed8f349fbaf0",
+  "descriptor_digest": "6f9facb1305c113b977a28906023a3476a8b116d7d02225d6dd86bb0412545be",
+  "identifier": "P3-3A-SEALED-ACCESS-v1",
+  "parent_contract": "P3-3A-INDEPENDENCE-v1",
+  "revealed": true,
+  "revealed_at_utc": "2026-07-29T04:21:56.914648+00:00",
+  "secret_bytes": 32
+}

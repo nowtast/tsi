@@ -1,0 +1,55 @@
+\section{서론}
+\label{sec:introduction}
+
+Joint-embedding predictive architecture와 structured world model은 모든
+관측 coordinate를 복원하지 않고도 prediction과 planning을 지원하는
+representation을 학습하고자 한다
+\citep{assran2023ijepa,assran2024vjepa,kipf2020contrastive}. 그러나 하나의
+scalar latent loss는 structured state의 어느 부분이 실패했는지 식별하지
+못한다. 같은 latent error를 가진 두 prediction도 typed label, edge, metric
+comparison, directed relation 또는 order constraint의 보존 여부에서는 크게
+다를 수 있다. Utility가 average latent fidelity가 아니라 이 predicate 중
+하나에 의존할 때 이러한 차이가 중요하다.
+
+본 논문은 일반적인 world-model superiority보다 좁은 질문을 다룬다. 선언된
+finite structural signature 아래에서 structural discrepancy가 matched scalar
+baseline에 남는 error를 검출하는가, 그리고 이 discrepancy가 independent
+world generation, open-loop composition과 plan selection에서도 informative한가?
+Mathematical interface는 다섯 layer 전체에 하나의 typed correspondence를
+사용한다. Correspondence-based distance는 metric 및 structured object를
+비교하는 확립된 도구다 \citep{memoli2011gromov,vayer2020fused}. 여기서 일반적인
+correspondence 개념 자체를 새 기여로 주장하지 않는다. 본 연구의 기여는
+coherent multi-layer state, codebook-free constructive decoding,
+routing-specific control과 failure-preserving sealed evaluation을 동결된
+형태로 결합한 것이다.
+
+Empirical study는 네 설계 원칙을 따른다.
+\begin{enumerate}[label=(\roman*)]
+    \item Development world와 sealed world는 서로 다른 committed seed로
+    생성하고 각 sealed gate를 한 번만 실행한다.
+    \item 여섯 control은 input information, active-parameter count,
+    optimization update와 tuning budget을 공유한다.
+    \item Transition이나 task가 아니라 world를 independent inferential
+    unit으로 사용하고 optimizer seed는 nested replicate로 둔다.
+    \item Positive result와 failed boundary를 함께 보고한다.
+\end{enumerate}
+
+세 gate를 평가한다. 첫 gate는 unseen mechanism에서 structural
+out-of-distribution(OOD) prediction을 검정한다. 둘째 gate는 horizon 32까지
+recursive open-loop error를 검정한다. 셋째 gate는 task-local structural
+discrepancy가 plan failure의 frozen probabilistic model을 개선하는지 묻는다.
+Proper Brier score를 probabilistic criterion으로 사용하고
+\citep{gneiting2007proper}, discrete-time hazard로 first-failure timing을
+표현한다 \citep{singer1993time}. Predictor는 leave-one-world-out development
+assessment 뒤 sealed evaluation 전에 동결하며, model development data와
+evaluation data를 분리하는 일반 원칙을 따른다
+\citep{varma2006bias,collins2024tripod}.
+
+셋째 gate는 prespecified primary analysis를 통과하지만 해석 범위는
+의도적으로 제한한다. Discrepancy와 regret label은 동일한 held-out candidate
+trajectory를 공유하므로, oracle endpoint 없이 사용할 수 있는
+deployment-time prognosis가 아니라 same-task criterion association이다. 또한 stronger raw
+layer-aware sensitivity는 prespecified effect floor에 도달하지 못했고,
+temporally separated development diagnostic 두 개도 실패했다. 이 negative
+result는 scalar-baseline 결과를 full correspondence metric이 모든 layerwise
+structural audit보다 우월하다는 증거로 읽지 못하게 한다.

@@ -1,0 +1,94 @@
+\section{과업 수준 준거 연관성 결과}
+\label{sec:validity-results}
+
+\subsection{Development freeze}
+
+첫 development specification은 sealed reveal 전에 실패했다.
+Leave-one-world-out improvement는 terminal Brier score에서 \(0.000421\),
+integrated score에서 \(-0.000221\)이었다. Effect floor를 낮추지 않았다.
+Revised specification은 exogenous task utility를 mode equality에서 structural
+predicate로 바꾸고, task-varying hazard와 scalar
+selected-versus-alternative contrast를 사용했으며, world당 unit을 16에서
+32로 늘리고 stronger layer-aware sensitivity를 유지했다.
+
+Revised development world 24개에서 primary event rate는 \(0.60384\)였다.
+Leave-one-world-out terminal/integrated improvement는 각각 \(0.003124\),
+\(0.003927\)이었다. Analytic floor와 20,000-draw conjunctive Holm power
+simulation으로 sealed world 69개를 선택했다. Simulated conjunctive power는
+\(0.9208\), Monte Carlo 95\% lower bound는 \(0.91698\)이었다.
+
+\subsection{Sealed primary analysis}
+
+Sealed fit \(1{,}242\)개가 모두 완료됐다. Primary population은
+\(26{,}496=69\times32\times3\times4\)개 unit record(world, unit, nested
+optimizer seed, primary arm)를 포함했고 event rate는 \(0.61632\)였다. 두 exact
+control의 event rate는 0을 유지했다. Table~\ref{tab:validity-primary}는
+co-primary analysis를 보인다.
+
+\begin{table}[ht]
+\centering
+\caption{69개 world의 frozen co-primary criterion-validity 결과. Bootstrap과
+hierarchical column은 0에 대한 simultaneous lower bound다.}
+\label{tab:validity-primary}
+\begin{tabular}{lrrrrr}
+\toprule
+Effect & Mean & World SD & Holm \(p\) & Bootstrap LB & Hierarchical LB \\
+\midrule
+Terminal Brier
+& 0.003519 & 0.009015 & 0.001230 & 0.001428 & 0.001392 \\
+Integrated first failure
+& 0.003034 & 0.007471 & 0.001230 & 0.001296 & 0.001271 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+두 mean은 \(\SESOI=0.0025\)를 넘는다. Mean terminal Brier score는
+\(0.183661\)에서 \(0.180143\)으로, integrated Brier score는 \(0.148317\)에서
+\(0.145283\)으로 감소했다. Outcome noncircularity, panel completeness, event
+balance, no-refitting, exact-control structural zero, Holm,
+cluster-bootstrap, hierarchical requirement가 모두 통과했다.
+
+Pooled estimand는 이질적인 네 arm을 평균한다. 따라서 routing interpretation에
+앞서 사전지정 secondary arm decomposition을
+Table~\ref{tab:validity-arms}에 보고한다.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen scalar model 대비 arm-level Brier improvement. 별도로
+multiplicity gate를 적용한 estimand가 아니라 secondary descriptive effect다.}
+\label{tab:validity-arms}
+\begin{tabular}{lrr}
+\toprule
+Arm & Terminal & Integrated \\
+\midrule
+Layer-routed dense & 0.005402 & 0.003222 \\
+Strict factorized & 0.003114 & 0.003077 \\
+Random-routed matched sparsity & 0.002445 & 0.002758 \\
+Permuted or wrong-routed & 0.003114 & 0.003077 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Wrong-routed arm은 두 outcome 모두에서 \(\SESOI\)를 넘고 random-routed arm은
+integrated outcome에서 이를 넘는다. 따라서 pooled criterion analysis는
+structural augmentation과 same-task outcome 사이의 association을 식별하지만
+routing correctness의 효과를 식별하지 않는다. Layer-routed dense의 descriptive
+effect가 strict factorization보다 크다는 사실도 factorization을 작동 성분으로
+분리하지 못한다.
+
+\subsection{Sensitivity와 temporal boundary}
+
+Generic baseline에 direct raw layer mismatch를 추가했을 때 structural
+augmentation의 terminal/integrated Brier improvement는 \(0.002108\),
+\(0.001467\)이었다. 양수이지만 \(\SESOI\) 미만이다. 따라서 primary result는
+scalar generic baseline을 넘는 increment를 확립하지만 prespecified
+layer-aware baseline을 넘는 practically nontrivial advantage는 확립하지
+않는다.
+
+더 강한 temporal interpretation 두 개를 development data에서만 검사했으며
+모두 실패했다. Independent probe로 later task failure를 예측했을 때
+\(-0.000539\), \(-0.000212\)였고, 처음 네 task를 calibration으로 사용해 뒤
+네 task를 예측했을 때 \(-0.002021\), \(-0.001069\)였다. 따라서 sealed
+positive result는 oracle candidate endpoint를 사용하는 same-task criterion
+association이다. Future-task prognosis 또는 oracle-free deployment score의
+evidence가 아니다.

@@ -1,0 +1,45 @@
+{
+  "analysis_consequence": {
+    "after_observation": "P3-3B-ANALYSIS-v2 replaces unsupported dense superiority with a 0.05 noninferiority margin",
+    "preserved_superiority_claims": [
+      "random_routed_matched_sparsity minus signature_routed_oracle",
+      "permuted_or_wrong_routed minus signature_routed_oracle"
+    ],
+    "reason": "A dense hypothesis class can contain the correctly routed law, so strict superiority is not a theory-implied estimand."
+  },
+  "cohort": "development",
+  "family": "bridge_coupled",
+  "identifier": "P3-3A-EXPLORATORY-SMOKE-v1",
+  "optimizer_seed": 0,
+  "primary_slice": "bridge_consistent_shift",
+  "results": {
+    "dense_active_matched": {
+      "fixed_joint_exact_rate": 1.0,
+      "mean_normalized_i0_quotient_error": 0.0
+    },
+    "layer_routed_dense_action": {
+      "fixed_joint_exact_rate": 0.0,
+      "mean_normalized_i0_quotient_error": 0.19574468085106386
+    },
+    "permuted_or_wrong_routed": {
+      "fixed_joint_exact_rate": 0.0,
+      "mean_normalized_i0_quotient_error": 0.19574468085106386
+    },
+    "random_routed_matched_sparsity": {
+      "fixed_joint_exact_rate": 0.0,
+      "mean_normalized_i0_quotient_error": 0.19574468085106386
+    },
+    "signature_routed_oracle": {
+      "fixed_joint_exact_rate": 1.0,
+      "mean_normalized_i0_quotient_error": 0.0
+    },
+    "strict_factorized_action": {
+      "fixed_joint_exact_rate": 0.0,
+      "mean_normalized_i0_quotient_error": 0.19574468085106386
+    }
+  },
+  "test_output_used": false,
+  "test_seed_reveals": 0,
+  "updates_per_run": 1000,
+  "world_index": 0
+}

@@ -1,0 +1,21 @@
+{
+  "identifier": "P3-5A-DEVELOPMENT-ENDPOINT-DIAGNOSTIC-v1",
+  "source_report": "development_multiworld.json",
+  "context_dependent_world_0_seed_0": {
+    "bridge_consistent_shift": {"dense_i0_error": 0.0, "learned_i0_error": 0.0, "improvement": 0.0},
+    "unseen_action_composition": {"dense_i0_error": 0.0, "learned_i0_error": 0.0, "improvement": 0.0},
+    "unseen_recombination": {"dense_i0_error": 0.0, "learned_i0_error": 0.0, "improvement": 0.0},
+    "unseen_structural_mode": {"dense_i0_error": 0.0, "learned_i0_error": 0.0, "improvement": 0.0},
+    "unseen_mechanism_parameter": {"dense_i0_error": 0.1409090909090909, "learned_i0_error": 0.125, "improvement": 0.0159090909090909}
+  },
+  "graph_recovery": {
+    "source_cross_edge_f1_mean": 1.0,
+    "action_cross_edge_f1_mean": 1.0
+  },
+  "contract_threshold": {
+    "learned_downstream_sesoi": 0.05
+  },
+  "status": "downstream_utility_gate_failed",
+  "failure_boundary": "validation and most OOD slices are exactly saturated; unseen mechanism improvement is below SESOI",
+  "evidence_promotion": false
+}

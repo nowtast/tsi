@@ -1,0 +1,6 @@
+{
+  "root_seed_hex_revealed_after_execution": "14b4b5124ee9cd4a80602d292b5c292ba67597f5b4fd59a57f498198c37fc93c",
+  "root_seed_commitment": "44c16b8ef33d3ae4ff0132d2877cb79ad39e9585e56bc900aacc579be539433f",
+  "commitment_verified": true,
+  "confirmatory_analysis_sha256": "41aad07bd68baa225ee8948058233578e91476b0ed558bee2af8b6ace9036139"
+}

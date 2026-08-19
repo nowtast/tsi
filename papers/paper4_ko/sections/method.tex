@@ -1,0 +1,206 @@
+\section{감사 계약과 방법}
+
+\subsection{Finite family와 analytic representability}
+
+Family는 cardinality \((4,3,5,3,4)\)인 다섯 finite state coordinate, 세 directed
+dependency graph와 96 multiplier/coupling mechanism으로 구성되어 288개
+graph--mechanism cell을 만든다. Graph edge \(s\to r\)에서 generator는
+\[
+x'_j=\left[x_j+m_j a_j+
+\mathbf 1\{j=r\}\,c\,a_s(1+x_r)\right]_{q_j}
+\]
+이다. Fitted TSI head는 training transition에서 graph,
+\((m_1,\ldots,m_5)\), \(c\)를 회수한 뒤 같은 equation을 적용한다. Candidate
+graph는 training partition에서만 scoring하며 training exact accuracy 1.000인
+candidate가 유일할 때만 accept한다. 따라서 recovery가 성공하면 exact test
+prediction은 보장된다. Recovery에 조건화한 accuracy 1.000은 stochastic
+discovery가 아니다.
+
+Training action은 magnitude-1 one-hot vector 다섯 개다. 원래 test partition은
+held-out primitive source--action pair와 단일 좌표 magnitude-2 action 두 개
+\((0,2,0,0,0)\), \((0,0,2,0,0)\)를 추가한다. 이들은 two-coordinate
+composition이 아니라 scale extrapolation이다. 720개 state 전체에서 cell당
+1,440개 intervention case를 만든다. Train/test source--action key 중복은 0이고,
+기록된 split audit, train-only discovery audit, test-only evaluation audit와 source
+inspection check는 모두 통과했다.
+
+\subsection{Frozen control과 unit}
+
+Diagonal model은 coordinate별 action multiplier를 추정한다. Graph-unaware dense
+polynomial model은 intercept, state value 다섯 개, action value 다섯 개와 25개
+source--action interaction을 사용하고 least squares로 fit한다. Lookup model은
+training source--action pair를 암기한다. Wrong-routed model은 shifted graph에서
+factorized equation을 적용한다. Independent unit은 graph--mechanism cell이다.
+다섯 row-permutation seed는 trainable control 내부에 nested되어 cell 안에서
+평균하며 TSI, wrong-routed, lookup은 deterministic fit 하나를 사용한다. 원래
+descriptive contrast는 TSI minus graph-unaware dense intervention accuracy다.
+
+\subsection{Post-review diagnostic}
+
+다음 analysis는 peer review 뒤 설계했으며 preregistered confirmatory test가 아니다.
+
+첫째, graph-by-head panel은 correct/shifted graph와 modular factorized/untied
+multi-output least-squares head를 교차한 네 operational cell을 채운다. Dense head는
+intercept, 다섯 action value와 graph-selected term \(a_s(1+x_r)\)를 사용하며 output
+coefficient를 generator parameter에 tie하지 않는다. 이는 명시적 dense-head
+operationalization 하나이지 모든 dense model의 보편적 class가 아니다.
+
+둘째, genuine composition panel은 서로 다른 두 active coordinate를 가진 binary
+action \(\binom{5}{2}=10\)개, 즉 cell당 7,200 case를 검사한다. 셋째,
+misspecified panel은 fitted action-linear TSI equation에 없는 target term
+\[
+a_s(a_s-1)(1+x_r)
+\]
+을 추가한 뒤 단일 좌표 magnitude-2 action 다섯 개를 검사한다. 이 term은 모든
+magnitude-1 training action에서 0이므로 원래 training partition과 recovery
+procedure는 바뀌지 않지만 test time에는 fitted TSI equation 밖에 있다. 이 panel은
+cell당 3,600 case를 포함한다.
+
+Frozen audit는
+\texttt{experiments/paper4\_final\_comparative\_audit.json}, 확장은
+\texttt{experiments/paper4\_postreview\_diagnostics.json}에 저장했다. 교정한
+cell distribution과 budget/replay declaration은
+\texttt{paper4\_statistical\_analysis\_r2.json} 및
+\texttt{paper4\_fairness\_audit\_r2.json}에 저장했다.
+
+\subsection{Prospective 귀속 contract}
+
+Diagnostic 뒤 새 contract와 implementation을 동결하고 나서 fresh confirmatory
+seed를 생성했다. 동결, seed 생성과 one-shot 실행은 하나의 scripted sequence에서
+그 순서대로 진행했다. 순서 보장은 경과 시간이 아니라 frozen source hash와 seed
+commitment에서 나온다. 각 world는 modulo 7인 다섯 coordinate와 서로 다른 두 source가
+하나의 target으로 들어가는 graph motif를 갖는다. Motif는 30개다. 각 edge는 다음
+세 typed function 중 하나를 사용한다.
+\[
+\phi_L=a_s(1+x_t),\quad
+\phi_Q=a_s(1+x_t)^2,\quad
+\phi_S=a_s(1+x_s+x_t).
+\]
+뒤의 두 function은 원래 linear equation 밖에 있다. Training과 selection은 서로
+겹치지 않는 noisy primitive-action transition 800개와 400개를 포함한다. OOD case
+1,200개에는 active coordinate가 두 개 있으며 사전지정 stratum은 두 graph source를
+모두 활성화하여 두 mechanism을 composition한다. Coordinate noise는 OOD 평가에서
+0.08에서 0.12로 증가한다.
+
+Complete attribution panel은 correct/shifted graph를 세 head operationalization과
+교차한다. Factorized head는 direct multiplier 다섯 개와 typed edge coefficient 두
+개를 갖는다. Generic sparse modular head는 다섯 direct action 및 declared edge마다
+세 function을 포함한 dictionary에서 output--feature coefficient 일곱 개를 greedily
+선택한다. Dense sensitivity는 \(5\times11=55\)개 modular coefficient를 coordinate
+descent로 적합한다. 따라서 factorized와 sparse-generic cell은 active parameter
+count가 일곱 개로 같고 dense cell은 generic head에 더 큰 capacity를 준다.
+
+\begin{proposition}[Seven-sparse embedding]
+고정 graph와 선택한 edge family에서 prospective family의 모든 seven-parameter
+factorized transition은 정확히 동등한 seven-sparse generic modular head를 가진다.
+\end{proposition}
+\begin{proof}
+각 coordinate \(j\)에 대해 output \(j\)의 direct feature \(a_j\)에 generic
+coefficient \(m_j\)를 할당하면 nonzero coefficient 다섯 개를 얻는다. 공통 target
+\(t\)에서 edge \(e\)의 선택된 feature \(\phi_{f_e}\)에 coefficient \(c_e\)를
+할당하면 두 개가 더해진다. 나머지 coefficient는 모두 0으로 둔다. 그러면 generic
+increment는
+\[
+\delta_j=m_j a_j+\mathbf 1\{j=t\}\sum_{e=1}^{2}c_e\phi_{f_e}
+\]
+가 되어 coordinate별로 factorized increment와 같다. \(x_j\)를 더하고 modulo 7로
+줄여도 등식은 보존된다. 역으로 generic support를 이 일곱 위치로 제한하면 동일한
+factorized equation을 얻는다.
+\end{proof}
+
+\begin{proposition}[Population motif 식별가능성]
+\label{prop:motif-identifiability}
+\(\mathbb Z_7^5\) 위의 prospective family를 생각하자. Primitive intervention
+distribution이 모든 state \(x\)와 unit action \(e_s\)에 full support를 갖고, 모든
+multiplier와 edge coefficient가 \(\{1,2,3\}\)에 속하며, 각 successor coordinate가
+독립적으로 확률 \(1-p\)에 유지되고 확률 \(p<6/7\)에 나머지 여섯 값 중 하나로
+균등하게 바뀐다고 하자. 그러면 \((x,e_s,x')\)의 joint population distribution은
+common-target two-source motif, 각 source에 연결된 ordered head family와 일곱
+parameter를 유일하게 식별한다.
+\end{proposition}
+\begin{proof}
+Input과 deterministic center value에 조건화하면 center의 확률은 \(1-p\)이고 다른
+각 값의 확률은 \(p/6\)이다. \(p<6/7\)은 \(1-p>p/6\)과 동치이므로 center는 유일한
+conditional mode다. 따라서 population distribution은 전체 deterministic
+primitive-action transition map을 식별한다.
+
+Action \(e_j\)에서 output coordinate \(j\)는 \(m_j\)만큼 변한다. \(j\)에서 시작하는
+edge는 \(j\)와 다른 target coordinate만 바꾼다. 따라서 direct multiplier 다섯 개가
+식별된다. 이 direct increment를 뺀 뒤, nontarget coordinate의 primitive action이
+다른 coordinate에 nonzero residual을 만드는 state가 존재할 필요충분조건은 그 action
+coordinate가 graph source인 것이다. 실제로 선언한 각 edge feature는 어떤 state에서
+0이 아니고 coefficient도 0이 아니다. 따라서 full state support는 이러한 residual
+family 두 개를 받는 유일한 output과 두 source를 식별한다.
+
+이제 각 source의 family와 coefficient를 식별하면 된다. Source--target feature
+\(\phi_S=1+x_s+x_t\)는 \(x_s\)에 의존하지만
+\(\phi_L=1+x_t\)와 \(\phi_Q=(1+x_t)^2\)는 의존하지 않으므로, full support에서
+\(\phi_S\)는 두 대안 중 어느 것의 nonzero multiple과도 같을 수 없다. 모든
+\(x_t\)에서 \(c\phi_L=c'\phi_Q\)라면 \(x_t=0\)을 대입해 \(c=c'\)를 얻는다.
+\(x_t=1\)을 대입하면 \(\mathbb Z_7\)에서 \(2c=4c\), 따라서 \(c=0\)인데 이는
+\(c\in\{1,2,3\}\)와 모순이다. 그러므로 family는 유일하다. \(x_s=x_t=0\)에서는
+선택한 모든 feature가 1이므로 residual이 해당 coefficient를 식별한다. 따라서 모든
+구성요소가 유일하다.
+\end{proof}
+
+\begin{corollary}[반복 input 회수 경계]
+\label{cor:motif-recovery-bound}
+앞의 증명에 충분한 primitive input--output coordinate pair의 finite separating
+set을 \(\mathcal I\)라 하고, 각 pair의 input을 적어도 \(n\)회 독립 반복한다고 하자.
+\(\mathcal I\) 위의 modal reconstruction과 그에 따른 motif 식별이 실패할 확률은
+다음 이하이다.
+\[
+  6|\mathcal I|\exp\!\left[
+    -\frac{n}{2}\left(1-\frac{7p}{6}\right)^2
+  \right].
+\]
+\end{corollary}
+\begin{proof}
+고정 input, center value 및 wrong value 하나에 대해 center indicator에서 wrong-value
+indicator를 뺀다. 이 변수는 \([-1,1]\)에 있고 기댓값은
+\((1-p)-p/6=1-7p/6>0\)이다. Hoeffding inequality는 wrong empirical count가 center
+count 이상일 확률을 \(\exp[-n(1-7p/6)^2/2]\)로 제한한다. 여섯 wrong value와
+\(\mathcal I\)의 모든 pair에 union bound를 적용하면 위 경계를 얻는다. 모든 modal
+center가 정확하면 Proposition~\ref{prop:motif-identifiability}가 유일성을 보장한다.
+\end{proof}
+
+이 결과는 population/full-support 명제와 repeated-input bound이며, finite
+random-design greedy selector가 반드시 motif를 회수한다는 증명이 아니다. 120/120
+회수율은 별도의 empirical result로 남는다.
+
+Independent unit은 world다. Confirmatory cohort는 120개 world이며 familywise level
+0.05에서 여덟 inferential quantity에 Bonferroni simultaneous interval을 사용한다.
+Primary graph effect는 각 head 안의 wrong-minus-correct NLL이다.
+
+Analysis object는 frozen Bonferroni divisor 8로 interval-bearing quantity 열 개를
+보고한다. 여기에는 exact duplicate pair 하나, sign-flipped pair 하나와 deterministic
+zero 하나가 있어 정보적으로 구별되는 stochastic quantity는 일곱 개다. Frozen v1
+contract는 정수 divisor만 지정하고 구성원을 열거하지 않았다. 이는 reporting
+defect이며 사전등록된 family 정의가 아니다. 현재 code는 identification,
+learned-routing NLL, factorized-graph NLL, generic-graph NLL, dense-graph NLL,
+rollout Hamming, criterion Brier 및 outside-family noninferiority를 여덟 gate
+quantity로 열거하되 post-freeze clarification임을 명시한다. Post-review
+sensitivity에서 divisor 10을 사용해도 모든 decision은 유지된다. 이 cohort, root
+seed와 multiplicity family는 Paper~3과 공유한다. 두 논문의 겹치는 endpoint는 하나의
+frozen analysis 중 일부이며 독립 evidence가 아니다.
+
+Confirmation 전에 120개 world에 대한 power analysis를 동결하지 않았다. Post-review
+retrospective design justification은 development world 24개만 사용하고 original 및
+outside-linear family로 층화한다. Bootstrap 20,000회에서 120개 world의 nine-gate
+conjunctive power 추정치는 0.9694, Monte Carlo interval은 [0.9670, 0.9718]이다.
+Development-fitted calibration을 고정값으로 취급하고 24개 world의 empirical
+support를 그대로 상속한다. 이는 preregistration record도 frozen design의 소급
+변경도 아니다.
+
+\subsection{Prospective outside-model-family stress contract}
+
+두 번째 source freeze 뒤 별도 120-world seed를 생성했다. Held-out successor는 graph
+target에 다음 항을 더한다.
+\[
+d\,a_{s_1}a_{s_2}(1+x_u)
+\]
+여기서 \(u\)는 target이나 두 source가 아니고 \(d\in\{1,2,3\}\)이다. 이 nonadditive
+synergy는 모든 primitive training 및 selection action에서 0이며 fitted dictionary
+어디에도 없다. 두 mechanism에 동시에 intervention할 때만 활성화된다. Frozen
+gate는 모든 world의 learned prediction이 nonexact일 것과 wrong-minus-learned NLL
+mean이 0.03 이상이면서 95\% 하한이 양수일 것을 요구한다.

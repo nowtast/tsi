@@ -1,0 +1,19 @@
+{
+  "layer_generic_vs_prefix_tsi_mean": [
+    -0.0001867426413751751,
+    8.206042166893323e-05
+  ],
+  "layer_generic_vs_prefix_tsi_world_seed_sd": [
+    0.0018660845750934313,
+    0.0013776322114516654
+  ],
+  "row_count": 9216,
+  "scalar_generic_vs_prefix_tsi_mean": [
+    -0.0005385387201438194,
+    -0.00021247670359487606
+  ],
+  "scalar_generic_vs_prefix_tsi_world_seed_sd": [
+    0.0019954445926428296,
+    0.001352165423692461
+  ]
+}

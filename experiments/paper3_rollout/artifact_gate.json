@@ -1,0 +1,104 @@
+{
+  "artifact_status": {
+    "development_and_sealed_generator_audit": true,
+    "development_rollout_pilot": true,
+    "development_variance_and_power_report": true,
+    "fixed_metric_and_lipschitz_audit": true,
+    "frozen_confirmatory_analysis_plan": true,
+    "one_shot_execution_lock": true,
+    "rollout_contract_and_digest": true,
+    "six_control_capacity_and_compute_audit": true,
+    "zero_access_rollout_seed_ledger": true
+  },
+  "combined_digest": "4943ce2fe37cf093976d6910e398e45245fb88f0ad0015187b997acb88d5476e",
+  "frozen_artifact_digests": {
+    "analysis_plan": "d89db588ee6c2a58593f0d245a0e3f0050aa35d43e2357b8db04af0911cc154c",
+    "development_pilot": "3fd29ff027bf38de12b69cc59315220d80afd0748acc29498dcb313b93cb5093",
+    "development_power": "ce329fe545c1f3c88a83d63d6c8cff6ac3ee6344361f0d065e42a0aa19e4923b",
+    "implementation_source": "af7173b2eda8539d3466d2207d5982e5ac892de16010dc84eab7bd992c392d85",
+    "p3b_evidence": "57f2f7cadc9c7a38f19e79a52dbfb98aec62b111893314c8d6a3e7dbdba78c54",
+    "p3b_implementation_source": "73dc51cf0b45b3d3229eb480810fe7bc00fbd9b366d82c12e170bd8a2217d4d1"
+  },
+  "gate_audit": {
+    "analysis_plan_digest": "d89db588ee6c2a58593f0d245a0e3f0050aa35d43e2357b8db04af0911cc154c",
+    "artifact_blockers": [],
+    "evidence_level_after": 3,
+    "evidence_level_before": 3,
+    "gate_passed": true,
+    "identifier": "P3-4A-FINAL-FREEZE-v1",
+    "implementation_source_digest": "af7173b2eda8539d3466d2207d5982e5ac892de16010dc84eab7bd992c392d85",
+    "p3b_frozen_source_digest_unchanged": true,
+    "p3b_level_3_retained": true,
+    "planned_test_worlds": 62,
+    "test_result_evaluations": 0,
+    "test_seed_reveals": 0
+  },
+  "identifier": "P3-4A-FINAL-FREEZE-v1",
+  "subreports": {
+    "access": {
+      "audit_digest": "baded98ab06fc496c4c2933fcd5dbc61ecfc7a90b0890c739e2080397326632f",
+      "commitment": "26bddc90d1ba6b45b779bd04883be0186a094cf1107ea90822cd52e238000828",
+      "errors": [],
+      "escrow_mode_octal": "0o0",
+      "escrow_size": 32,
+      "event_names": [
+        "seed_commitment_created"
+      ],
+      "expected_phase": "zero",
+      "identifier": "P3-4A-ROLLOUT-SEALED-ACCESS-v1",
+      "latest_event_hash": "7f752c2e38d44c1ce629dbd734870cc010a1280daab8817d2e380f4497a028ea",
+      "passed": true,
+      "result_evaluations": 0,
+      "seed_reveals": 0
+    },
+    "contract": {
+      "contract_digest": "9672b5cbedac7c1e17f807ca776d6c358d85295f6cc32bbfcad1f82e2fc116f8",
+      "effect_count": 8,
+      "errors": [],
+      "identifier": "P3-4A-ROLLOUT-v1",
+      "model_count": 6,
+      "passed": true
+    },
+    "fixed_metric_and_lipschitz": {
+      "errors": [],
+      "exact_lipschitz_constants": {
+        "hold": 1.0,
+        "label_step": 1.0,
+        "metric_step": 2.999999999999999,
+        "order_step": 2.0,
+        "relation_step": 2.0,
+        "topology_step": 6.0
+      },
+      "identifier": "P3-4A-ROLLOUT-EVALUATOR-v1",
+      "maximum_triangle_excess": 1.1102230246251565e-16,
+      "passed": true,
+      "positive_off_diagonal_count": 104652,
+      "state_count": 324
+    },
+    "generator": {
+      "development_manifest_digest": "966d68d937065b99eef1a02ad3f80a851d9ee5418c94ac61600bcd594c410045",
+      "development_trajectory_count": 768,
+      "development_world_count": 24,
+      "errors": [],
+      "identifier": "P3-4A-CONTEXT-ROLLOUT-GENERATOR-v1",
+      "maximum_horizon": 32,
+      "passed": true,
+      "sealed_worlds_materialized": 0,
+      "trajectories_per_world": 32
+    },
+    "routing_controls": {
+      "active_parameter_budget": 420,
+      "compute_budgets_matched": true,
+      "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+      "errors": [],
+      "information_fields_matched": true,
+      "max_relative_parameter_difference": 0.0,
+      "model_count_per_family": 6,
+      "passed": true,
+      "random_masks_equal_correct_masks": false,
+      "training_updates_matched": true,
+      "tuning_budgets_matched": true,
+      "wrong_masks_equal_correct_masks": false
+    }
+  }
+}

@@ -1,0 +1,5730 @@
+{
+  "sealed_test_worlds": 0,
+  "world_count": 108,
+  "worlds": [
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:000",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "ef5098d50dc3618b7e4077ff9c478314c7cd84a68f4199703a4511fd04a40049",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:001",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "4a6e04e3588284e88cc3e2cfd9abd922d28656f567d57fe6d0e4090028f9bd4b",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          3,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:002",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "34b43b7acdbffec85dae4b08be82dc3055beb159cebfd7066decec6035743e6e",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          1,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:003",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "f7a08ed74695b5aecd581e7cf91e37a6ff3ce7f4d17240170e05b45f7d11da10",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:004",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "1687cc3ca0dcda328fd6743543eff0573e2f52411a3ec3fa4ee313eb41164cd0",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:005",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "7f9f6d91628e9d96a05b1de604f479ec16f8fdb90f4b2686205b472e5ded50f9",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          3,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:006",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "f89f17368d351a3af77e1251ccc0665fb029c8465bc5c12a7bc63b3cf70652da",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:007",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "6b947c1e0251d411bce3b7f10129f6a0a848e5745594083d7e4074c3d23d3efc",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:008",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "64e1ead0156b9a0387fb381ac06f437093767962b82445f0275e87dd066152b3",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:009",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "7960961d7397166894bc22e5c61c03486fa7929ba84c17f013fb7ec7c33a02a9",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:010",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "8fb5c77103a671d1c8f047a54ada95225ef1d8edaf3f6418dc91ca6d442ca8f1",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:011",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "0539148f657345bbcfcd52ec05d1591ddad2f03ae317383a066e33144bcff471",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 11
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:012",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "c32729016711cd5f8a27629d808609a282b79dbd8f6c23135aa23cd02d777ade",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 12
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:013",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "ad2bb329de895cf1dc946233e9011913a38954d72336512c6a5dc982aeb8edd4",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 13
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:014",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "abc74da3819ecdb48e5d1de4999fab4da65a09976a34bc3279d8667759f5cb25",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 14
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:015",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "f0511c890030c7bea6ae1a544651fdf902153e9852f7a0771b4d87e3d2485f1c",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 15
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:016",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "9c51cc63b7abf1b503d548f801b173de0f90c97b2ad8077dfe70c1b7ee5ed45f",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 16
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:017",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "73c445311e73e1345c10fc44e8f4be14046c9296f49341431fcb0fef58ed1910",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 17
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:018",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "a96f55cad0584e0680767d5c8d1dd21e5652ba7ae0f2126762a13cf321c3958c",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 18
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:019",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "7868b5844079982497fed5629cc8a8e326b8f9535fa39528ef3f56932b139201",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 19
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:020",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "27e562c5c1438278d9c21dca4af26b371e36fe98837e28c075f01769a8faf098",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 20
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:021",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "067b14f545bbd2448f993887abee8235697e044a45ed3fd140cbe1da09c4de9f",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 21
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:022",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "8d45fb39a3655f1e5f136cdbb8438095e386564cb48f3055e2a912a1a394a73c",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 22
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "development:separable:023",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "17dff7004bd2318984531cef6c1bb54370e4d8c43577612bb945d48694efc519",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 23
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:000",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "b361928f1792a3f4843b99efbaa126adb64f57526f798d560f43da26ae49816e",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:001",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "0c387509bd8602df51d90b0ab008160a85a74f2f1d361f48f2c5dccf1c764158",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          1,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:002",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "7a5ab1bdc52463d76805e2641677d24697d7650acc12f5889b27edff8ff0f79e",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:003",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "e9b4b93c502a9e96b847a8f9537ae1ed4610632a4b85d9713ddea4671d54b9e1",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:004",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "05580e2f7456e74a7e4f8c6411d7172293d3ade01cd04d70b3c7d0767932c4cc",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          3,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:005",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "2fcbcf5a18e2cf5cbcfa71dcea0f8be8a480b3e4a20f09fb8a62239e4ff9ef79",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:006",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "08909ad884f41d606232792be7a38db8733abbb67993c3e41fb114c791a468a9",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:007",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "4b57c51569825cfb2528d96b1bfc30b086082146d9eaa706f8a5741a45622775",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          3,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:008",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "8353c9edf3dfea62e5ba336933cf284e5b2a1da6fecd947f99f5e68d364cac62",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:009",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "8ce253cc682eda420b559e4327747017ce0fc44a4ceeb113da0765e070496467",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:010",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "a0fc0d292020bce1089b6f67dc79a834afd4b6c7e1992784f37f9ce89b39fcfe",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:011",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "13ba37a9e000d07d84805273d54b3913bd3f3bfd5b24759752b274da426e3954",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 11
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          2,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:012",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "4b10f296f17ed9da234caf4304084ed18eded23080e2ee05586c9647a5f84fee",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 12
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:013",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "56a05084c2b097499d4248631fe3c19109979a182e81d402d21aa62a453ae3b5",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 13
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:014",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "39b2abaacf90877520252517637de54ce4ea39e0c02942f4cff0a413aaaba3b3",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 14
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:015",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "9e9aa3b695679d12a656e94846f93e8b282692b208be021c95582f1e6d0a7ab1",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 15
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:016",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "14b9f7c4242e093641aaba072fb41900ffe72713e38157354cce099c225424b5",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 16
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          1
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:017",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "283df4385bb94a193e9e8e18d7b042caeead89e1f6a96b3e4aa6eb78e3a87949",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 17
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:018",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "f3b6daf953a65c170c942d3f809c93360581aa742bf152e3b45f44ab2cce8291",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 18
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:019",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "cedc17d45eff492ebd464ce87b9978de864798edfd0da608b83402854b55f7e2",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 19
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:020",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "76dee79ee182beb018640c25ab396d1554b489145bb47438c420eb18ad91a002",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 20
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:021",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "dd7f7050600957565a911484d2d8707c299c4b73d9d91da358de8a260375de69",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 21
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:022",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "4d6f51e9783844106d1cc6b38fa9aed855ea620aae364c1473c2114343881cc0",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 22
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "development:bridge_coupled:023",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "d54e4fa776f86a3a1ec8defc63d9461b72a2862a7c4be6367005cbc7940c45dd",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 23
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          3,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:000",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "46084af81bf3906d68e9be442824d24c477f91f96e08d02a1272bad024cb9364",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          3,
+          1
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:001",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "f80a1fb6914aa743434852474843bb65c58d143c29fff17d5f3af0eaf7371630",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:002",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "425c19808e0647effc7a71ef5074cdf899ae1c6dbfdf17e7896925f1250a8af9",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:003",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "cbc3851ad355cfd01383bf9b5cc97966421e280ddbe815b58316bd7f158f07c0",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          2,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:004",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "dfab0e717bd02ce3653dffc9f848071deaa840e38e354848cd083af9cf5f41df",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:005",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "b5c5cec769f7b55a3bc394afecee9b78fd46d91dd022eda060cc1359d0c821fa",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:006",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "85fa96a4b4e88a103f0236e38077570694e4b7add679e8d23c6c78891b47ac1e",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          1
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:007",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "b34c763beaf231f485ba52ecc89945e77a3b3b000936ff8bbd02b16c036e773a",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:008",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "4fa867859f810f18878049bd8cf84e19e13e5c4d8988c4884dae2fc6dd98e6e0",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:009",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "7b98b863e2de717b69037c38856c64768f7139c74e47b70d7f1e738a71f52c1c",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:010",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "1d5daedd6d4d5f65107bb80022ea1d0b49996cd20bd748d623e7bb0496ffbb69",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:011",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "07a78101acb13c2045c0c5f4ac2b323c5ddc2c5ecd95fa02870d7fc5a42ab35c",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 11
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          2
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:012",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "a0023ca94a89144d1e1f7ff9b3dd82c3e54a6c24fccaa18f09889d9e5a3ccb7a",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 12
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:013",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "b23673eb47db099bf39d8fc5c4e2c16faadaca70dbb239d4dc75733547a29aa9",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 13
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:014",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "b7c933a1624e81ba3375eeca3907bc7ab205512fc6449f9b46e627a42f477fd5",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 14
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:015",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "a31d2f7894d3360ee91a3dedf4b552b6daa6c9de2f060ebb9f1bcb6a29b700b3",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 15
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:016",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "619ae45ec756df2e118326000929d0d3f90b5a5b91010269d61d0bc6a202828a",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 16
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:017",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "d3054d049ab4ad93117508be8d47d1a50d101bd309537831437b7707b006956f",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 17
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:018",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "707c14d51a05a7361a83ded1675176fb21b41186b1d5bb15b0089f5097f5f9a5",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 18
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          3,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:019",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "8da99427caca5150e7a236c93b54095cdd7d584339ef0c9f40006cd7e1f9e13f",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 19
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          3,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:020",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "930c55bfeb13b62c2f2e076a33a51ebd95d9639c0725ac617e7fda17adbbb7a6",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 20
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:021",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "1357dd1ba383d639fd20e0d22c07e611732f6d79b2df34f3be9a0e42707e20f5",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 21
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:022",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "7355fbc1a9564f39caf7b8c40f6ef2c9969b700706afd2212183b8dd135b3bc1",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 22
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "development",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "development:context_dependent:023",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "2d04d0f944050ec011c6500263da9bef1f1eecc295703208fd845521f159bbfd",
+      "root_commitment": "3d1e53d906a0245d1555cfa8074b41576d4b6f7bcc34508a0d03184d2d9a8084",
+      "world_index": 23
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          2,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:000",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "f4d9ed48dd9cd5b66b8a8cd1da36ed057c0760f66e34ac1fe50f46cade4b1564",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:001",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "a9b20ade8e98ce87d064aaa3f4da4a30171a24e5033c52b859ac0d1546e7877f",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:002",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "29bbf30feeeda5010eb12acf7b463b5776ce5f158c7441fc501347903dfdfb51",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:003",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "mechanism_digest": "306e608685c921d2be516e8f1163815811a1c7f55ffc2384c8c3cf87f337554a",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          1,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:004",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "mechanism_digest": "9b8a0549b5c19fa6165cb4548ab125bf508bdfd878c7283a13dce86a2964d86a",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:005",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "mechanism_digest": "9caaba543d5a601058cb3892b9e586cc2f243d32b5f04e9259a4ee8af819927b",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          2,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:006",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "2bd2e6f7ffc0cd95b06cfcfd07b4a4c2c419ca9254436dde1ffe07ee89bb7007",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:007",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "70c1aa6d72fcd9ef6bc11c74c256ddba2ca93e5576440726612024cfb8e66312",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:008",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "dfcdc0daf01be1b42bf2bd33abc407fc685d0fe08aeba372fca8650b305a626a",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:009",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "858f348a5e66a15d763520005e88d27ec22b444272dec1a7b8d5d5ba0316bca5",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          1,
+          2
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:010",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "be4799b8eff5ca1b1ef16c7793300ad15730244d638514ba7e43f6af06bae6dd",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          1
+        ]
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ]
+      ],
+      "family": "separable",
+      "identifier": "validation:separable:011",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "541300fba5bce15cff4682c285c52832b003ac38d737f0584f76a053f96e47c0",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 11
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:000",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "9aa01c251dc0781f6fc0641b8d7f5c8970d35f311e182c05f70e5923750881de",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:001",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "24ba4a099d0b65c838f00499ef8cc8c2c8a6a8a384f8830e7dce628c38bb8221",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:002",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "72c0828fa9f552518ffff2df75b1644da58d7af1b681c1ce098fb52c2f44b84f",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:003",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "a8cf7ee233fea33d6b2cd7eecaba6cae2c7f0f647a4d3ceeaa2e8d8f37bbaddd",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:004",
+      "layer_multipliers": [
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "4e8604f8f5fa2fddbdaad205ac0371f75795c8f19d468e569f034719bda375b4",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:005",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "096c95c07e49ba4188f363624867e3be03b29c2db23253af47209fb4df1256cc",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          2,
+          1
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:006",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "mechanism_digest": "bf2354ffeeef447ba328771c2db1abbd0af33a8f795c95b8a9a48c48dd2de63c",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          2,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:007",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "mechanism_digest": "082cb4cdaffc951dcc15559145e49318a8231647081c3fb392d1224f0b668ffb",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          3,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:008",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "e0edca2ecb00c6a82055e4800144d49665dfc3f7dcc01cda26ebbfeecb5dc7d5",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:009",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "7c48e94eaa23ebf41a8161e44926942e16e4ac6cd9e6c843b24b7ad2795fe3f7",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:010",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "3c6933ed4242439ceb4643b4686426eeaeffba575ffa68b270614d0c69497894",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        3
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ]
+      ],
+      "family": "bridge_coupled",
+      "identifier": "validation:bridge_coupled:011",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "mechanism_digest": "e13a94c0b1941b67013f5c12db0af509736399617b5468ac2a0fb6dff25452ea",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 11
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:000",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "53118e6fc2f878f8a8adc6580d49eea42cf1fb3dff04b531071e9dc775dca617",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 0
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          3,
+          2
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:001",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "23e40c9edd8b27449dc657ba0bf2d72767ed82190349cb0cc742ec580207ecdc",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 1
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          2,
+          1,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:002",
+      "layer_multipliers": [
+        1,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "e5adfeb1210bec67a536e5a89c7302d75ad75fc523fab3b79167b02b8c8f9348",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 2
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:003",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "37d1413047a66a7c75f362a6a388eaefb2b74283425822b091d64bacf56a9b5c",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 3
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          3,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:004",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        3,
+        2
+      ],
+      "mechanism_digest": "7f9022e66f61173217740eb5826598a58ef30182383a0e2f884751b6120f9973",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 4
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:005",
+      "layer_multipliers": [
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "f6cd16d6f32b793aabaca7578dfca1f9e2740ae6f1c79c8418dc6282f7c77a10",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 5
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          1,
+          2,
+          3,
+          1
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:006",
+      "layer_multipliers": [
+        2,
+        1,
+        2,
+        3,
+        1
+      ],
+      "mechanism_digest": "77e103a1607f89ec6dca9c4ef26b8fa76587eac3df7456a18a510befa656de6f",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 6
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          2,
+          1,
+          1,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:007",
+      "layer_multipliers": [
+        1,
+        2,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "6d312f0ba0f85a8f79d4572b8d48189ff1c68daf6a6ea6e2cf7ada5160ab965b",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 7
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        1,
+        1
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:008",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "mechanism_digest": "4cfa32a311adeefe77b48fbfc6e8e72c3819377cac0259b479b017f3bd709041",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 8
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        3,
+        1
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 1,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:009",
+      "layer_multipliers": [
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "mechanism_digest": "ec61af48bacb38ab3879745181c101df466fe48cab2c761f632e4305d2740ebd",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 9
+    },
+    {
+      "active_parameter_signature": [
+        [
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        1,
+        2
+      ],
+      "bridge_coefficient": 1,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:010",
+      "layer_multipliers": [
+        2,
+        2,
+        2,
+        1,
+        2
+      ],
+      "mechanism_digest": "7c2601266ea12ad3f1429c3bc24dc30b6387148e0fca588359d6633dc5ba936f",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 10
+    },
+    {
+      "active_parameter_signature": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        3,
+        2
+      ],
+      "bridge_coefficient": 3,
+      "cohort": "validation",
+      "context_coefficient": 2,
+      "dependency_graph": [
+        [
+          "label",
+          "label"
+        ],
+        [
+          "topology",
+          "topology"
+        ],
+        [
+          "metric",
+          "metric"
+        ],
+        [
+          "relation",
+          "relation"
+        ],
+        [
+          "order",
+          "order"
+        ],
+        [
+          "topology",
+          "relation"
+        ],
+        [
+          "order",
+          "metric"
+        ]
+      ],
+      "family": "context_dependent",
+      "identifier": "validation:context_dependent:011",
+      "layer_multipliers": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mechanism_digest": "f7b7207c962275a08154ad6e19cf147353e2d79983a505bcfe7f02a57134a0a1",
+      "root_commitment": "282d24bee365a5fd5f9596d8d55971900fd8eefb5f8b380ba40ed29418a79a30",
+      "world_index": 11
+    }
+  ]
+}

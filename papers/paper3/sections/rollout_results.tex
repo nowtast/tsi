@@ -1,0 +1,24 @@
+\section{Open-Loop Rollout Results}
+\label{sec:rollout-results}
+
+The rollout gate completed all \(1{,}116\) fits on 62 fresh sealed context
+worlds.  The oracle signature-routed and matched dense controls had zero
+32-step open-loop \(\DeltaTheta\) area and unit structural survival.  Against
+the signature control, the random-routed and wrong-routed controls had mean
+open-loop area effects \(0.17457\) and \(0.17490\), respectively.  The frozen
+family contained eight co-primary margins.  Six were deterministic structural
+margins with effectively zero between-world SD: \(0.10\), \(0.15\), and four
+instances of \(0.05\).  Only the random- and wrong-routing comparisons carried
+material stochastic variation, with between-world SDs \(0.01196\) and
+\(0.01120\).  All eight recorded decisions were positive after multiplicity,
+cluster-bootstrap, and hierarchical processing, but this is not eight
+independent informative tests; the stochastic content lies in the two routing
+comparisons.
+
+Tracking error was zero for every control.  This is a useful consistency check
+but provides no identification of routing quality in a fixed-cardinality world.
+The exact recursive inequality also passed its finite audit, yet the global
+worst-case bound for failed controls grew to approximately
+\(1.24\times 10^{13}\).  The bound is therefore proof-valid but numerically
+vacuous in this regime.  Neither observation is converted into a positive
+tracking or stability claim.

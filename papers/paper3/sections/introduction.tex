@@ -1,0 +1,56 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Joint-embedding predictive architectures and structured world models seek
+representations that support prediction and planning without reconstructing
+every observed coordinate \citep{assran2023ijepa,assran2024vjepa,
+kipf2020contrastive}.  A scalar latent loss, however, does not identify which
+part of a structured state failed.  Two predictions with the same latent
+error may differ sharply in whether they preserve a typed label, an edge, a
+metric comparison, a directed relation, or an order constraint.  This matters
+when utility depends on one of those predicates rather than on average latent
+fidelity.
+
+This paper studies a narrower question than general world-model superiority:
+under a declared finite structural signature, can structural discrepancies
+detect errors that survive matched scalar baselines, and do those
+discrepancies remain informative under independent world generation,
+open-loop composition, and plan selection?  The mathematical interface uses a
+single typed correspondence across five layers.  Correspondence-based
+distances are established tools for comparing metric and structured objects
+\citep{memoli2011gromov,vayer2020fused}; our contribution here is not the
+general idea of correspondence.  It is the frozen combination of a coherent
+multi-layer state, codebook-free constructive decoding, routing-specific
+controls, and failure-preserving sealed evaluation.
+
+The empirical study has four design commitments.
+\begin{enumerate}[label=(\roman*)]
+    \item Development and sealed worlds are generated from disjoint committed
+    seeds, and each sealed gate is executed once.
+    \item Six controls share input information, active-parameter count,
+    optimization updates, and tuning budget.
+    \item Worlds, rather than transitions or tasks, are the independent
+    inferential units; optimizer seeds are nested replicates.
+    \item Positive results and failed boundaries are reported together.
+\end{enumerate}
+
+Three gates are evaluated.  The first tests structural out-of-distribution
+(OOD) prediction under unseen mechanisms.  The second tests recursive
+open-loop error over horizons up to 32.  The third asks whether task-local
+structural discrepancies improve a frozen probabilistic model of plan
+failure.  Proper Brier scores provide the probabilistic criterion
+\citep{gneiting2007proper}, and a discrete-time hazard represents first-failure
+timing \citep{singer1993time}.  Predictor development uses leave-one-world-out
+assessment and is frozen before sealed evaluation, following the general
+separation between model development and evaluation data
+\citep{varma2006bias,collins2024tripod}.
+
+The third gate passes its prespecified primary analysis, but its interpretation
+is intentionally limited.  Its discrepancies and regret labels share the same
+held-out candidate trajectories; this is a same-task criterion association, not a
+deployment-time prognosis that is available without oracle endpoints.
+Moreover, a stronger raw layer-aware sensitivity does not reach the
+prespecified effect floor, and two temporally separated development
+diagnostics fail.  These negative results prevent the scalar-baseline result
+from being read as evidence that the full correspondence metric is superior to
+every layerwise structural audit.

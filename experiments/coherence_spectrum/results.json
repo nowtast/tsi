@@ -1,0 +1,108 @@
+{
+  "audit_family": {
+    "ordered_pair_count": 36,
+    "ordered_triple_count": 216,
+    "state_count": 6,
+    "tested_frontier_pair_sums": 242
+  },
+  "checks": {
+    "diagonal_violations": [],
+    "frustration_equivalence_violations": [],
+    "max_scalarization_absolute_error": 0.0,
+    "pareto_triangle_violations": [],
+    "scalarization_violations": [],
+    "symmetry_violations": []
+  },
+  "layer_order": [
+    "label",
+    "simplicial",
+    "metric",
+    "relation",
+    "order"
+  ],
+  "one_sided_singleton_minimality": {
+    "correspondence_counts": [
+      1,
+      1,
+      1
+    ],
+    "passed": true
+  },
+  "status": "passed",
+  "strict_separation_example": {
+    "frustration": {
+      "gap": 2.0,
+      "ideal": {
+        "label": 0.0,
+        "metric": 0.0,
+        "order": 0.0,
+        "relation": 0.0,
+        "simplicial": 0.0
+      },
+      "ideal_is_attainable": false,
+      "independent_lower_bound": 0.0,
+      "joint_cost": 2.0
+    },
+    "passed": true,
+    "spectrum": {
+      "attainable": [
+        {
+          "label": 0.0,
+          "metric": 0.0,
+          "order": 0.0,
+          "relation": 1.0,
+          "simplicial": 0.0
+        },
+        {
+          "label": 1.0,
+          "metric": 0.0,
+          "order": 0.0,
+          "relation": 0.0,
+          "simplicial": 0.0
+        },
+        {
+          "label": 1.0,
+          "metric": 1.0,
+          "order": 1.0,
+          "relation": 1.0,
+          "simplicial": 1.0
+        }
+      ],
+      "attainable_vector_count": 3,
+      "correspondence_count": 7,
+      "has_zero": false,
+      "ideal": {
+        "label": 0.0,
+        "metric": 0.0,
+        "order": 0.0,
+        "relation": 0.0,
+        "simplicial": 0.0
+      },
+      "ideal_is_attainable": false,
+      "pareto": [
+        {
+          "label": 0.0,
+          "metric": 0.0,
+          "order": 0.0,
+          "relation": 1.0,
+          "simplicial": 0.0
+        },
+        {
+          "label": 1.0,
+          "metric": 0.0,
+          "order": 0.0,
+          "relation": 0.0,
+          "simplicial": 0.0
+        }
+      ],
+      "pareto_vector_count": 2
+    },
+    "weights": [
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0
+    ]
+  }
+}

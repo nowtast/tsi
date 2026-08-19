@@ -1,0 +1,138 @@
+{
+  "fixed_basis_development_metadata.json": {
+    "groups": [
+      {
+        "bridge_coefficient": 1,
+        "graph_variant": "bridge_topology_to_relation",
+        "layer_multipliers": [
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "mean_source_logloss_degradation": 1.7353125979535342,
+        "mean_target_logloss_degradation": 1.0149792811227807,
+        "worlds": [
+          32
+        ]
+      },
+      {
+        "bridge_coefficient": 3,
+        "graph_variant": "context_order_to_metric",
+        "layer_multipliers": [
+          1,
+          1,
+          2,
+          3,
+          2
+        ],
+        "mean_source_logloss_degradation": 0.13828636136769248,
+        "mean_target_logloss_degradation": 0.3400360315441895,
+        "worlds": [
+          33
+        ]
+      },
+      {
+        "bridge_coefficient": 1,
+        "graph_variant": "independent_relation",
+        "layer_multipliers": [
+          2,
+          2,
+          2,
+          1,
+          2
+        ],
+        "mean_source_logloss_degradation": 1.0487973451429806,
+        "mean_target_logloss_degradation": 0.33176183834948697,
+        "worlds": [
+          34
+        ]
+      },
+      {
+        "bridge_coefficient": 3,
+        "graph_variant": "wrong_direction_negative_control",
+        "layer_multipliers": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "mean_source_logloss_degradation": 0.001924646874252434,
+        "mean_target_logloss_degradation": -0.0003402295507642352,
+        "worlds": [
+          35
+        ]
+      }
+    ]
+  },
+  "fixed_basis_independent_metadata.json": {
+    "groups": [
+      {
+        "bridge_coefficient": 3,
+        "graph_variant": "bridge_topology_to_relation",
+        "layer_multipliers": [
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        "mean_source_logloss_degradation": 0.002663998449181082,
+        "mean_target_logloss_degradation": -0.0322923572046269,
+        "worlds": [
+          36
+        ]
+      },
+      {
+        "bridge_coefficient": 1,
+        "graph_variant": "context_order_to_metric",
+        "layer_multipliers": [
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "mean_source_logloss_degradation": -0.37097956473860355,
+        "mean_target_logloss_degradation": 0.29410604940236773,
+        "worlds": [
+          37
+        ]
+      },
+      {
+        "bridge_coefficient": 1,
+        "graph_variant": "independent_relation",
+        "layer_multipliers": [
+          2,
+          1,
+          1,
+          3,
+          2
+        ],
+        "mean_source_logloss_degradation": -0.18338242227591106,
+        "mean_target_logloss_degradation": -0.13374479407510606,
+        "worlds": [
+          38
+        ]
+      },
+      {
+        "bridge_coefficient": 3,
+        "graph_variant": "wrong_direction_negative_control",
+        "layer_multipliers": [
+          2,
+          1,
+          2,
+          3,
+          2
+        ],
+        "mean_source_logloss_degradation": 0.0015810786515730313,
+        "mean_target_logloss_degradation": -0.00034977251253891055,
+        "worlds": [
+          39
+        ]
+      }
+    ]
+  }
+}

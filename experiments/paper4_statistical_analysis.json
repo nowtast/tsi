@@ -1,0 +1,49 @@
+{
+  "contract": {
+    "identifier": "TSI-PAPER4-COMPARATIVE-v3",
+    "model_families": [
+      "diagonal_trainable",
+      "dense_polynomial_trainable",
+      "unstructured_lookup",
+      "wrong_routed_factorized",
+      "tsi_graph_discovered_factorized"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "primary_metric": "intervention_exact_accuracy",
+    "primary_contrast": "tsi_graph_discovered_factorized - dense_polynomial_trainable",
+    "compute_budget": {
+      "feature_evaluations_per_case": 36,
+      "fit_passes": 1,
+      "prediction_passes": 1,
+      "seed_count": 5
+    },
+    "independent_unit": "graph_mechanism_cell",
+    "nested_unit": "bootstrap_seed",
+    "test_includes_interventions": true
+  },
+  "independent_cell_count": 288,
+  "nested_seed_policy": "dense cell means average five bootstrap seeds; TSI has one deterministic fit",
+  "primary_metric": "intervention_exact_accuracy",
+  "primary_contrast": "TSI minus dense trainable",
+  "primary_contrast_interval": {
+    "mean": 0.5866946373456791,
+    "sd": 0.3258882613919555,
+    "ci95_low": 0.5489412736304012,
+    "ci95_high": 0.6240966796874998
+  },
+  "exact_accuracy_contrast_interval": {
+    "mean": 0.3777606727630857,
+    "sd": 0.20566495875306587,
+    "ci95_low": 0.3539046872365605,
+    "ci95_high": 0.40133727831160837
+  },
+  "all_primary_differences_positive": false,
+  "bootstrap_replicates": 20000,
+  "bootstrap_seed": 20260810
+}

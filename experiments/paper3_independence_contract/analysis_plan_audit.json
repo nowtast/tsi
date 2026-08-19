@@ -1,0 +1,9 @@
+{
+  "analysis_digest": "fbab7beb00d52b4c3c2653d5af146a8eaaadf1c8da6ddcb2fe32e6ab58d7151e",
+  "errors": [],
+  "passed": true,
+  "primary_contrast_count": 3,
+  "primary_controls_match_contract": true,
+  "statistical_constants_match_contract": true,
+  "test_world_count_frozen": true
+}

@@ -1,0 +1,22 @@
+\section{Structural OOD 결과}
+\label{sec:ood-results}
+
+계획한 \(900\)개 fit이 numerical failure 없이 완료됐다. Codebook-free
+decoder는 valid structural state를 생성했고 paired information, parameter,
+update, tuning audit가 통과했다.
+
+Primary sealed structural-OOD endpoint에서 oracle signature-routed control과
+matched dense exact control의 error는 0이었다. Signature-routed control 대비
+matched random routing과 permuted/wrong routing은 machine precision에서 동일한
+paired structural effect \(0.1943489362\)와 동일한 world SD \(0.0011631\)을
+보였다. 따라서 이 cohort에서 두 control은 oracle routing과는 구분되지만 서로
+간에는 구분되지 않는다. Dense noninferiority margin은 floating-point error를
+제외하면 결정론적 상수 \(0.05\)였고 world SD는 \(2.10\times10^{-17}\)였다.
+Frozen Holm, world-cluster bootstrap, hierarchical world/seed decision은
+양수였지만 극단적인 \(p\)-value는 넓은 일반화의 독립 증거가 아니라 저분산
+synthetic margin을 기술한다.
+
+이 결과는 finite oracle-signature regime에서 declared routing mask의 가치를
+식별한다. Mask를 data에서 발견할 수 있음을 보이지 않는다. Unseen
+mechanism-parameter slice의 signature-routing error \(0.11995\)는 남았다.
+이는 aggregate에서 제거한 예외가 아니라 보존된 failure boundary다.

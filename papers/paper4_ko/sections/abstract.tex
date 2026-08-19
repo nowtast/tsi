@@ -1,0 +1,31 @@
+\begin{abstract}
+이전 288-cell benchmark는 exact representability를 확립할 수 있었지만 TSI
+predictor가 generating equation이었으므로 graph information과 head form을
+분리하지 못했다. 본 논문은 그 audit를 보존하고, source 동결, fresh 256-bit seed
+생성과 one-shot 실행을 하나의 scripted sequence에서 그 순서대로 수행한 새로운
+prospective 연구를 보고한다. 무결성은 경과 시간 간격이 아니라 frozen hash와 seed
+commitment에서 나온다.
+이 연구는 30개 two-edge graph motif와 세 head family를 교차하며, 두 family는
+원래 linear TSI 식 밖에 있다. 두 mechanism을 동시에 활성화하는 stochastic
+two-coordinate action은 평가용으로 남겼다. 120개 independent world 모두에서
+train-only selection이 graph와 두 head family를 회수했다(multiplicity-adjusted
+Wilson 하한 0.941). Correct-minus-wrong graph NLL effect는 seven-parameter
+factorized head에서 0.35933, seven-parameter generic sparse head에서 0.36160,
+55-parameter dense modular head에서 0.03893이었고 simultaneous 하한은 모두
+양수였다. Correct graph 아래 factorized head와 generic seven-parameter head는
+predictive-equivalent였다. Seven-sparse embedding은 이 동률을 가능하게 하고,
+sparse procedure는 모든 world에서 동등한 support를 회수했다. 이 cohort, root seed와
+여덟-quantity multiplicity family는 Paper~3과 공유한다. 두 논문의 겹치는 endpoint는
+하나의 frozen analysis에 속하며 독립 evidence가 아니다. 또한 full-support primitive
+intervention과 symmetric coordinate corruption \(p<6/7\) 아래 population motif
+식별가능성을 finite repeated-input recovery bound와 함께 증명한다. Post-review
+\(3\times3\) noise sweep의 모든 cell에서 graph--head 회수율 1.000이 유지됐다.
+Outside-family
+성능은 원래 linear family에 noninferior했다. 두 번째 frozen cohort에서는
+unmodeled nonadditive synergy가 120/120개 world의 exactness를 깨뜨렸지만
+learned-versus-wrong graph NLL effect 0.18545 [0.18388, 0.18702]를 보존했다.
+Clean-room Node.js 구현은 learned fit 120/120개와 analysis mean 10/10개를
+재현했다. 식별된 기여는 graph information과
+minimal typed support의 회수이며, 동일 support를 회수한 generic head 대비
+factorized notation만의 고유 predictive advantage가 아니다.
+\end{abstract}

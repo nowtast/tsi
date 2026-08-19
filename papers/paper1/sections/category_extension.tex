@@ -1,0 +1,124 @@
+\section{Categorical Descent Extension}
+
+The relational carrier in the formal framework is a functor on a schema
+category. This section makes the descent condition explicit when the schema is
+given by generators and path equations. The purpose is to prevent a list of
+primitive relations from being mistaken for a well-defined categorical state.
+
+
+\begin{definition}[Generator realization]
+A generator realization assigns a finite nonempty set $X_A$ to every
+$A\in Q_0$ and a relation $R_e\subseteq X_{s(e)}\times X_{t(e)}$ to
+every $e\in Q_1$. Its free relational extension is
+\[
+ \widetilde F(1_A)=\Delta_{X_A},\qquad
+ \widetilde F(e_n\cdots e_1)
+ =R_{e_n}\circ\cdots\circ R_{e_1}.
+\]
+\end{definition}
+
+\begin{proposition}[The finite-relation category]
+Finite sets, binary relations, relational composition, and diagonal relations
+form a category. In particular, the path formula in the preceding definition
+is independent of parenthesization.
+\end{proposition}
+
+\begin{proof}
+Let $R:X\nrightarrow Y$, $S:Y\nrightarrow Z$, and $T:Z\nrightarrow W$.
+A pair $(x,w)$ belongs to $T\circ(S\circ R)$ exactly when there are
+$y\in Y$ and $z\in Z$ with
+$(x,y)\in R$, $(y,z)\in S$, and $(z,w)\in T$. Expanding
+$(T\circ S)\circ R$ gives exactly the same existential condition, so
+composition is associative. A pair belongs to $\Delta_Y\circ R$ exactly
+when its intermediate element is forced by the diagonal to equal the target;
+hence $\Delta_Y\circ R=R$. The analogous argument gives
+$R\circ\Delta_X=R$. These are the category axioms.
+\end{proof}
+
+\begin{theorem}[Descent through path equations]
+A generator realization descends to a functor
+$F:\mathcal S\to\FinRel$ satisfying
+$F([e])=R_e$ if and only if
+\[
+ \widetilde F(p)=\widetilde F(q)
+ \qquad\text{for every }(p,q)\in\mathcal E.
+\]
+When it exists, the descended functor is unique.
+\end{theorem}
+
+\begin{proof}
+Assume first that a descended functor $F$ exists and satisfies
+$F([e])=R_e$. Let
+$\pi:\operatorname{Path}(Q)\to\mathcal S$ map each path to its
+equivalence class. We first verify the factorization from the generator data.
+For a length-zero path, functoriality gives
+$F([1_A])=\Delta_{X_A}=\widetilde F(1_A)$. If
+$p=e_n\cdots e_1$ and the equality holds for paths of length $n-1$, then
+functoriality and $F([e_i])=R_{e_i}$ give
+\[
+ F([p])=F([e_n])\circ F([e_{n-1}\cdots e_1])
+ =R_{e_n}\circ\widetilde F(e_{n-1}\cdots e_1)=\widetilde F(p).
+\]
+Thus $\widetilde F=F\circ\pi$ by induction on path length. If
+$(p,q)\in\mathcal E$, then
+$\pi(p)=\pi(q)$ by construction. Therefore
+$\widetilde F(p)=F(\pi(p))=F(\pi(q))=\widetilde F(q)$.
+
+Conversely, assume equality for every declared equation. Define
+$p\sim q$ exactly when $\widetilde F(p)=\widetilde F(q)$, for parallel
+paths. Equality is reflexive, symmetric, and transitive. If $p\sim q$ and
+$a,b$ are compatibly composable paths, functoriality of the free extension and
+associativity give
+\[
+ \widetilde F(bpa)
+ =\widetilde F(b)\circ\widetilde F(p)\circ\widetilde F(a)
+ =\widetilde F(b)\circ\widetilde F(q)\circ\widetilde F(a)
+ =\widetilde F(bqa).
+\]
+Thus $\sim$ is a path congruence containing $\mathcal E$. By minimality,
+$\equiv_{\mathcal E}\subseteq\sim$. Hence
+$F([p])=\widetilde F(p)$ is well-defined. The identity and composition laws
+are inherited from $\widetilde F$, so $F$ is a functor and
+$\widetilde F=F\circ\pi$. Every morphism of $\mathcal S$ has a path
+representative, so any functor satisfying the factorization is forced to have
+$F([p])=\widetilde F(p)$; uniqueness follows.
+\end{proof}
+
+\begin{proposition}[Generator criterion for natural equivalence]
+Let $F,G:\mathcal S\to\FinRel$ be functors with the same object
+carriers and let $\varphi_A:F(A)\to G(A)$ be bijections.
+The graphs $\operatorname{Gr}(\varphi_A)$ form a natural isomorphism if and
+only if, for every generator $e:A\to B$ and every $x,y$,
+\[
+ (x,y)\in F([e])
+ \Longleftrightarrow
+ (\varphi_A(x),\varphi_B(y))\in G([e]).
+\]
+\end{proposition}
+
+\begin{proof}
+If the family is natural, its naturality square at each generator is
+$G([e])\circ\operatorname{Gr}(\varphi_A)
+=\operatorname{Gr}(\varphi_B)\circ F([e])$. Expanding graph
+composition gives the displayed biconditional: one direction follows by
+transporting a related pair, and the other uses surjectivity of
+$\varphi_B$.
+
+Conversely, the biconditional transports each generator relation. It also
+holds for identities because a bijection transports a diagonal relation to a
+diagonal relation. For composable paths, membership in a relational composite
+is witnessed by an intermediate entity; applying the criterion to both factors
+and using bijectivity transports that witness. Induction on path length gives
+the criterion for every path. Since both functors satisfy the same path
+equations, it is independent of the chosen representative. The corresponding
+naturality equality therefore holds for every schema morphism. Each graph is
+an isomorphism in $\FinRel$, so the natural transformation is a natural
+isomorphism.
+\end{proof}
+
+If a declared path equation is not satisfied by the generator relations, the
+assignment remains a valid functor on the free path category but is not a
+state over the presented schema. Thus categorical validity is an additional
+mathematical gate, not an interpretive label attached after prediction.
+The extension does not assert that a learner discovers the correct schema or
+that generator-level agreement is sufficient without checking the equations.

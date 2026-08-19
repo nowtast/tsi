@@ -1,0 +1,26 @@
+\begin{abstract}
+세계모형 오차는 scalar loss를 유지하면서 의사결정에 필요한 structural
+dependency를 위반할 수 있다. 사전등록한 세 exact-state 연구는 먼저 structural
+OOD, open-loop rollout과 task-level criterion association을 평가했다. 첫 두
+연구에서는 correct routing이 random 및 wrong routing과 분리됐지만, four-arm
+criterion estimand에서는 wrong-routed arm도 point-effect threshold를 넘어 routing
+correctness가 식별되지 않았다. 이에 새로운 prospective stochastic 연구의 source
+동결, fresh seed 생성과 one-shot 실행을 하나의 scripted sequence에서 그 순서대로
+수행했다. 120개 independent world는 30개 two-edge
+graph motif와 세 transition-head family를 교차하며, 이 중 두 family는 원래의
+linear TSI 식 밖에 있다. 800개 noisy primitive transition과 400개 selection
+transition에서 structure와 head family를 선택한 뒤, 1,200개 더 noisy한
+two-coordinate composition 및 world당 160개 six-step rollout으로 평가했다.
+Learned graph와 head 회수율은 1.000이었고 multiplicity-adjusted Wilson 하한은
+0.941이었다. Shifted routing 대비 learned routing은 composition negative log
+likelihood를 0.35933, open-loop normalized Hamming area를 0.08996 개선했다.
+Development에서 적합하고 동결한 calibration으로 첫 세 transition의 discrepancy가
+terminal failure를 예측하게 했을 때, correct routing은 shifted routing보다 Brier
+score를 0.02402 개선했고 simultaneous interval은 [0.01808, 0.02997]이었다. Frozen
+gate 아홉 개가 모두 통과했으며 outside-family noninferiority도 포함된다. 이 cohort,
+root seed와 여덟-quantity multiplicity family는 Paper~4와 공유한다. 여기서 보고하는
+endpoint는 하나의 frozen analysis 중 일부이며 독립 evidence가 아니다. 별도의
+Node.js 구현은 120개 learned fit과 analysis mean 열 개를 모두 재현했다. 따라서
+새 evidence는 선언한 stochastic family에서 routing correctness를 해결하지만,
+이전 pooled association을 같은 결과로 소급 변경하지 않는다.
+\end{abstract}

@@ -1,0 +1,27 @@
+{
+  "evidence_level_before": 3,
+  "evidence_level_after": 4,
+  "level4_requirements": {
+    "open_loop_multihorizon_rollout": true,
+    "downstream_predictive_validity": true,
+    "learned_routing_or_structure": true,
+    "noisy_perception": true,
+    "variable_cardinality": true,
+    "public_benchmark": true,
+    "cross_family_replication": true,
+    "artifact_reproducibility": true
+  },
+  "satisfied_count": "8/8",
+  "learned_structure_cells": 1056,
+  "learned_structure_exact_cells": 1056,
+  "bounded_noisy_cells": 288,
+  "bounded_noisy_exact_cells": 288,
+  "noise_contract": {
+    "repetitions": 3,
+    "max_corrupted_repetitions": 1,
+    "decoder": "coordinate-wise majority"
+  },
+  "scope_boundary": "No claim is made for unbounded noise, near-blank pixels, or unconstrained neural structure discovery.",
+  "neural_model_status": "frozen exploratory; not used for the Level-4 promotion",
+  "review_digest": "3e74e8f6cc5c531c5fd356408789e8255eeeef83bf42b497b2d1cf8343262e74"
+}

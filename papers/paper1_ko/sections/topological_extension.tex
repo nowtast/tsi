@@ -1,0 +1,110 @@
+\section{지속적 위상 확장}
+
+이 절에서는 통합 상태에 지속적 위상 관측량을 추가한다. 이는 위상이
+구조를 완전히 식별한다는 주장이 아니다. 아래 안정성 결과는 유한한
+동일 단순 복합체를 고정하고 여과 함수만을 변화시키는 경우로 제한된다.
+
+\begin{definition}[여과된 유한 담체]
+$K$를 유한 추상 단순 복합체, $\F$를 체(field)라 하자. 여과 함수는
+$f:K\to\R$ 중 $\sigma\subseteq\tau$이면
+$f(\sigma)\leq f(\tau)$를 만족하는 함수이다. $a\in\R$에서의
+하위수준 복합체를
+\[
+ K_a^f=\{\sigma\in K:f(\sigma)\leq a\}
+\]
+로 둔다. $k$차 지속적 서명은 $H_k(K_a^f;\F)$라는 호몰로지 지속 모듈의
+persistence diagram $\Dgm_k(f)$이며, 절단된 서명은
+$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$이다.
+\end{definition}
+
+단조성 조건에 의해 모든 $K_a^f$는 단순 부분복합체이다. 따라서 하위수준
+복합체의 포함 사상이 지속 사상을 준다.
+
+\begin{definition}[지속적 불일치]
+같은 유한 담체 $K$ 위의 여과 함수 $f,g$에 대해
+\[
+ \Delta_{\mathrm{pers},r}(f,g)=\max_{0\leq k\leq r}
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr)
+\]
+로 둔다. 여기서 $d_B$는 bottleneck distance이다. 두 여과는 체, 담체,
+차수 절단값, 여과값의 단위를 고정한 뒤에만 비교한다.
+\end{definition}
+
+\begin{theorem}[여과 안정성: 외부에서 도입한 정리]
+고정된 유한 단순 복합체 $K$와 단조 여과 함수 $f,g:K\to\R$에 대해
+\[
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr)\leq \|f-g\|_\infty
+ \quad\text{for every }k.
+\]
+따라서 $\Delta_{\mathrm{pers},r}(f,g)\leq\|f-g\|_\infty$이다.
+\end{theorem}
+
+\begin{proof}
+$\delta=\|f-g\|_\infty$라 하자. 모든 단체 $\sigma$에 대해
+$g(\sigma)\leq f(\sigma)+\delta$ 및
+$f(\sigma)\leq g(\sigma)+\delta$가 성립한다. 그러므로
+\[
+ K_a^f\subseteq K_{a+\delta}^g
+ \quad\text{and}\quad
+ K_a^g\subseteq K_{a+\delta}^f.
+\]
+이다. 이 포함들은 하위수준 복합체 포함 사상과 호환된다. 호몰로지를
+적용하면 각 $k$에서 두 지속 모듈 사이에 $\delta$-interleaving이 생긴다.
+algebraic stability 정리는 bottleneck distance가 interleaving distance
+이하임을 보장한다. 따라서 원하는 부등식이 성립한다. 외부에서 도입한
+비초등적 단계는 algebraic stability 정리이며, 포함과 interleaving 구성은
+이 논문에서 직접 확인했다.
+\end{proof}
+
+\begin{proposition}[지속적 서명의 동형 불변성]
+$\varphi:K\to L$이 단순 복합체 동형이고 $f:K\to\R$, $g:L\to\R$가
+$g(\varphi(\sigma))=f(\sigma)$를 만족한다고 하자. 그러면 모든 $k$에 대해
+\[
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr)=0.
+\]
+\end{proposition}
+
+\begin{proof}
+각 $a$에 대해 값 보존 조건으로 $\varphi(K_a^f)=L_a^g$이다. 제한 사상은
+단순 복합체 동형이므로 호몰로지에서 $H_k(K_a^f;\F)\cong
+H_k(L_a^g;\F)$를 준다. $a\leq b$일 때 포함으로 유도된 사상들과
+가환하므로 두 지속 모듈은 동형이다. 따라서 persistence diagram이 같고
+bottleneck distance는 0이다.
+\end{proof}
+
+\begin{proposition}[Persistent signature는 labeled carrier의 complete invariant가 아니다]
+하나의 고정된 labeled carrier에서도 모든 persistence diagram의 일치가
+filtration을 labeled structural data로서 결정하지는 않는다.
+\end{proposition}
+
+\begin{proof}
+서로 다른 label을 가진 isolated vertex $x,y$ 두 개로 이루어진 $K$를 택한다.
+$f(x)=0,f(y)=1$, $g(x)=1,g(y)=0$으로 둔다. 두 degree-zero diagram은 모두
+$(0,\infty)$와 $(1,\infty)$를 갖고 positive-degree diagram은 모두 empty이다.
+따라서 모든 $r\geq0$에 대해 $\Pi_r(K,f)=\Pi_r(K,g)$이다. 그러나 유일한
+label-preserving bijection은 두 vertex를 각각 고정하며 filtration value를
+보존하지 않는다. 그러므로 persistent signature는 labeled filtered state를
+결정하지 못한다.
+\end{proof}
+
+
+이 확장은 명시된 가정 아래 불변성과 제어된 민감도를 인증한다. 그러나
+완전성, 대응 없는 무관한 담체의 비교, 신경망의 담체 발견을 증명하지는
+않으며, 이 질문들은 별도 가정이나 경험적 검증을 요구한다.
+
+
+\begin{proposition}[State-level persistent invariance]
+$\Sigma$와 $\Sigma'$가 integrated state이고
+$\varphi:\Sigma\to\Sigma'$가 structural isomorphism이면 모든 degree cutoff
+$r$에 대해
+\[
+d_B(\Dgm_k(f),\Dgm_k(g))=0\quad\text{for every }k\leq r
+\]
+이다.
+\end{proposition}
+
+\begin{proof}
+$\varphi$의 filtration-preserving component가 모든 simplex에 대해
+$g(\bar\varphi\sigma)=f(\sigma)$를 만족한다. 따라서 앞의
+isomorphism-invariance proposition을 두 filtered carrier에 적용할 수 있다.
+\end{proof}

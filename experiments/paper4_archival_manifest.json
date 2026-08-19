@@ -1,0 +1,30 @@
+{
+  "package": "TSI Paper 4 archival TeX package",
+  "date": "2026-08-10",
+  "packages": {
+    "paper4": {
+      "files": {
+        "main.pdf": "98c984e6eddf5f74fc4a4492346f222cd672524bb4dcb501d8c9e6a434d4e927",
+        "main.tex": "d914c1b206bbc0ce955becfeb75efa2579afc8cde653b9d02b8537ec115b55da",
+        "sections/abstract.tex": "2aea60afc309753d80bf819a5f9534979b8b418f43b0c41bff48e07a1527335a",
+        "sections/conclusion.tex": "f4334d77f4be16172d99f4a12865a0f08738c6b1cbeae4a2449664c9d7ee36dd",
+        "sections/introduction.tex": "e5db61794e3f0f10fc928de4d5de69583cbf037594e99e511ae7ff395c226038",
+        "sections/limitations.tex": "0460b3ad2c8c7e6ffab2763b9906ca0c3a45e923fc6f902da338de20237f7391",
+        "sections/method.tex": "d0d2cc1c66eb941ca2de29d23f5d5a5918aaadf83d7f03bbcf44a1e8bb4e6683",
+        "sections/results.tex": "584191a361fee4141a446f71c9d290ffdd7107b55c076cd61fb19c7a08570cb1"
+      }
+    },
+    "paper4_ko": {
+      "files": {
+        "main.pdf": "79e6124920fb501e14888dafe7a34830a8509bb965fc449296304653c7bd02e7",
+        "main.tex": "a2a0494a482514c3b13f58be8749ac9157fc487f5c6c5d7dd36c15f78ee904d2",
+        "sections/abstract.tex": "8032e45b27048a9ab9456a44966828913519d1194e9adc27d5063a879117ba63",
+        "sections/conclusion.tex": "d676d0f345aebad91a9c2bdd45d4f13a0638778bbabc93f53b1d069ede6b1415",
+        "sections/introduction.tex": "0d229fe692536bd74089b9c937a61dfb2ce6e9a00a671c7b628d2e5a80e79c31",
+        "sections/limitations.tex": "e3e982dd8622fd986e7785903475a55c9efd64c5583b9267b5e64d938ec4ad3f",
+        "sections/method.tex": "3b4ba4f3119b04610e918ef848fe6f1d32b8792c2880a14186e7e9ba498bcc37",
+        "sections/results.tex": "0a01d906a4e0c8edf9790ba295b05c59dea7e5e92a399075dbc8ce63bf984ff4"
+      }
+    }
+  }
+}

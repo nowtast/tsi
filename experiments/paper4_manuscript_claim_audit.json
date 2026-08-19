@@ -1,0 +1,23 @@
+{
+  "paper": "Paper 4",
+  "scope": "final theorem/claim/limitation audit",
+  "checks": {
+    "no_unresolved_tex_markers": true,
+    "english_has_bounded_claim": true,
+    "korean_has_bounded_claim": true,
+    "english_has_no_universal_claim": true,
+    "korean_has_no_universal_claim": true,
+    "english_has_neural_limitation": true,
+    "korean_has_neural_limitation": true,
+    "english_has_budget_limitation": true,
+    "korean_has_budget_limitation": true,
+    "numeric_claims_present": true,
+    "no_theorem_claim": true
+  },
+  "passed": true,
+  "sources": [
+    "experiments/paper4_final_comparative_audit.json",
+    "experiments/paper4_statistical_analysis.json",
+    "experiments/paper4_fairness_audit.json"
+  ]
+}

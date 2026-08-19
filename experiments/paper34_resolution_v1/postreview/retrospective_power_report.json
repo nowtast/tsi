@@ -1,0 +1,126 @@
+{
+  "status": "retrospective_design_justification_not_preregistered",
+  "uses_confirmatory_results": false,
+  "development_world_count": 24,
+  "development_original_linear_worlds": 8,
+  "development_outside_family_worlds": 16,
+  "bootstrap_iterations": 20000,
+  "bootstrap_seed_label": "TSI-P34-retrospective-design-justification-v1",
+  "bonferroni_divisor": 8,
+  "critical": 2.734368786533176,
+  "positive_effect_names": [
+    "learned_routing_nll",
+    "factorized_graph_nll",
+    "generic_graph_nll",
+    "large_generic_graph_nll",
+    "rollout_hamming",
+    "criterion_brier"
+  ],
+  "development_observed_sd": {
+    "learned_routing_nll": 0.02342866276985014,
+    "factorized_graph_nll": 0.02342866276985014,
+    "generic_graph_nll": 0.014512218895029952,
+    "large_generic_graph_nll": 0.058966750667828506,
+    "rollout_hamming": 0.010351057724187443,
+    "criterion_brier": 0.0171420546882186
+  },
+  "power_curve": [
+    {
+      "world_count": 60,
+      "original_linear_worlds": 20,
+      "outside_family_worlds": 40,
+      "conjunctive_gate_power": 0.0,
+      "monte_carlo_standard_error": 0.0,
+      "monte_carlo_95pct_interval": [
+        0.0,
+        0.0
+      ],
+      "gate_pass_probabilities": {
+        "identification": 0.0,
+        "learned_routing_nll": 1.0,
+        "factorized_graph_nll": 1.0,
+        "generic_graph_nll": 1.0,
+        "large_generic_graph_nll": 1.0,
+        "matched_head_equivalence": 1.0,
+        "rollout_hamming": 1.0,
+        "criterion_brier": 1.0,
+        "outside_family_noninferiority": 0.6884
+      }
+    },
+    {
+      "world_count": 90,
+      "original_linear_worlds": 30,
+      "outside_family_worlds": 60,
+      "conjunctive_gate_power": 0.8931,
+      "monte_carlo_standard_error": 0.002184861437254088,
+      "monte_carlo_95pct_interval": [
+        0.8888177502717716,
+        0.8973822497282284
+      ],
+      "gate_pass_probabilities": {
+        "identification": 1.0,
+        "learned_routing_nll": 1.0,
+        "factorized_graph_nll": 1.0,
+        "generic_graph_nll": 1.0,
+        "large_generic_graph_nll": 1.0,
+        "matched_head_equivalence": 1.0,
+        "rollout_hamming": 1.0,
+        "criterion_brier": 1.0,
+        "outside_family_noninferiority": 0.8931
+      }
+    },
+    {
+      "world_count": 120,
+      "original_linear_worlds": 40,
+      "outside_family_worlds": 80,
+      "conjunctive_gate_power": 0.9694,
+      "monte_carlo_standard_error": 0.001217859597819058,
+      "monte_carlo_95pct_interval": [
+        0.9670130390500482,
+        0.9717869609499519
+      ],
+      "gate_pass_probabilities": {
+        "identification": 1.0,
+        "learned_routing_nll": 1.0,
+        "factorized_graph_nll": 1.0,
+        "generic_graph_nll": 1.0,
+        "large_generic_graph_nll": 1.0,
+        "matched_head_equivalence": 1.0,
+        "rollout_hamming": 1.0,
+        "criterion_brier": 1.0,
+        "outside_family_noninferiority": 0.9694
+      }
+    },
+    {
+      "world_count": 150,
+      "original_linear_worlds": 50,
+      "outside_family_worlds": 100,
+      "conjunctive_gate_power": 0.9925,
+      "monte_carlo_standard_error": 0.0006100717170956195,
+      "monte_carlo_95pct_interval": [
+        0.9913042814065062,
+        0.9936957185934939
+      ],
+      "gate_pass_probabilities": {
+        "identification": 1.0,
+        "learned_routing_nll": 1.0,
+        "factorized_graph_nll": 1.0,
+        "generic_graph_nll": 1.0,
+        "large_generic_graph_nll": 1.0,
+        "matched_head_equivalence": 1.0,
+        "rollout_hamming": 1.0,
+        "criterion_brier": 1.0,
+        "outside_family_noninferiority": 0.9925
+      }
+    }
+  ],
+  "selected_world_count": 120,
+  "selected_conjunctive_gate_power": 0.9694,
+  "limitations": [
+    "This analysis was constructed after confirmation and is not a preregistration record.",
+    "It bootstraps the 24 development worlds and therefore inherits their empirical support.",
+    "The development-fitted criterion calibration is treated as fixed.",
+    "All development worlds were identified correctly, so identification uncertainty may be understated."
+  ],
+  "development_report_sha256": "a40228cbaf5812798beb6bbe350008b96d4195b4e77cb79ef0553cf3236f3db8"
+}

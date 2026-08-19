@@ -1,0 +1,46 @@
+{
+  "condition": "gaussian_0.50",
+  "development_variance": {
+    "seed_count": 3,
+    "total_variance": 0.2698297887857426,
+    "within_world_seed_variance": 0.13151678007045542,
+    "world_count": 4,
+    "world_mean": 0.3018635533671886,
+    "world_variance": 0.154436257310856
+  },
+  "endpoint": "source_logloss_degradation",
+  "family_count": 5,
+  "familywise_alpha": 0.05,
+  "independent_validation_variance": {
+    "seed_count": 3,
+    "total_variance": 1.0086355444793689,
+    "within_world_seed_variance": 0.7366694302916029,
+    "world_count": 4,
+    "world_mean": 0.4140440570436213,
+    "world_variance": 0.2505508695304246
+  },
+  "iterations": 20000,
+  "power_curve": [
+    {
+      "power": 0.1493,
+      "world_count": 24
+    },
+    {
+      "power": 0.21115,
+      "world_count": 50
+    },
+    {
+      "power": 0.23905,
+      "world_count": 64
+    },
+    {
+      "power": 0.36235,
+      "world_count": 128
+    }
+  ],
+  "power_passed": false,
+  "selected_world_count": 128,
+  "sesoi": 0.05,
+  "status": "development_power_plan_not_sealed",
+  "target_power": 0.9
+}

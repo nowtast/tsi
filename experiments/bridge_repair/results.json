@@ -1,0 +1,81 @@
+{
+  "error_erasure": {
+    "case_count": 756,
+    "violations": []
+  },
+  "identifiability": {
+    "hitting_criterion_violations": [],
+    "information_lower_bound": 2,
+    "margin_certified_pair_count": 46,
+    "margin_violations": [],
+    "minimum_distance": 2.0,
+    "minimum_identifying_probe_sets": [
+      [
+        "p0",
+        "p1"
+      ],
+      [
+        "p0",
+        "p2"
+      ],
+      [
+        "p1",
+        "p2"
+      ]
+    ],
+    "probe_subset_count": 8
+  },
+  "local_repair": {
+    "case_count": 192,
+    "minimal_equal_weight_conflict": {
+      "cell_count": 1,
+      "minimum_cost": 1.0,
+      "repair_count": 2
+    },
+    "one_sided": {
+      "flip_count": 3,
+      "normalized_defect": 0.75,
+      "unique": true
+    },
+    "violations": []
+  },
+  "specializations": {
+    "adjacency_only_identifiable": false,
+    "all_simplex_probes_identifiable": true,
+    "composability_only_identifiable": false,
+    "composition_probe_identifiable": true,
+    "cross_order_only_identifiable": false,
+    "distance_alphabet": [
+      1.0,
+      2.0,
+      4.0
+    ],
+    "full_order_probe_identifiable": true,
+    "nonseparated": true,
+    "nonseparating_thresholds": [
+      5.0
+    ],
+    "reachability_only_identifiable": false,
+    "separated": true,
+    "separating_profiles": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "separating_thresholds": [
+      1.0,
+      2.0
+    ],
+    "transition_probe_identifiable": true
+  },
+  "status": "passed"
+}

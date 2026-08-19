@@ -1,0 +1,12 @@
+{
+  "artifact_blockers": [],
+  "contract_digest": "0a7223b8069c9d14301f622d5da5a6b7732eca4990d036ce6bc287eba9026cbf",
+  "evidence_level_after": 2,
+  "evidence_level_before": 2,
+  "gate_passed": true,
+  "identifier": "P3-3A-INDEPENDENCE-v1",
+  "static_contract_passed": true,
+  "static_errors": [],
+  "test_result_evaluations": 0,
+  "test_seed_reveals": 0
+}

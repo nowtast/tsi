@@ -1,0 +1,24 @@
+\section{Structural OOD Results}
+\label{sec:ood-results}
+
+All \(900\) planned fits completed without numerical failure.  The
+codebook-free decoder produced valid structural states, and the paired
+information, parameter, update, and tuning audits passed.
+
+On the primary sealed structural-OOD endpoint, the oracle
+signature-routed and matched dense exact controls had zero error.  Relative to
+the signature-routed control, matched random routing and permuted or wrong
+routing produced the same paired structural effect to machine precision,
+\(0.1943489362\), with the same world SD \(0.0011631\).  The two controls are
+therefore distinguishable from oracle routing in this cohort but not from each
+other.  The dense noninferiority margin was the deterministic constant \(0.05\)
+up to floating-point error (world SD \(2.10\times10^{-17}\)).  The frozen Holm,
+world-cluster bootstrap, and hierarchical world/seed decisions were positive,
+but their extreme \(p\)-values describe low-variance synthetic margins rather
+than independent evidence of broad generalization.
+
+This result identifies the value of the declared routing mask in the finite
+oracle-signature regime.  It does not show that the mask can be discovered
+from data.  The unseen mechanism-parameter slice retained a signature-routing
+error of \(0.11995\); it is a preserved failure boundary rather than an
+exception removed from the aggregate.

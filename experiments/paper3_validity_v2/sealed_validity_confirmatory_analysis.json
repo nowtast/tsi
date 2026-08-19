@@ -1,0 +1,2047 @@
+{
+  "analysis_plan_digest": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+  "decision_requirements": {
+    "both_point_effects_meet_sesoi": true,
+    "design_complete_without_failed_runs": true,
+    "exact_controls_remained_structural_zero": true,
+    "hierarchical_simultaneous_bounds_passed": true,
+    "holm_two_tests_passed": true,
+    "outcomes_noncircular_and_probe_task_separated": true,
+    "primary_predictive_population_complete": true,
+    "sealed_event_balance_passed": true,
+    "sealed_predictors_were_not_refit": true,
+    "world_cluster_simultaneous_bounds_passed": true
+  },
+  "estimand_scope": "held-out same-task incremental criterion validity of structural discrepancy for model-selected plan regret",
+  "frozen_predictor_digest": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+  "hierarchical_world_seed_analysis": {
+    "effects": {
+      "binary_brier_improvement": {
+        "between_world_variance": 6.555418380572414e-05,
+        "grand_mean": 0.0035186820080918744,
+        "simultaneous_bound_positive": true,
+        "simultaneous_normal_lower_bound": 0.001391553498870833,
+        "standard_error": 0.0010852895900126534,
+        "within_world_seed_variance": 4.7153121880123074e-05
+      },
+      "first_failure_integrated_brier_improvement": {
+        "between_world_variance": 4.8332762059737787e-05,
+        "grand_mean": 0.0030337075197727536,
+        "simultaneous_bound_positive": true,
+        "simultaneous_normal_lower_bound": 0.001270938958236935,
+        "standard_error": 0.0008993882415392898,
+        "within_world_seed_variance": 2.2443850087747745e-05
+      }
+    },
+    "model": "world_random_intercept_seed_nested_variance_decomposition",
+    "simultaneous_normal_critical": 1.9599639845400536
+  },
+  "identifier": "P3-4B-CONFIRMATORY-ANALYSIS-v2",
+  "layer_aware_sensitivity_is_non_gating": true,
+  "mean_success_effects": {
+    "binary_brier_improvement": 0.0035186820080918744,
+    "first_failure_integrated_brier_improvement": 0.0030337075197727536
+  },
+  "optimizer_seeds_per_world": 3,
+  "oracle_endpoint_diagnostics_used": true,
+  "passed": true,
+  "predictive_sesoi": 0.0025,
+  "primary_predictive_models": [
+    "layer_routed_dense_action",
+    "strict_factorized_action",
+    "random_routed_matched_sparsity",
+    "permuted_or_wrong_routed"
+  ],
+  "primary_success_effects": [
+    "binary_brier_improvement",
+    "first_failure_integrated_brier_improvement"
+  ],
+  "raw_result_digest": "1ea70361fae917a05edc12445998d78079597045c55837a2739759674f92426e",
+  "report_digest": "8380318f8ce6c17abb23d415046b57c3a45de458341aee9efb48110db6a7751d",
+  "sealed_primary_event_rate": 0.6163194444444444,
+  "secondary_predictive_summary": {
+    "by_model": {
+      "dense_active_matched": {
+        "binary_brier_improvement": 0.004331888207697789,
+        "event_rate": 0.0,
+        "first_failure_integrated_brier_improvement": 0.0018228660404128933,
+        "layer_aware_binary_brier_improvement": 0.004158224476064088,
+        "layer_aware_integrated_brier_improvement": 0.0016905330451513064,
+        "record_count": 6624
+      },
+      "layer_routed_dense_action": {
+        "binary_brier_improvement": 0.005401601147721686,
+        "event_rate": 0.5582729468599034,
+        "first_failure_integrated_brier_improvement": 0.0032221836125496998,
+        "layer_aware_binary_brier_improvement": 0.004723042366290539,
+        "layer_aware_integrated_brier_improvement": 0.002387167707135868,
+        "record_count": 6624
+      },
+      "permuted_or_wrong_routed": {
+        "binary_brier_improvement": 0.0031141104588915396,
+        "event_rate": 0.6292270531400966,
+        "first_failure_integrated_brier_improvement": 0.003077339773035067,
+        "layer_aware_binary_brier_improvement": 0.0012925587252378874,
+        "layer_aware_integrated_brier_improvement": 0.0012035592740522764,
+        "record_count": 6624
+      },
+      "random_routed_matched_sparsity": {
+        "binary_brier_improvement": 0.0024449400971540518,
+        "event_rate": 0.6485507246376812,
+        "first_failure_integrated_brier_improvement": 0.0027579973287997117,
+        "layer_aware_binary_brier_improvement": 0.0011219126930010134,
+        "layer_aware_integrated_brier_improvement": 0.0010737767299148764,
+        "record_count": 6624
+      },
+      "signature_routed_oracle": {
+        "binary_brier_improvement": 0.004343528691295752,
+        "event_rate": 0.0,
+        "first_failure_integrated_brier_improvement": 0.0018278161209023698,
+        "layer_aware_binary_brier_improvement": 0.004176565395304123,
+        "layer_aware_integrated_brier_improvement": 0.0016983306873122308,
+        "record_count": 6624
+      },
+      "strict_factorized_action": {
+        "binary_brier_improvement": 0.00311407632860022,
+        "event_rate": 0.6292270531400966,
+        "first_failure_integrated_brier_improvement": 0.00307730936470654,
+        "layer_aware_binary_brier_improvement": 0.0012925275499711811,
+        "layer_aware_integrated_brier_improvement": 0.0012035304423300853,
+        "record_count": 6624
+      }
+    },
+    "primary_population": {
+      "binary_baseline_brier": 0.18366148107258268,
+      "binary_tsi_brier": 0.1801427990644908,
+      "event_rate": 0.6163194444444444,
+      "first_failure_baseline_integrated_brier": 0.14831702480966769,
+      "first_failure_distribution": {
+        "1": 2192,
+        "2": 2242,
+        "3": 2838,
+        "4": 2571,
+        "5": 1341,
+        "6": 1544,
+        "7": 1807,
+        "8": 1795,
+        "9": 10166
+      },
+      "first_failure_tsi_integrated_brier": 0.14528331728989494,
+      "layer_aware_binary_brier_improvement": 0.0021075103336251557,
+      "layer_aware_integrated_brier_improvement": 0.0014670085383582765,
+      "models": [
+        "layer_routed_dense_action",
+        "strict_factorized_action",
+        "random_routed_matched_sparsity",
+        "permuted_or_wrong_routed"
+      ],
+      "record_count": 26496
+    }
+  },
+  "student_t_holm": {
+    "binary_brier_improvement": {
+      "degrees_of_freedom": 68,
+      "holm_adjusted_p": 0.0012303786155011718,
+      "holm_reject": true,
+      "mean_brier_improvement": 0.0035186820080918744,
+      "one_sided_p": 0.0009195937882180064,
+      "student_t": 3.2421595493704594,
+      "world_sd": 0.00901509240657568
+    },
+    "first_failure_integrated_brier_improvement": {
+      "degrees_of_freedom": 68,
+      "holm_adjusted_p": 0.0012303786155011718,
+      "holm_reject": true,
+      "mean_brier_improvement": 0.0030337075197727536,
+      "one_sided_p": 0.0006151893077505859,
+      "student_t": 3.3730789214906878,
+      "world_sd": 0.00747087982919819
+    }
+  },
+  "temporal_prognostic_validity_supported": false,
+  "test_output_used": true,
+  "world_cluster_bootstrap": {
+    "cluster_unit": "world_with_all_nested_optimizer_seeds",
+    "effects": {
+      "binary_brier_improvement": {
+        "marginal_95pct_lower_bound": 0.001745351844577505,
+        "simultaneous_95pct_lower_bound": 0.0014281917482864264,
+        "simultaneous_bound_positive": true
+      },
+      "first_failure_integrated_brier_improvement": {
+        "marginal_95pct_lower_bound": 0.001595611830717628,
+        "simultaneous_95pct_lower_bound": 0.001295977496083763,
+        "simultaneous_bound_positive": true
+      }
+    },
+    "iterations": 20000,
+    "seed_commitment": "d1e876785ba738aee1d17b408a48e443d637d7f851dbea629147d6e12ccc83f1",
+    "simultaneous_method": "bonferroni_alpha_over_2"
+  },
+  "world_count": 69,
+  "world_seed_effects": [
+    {
+      "binary_brier_improvement": -0.004861314108914894,
+      "first_failure_integrated_brier_improvement": -0.012632729280515037,
+      "layer_aware_binary_brier_improvement": 0.00010475648183948553,
+      "layer_aware_integrated_brier_improvement": -0.008453460198032135,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 0
+    },
+    {
+      "binary_brier_improvement": -0.015230048714430648,
+      "first_failure_integrated_brier_improvement": -0.01776228994666669,
+      "layer_aware_binary_brier_improvement": -0.007573930046247421,
+      "layer_aware_integrated_brier_improvement": -0.013614675786334353,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 0
+    },
+    {
+      "binary_brier_improvement": -0.0001815326134536674,
+      "first_failure_integrated_brier_improvement": -0.0048885356205301345,
+      "layer_aware_binary_brier_improvement": 0.002008256765928747,
+      "layer_aware_integrated_brier_improvement": -0.002678127091498126,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 0
+    },
+    {
+      "binary_brier_improvement": -0.00872415552920164,
+      "first_failure_integrated_brier_improvement": 9.087934681879101e-05,
+      "layer_aware_binary_brier_improvement": -0.00232651588526924,
+      "layer_aware_integrated_brier_improvement": -0.00277703565063344,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 1
+    },
+    {
+      "binary_brier_improvement": 0.003179026796063151,
+      "first_failure_integrated_brier_improvement": 0.00653651091881096,
+      "layer_aware_binary_brier_improvement": -0.0022140840089027803,
+      "layer_aware_integrated_brier_improvement": 0.00020419756775878588,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 1
+    },
+    {
+      "binary_brier_improvement": -0.0035946633596398254,
+      "first_failure_integrated_brier_improvement": 0.010387824722754666,
+      "layer_aware_binary_brier_improvement": -0.0036111912285684083,
+      "layer_aware_integrated_brier_improvement": 0.0033268521476165127,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 1
+    },
+    {
+      "binary_brier_improvement": 0.006654485540541653,
+      "first_failure_integrated_brier_improvement": 0.005071976169364178,
+      "layer_aware_binary_brier_improvement": 0.0063581853574412915,
+      "layer_aware_integrated_brier_improvement": 0.01164764845619768,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 2
+    },
+    {
+      "binary_brier_improvement": 0.015015066962392461,
+      "first_failure_integrated_brier_improvement": 0.010184077109019939,
+      "layer_aware_binary_brier_improvement": 0.010629644376278882,
+      "layer_aware_integrated_brier_improvement": 0.008336852960383195,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 2
+    },
+    {
+      "binary_brier_improvement": 0.01513711001236237,
+      "first_failure_integrated_brier_improvement": 0.012310023098153062,
+      "layer_aware_binary_brier_improvement": 0.013921155657077628,
+      "layer_aware_integrated_brier_improvement": 0.013856994502500757,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 2
+    },
+    {
+      "binary_brier_improvement": 0.03240217393442252,
+      "first_failure_integrated_brier_improvement": 0.018714949518730893,
+      "layer_aware_binary_brier_improvement": 0.014782183679586251,
+      "layer_aware_integrated_brier_improvement": 0.004295103949308497,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 3
+    },
+    {
+      "binary_brier_improvement": 0.027022552527575287,
+      "first_failure_integrated_brier_improvement": 0.010110570275602401,
+      "layer_aware_binary_brier_improvement": 0.009896427184685594,
+      "layer_aware_integrated_brier_improvement": -0.0024270234129112576,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 3
+    },
+    {
+      "binary_brier_improvement": 0.024807827485495253,
+      "first_failure_integrated_brier_improvement": 0.01381542908743157,
+      "layer_aware_binary_brier_improvement": 0.010509611013435664,
+      "layer_aware_integrated_brier_improvement": 0.00038703459167652144,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 3
+    },
+    {
+      "binary_brier_improvement": 0.025044443076588464,
+      "first_failure_integrated_brier_improvement": 0.020313260718797882,
+      "layer_aware_binary_brier_improvement": 0.018246774360824898,
+      "layer_aware_integrated_brier_improvement": 0.01796728020840684,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 4
+    },
+    {
+      "binary_brier_improvement": 0.015346086300853637,
+      "first_failure_integrated_brier_improvement": 0.013708079190351951,
+      "layer_aware_binary_brier_improvement": 0.007998179086306477,
+      "layer_aware_integrated_brier_improvement": 0.007496374421654312,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 4
+    },
+    {
+      "binary_brier_improvement": 0.018433372274119175,
+      "first_failure_integrated_brier_improvement": 0.012057987048220267,
+      "layer_aware_binary_brier_improvement": 0.00999942832519487,
+      "layer_aware_integrated_brier_improvement": 0.007513720505136179,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 4
+    },
+    {
+      "binary_brier_improvement": -0.009198155779143496,
+      "first_failure_integrated_brier_improvement": -0.006817945438105605,
+      "layer_aware_binary_brier_improvement": -0.010581190534942764,
+      "layer_aware_integrated_brier_improvement": -0.007870903477736073,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 5
+    },
+    {
+      "binary_brier_improvement": -0.015606218825958747,
+      "first_failure_integrated_brier_improvement": -0.004941325766109049,
+      "layer_aware_binary_brier_improvement": -0.012423603704692879,
+      "layer_aware_integrated_brier_improvement": -0.0059007472347945575,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 5
+    },
+    {
+      "binary_brier_improvement": -0.0006033489214976283,
+      "first_failure_integrated_brier_improvement": -0.0016283416959203471,
+      "layer_aware_binary_brier_improvement": -0.0042818286952389555,
+      "layer_aware_integrated_brier_improvement": -0.004149090985825769,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 5
+    },
+    {
+      "binary_brier_improvement": 0.017036198266217446,
+      "first_failure_integrated_brier_improvement": 0.006005627366259837,
+      "layer_aware_binary_brier_improvement": 0.005178445193616584,
+      "layer_aware_integrated_brier_improvement": 0.0052134797741851605,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 6
+    },
+    {
+      "binary_brier_improvement": 0.008042875355899681,
+      "first_failure_integrated_brier_improvement": 0.006926076452205318,
+      "layer_aware_binary_brier_improvement": 0.008053108891061683,
+      "layer_aware_integrated_brier_improvement": 0.009696545384196576,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 6
+    },
+    {
+      "binary_brier_improvement": 0.0044953875247228225,
+      "first_failure_integrated_brier_improvement": 0.003223241205031895,
+      "layer_aware_binary_brier_improvement": 0.002202598044837898,
+      "layer_aware_integrated_brier_improvement": 0.00455986925963088,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 6
+    },
+    {
+      "binary_brier_improvement": 0.013334010574061427,
+      "first_failure_integrated_brier_improvement": 0.008338166068175366,
+      "layer_aware_binary_brier_improvement": 0.0056946469279350615,
+      "layer_aware_integrated_brier_improvement": 0.0011862530668880714,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 7
+    },
+    {
+      "binary_brier_improvement": 0.012652027281013112,
+      "first_failure_integrated_brier_improvement": 0.013565716032431337,
+      "layer_aware_binary_brier_improvement": 0.0114353767261322,
+      "layer_aware_integrated_brier_improvement": 0.009464506639837299,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 7
+    },
+    {
+      "binary_brier_improvement": 0.004988825240552415,
+      "first_failure_integrated_brier_improvement": -0.00020240988811488347,
+      "layer_aware_binary_brier_improvement": 0.004756106291541107,
+      "layer_aware_integrated_brier_improvement": -0.00042794876865976045,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 7
+    },
+    {
+      "binary_brier_improvement": -0.006830076378436926,
+      "first_failure_integrated_brier_improvement": 0.0036909361390267646,
+      "layer_aware_binary_brier_improvement": -0.007911894611023948,
+      "layer_aware_integrated_brier_improvement": -0.00045843856044571407,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 8
+    },
+    {
+      "binary_brier_improvement": -0.001287531527482384,
+      "first_failure_integrated_brier_improvement": 0.007556140270489908,
+      "layer_aware_binary_brier_improvement": -0.0009218035788676796,
+      "layer_aware_integrated_brier_improvement": 0.006774334707521694,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 8
+    },
+    {
+      "binary_brier_improvement": 0.011606973466446974,
+      "first_failure_integrated_brier_improvement": 0.01261555500227507,
+      "layer_aware_binary_brier_improvement": 0.007550689597732797,
+      "layer_aware_integrated_brier_improvement": 0.007163337390885288,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 8
+    },
+    {
+      "binary_brier_improvement": 0.017293637831641104,
+      "first_failure_integrated_brier_improvement": 0.012642760360242852,
+      "layer_aware_binary_brier_improvement": 0.00924658649924301,
+      "layer_aware_integrated_brier_improvement": 0.00335778560155945,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 9
+    },
+    {
+      "binary_brier_improvement": 0.006754675412910271,
+      "first_failure_integrated_brier_improvement": 0.0126411821229429,
+      "layer_aware_binary_brier_improvement": -0.0016409414476797734,
+      "layer_aware_integrated_brier_improvement": 0.003917735975952009,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 9
+    },
+    {
+      "binary_brier_improvement": 0.004894952793877601,
+      "first_failure_integrated_brier_improvement": 0.014084290189669424,
+      "layer_aware_binary_brier_improvement": -0.002857099693383846,
+      "layer_aware_integrated_brier_improvement": 0.006745578761248181,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 9
+    },
+    {
+      "binary_brier_improvement": -0.00922073903599843,
+      "first_failure_integrated_brier_improvement": -0.015055206226137539,
+      "layer_aware_binary_brier_improvement": -0.0007202520091280826,
+      "layer_aware_integrated_brier_improvement": -0.008570993108978318,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 10
+    },
+    {
+      "binary_brier_improvement": -0.009876452520088485,
+      "first_failure_integrated_brier_improvement": -0.0133200123465893,
+      "layer_aware_binary_brier_improvement": -0.0053809381274838464,
+      "layer_aware_integrated_brier_improvement": -0.009627057778835211,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 10
+    },
+    {
+      "binary_brier_improvement": -0.0017785431909059226,
+      "first_failure_integrated_brier_improvement": -0.010418378650718778,
+      "layer_aware_binary_brier_improvement": 0.0034147258484962,
+      "layer_aware_integrated_brier_improvement": -0.0051623005523897805,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 10
+    },
+    {
+      "binary_brier_improvement": -0.008281315313943225,
+      "first_failure_integrated_brier_improvement": -0.0072600444162327655,
+      "layer_aware_binary_brier_improvement": -0.006489257915164275,
+      "layer_aware_integrated_brier_improvement": -0.005505946344003218,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 11
+    },
+    {
+      "binary_brier_improvement": 0.0016495017836495474,
+      "first_failure_integrated_brier_improvement": 0.001202368385355839,
+      "layer_aware_binary_brier_improvement": 0.0013575480873516278,
+      "layer_aware_integrated_brier_improvement": 0.0008071866837422118,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 11
+    },
+    {
+      "binary_brier_improvement": -0.004271221280365308,
+      "first_failure_integrated_brier_improvement": -0.004576997944441778,
+      "layer_aware_binary_brier_improvement": -0.0024911132451749785,
+      "layer_aware_integrated_brier_improvement": -0.0023813563837481637,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 11
+    },
+    {
+      "binary_brier_improvement": 0.0117692555027836,
+      "first_failure_integrated_brier_improvement": 0.010870197559237404,
+      "layer_aware_binary_brier_improvement": 0.006466131137496233,
+      "layer_aware_integrated_brier_improvement": 0.005834030150742224,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 12
+    },
+    {
+      "binary_brier_improvement": 0.00606346237871697,
+      "first_failure_integrated_brier_improvement": 0.003410014260287996,
+      "layer_aware_binary_brier_improvement": 0.002862714945550641,
+      "layer_aware_integrated_brier_improvement": 0.0013345188884343094,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 12
+    },
+    {
+      "binary_brier_improvement": 0.00926763839663754,
+      "first_failure_integrated_brier_improvement": 0.00985303903984629,
+      "layer_aware_binary_brier_improvement": 0.0018850622947623671,
+      "layer_aware_integrated_brier_improvement": 0.002296761734604124,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 12
+    },
+    {
+      "binary_brier_improvement": -0.012715663898057034,
+      "first_failure_integrated_brier_improvement": -0.005031640022527669,
+      "layer_aware_binary_brier_improvement": -0.0010011196816506075,
+      "layer_aware_integrated_brier_improvement": -0.0014276590091191858,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 13
+    },
+    {
+      "binary_brier_improvement": -0.015100699244252698,
+      "first_failure_integrated_brier_improvement": -0.00812299910597503,
+      "layer_aware_binary_brier_improvement": -0.005444560702896386,
+      "layer_aware_integrated_brier_improvement": -0.003275506734809909,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 13
+    },
+    {
+      "binary_brier_improvement": -0.008937544478119102,
+      "first_failure_integrated_brier_improvement": -0.006727764473667429,
+      "layer_aware_binary_brier_improvement": -0.0026827457098193975,
+      "layer_aware_integrated_brier_improvement": -0.0032278568400480323,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 13
+    },
+    {
+      "binary_brier_improvement": 0.005791710571313058,
+      "first_failure_integrated_brier_improvement": 0.006685676567142647,
+      "layer_aware_binary_brier_improvement": 0.006208450696473428,
+      "layer_aware_integrated_brier_improvement": 0.007044182167609826,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 14
+    },
+    {
+      "binary_brier_improvement": 0.02823368181577554,
+      "first_failure_integrated_brier_improvement": 0.016339292164633326,
+      "layer_aware_binary_brier_improvement": 0.020525837169878797,
+      "layer_aware_integrated_brier_improvement": 0.013085097164362066,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 14
+    },
+    {
+      "binary_brier_improvement": 0.02499296735231235,
+      "first_failure_integrated_brier_improvement": 0.011880520092045436,
+      "layer_aware_binary_brier_improvement": 0.020298385685796866,
+      "layer_aware_integrated_brier_improvement": 0.011239109443104273,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 14
+    },
+    {
+      "binary_brier_improvement": -0.00218383604169161,
+      "first_failure_integrated_brier_improvement": -0.0012159666346312058,
+      "layer_aware_binary_brier_improvement": -0.0099095848068512,
+      "layer_aware_integrated_brier_improvement": -0.0031400760531335174,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 15
+    },
+    {
+      "binary_brier_improvement": -0.013303126408169197,
+      "first_failure_integrated_brier_improvement": 0.004705705504291147,
+      "layer_aware_binary_brier_improvement": -0.01280455498259638,
+      "layer_aware_integrated_brier_improvement": 0.0024617847849687674,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 15
+    },
+    {
+      "binary_brier_improvement": -0.009429719334199645,
+      "first_failure_integrated_brier_improvement": 0.0007711749293243062,
+      "layer_aware_binary_brier_improvement": -0.01596548839540234,
+      "layer_aware_integrated_brier_improvement": -0.0021586626795617484,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 15
+    },
+    {
+      "binary_brier_improvement": 0.006147067416771462,
+      "first_failure_integrated_brier_improvement": 0.012946698758167511,
+      "layer_aware_binary_brier_improvement": 0.0005008818531484112,
+      "layer_aware_integrated_brier_improvement": 0.005112129936667809,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 16
+    },
+    {
+      "binary_brier_improvement": 0.0070075968379810505,
+      "first_failure_integrated_brier_improvement": 0.01084881875281472,
+      "layer_aware_binary_brier_improvement": 0.0009760615315158733,
+      "layer_aware_integrated_brier_improvement": 0.005581679876574309,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 16
+    },
+    {
+      "binary_brier_improvement": 0.009679962580191022,
+      "first_failure_integrated_brier_improvement": 0.0131257125451958,
+      "layer_aware_binary_brier_improvement": 0.007124459027769174,
+      "layer_aware_integrated_brier_improvement": 0.008855876159282749,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 16
+    },
+    {
+      "binary_brier_improvement": 0.0010527486758073728,
+      "first_failure_integrated_brier_improvement": 0.010626340687554282,
+      "layer_aware_binary_brier_improvement": 0.007265171336659696,
+      "layer_aware_integrated_brier_improvement": 0.009645665747810258,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 17
+    },
+    {
+      "binary_brier_improvement": 0.0038240460524810223,
+      "first_failure_integrated_brier_improvement": 0.01130275404812741,
+      "layer_aware_binary_brier_improvement": 0.010465127248356118,
+      "layer_aware_integrated_brier_improvement": 0.009425774177448928,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 17
+    },
+    {
+      "binary_brier_improvement": 0.002122056079787422,
+      "first_failure_integrated_brier_improvement": 0.008742779620327372,
+      "layer_aware_binary_brier_improvement": 0.009523878664030318,
+      "layer_aware_integrated_brier_improvement": 0.01215284257521187,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 17
+    },
+    {
+      "binary_brier_improvement": 0.017312615621691677,
+      "first_failure_integrated_brier_improvement": 0.012984441321168645,
+      "layer_aware_binary_brier_improvement": 0.014222025581803785,
+      "layer_aware_integrated_brier_improvement": 0.008766160304893906,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 18
+    },
+    {
+      "binary_brier_improvement": 0.0067615236053209255,
+      "first_failure_integrated_brier_improvement": 0.004874055274435381,
+      "layer_aware_binary_brier_improvement": 0.002867521055008369,
+      "layer_aware_integrated_brier_improvement": 0.0007312083368174629,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 18
+    },
+    {
+      "binary_brier_improvement": 0.007299900868260066,
+      "first_failure_integrated_brier_improvement": 0.007006705184255816,
+      "layer_aware_binary_brier_improvement": 0.007190130082855822,
+      "layer_aware_integrated_brier_improvement": 0.00576924634829671,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 18
+    },
+    {
+      "binary_brier_improvement": 0.021185334146573136,
+      "first_failure_integrated_brier_improvement": 0.017339165665217218,
+      "layer_aware_binary_brier_improvement": 0.0031117425478787604,
+      "layer_aware_integrated_brier_improvement": 0.008799958563242085,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 19
+    },
+    {
+      "binary_brier_improvement": 0.009256793890116655,
+      "first_failure_integrated_brier_improvement": 0.013675524571572768,
+      "layer_aware_binary_brier_improvement": 0.004908335952736161,
+      "layer_aware_integrated_brier_improvement": 0.009257170281844283,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 19
+    },
+    {
+      "binary_brier_improvement": 0.010148912127280175,
+      "first_failure_integrated_brier_improvement": 0.009345877716310748,
+      "layer_aware_binary_brier_improvement": 0.006496151568310888,
+      "layer_aware_integrated_brier_improvement": 0.005554440630172408,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 19
+    },
+    {
+      "binary_brier_improvement": -0.005424656657407848,
+      "first_failure_integrated_brier_improvement": -0.005437316354782192,
+      "layer_aware_binary_brier_improvement": -0.004902763715080272,
+      "layer_aware_integrated_brier_improvement": -0.0055010052489644495,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 20
+    },
+    {
+      "binary_brier_improvement": -0.0003926625123433728,
+      "first_failure_integrated_brier_improvement": -0.0033823545823660245,
+      "layer_aware_binary_brier_improvement": 0.0019909345109516267,
+      "layer_aware_integrated_brier_improvement": -0.0027368177106993075,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 20
+    },
+    {
+      "binary_brier_improvement": -0.00634992677839241,
+      "first_failure_integrated_brier_improvement": -0.006955124520361785,
+      "layer_aware_binary_brier_improvement": -0.007452207300238777,
+      "layer_aware_integrated_brier_improvement": -0.009521745185583134,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 20
+    },
+    {
+      "binary_brier_improvement": 0.014612607736283985,
+      "first_failure_integrated_brier_improvement": 0.012265337157049125,
+      "layer_aware_binary_brier_improvement": 0.010215932137394499,
+      "layer_aware_integrated_brier_improvement": 0.007467672077142477,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 21
+    },
+    {
+      "binary_brier_improvement": 0.02643482444433918,
+      "first_failure_integrated_brier_improvement": 0.02086601118650723,
+      "layer_aware_binary_brier_improvement": 0.019430811810926953,
+      "layer_aware_integrated_brier_improvement": 0.016904483196170016,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 21
+    },
+    {
+      "binary_brier_improvement": 0.011825787154125939,
+      "first_failure_integrated_brier_improvement": 0.004847422035693485,
+      "layer_aware_binary_brier_improvement": 0.006503902560733892,
+      "layer_aware_integrated_brier_improvement": 0.0009519235619180153,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 21
+    },
+    {
+      "binary_brier_improvement": 0.006756037252283717,
+      "first_failure_integrated_brier_improvement": 0.004332217243081845,
+      "layer_aware_binary_brier_improvement": -0.004480489094156316,
+      "layer_aware_integrated_brier_improvement": -0.006312187453027571,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 22
+    },
+    {
+      "binary_brier_improvement": 0.009905212032051856,
+      "first_failure_integrated_brier_improvement": 0.010472998067708617,
+      "layer_aware_binary_brier_improvement": 0.0012711276526669642,
+      "layer_aware_integrated_brier_improvement": 0.0009336812758180789,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 22
+    },
+    {
+      "binary_brier_improvement": 0.004560184880585368,
+      "first_failure_integrated_brier_improvement": 0.006536834434483874,
+      "layer_aware_binary_brier_improvement": -0.003671868667744061,
+      "layer_aware_integrated_brier_improvement": -0.0029221718109321455,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 22
+    },
+    {
+      "binary_brier_improvement": -0.0031030323045578415,
+      "first_failure_integrated_brier_improvement": -0.005045256603601352,
+      "layer_aware_binary_brier_improvement": -0.001436043812119515,
+      "layer_aware_integrated_brier_improvement": -0.0013230524642532486,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 23
+    },
+    {
+      "binary_brier_improvement": 0.0015293275048930848,
+      "first_failure_integrated_brier_improvement": -0.00793571193020777,
+      "layer_aware_binary_brier_improvement": 0.004763380504846859,
+      "layer_aware_integrated_brier_improvement": -0.0007203116349679822,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 23
+    },
+    {
+      "binary_brier_improvement": -0.006944135504466948,
+      "first_failure_integrated_brier_improvement": -0.013207845465557042,
+      "layer_aware_binary_brier_improvement": -0.003847115385260897,
+      "layer_aware_integrated_brier_improvement": -0.007018091504379603,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 23
+    },
+    {
+      "binary_brier_improvement": 0.0024724193153024708,
+      "first_failure_integrated_brier_improvement": -0.002227934865152679,
+      "layer_aware_binary_brier_improvement": 0.00032690025488425496,
+      "layer_aware_integrated_brier_improvement": -0.003247588701527417,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 24
+    },
+    {
+      "binary_brier_improvement": -0.0043202798757398094,
+      "first_failure_integrated_brier_improvement": -0.0034915482990220408,
+      "layer_aware_binary_brier_improvement": -0.0035970658696343302,
+      "layer_aware_integrated_brier_improvement": -0.0023371649473120865,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 24
+    },
+    {
+      "binary_brier_improvement": -0.002325551597472781,
+      "first_failure_integrated_brier_improvement": -0.007664303880135392,
+      "layer_aware_binary_brier_improvement": -0.0028624735225097186,
+      "layer_aware_integrated_brier_improvement": -0.006798496735547122,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 24
+    },
+    {
+      "binary_brier_improvement": 0.016692512116208376,
+      "first_failure_integrated_brier_improvement": 0.020915287514909682,
+      "layer_aware_binary_brier_improvement": 0.0064523291362350455,
+      "layer_aware_integrated_brier_improvement": 0.009381681958859038,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 25
+    },
+    {
+      "binary_brier_improvement": 0.0050174643438719736,
+      "first_failure_integrated_brier_improvement": 0.011080630877957498,
+      "layer_aware_binary_brier_improvement": -0.00397177877167602,
+      "layer_aware_integrated_brier_improvement": 0.002241337348278907,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 25
+    },
+    {
+      "binary_brier_improvement": 0.00458833496662868,
+      "first_failure_integrated_brier_improvement": 0.009071274698374654,
+      "layer_aware_binary_brier_improvement": -0.0037727480346047815,
+      "layer_aware_integrated_brier_improvement": 0.004135257406001722,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 25
+    },
+    {
+      "binary_brier_improvement": 0.010180542675170974,
+      "first_failure_integrated_brier_improvement": 0.007138289625460766,
+      "layer_aware_binary_brier_improvement": 0.007094501634564104,
+      "layer_aware_integrated_brier_improvement": 0.0036425103591153697,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 26
+    },
+    {
+      "binary_brier_improvement": 0.020983657085216448,
+      "first_failure_integrated_brier_improvement": 0.01714417564579123,
+      "layer_aware_binary_brier_improvement": 0.01818003469301797,
+      "layer_aware_integrated_brier_improvement": 0.010142699473517354,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 26
+    },
+    {
+      "binary_brier_improvement": 0.023266183552727512,
+      "first_failure_integrated_brier_improvement": 0.018563604418160146,
+      "layer_aware_binary_brier_improvement": 0.014061412897023836,
+      "layer_aware_integrated_brier_improvement": 0.006165305927906692,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 26
+    },
+    {
+      "binary_brier_improvement": -0.015414961016588645,
+      "first_failure_integrated_brier_improvement": -0.009730058329675089,
+      "layer_aware_binary_brier_improvement": -0.011343767553912375,
+      "layer_aware_integrated_brier_improvement": -0.0067574084123142135,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 27
+    },
+    {
+      "binary_brier_improvement": -0.019820714103712382,
+      "first_failure_integrated_brier_improvement": -0.017502785279547184,
+      "layer_aware_binary_brier_improvement": -0.017260838686537786,
+      "layer_aware_integrated_brier_improvement": -0.017507718315560774,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 27
+    },
+    {
+      "binary_brier_improvement": -0.008759433960919966,
+      "first_failure_integrated_brier_improvement": -0.012062633306880084,
+      "layer_aware_binary_brier_improvement": -0.0073581191460304375,
+      "layer_aware_integrated_brier_improvement": -0.00965809962427478,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 27
+    },
+    {
+      "binary_brier_improvement": 0.0008860409423580105,
+      "first_failure_integrated_brier_improvement": 0.004554621319119184,
+      "layer_aware_binary_brier_improvement": 0.008149270511898886,
+      "layer_aware_integrated_brier_improvement": 0.007947859171037325,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 28
+    },
+    {
+      "binary_brier_improvement": -0.0016690642244937114,
+      "first_failure_integrated_brier_improvement": -0.004177549191371151,
+      "layer_aware_binary_brier_improvement": -0.002571305567047796,
+      "layer_aware_integrated_brier_improvement": -0.0029451323862545054,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 28
+    },
+    {
+      "binary_brier_improvement": -0.007320343324514286,
+      "first_failure_integrated_brier_improvement": -0.0029688779891257526,
+      "layer_aware_binary_brier_improvement": -0.0015032215776499623,
+      "layer_aware_integrated_brier_improvement": 4.8428212652304285e-05,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 28
+    },
+    {
+      "binary_brier_improvement": -0.001211711401131761,
+      "first_failure_integrated_brier_improvement": -0.001561779362992292,
+      "layer_aware_binary_brier_improvement": -0.0025325210721141578,
+      "layer_aware_integrated_brier_improvement": -0.002404695521505843,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 29
+    },
+    {
+      "binary_brier_improvement": -0.008632112742045202,
+      "first_failure_integrated_brier_improvement": -0.005361775086044645,
+      "layer_aware_binary_brier_improvement": -0.006371919992742044,
+      "layer_aware_integrated_brier_improvement": -0.003409099102839359,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 29
+    },
+    {
+      "binary_brier_improvement": 0.0048958359207121865,
+      "first_failure_integrated_brier_improvement": 0.001662409531910148,
+      "layer_aware_binary_brier_improvement": -0.00042241415920053673,
+      "layer_aware_integrated_brier_improvement": -0.0020498967176190903,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 29
+    },
+    {
+      "binary_brier_improvement": 0.0008389467489077571,
+      "first_failure_integrated_brier_improvement": 0.0052451288406914175,
+      "layer_aware_binary_brier_improvement": 0.0034931574497466117,
+      "layer_aware_integrated_brier_improvement": 0.0036553409322075347,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 30
+    },
+    {
+      "binary_brier_improvement": 0.004870946741963847,
+      "first_failure_integrated_brier_improvement": 0.008817949459135627,
+      "layer_aware_binary_brier_improvement": -0.0019033153181880458,
+      "layer_aware_integrated_brier_improvement": 0.003982763006214385,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 30
+    },
+    {
+      "binary_brier_improvement": -0.004508247127511955,
+      "first_failure_integrated_brier_improvement": 0.0024682321611189427,
+      "layer_aware_binary_brier_improvement": -0.005443681135768602,
+      "layer_aware_integrated_brier_improvement": 0.0009994978521017017,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 30
+    },
+    {
+      "binary_brier_improvement": 0.0033939538733770867,
+      "first_failure_integrated_brier_improvement": -3.7170387465633795e-05,
+      "layer_aware_binary_brier_improvement": 0.0014091604282400957,
+      "layer_aware_integrated_brier_improvement": -0.0002500464397253762,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 31
+    },
+    {
+      "binary_brier_improvement": -0.018478038933199874,
+      "first_failure_integrated_brier_improvement": -0.008645209290870343,
+      "layer_aware_binary_brier_improvement": -0.01962301546229437,
+      "layer_aware_integrated_brier_improvement": -0.00879335569265102,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 31
+    },
+    {
+      "binary_brier_improvement": 0.005161144478187346,
+      "first_failure_integrated_brier_improvement": 0.006068789756879904,
+      "layer_aware_binary_brier_improvement": -0.00121922011501264,
+      "layer_aware_integrated_brier_improvement": 0.0007311948806708844,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 31
+    },
+    {
+      "binary_brier_improvement": -0.0021134476677251374,
+      "first_failure_integrated_brier_improvement": 0.00010257268631991973,
+      "layer_aware_binary_brier_improvement": -0.00416821643172621,
+      "layer_aware_integrated_brier_improvement": -0.006033678179731999,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 32
+    },
+    {
+      "binary_brier_improvement": -0.0011165062065152387,
+      "first_failure_integrated_brier_improvement": 0.00682499435025335,
+      "layer_aware_binary_brier_improvement": 0.0019019214941456237,
+      "layer_aware_integrated_brier_improvement": 0.0013147379719712724,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 32
+    },
+    {
+      "binary_brier_improvement": -0.0014270245526278374,
+      "first_failure_integrated_brier_improvement": 1.6416783038782252e-05,
+      "layer_aware_binary_brier_improvement": -0.0005879358053883577,
+      "layer_aware_integrated_brier_improvement": -0.004917745952476906,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 32
+    },
+    {
+      "binary_brier_improvement": -0.020390707812747228,
+      "first_failure_integrated_brier_improvement": -0.013945941570820247,
+      "layer_aware_binary_brier_improvement": -0.006599822071346,
+      "layer_aware_integrated_brier_improvement": -0.0063176432142691115,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 33
+    },
+    {
+      "binary_brier_improvement": -0.007948652618852515,
+      "first_failure_integrated_brier_improvement": -0.0048025319822915784,
+      "layer_aware_binary_brier_improvement": -0.005463127279869511,
+      "layer_aware_integrated_brier_improvement": -0.002376308764593945,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 33
+    },
+    {
+      "binary_brier_improvement": -0.0028571639696196895,
+      "first_failure_integrated_brier_improvement": 0.0006061260214312659,
+      "layer_aware_binary_brier_improvement": 0.009076168859825257,
+      "layer_aware_integrated_brier_improvement": 0.005205950289828338,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 33
+    },
+    {
+      "binary_brier_improvement": 0.012747497002232235,
+      "first_failure_integrated_brier_improvement": 0.005286903488574347,
+      "layer_aware_binary_brier_improvement": 0.008041040112688195,
+      "layer_aware_integrated_brier_improvement": 0.002889065984065977,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 34
+    },
+    {
+      "binary_brier_improvement": 0.004518625536117391,
+      "first_failure_integrated_brier_improvement": -0.0024246684382082254,
+      "layer_aware_binary_brier_improvement": 0.0004943429190524388,
+      "layer_aware_integrated_brier_improvement": -0.004984394000840747,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 34
+    },
+    {
+      "binary_brier_improvement": -0.0026397600393482834,
+      "first_failure_integrated_brier_improvement": -0.008440088594420426,
+      "layer_aware_binary_brier_improvement": -0.005122568485914724,
+      "layer_aware_integrated_brier_improvement": -0.0082488781705423,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 34
+    },
+    {
+      "binary_brier_improvement": 0.019428619810390253,
+      "first_failure_integrated_brier_improvement": 0.0013521147302392369,
+      "layer_aware_binary_brier_improvement": 0.013918726668528829,
+      "layer_aware_integrated_brier_improvement": 0.002245635322475118,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 35
+    },
+    {
+      "binary_brier_improvement": 0.026676911611104415,
+      "first_failure_integrated_brier_improvement": 0.021842065937039547,
+      "layer_aware_binary_brier_improvement": 0.020120861057260082,
+      "layer_aware_integrated_brier_improvement": 0.01644580298482893,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 35
+    },
+    {
+      "binary_brier_improvement": 0.000779972693135937,
+      "first_failure_integrated_brier_improvement": -0.0007232383634454293,
+      "layer_aware_binary_brier_improvement": 0.00032917484919229526,
+      "layer_aware_integrated_brier_improvement": -0.0024750330786455716,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 35
+    },
+    {
+      "binary_brier_improvement": -0.0035034613325296633,
+      "first_failure_integrated_brier_improvement": -0.007269312769078213,
+      "layer_aware_binary_brier_improvement": -0.0020577771349353058,
+      "layer_aware_integrated_brier_improvement": -0.0028941183545449205,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 36
+    },
+    {
+      "binary_brier_improvement": 0.007324880321025833,
+      "first_failure_integrated_brier_improvement": -0.002411989522626514,
+      "layer_aware_binary_brier_improvement": -0.001276407047751517,
+      "layer_aware_integrated_brier_improvement": -0.0050672606510096955,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 36
+    },
+    {
+      "binary_brier_improvement": 0.006051064554785682,
+      "first_failure_integrated_brier_improvement": -0.001173036644309977,
+      "layer_aware_binary_brier_improvement": 0.00465506080618614,
+      "layer_aware_integrated_brier_improvement": -0.0008714337885344357,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 36
+    },
+    {
+      "binary_brier_improvement": -0.0009778340511046339,
+      "first_failure_integrated_brier_improvement": -0.0032723849224477555,
+      "layer_aware_binary_brier_improvement": 0.0042385325917755345,
+      "layer_aware_integrated_brier_improvement": 0.0035913802615934677,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 37
+    },
+    {
+      "binary_brier_improvement": 0.010016346461328858,
+      "first_failure_integrated_brier_improvement": 0.002096565594774821,
+      "layer_aware_binary_brier_improvement": 0.009178814004508477,
+      "layer_aware_integrated_brier_improvement": 0.005599857314822267,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 37
+    },
+    {
+      "binary_brier_improvement": -0.005597763436330434,
+      "first_failure_integrated_brier_improvement": -0.0004655587136599953,
+      "layer_aware_binary_brier_improvement": -0.007595473882883352,
+      "layer_aware_integrated_brier_improvement": 0.0001176558789852001,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 37
+    },
+    {
+      "binary_brier_improvement": 0.0162535492933549,
+      "first_failure_integrated_brier_improvement": 0.013450751670857693,
+      "layer_aware_binary_brier_improvement": 0.012229247128984638,
+      "layer_aware_integrated_brier_improvement": 0.009800829396638691,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 38
+    },
+    {
+      "binary_brier_improvement": 0.008352910820637386,
+      "first_failure_integrated_brier_improvement": 0.015270016062289404,
+      "layer_aware_binary_brier_improvement": 0.0093352517311266,
+      "layer_aware_integrated_brier_improvement": 0.011861328314863924,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 38
+    },
+    {
+      "binary_brier_improvement": 0.011537302833795084,
+      "first_failure_integrated_brier_improvement": 0.012984856977729414,
+      "layer_aware_binary_brier_improvement": 0.013737293231494405,
+      "layer_aware_integrated_brier_improvement": 0.01029435825075973,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 38
+    },
+    {
+      "binary_brier_improvement": 0.012834195437890664,
+      "first_failure_integrated_brier_improvement": 0.0032330636968546586,
+      "layer_aware_binary_brier_improvement": 0.01322223377646381,
+      "layer_aware_integrated_brier_improvement": 0.0035941202410091407,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 39
+    },
+    {
+      "binary_brier_improvement": 0.007992832543378669,
+      "first_failure_integrated_brier_improvement": -0.002601020588199009,
+      "layer_aware_binary_brier_improvement": 0.00892178775188923,
+      "layer_aware_integrated_brier_improvement": -0.0005361544290009201,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 39
+    },
+    {
+      "binary_brier_improvement": -0.0018921984169014486,
+      "first_failure_integrated_brier_improvement": 0.004706373610415272,
+      "layer_aware_binary_brier_improvement": 0.003013470352713022,
+      "layer_aware_integrated_brier_improvement": -5.4222938106650125e-05,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 39
+    },
+    {
+      "binary_brier_improvement": 0.014197482594221711,
+      "first_failure_integrated_brier_improvement": 0.010211606219544544,
+      "layer_aware_binary_brier_improvement": 0.006362927008845543,
+      "layer_aware_integrated_brier_improvement": 0.002453699795352114,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 40
+    },
+    {
+      "binary_brier_improvement": 0.018437784374630405,
+      "first_failure_integrated_brier_improvement": 0.008981798422325608,
+      "layer_aware_binary_brier_improvement": 0.011770292449184122,
+      "layer_aware_integrated_brier_improvement": 0.005199427557528705,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 40
+    },
+    {
+      "binary_brier_improvement": 0.018360174490353896,
+      "first_failure_integrated_brier_improvement": 0.010581173469231544,
+      "layer_aware_binary_brier_improvement": 0.010104750023533561,
+      "layer_aware_integrated_brier_improvement": 0.0046901111036033605,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 40
+    },
+    {
+      "binary_brier_improvement": -0.010868523818319304,
+      "first_failure_integrated_brier_improvement": -0.014242308754920443,
+      "layer_aware_binary_brier_improvement": -0.003345624750012855,
+      "layer_aware_integrated_brier_improvement": -0.0031739634740949895,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 41
+    },
+    {
+      "binary_brier_improvement": -0.0017084636181619777,
+      "first_failure_integrated_brier_improvement": -0.005522495054100691,
+      "layer_aware_binary_brier_improvement": 0.0030890487393193363,
+      "layer_aware_integrated_brier_improvement": -0.0007731050478719057,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 41
+    },
+    {
+      "binary_brier_improvement": -0.008120641207848181,
+      "first_failure_integrated_brier_improvement": -0.00955970679364568,
+      "layer_aware_binary_brier_improvement": -0.0019322090780426295,
+      "layer_aware_integrated_brier_improvement": -0.002824422133227391,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 41
+    },
+    {
+      "binary_brier_improvement": 0.027179334285229652,
+      "first_failure_integrated_brier_improvement": 0.008615096001530152,
+      "layer_aware_binary_brier_improvement": 0.024555202891585866,
+      "layer_aware_integrated_brier_improvement": 0.009737598459633972,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 42
+    },
+    {
+      "binary_brier_improvement": 0.009158704663940944,
+      "first_failure_integrated_brier_improvement": 0.0004951468651314545,
+      "layer_aware_binary_brier_improvement": 0.00519401244407637,
+      "layer_aware_integrated_brier_improvement": -0.0009337256599928961,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 42
+    },
+    {
+      "binary_brier_improvement": 0.025070988737194058,
+      "first_failure_integrated_brier_improvement": 0.009551050286997336,
+      "layer_aware_binary_brier_improvement": 0.0200411699183204,
+      "layer_aware_integrated_brier_improvement": 0.009097250456679116,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 42
+    },
+    {
+      "binary_brier_improvement": 0.000353309196651384,
+      "first_failure_integrated_brier_improvement": 0.006520919355354807,
+      "layer_aware_binary_brier_improvement": 0.0038920150564273337,
+      "layer_aware_integrated_brier_improvement": 0.007014112327617067,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 43
+    },
+    {
+      "binary_brier_improvement": 0.0073482063586879035,
+      "first_failure_integrated_brier_improvement": 0.005693044786381935,
+      "layer_aware_binary_brier_improvement": 0.00755860820676895,
+      "layer_aware_integrated_brier_improvement": 0.005016977160018355,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 43
+    },
+    {
+      "binary_brier_improvement": 0.00429733207354825,
+      "first_failure_integrated_brier_improvement": 0.006331175847706075,
+      "layer_aware_binary_brier_improvement": 0.005368805578716612,
+      "layer_aware_integrated_brier_improvement": 0.003965649708683974,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 43
+    },
+    {
+      "binary_brier_improvement": 0.00791152189100397,
+      "first_failure_integrated_brier_improvement": 0.006912949921408521,
+      "layer_aware_binary_brier_improvement": 0.006169547781212293,
+      "layer_aware_integrated_brier_improvement": 0.002569671354026587,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 44
+    },
+    {
+      "binary_brier_improvement": 0.0003674550430673683,
+      "first_failure_integrated_brier_improvement": -0.009536059551700669,
+      "layer_aware_binary_brier_improvement": 0.0005103887815113071,
+      "layer_aware_integrated_brier_improvement": -0.007895606932618902,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 44
+    },
+    {
+      "binary_brier_improvement": 0.012893087177912627,
+      "first_failure_integrated_brier_improvement": 0.007245231916136485,
+      "layer_aware_binary_brier_improvement": 0.0069544601306266,
+      "layer_aware_integrated_brier_improvement": 0.0007117594561984997,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 44
+    },
+    {
+      "binary_brier_improvement": -0.004262172060242958,
+      "first_failure_integrated_brier_improvement": -0.0027379465451277526,
+      "layer_aware_binary_brier_improvement": -0.004808247083458053,
+      "layer_aware_integrated_brier_improvement": -0.0036383767071822247,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 45
+    },
+    {
+      "binary_brier_improvement": -0.003381223554372247,
+      "first_failure_integrated_brier_improvement": 0.003681902178721404,
+      "layer_aware_binary_brier_improvement": -0.002883373063587033,
+      "layer_aware_integrated_brier_improvement": 0.0018197253809139136,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 45
+    },
+    {
+      "binary_brier_improvement": 0.0013393407394773358,
+      "first_failure_integrated_brier_improvement": -0.0026055156961386976,
+      "layer_aware_binary_brier_improvement": -0.0005636027496515256,
+      "layer_aware_integrated_brier_improvement": -0.0020297860383312796,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 45
+    },
+    {
+      "binary_brier_improvement": 0.004663241168758358,
+      "first_failure_integrated_brier_improvement": -0.0032572033907200234,
+      "layer_aware_binary_brier_improvement": 0.0049514544404433486,
+      "layer_aware_integrated_brier_improvement": -0.00335884555635981,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 46
+    },
+    {
+      "binary_brier_improvement": -0.013427565109288992,
+      "first_failure_integrated_brier_improvement": -0.009974485479779327,
+      "layer_aware_binary_brier_improvement": -0.007453926715950047,
+      "layer_aware_integrated_brier_improvement": -0.007400850738803151,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 46
+    },
+    {
+      "binary_brier_improvement": -0.0012955885400184565,
+      "first_failure_integrated_brier_improvement": 0.001858183480180551,
+      "layer_aware_binary_brier_improvement": 0.0005765259417563179,
+      "layer_aware_integrated_brier_improvement": 0.003556941183640208,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 46
+    },
+    {
+      "binary_brier_improvement": -0.006364195082097323,
+      "first_failure_integrated_brier_improvement": 0.002963748484855525,
+      "layer_aware_binary_brier_improvement": -0.0045064613415235705,
+      "layer_aware_integrated_brier_improvement": 0.00075911189832367,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 47
+    },
+    {
+      "binary_brier_improvement": 0.002615792853070158,
+      "first_failure_integrated_brier_improvement": 0.007754353626428966,
+      "layer_aware_binary_brier_improvement": 0.0016678688726168229,
+      "layer_aware_integrated_brier_improvement": 0.005018098236078378,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 47
+    },
+    {
+      "binary_brier_improvement": -0.004654533375361854,
+      "first_failure_integrated_brier_improvement": 0.006640480810207145,
+      "layer_aware_binary_brier_improvement": -0.004500230111260304,
+      "layer_aware_integrated_brier_improvement": 0.0012951634072449346,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 47
+    },
+    {
+      "binary_brier_improvement": -0.004206285945457208,
+      "first_failure_integrated_brier_improvement": 0.00045181315858372744,
+      "layer_aware_binary_brier_improvement": 0.002640883160713742,
+      "layer_aware_integrated_brier_improvement": 0.0038983893296193626,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 48
+    },
+    {
+      "binary_brier_improvement": 0.017084185445590816,
+      "first_failure_integrated_brier_improvement": 0.008641307734449922,
+      "layer_aware_binary_brier_improvement": 0.013106082197993071,
+      "layer_aware_integrated_brier_improvement": 0.0024147751423202915,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 48
+    },
+    {
+      "binary_brier_improvement": 0.014863652832905937,
+      "first_failure_integrated_brier_improvement": 0.007926169878853476,
+      "layer_aware_binary_brier_improvement": 0.010914415060884803,
+      "layer_aware_integrated_brier_improvement": 0.0058797188651985325,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 48
+    },
+    {
+      "binary_brier_improvement": 0.031257127006397045,
+      "first_failure_integrated_brier_improvement": 0.01561981683900876,
+      "layer_aware_binary_brier_improvement": 0.014334631964487272,
+      "layer_aware_integrated_brier_improvement": 0.00972380217566557,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 49
+    },
+    {
+      "binary_brier_improvement": 0.0034737994550300263,
+      "first_failure_integrated_brier_improvement": 0.0025970770354782863,
+      "layer_aware_binary_brier_improvement": -0.004057381615803974,
+      "layer_aware_integrated_brier_improvement": -0.0006389536700797519,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 49
+    },
+    {
+      "binary_brier_improvement": 0.013925352709060238,
+      "first_failure_integrated_brier_improvement": 0.011018848402869222,
+      "layer_aware_binary_brier_improvement": 0.003058641461242841,
+      "layer_aware_integrated_brier_improvement": 0.00645298717448317,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 49
+    },
+    {
+      "binary_brier_improvement": 0.0033195846452198368,
+      "first_failure_integrated_brier_improvement": 0.006430654970073536,
+      "layer_aware_binary_brier_improvement": 0.008718962194034306,
+      "layer_aware_integrated_brier_improvement": 0.00952406929337154,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 50
+    },
+    {
+      "binary_brier_improvement": 0.007697603378603895,
+      "first_failure_integrated_brier_improvement": 0.009441835879886664,
+      "layer_aware_binary_brier_improvement": 0.009659167794071164,
+      "layer_aware_integrated_brier_improvement": 0.008539481771135773,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 50
+    },
+    {
+      "binary_brier_improvement": 0.005247311871725514,
+      "first_failure_integrated_brier_improvement": 0.008507112017644538,
+      "layer_aware_binary_brier_improvement": 0.005579172877509461,
+      "layer_aware_integrated_brier_improvement": 0.009003785077189647,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 50
+    },
+    {
+      "binary_brier_improvement": 0.008534366981650335,
+      "first_failure_integrated_brier_improvement": 0.0034805274072466736,
+      "layer_aware_binary_brier_improvement": 0.005032724394995543,
+      "layer_aware_integrated_brier_improvement": 0.0036677246295684337,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 51
+    },
+    {
+      "binary_brier_improvement": 0.005126186147206378,
+      "first_failure_integrated_brier_improvement": 0.00650983973279598,
+      "layer_aware_binary_brier_improvement": 0.007002088301545233,
+      "layer_aware_integrated_brier_improvement": 0.005668386473527507,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 51
+    },
+    {
+      "binary_brier_improvement": 0.008516830474053308,
+      "first_failure_integrated_brier_improvement": 0.00835317343455153,
+      "layer_aware_binary_brier_improvement": 0.005935045891669325,
+      "layer_aware_integrated_brier_improvement": 0.010415195676208147,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 51
+    },
+    {
+      "binary_brier_improvement": 0.00043988434456943785,
+      "first_failure_integrated_brier_improvement": -0.0035971316910139058,
+      "layer_aware_binary_brier_improvement": -0.0010149908128463448,
+      "layer_aware_integrated_brier_improvement": -0.0027354001142888967,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 52
+    },
+    {
+      "binary_brier_improvement": -0.001787505244210953,
+      "first_failure_integrated_brier_improvement": -0.00715266562549091,
+      "layer_aware_binary_brier_improvement": 0.0005596463677605672,
+      "layer_aware_integrated_brier_improvement": -0.006746940068358983,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 52
+    },
+    {
+      "binary_brier_improvement": -0.00801042057480987,
+      "first_failure_integrated_brier_improvement": -0.00938186444467757,
+      "layer_aware_binary_brier_improvement": -0.007130046993006566,
+      "layer_aware_integrated_brier_improvement": -0.009637279760276346,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 52
+    },
+    {
+      "binary_brier_improvement": 0.0029138755422629527,
+      "first_failure_integrated_brier_improvement": 0.0038760066546349023,
+      "layer_aware_binary_brier_improvement": -0.0004419680132132734,
+      "layer_aware_integrated_brier_improvement": 0.0027763347863737735,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 53
+    },
+    {
+      "binary_brier_improvement": 0.005066374825835786,
+      "first_failure_integrated_brier_improvement": 0.003924261098429671,
+      "layer_aware_binary_brier_improvement": 0.002730901347133407,
+      "layer_aware_integrated_brier_improvement": 0.002519472405046245,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 53
+    },
+    {
+      "binary_brier_improvement": 0.009053097954596601,
+      "first_failure_integrated_brier_improvement": 0.0066597444847175365,
+      "layer_aware_binary_brier_improvement": 0.0026709628211379756,
+      "layer_aware_integrated_brier_improvement": 0.0037094701422880224,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 53
+    },
+    {
+      "binary_brier_improvement": -0.008084402459699316,
+      "first_failure_integrated_brier_improvement": 7.167922424615642e-05,
+      "layer_aware_binary_brier_improvement": -0.007908577816938652,
+      "layer_aware_integrated_brier_improvement": -0.0015909579078670427,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 54
+    },
+    {
+      "binary_brier_improvement": 0.00380109997395187,
+      "first_failure_integrated_brier_improvement": 0.0016223607286587794,
+      "layer_aware_binary_brier_improvement": 0.0020020725856484773,
+      "layer_aware_integrated_brier_improvement": 0.0011306440149031274,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 54
+    },
+    {
+      "binary_brier_improvement": -0.012356161559999666,
+      "first_failure_integrated_brier_improvement": 0.0014133995718215225,
+      "layer_aware_binary_brier_improvement": -0.011096897181303716,
+      "layer_aware_integrated_brier_improvement": 0.0004308109642634588,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 54
+    },
+    {
+      "binary_brier_improvement": 0.005910956937360844,
+      "first_failure_integrated_brier_improvement": -0.0018952552779617961,
+      "layer_aware_binary_brier_improvement": 0.001633640272726139,
+      "layer_aware_integrated_brier_improvement": -0.0028538765454868523,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 55
+    },
+    {
+      "binary_brier_improvement": -0.0024890747899146007,
+      "first_failure_integrated_brier_improvement": -0.003184412594557328,
+      "layer_aware_binary_brier_improvement": -0.0034136826722614734,
+      "layer_aware_integrated_brier_improvement": -0.0021015355175461217,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 55
+    },
+    {
+      "binary_brier_improvement": 0.00324597273831245,
+      "first_failure_integrated_brier_improvement": -1.9645928680579912e-05,
+      "layer_aware_binary_brier_improvement": 0.001120608353564393,
+      "layer_aware_integrated_brier_improvement": -0.0015721468219466518,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 55
+    },
+    {
+      "binary_brier_improvement": 0.014519923076574938,
+      "first_failure_integrated_brier_improvement": 0.00998955998403106,
+      "layer_aware_binary_brier_improvement": 0.008113199271148964,
+      "layer_aware_integrated_brier_improvement": 0.00738168265873085,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 56
+    },
+    {
+      "binary_brier_improvement": 0.009660812893227958,
+      "first_failure_integrated_brier_improvement": 0.007750309368892922,
+      "layer_aware_binary_brier_improvement": 0.0035863814197253287,
+      "layer_aware_integrated_brier_improvement": 0.0037806483433848563,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 56
+    },
+    {
+      "binary_brier_improvement": 0.0011227897007816483,
+      "first_failure_integrated_brier_improvement": 0.005132295759870793,
+      "layer_aware_binary_brier_improvement": 0.003436273180300927,
+      "layer_aware_integrated_brier_improvement": 0.006284947420430687,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 56
+    },
+    {
+      "binary_brier_improvement": -0.005952489515792499,
+      "first_failure_integrated_brier_improvement": -0.00103515415040744,
+      "layer_aware_binary_brier_improvement": -0.011776580769837123,
+      "layer_aware_integrated_brier_improvement": -0.005539841406083878,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 57
+    },
+    {
+      "binary_brier_improvement": 0.011707610024941093,
+      "first_failure_integrated_brier_improvement": 0.009962539657273298,
+      "layer_aware_binary_brier_improvement": 0.003156558542288976,
+      "layer_aware_integrated_brier_improvement": 0.001354864353316589,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 57
+    },
+    {
+      "binary_brier_improvement": 0.005718066099056588,
+      "first_failure_integrated_brier_improvement": -0.0025811192985990246,
+      "layer_aware_binary_brier_improvement": 0.0003133308316624044,
+      "layer_aware_integrated_brier_improvement": -0.008603786842448448,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 57
+    },
+    {
+      "binary_brier_improvement": 0.00044956274144390294,
+      "first_failure_integrated_brier_improvement": 0.005575981944048545,
+      "layer_aware_binary_brier_improvement": -0.003195832301591991,
+      "layer_aware_integrated_brier_improvement": 0.0023878466765083982,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 58
+    },
+    {
+      "binary_brier_improvement": 0.0035360159713387802,
+      "first_failure_integrated_brier_improvement": 0.004814427128372536,
+      "layer_aware_binary_brier_improvement": -0.001902346980132709,
+      "layer_aware_integrated_brier_improvement": 0.0020681576367858486,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 58
+    },
+    {
+      "binary_brier_improvement": -0.001909461043275698,
+      "first_failure_integrated_brier_improvement": 0.009149909916369898,
+      "layer_aware_binary_brier_improvement": -0.01030926114433025,
+      "layer_aware_integrated_brier_improvement": 0.0033829228108891163,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 58
+    },
+    {
+      "binary_brier_improvement": 0.0004930968354667636,
+      "first_failure_integrated_brier_improvement": 0.009386033892452286,
+      "layer_aware_binary_brier_improvement": 5.961508326821248e-06,
+      "layer_aware_integrated_brier_improvement": 0.008984541776313151,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 59
+    },
+    {
+      "binary_brier_improvement": -0.00011635808472423674,
+      "first_failure_integrated_brier_improvement": 0.006455333652108032,
+      "layer_aware_binary_brier_improvement": -0.0017837967055783007,
+      "layer_aware_integrated_brier_improvement": 0.004344965930136261,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 59
+    },
+    {
+      "binary_brier_improvement": 0.0014412622783436975,
+      "first_failure_integrated_brier_improvement": 0.007141206429872994,
+      "layer_aware_binary_brier_improvement": -0.0016366678878060028,
+      "layer_aware_integrated_brier_improvement": 0.0042987410947880125,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 59
+    },
+    {
+      "binary_brier_improvement": 0.0021551319159895882,
+      "first_failure_integrated_brier_improvement": -0.0027009139219805094,
+      "layer_aware_binary_brier_improvement": -0.000428479255268498,
+      "layer_aware_integrated_brier_improvement": -0.0037898234484213854,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 60
+    },
+    {
+      "binary_brier_improvement": 0.01074108915934028,
+      "first_failure_integrated_brier_improvement": 0.0046694903973355005,
+      "layer_aware_binary_brier_improvement": 0.002985718648187238,
+      "layer_aware_integrated_brier_improvement": -0.00019298502088149934,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 60
+    },
+    {
+      "binary_brier_improvement": -0.0009393707477532848,
+      "first_failure_integrated_brier_improvement": -0.009545397359258178,
+      "layer_aware_binary_brier_improvement": -0.0030408157749316524,
+      "layer_aware_integrated_brier_improvement": -0.00893174467538755,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 60
+    },
+    {
+      "binary_brier_improvement": -0.00022699117910045946,
+      "first_failure_integrated_brier_improvement": 0.006457141794322879,
+      "layer_aware_binary_brier_improvement": 0.002219683320508885,
+      "layer_aware_integrated_brier_improvement": 0.004011087849231329,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 61
+    },
+    {
+      "binary_brier_improvement": 0.0012006907622131562,
+      "first_failure_integrated_brier_improvement": 0.010335667063750113,
+      "layer_aware_binary_brier_improvement": 0.0034593584114168733,
+      "layer_aware_integrated_brier_improvement": 0.0070010310682586925,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 61
+    },
+    {
+      "binary_brier_improvement": 0.005792507002222246,
+      "first_failure_integrated_brier_improvement": 0.008633396139242498,
+      "layer_aware_binary_brier_improvement": 0.0090974481475607,
+      "layer_aware_integrated_brier_improvement": 0.004802119340829644,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 61
+    },
+    {
+      "binary_brier_improvement": -0.008560193274315982,
+      "first_failure_integrated_brier_improvement": -0.002484091209316299,
+      "layer_aware_binary_brier_improvement": -0.007883054697519416,
+      "layer_aware_integrated_brier_improvement": -0.0026643914939078334,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 62
+    },
+    {
+      "binary_brier_improvement": 0.0009220500218828764,
+      "first_failure_integrated_brier_improvement": 0.0025939611957411426,
+      "layer_aware_binary_brier_improvement": -0.001698389582140445,
+      "layer_aware_integrated_brier_improvement": 0.0013472968015413843,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 62
+    },
+    {
+      "binary_brier_improvement": -0.00015898170011157862,
+      "first_failure_integrated_brier_improvement": -0.002062387771776422,
+      "layer_aware_binary_brier_improvement": -0.0034774768563125696,
+      "layer_aware_integrated_brier_improvement": -0.0020297160206651254,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 62
+    },
+    {
+      "binary_brier_improvement": -0.0015710949947010276,
+      "first_failure_integrated_brier_improvement": 0.003959382999872854,
+      "layer_aware_binary_brier_improvement": -0.0011939228355669976,
+      "layer_aware_integrated_brier_improvement": 0.0018184068833949829,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 63
+    },
+    {
+      "binary_brier_improvement": -0.0032945452341625967,
+      "first_failure_integrated_brier_improvement": 0.0021316829721395557,
+      "layer_aware_binary_brier_improvement": -0.00660749899182599,
+      "layer_aware_integrated_brier_improvement": -0.002724591234505667,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 63
+    },
+    {
+      "binary_brier_improvement": -0.006378830842342907,
+      "first_failure_integrated_brier_improvement": -0.001126498076610952,
+      "layer_aware_binary_brier_improvement": -0.006368405604286832,
+      "layer_aware_integrated_brier_improvement": -0.0034101148655342733,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 63
+    },
+    {
+      "binary_brier_improvement": -0.012708081090758928,
+      "first_failure_integrated_brier_improvement": -0.009484245246940292,
+      "layer_aware_binary_brier_improvement": -0.00794636912472228,
+      "layer_aware_integrated_brier_improvement": -0.008746806579901137,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 64
+    },
+    {
+      "binary_brier_improvement": 0.012922229406140835,
+      "first_failure_integrated_brier_improvement": 0.0060449458375934715,
+      "layer_aware_binary_brier_improvement": 0.01032061891925112,
+      "layer_aware_integrated_brier_improvement": 0.0033540291099568315,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 64
+    },
+    {
+      "binary_brier_improvement": 0.027376865191548076,
+      "first_failure_integrated_brier_improvement": 0.013590094296915295,
+      "layer_aware_binary_brier_improvement": 0.015095580154297373,
+      "layer_aware_integrated_brier_improvement": 0.007937270064694937,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 64
+    },
+    {
+      "binary_brier_improvement": 0.01650403014782697,
+      "first_failure_integrated_brier_improvement": 0.018067252857330133,
+      "layer_aware_binary_brier_improvement": 0.020716205772063907,
+      "layer_aware_integrated_brier_improvement": 0.017957448757149205,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 65
+    },
+    {
+      "binary_brier_improvement": 0.011145115427980613,
+      "first_failure_integrated_brier_improvement": 0.013940973583881949,
+      "layer_aware_binary_brier_improvement": 0.010528937721958696,
+      "layer_aware_integrated_brier_improvement": 0.011266165915798865,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 65
+    },
+    {
+      "binary_brier_improvement": 0.0090784704063461,
+      "first_failure_integrated_brier_improvement": 0.012437652435077693,
+      "layer_aware_binary_brier_improvement": 0.010139066248756677,
+      "layer_aware_integrated_brier_improvement": 0.009099917622510589,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 65
+    },
+    {
+      "binary_brier_improvement": -0.006429505240565554,
+      "first_failure_integrated_brier_improvement": -0.004549721249058529,
+      "layer_aware_binary_brier_improvement": -0.002369575204473076,
+      "layer_aware_integrated_brier_improvement": -0.003406350242675671,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 66
+    },
+    {
+      "binary_brier_improvement": -0.020756473904406346,
+      "first_failure_integrated_brier_improvement": -0.013852906080797324,
+      "layer_aware_binary_brier_improvement": -0.018868047127670182,
+      "layer_aware_integrated_brier_improvement": -0.014361543486831382,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 66
+    },
+    {
+      "binary_brier_improvement": -0.013432286951063778,
+      "first_failure_integrated_brier_improvement": -0.002845222012632118,
+      "layer_aware_binary_brier_improvement": -0.011085401738477059,
+      "layer_aware_integrated_brier_improvement": -0.004563693051643111,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 66
+    },
+    {
+      "binary_brier_improvement": 0.002706744749650161,
+      "first_failure_integrated_brier_improvement": 0.0023790766969471687,
+      "layer_aware_binary_brier_improvement": 0.010919339416512578,
+      "layer_aware_integrated_brier_improvement": 0.005252479661043625,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 67
+    },
+    {
+      "binary_brier_improvement": -0.0022312630947953506,
+      "first_failure_integrated_brier_improvement": -0.006277454053344303,
+      "layer_aware_binary_brier_improvement": 0.005304090427208502,
+      "layer_aware_integrated_brier_improvement": -0.0011179959942856478,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 67
+    },
+    {
+      "binary_brier_improvement": -0.008052676506788887,
+      "first_failure_integrated_brier_improvement": -0.005018808259405601,
+      "layer_aware_binary_brier_improvement": 0.002327092867672165,
+      "layer_aware_integrated_brier_improvement": -0.0008160234598571896,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 67
+    },
+    {
+      "binary_brier_improvement": 0.0017769576227663203,
+      "first_failure_integrated_brier_improvement": -0.003831368879506336,
+      "layer_aware_binary_brier_improvement": 0.0071955067849610215,
+      "layer_aware_integrated_brier_improvement": 0.0013219196432354735,
+      "optimizer_seed": 0,
+      "record_count": 128,
+      "world_index": 68
+    },
+    {
+      "binary_brier_improvement": -0.012172139357634535,
+      "first_failure_integrated_brier_improvement": -0.012963193003722711,
+      "layer_aware_binary_brier_improvement": -0.00933925553014715,
+      "layer_aware_integrated_brier_improvement": -0.010775509466739911,
+      "optimizer_seed": 1,
+      "record_count": 128,
+      "world_index": 68
+    },
+    {
+      "binary_brier_improvement": -0.0011072233428784427,
+      "first_failure_integrated_brier_improvement": -0.007603734287125259,
+      "layer_aware_binary_brier_improvement": 0.0054895950807918245,
+      "layer_aware_integrated_brier_improvement": -0.001780224297462489,
+      "optimizer_seed": 2,
+      "record_count": 128,
+      "world_index": 68
+    }
+  ]
+}

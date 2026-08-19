@@ -1,0 +1,110 @@
+\section{Sealed Multi-Gate Design}
+\label{sec:design}
+
+\subsection{Cohorts and one-shot access}
+
+Table~\ref{tab:gates} summarizes the three confirmatory cohorts.  Each gate has
+a development generator, a separate encrypted seed commitment, a zero-access
+audit, a frozen source digest, and an atomic one-shot lock.  A sealed result is
+not reused to change a threshold, feature, model population, or sample size.
+
+\begin{table}[ht]
+\centering
+\caption{Confirmatory cohorts.  Runs equal worlds times six controls times
+three optimizer seeds.}
+\label{tab:gates}
+\begin{tabular}{lrrrl}
+\toprule
+Gate & Worlds & Runs & Max horizon & Primary purpose \\
+\midrule
+Structural OOD & 50 & 900 & 1 & unseen mechanisms and routing \\
+Open-loop rollout & 62 & 1,116 & 32 & recursive structural error \\
+Criterion validity & 69 & 1,242 & 8 & plan failure and first failure \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The OOD and rollout gates use all six controls in paired comparisons.  The
+criterion-validity gate fits its hazard model on the four controls that produce
+nondegenerate errors.  The dense and oracle-signature controls remain mandatory
+structural-zero checks and are never deleted from the report.
+
+\subsection{Structural OOD gate}
+
+Development and sealed mechanisms are disjoint at the world level.  The
+generator distinguishes unseen recombinations, unseen structural modes,
+unseen mechanism parameters, unseen action compositions, bridge-consistent
+shifts, and bridge-violating negative controls.  The primary comparisons pair
+correct routing against random and wrong routing while preserving capacity and
+compute.  Fifty sealed worlds were selected by the frozen power rule.
+
+\subsection{Open-loop gate}
+
+The rollout protocol separates teacher-forced and recursive predictions at
+horizons \(1,2,4,8,16,32\).  It records the area under the
+\(\DeltaTheta\) trajectory, the fixed-layer vector, survival without structural
+failure, bridge violation, and tracking diagnostics.  The recursive inequality
+audit is retained even when its accumulated worst-case numerical bound is
+vacuous.
+
+\subsection{Criterion-validity gate}
+
+Each world contains 32 units.  A unit has a domain-separated eight-step probe
+and eight tasks with horizons
+\[
+(1,2,4,8,1,2,4,8).
+\]
+Task utilities are generated only from structural predicates.  The primary
+population contains the layer-routed, strict-factorized, random-routed, and
+wrong-routed controls.
+
+The scalar baseline includes training negative log likelihood, one-step and
+open-loop latent mean-squared error, endpoint exactness, task horizon and goal
+weights, model identity, plan-selection margin, and selected-versus-alternative
+scalar error contrasts.  The augmented model adds prespecified task-local
+\(\DeltaTheta\), fixed-total, fixed-layer, and goal-aligned structural
+contrasts.  A mandatory non-gating sensitivity gives the baseline direct raw
+layer mismatches.
+
+A ridge logistic discrete hazard \(h_i(t)\) is fit on development worlds.  Its
+cumulative failure probability is
+\[
+\widehat F_i(t)
+=1-\prod_{s=1}^{t}\{1-\widehat h_i(s)\}.
+\]
+All coefficients, feature order, means, scales, and penalties are frozen before
+the sealed seed is revealed.
+
+\subsection{Estimands and inference}
+
+The two co-primary effects are
+\[
+\begin{split}
+\mathcal E_{\mathrm{bin}}
+&=
+\operatorname{BS}_{\mathrm{scalar}}(8)
+-
+\operatorname{BS}_{\mathrm{TSI}}(8),\\
+\mathcal E_{\mathrm{int}}
+&=
+\frac{1}{8}\sum_{t=1}^{8}
+\left[
+\operatorname{BS}_{\mathrm{scalar}}(t)
+-
+\operatorname{BS}_{\mathrm{TSI}}(t)
+\right].
+\end{split}
+\]
+Here, \(\operatorname{BS}(8)\) is the Brier score at terminal time index
+\(t=8\) of the fixed eight-step candidate trajectory; the numeral is a time
+index, not a task identifier.  The integrated estimand averages the eight time
+indices of that trajectory.
+Positive values favor the structural augmentation.  Scores are first averaged
+within world over units, primary controls, and nested optimizer seeds.
+One-sided world-level Student tests use Holm familywise correction
+\citep{holm1979simple}.  We also require positive Bonferroni simultaneous
+lower bounds from a 20,000-replicate world-cluster bootstrap and from a
+world-random-intercept, seed-nested variance decomposition.  Both point effects
+must satisfy the prespecified smallest effect size of interest
+\(\SESOI=0.0025\).  The inferential null remains a nonpositive effect; we do
+not claim that a confidence lower bound exceeds \(\SESOI\).

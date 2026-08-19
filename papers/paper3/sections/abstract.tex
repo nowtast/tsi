@@ -1,0 +1,29 @@
+\begin{abstract}
+World-model errors can preserve scalar loss while violating structural
+dependencies needed by a decision.  Three preregistered exact-state studies
+first evaluated structural OOD, open-loop rollout, and task-level criterion
+association.  Correct routing separated from random and wrong routing in the
+first two studies, but a four-arm criterion estimand did not identify routing
+correctness because a wrong-routed arm also exceeded its point-effect
+threshold.  We therefore ran the source freeze, fresh seed generation, and
+one-shot execution of a new prospective stochastic study in that order in one
+scripted sequence.  Its 120 independent worlds cross 30
+two-edge graph motifs with three transition-head families; two families are
+outside the original linear TSI equation.  Structure and head family are
+selected from 800 noisy primitive transitions and 400 selection transitions,
+then evaluated on 1,200 noisier two-coordinate compositions and 160 six-step
+rollouts per world.  Learned graph and head recovery was 1.000, with a
+multiplicity-adjusted Wilson lower bound of 0.941.  Relative to shifted routing,
+learned routing improved composition negative log likelihood by 0.35933 and
+open-loop normalized Hamming area by 0.08996.  A development-fitted, frozen
+calibration of discrepancies from the first three transitions predicted
+terminal failure; correct rather than shifted routing improved Brier score by
+0.02402, with simultaneous interval [0.01808, 0.02997].  All nine frozen gates
+passed, including outside-family noninferiority.  This cohort, its root seed,
+and its eight-quantity multiplicity family are shared with Paper~4; the endpoints
+reported here are a subset of that single frozen analysis, not independent
+evidence.  A separate Node.js
+implementation reproduced all 120 learned fits and ten analysis means.  Thus
+the new evidence resolves routing correctness in this declared stochastic
+family; it does not convert the earlier pooled association into that result.
+\end{abstract}

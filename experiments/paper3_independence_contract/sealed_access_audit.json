@@ -1,0 +1,15 @@
+{
+  "artifact_digest": "1cd7a9cfd394ff56162dc83a3f60dc3a4d3726bd24c133e2ecc740ada06ffc4b",
+  "commitment": "b4af5d120cd748e64af48378df621f04fb06cd9cd8a311d55950ed8f349fbaf0",
+  "descriptor_digest": "d48de249c81f5c58f899507e1329e47beb3c752e4f3069387b96bd4b21c98e95",
+  "errors": [],
+  "escrow_exists": true,
+  "escrow_mode_octal": "0o0",
+  "escrow_size": 32,
+  "event_count": 1,
+  "identifier": "P3-3A-SEALED-ACCESS-v1",
+  "latest_event_hash": "43b0f94feecd8e0006ebc0829f3d888ba840cae64bea028d02286f4463b5a036",
+  "passed": true,
+  "test_result_evaluations": 0,
+  "test_seed_reveals": 0
+}

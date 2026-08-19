@@ -1,0 +1,2616 @@
+{
+  "summary": {
+    "contract": "P3-5B-REPLICATION-v1",
+    "independent_family": true,
+    "cardinalities": [
+      4,
+      3,
+      5,
+      3,
+      4
+    ],
+    "graph_count": 3,
+    "combination_count": 96,
+    "cells": 288,
+    "parameter_exact_cells": 288,
+    "transition_exact_cells": 288,
+    "min_exact_accuracy": 1.0,
+    "mean_exact_accuracy": 1.0,
+    "intervention_included": true,
+    "neural_extension_used": false
+  },
+  "cells": [
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 0,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2444,
+      "test_case_count": 2596
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 1,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2494,
+      "test_case_count": 2546
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 2,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2489,
+      "test_case_count": 2551
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 3,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2497,
+      "test_case_count": 2543
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 4,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2502,
+      "test_case_count": 2538
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 5,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 6,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2526,
+      "test_case_count": 2514
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 7,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2551,
+      "test_case_count": 2489
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 8,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2492,
+      "test_case_count": 2548
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 9,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 10,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2567,
+      "test_case_count": 2473
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 11,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2507,
+      "test_case_count": 2533
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 12,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2537,
+      "test_case_count": 2503
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 13,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2534,
+      "test_case_count": 2506
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 14,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2511,
+      "test_case_count": 2529
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 15,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2536,
+      "test_case_count": 2504
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 16,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 17,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2516,
+      "test_case_count": 2524
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 18,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2479,
+      "test_case_count": 2561
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 19,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2500,
+      "test_case_count": 2540
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 20,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2556,
+      "test_case_count": 2484
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 21,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 22,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2471,
+      "test_case_count": 2569
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 23,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 24,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 25,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2535,
+      "test_case_count": 2505
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 26,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2440,
+      "test_case_count": 2600
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 27,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2471,
+      "test_case_count": 2569
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 28,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2544,
+      "test_case_count": 2496
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 29,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2486,
+      "test_case_count": 2554
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 30,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2511,
+      "test_case_count": 2529
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 31,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 32,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 33,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2487,
+      "test_case_count": 2553
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 34,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2560,
+      "test_case_count": 2480
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 35,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2525,
+      "test_case_count": 2515
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 36,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 37,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2552,
+      "test_case_count": 2488
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 38,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2532,
+      "test_case_count": 2508
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 39,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2588,
+      "test_case_count": 2452
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 40,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 41,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2481,
+      "test_case_count": 2559
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 42,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2493,
+      "test_case_count": 2547
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 43,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 44,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2482,
+      "test_case_count": 2558
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 45,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 46,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2572,
+      "test_case_count": 2468
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 47,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2532,
+      "test_case_count": 2508
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 48,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2538,
+      "test_case_count": 2502
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 49,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2516,
+      "test_case_count": 2524
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 50,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2524,
+      "test_case_count": 2516
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 51,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 52,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2502,
+      "test_case_count": 2538
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 53,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2487,
+      "test_case_count": 2553
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 54,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2522,
+      "test_case_count": 2518
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 55,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 56,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2543,
+      "test_case_count": 2497
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 57,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2498,
+      "test_case_count": 2542
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 58,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2494,
+      "test_case_count": 2546
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 59,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2527,
+      "test_case_count": 2513
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 60,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2496,
+      "test_case_count": 2544
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 61,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2483,
+      "test_case_count": 2557
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 62,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2477,
+      "test_case_count": 2563
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 63,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2519,
+      "test_case_count": 2521
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 64,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2492,
+      "test_case_count": 2548
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 65,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2513,
+      "test_case_count": 2527
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 66,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2577,
+      "test_case_count": 2463
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 67,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2528,
+      "test_case_count": 2512
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 68,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2559,
+      "test_case_count": 2481
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 69,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2517,
+      "test_case_count": 2523
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 70,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2513,
+      "test_case_count": 2527
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 71,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2531,
+      "test_case_count": 2509
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 72,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2495,
+      "test_case_count": 2545
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 73,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2542,
+      "test_case_count": 2498
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 74,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2533,
+      "test_case_count": 2507
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 75,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 76,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2505,
+      "test_case_count": 2535
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 77,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2565,
+      "test_case_count": 2475
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 78,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2561,
+      "test_case_count": 2479
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 79,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2583,
+      "test_case_count": 2457
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 80,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2563,
+      "test_case_count": 2477
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 81,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2498,
+      "test_case_count": 2542
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 82,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2463,
+      "test_case_count": 2577
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 83,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2512,
+      "test_case_count": 2528
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 84,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2476,
+      "test_case_count": 2564
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 85,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2531,
+      "test_case_count": 2509
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 86,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 87,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2557,
+      "test_case_count": 2483
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 88,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 89,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2515,
+      "test_case_count": 2525
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 90,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2515,
+      "test_case_count": 2525
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 91,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 92,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 93,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2468,
+      "test_case_count": 2572
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 94,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2541,
+      "test_case_count": 2499
+    },
+    {
+      "graph": "topology_to_metric",
+      "combination_index": 95,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 0,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2524,
+      "test_case_count": 2516
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 1,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2531,
+      "test_case_count": 2509
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 2,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2554,
+      "test_case_count": 2486
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 3,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2506,
+      "test_case_count": 2534
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 4,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2508,
+      "test_case_count": 2532
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 5,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2500,
+      "test_case_count": 2540
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 6,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2483,
+      "test_case_count": 2557
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 7,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2563,
+      "test_case_count": 2477
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 8,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2533,
+      "test_case_count": 2507
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 9,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2526,
+      "test_case_count": 2514
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 10,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2528,
+      "test_case_count": 2512
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 11,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 12,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2522,
+      "test_case_count": 2518
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 13,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2506,
+      "test_case_count": 2534
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 14,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2564,
+      "test_case_count": 2476
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 15,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2493,
+      "test_case_count": 2547
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 16,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2606,
+      "test_case_count": 2434
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 17,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 18,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2546,
+      "test_case_count": 2494
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 19,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 20,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2547,
+      "test_case_count": 2493
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 21,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2533,
+      "test_case_count": 2507
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 22,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2514,
+      "test_case_count": 2526
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 23,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2512,
+      "test_case_count": 2528
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 24,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2454,
+      "test_case_count": 2586
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 25,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 26,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2556,
+      "test_case_count": 2484
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 27,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2517,
+      "test_case_count": 2523
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 28,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2549,
+      "test_case_count": 2491
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 29,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 30,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2477,
+      "test_case_count": 2563
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 31,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2495,
+      "test_case_count": 2545
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 32,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2498,
+      "test_case_count": 2542
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 33,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2531,
+      "test_case_count": 2509
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 34,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2535,
+      "test_case_count": 2505
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 35,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2516,
+      "test_case_count": 2524
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 36,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2511,
+      "test_case_count": 2529
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 37,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 38,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2532,
+      "test_case_count": 2508
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 39,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2570,
+      "test_case_count": 2470
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 40,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2509,
+      "test_case_count": 2531
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 41,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2499,
+      "test_case_count": 2541
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 42,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2459,
+      "test_case_count": 2581
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 43,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 44,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2578,
+      "test_case_count": 2462
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 45,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2513,
+      "test_case_count": 2527
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 46,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2488,
+      "test_case_count": 2552
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 47,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2505,
+      "test_case_count": 2535
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 48,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2548,
+      "test_case_count": 2492
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 49,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2471,
+      "test_case_count": 2569
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 50,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2572,
+      "test_case_count": 2468
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 51,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2508,
+      "test_case_count": 2532
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 52,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2512,
+      "test_case_count": 2528
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 53,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 54,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2536,
+      "test_case_count": 2504
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 55,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2554,
+      "test_case_count": 2486
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 56,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2546,
+      "test_case_count": 2494
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 57,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 58,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2506,
+      "test_case_count": 2534
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 59,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2525,
+      "test_case_count": 2515
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 60,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2538,
+      "test_case_count": 2502
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 61,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2564,
+      "test_case_count": 2476
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 62,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2512,
+      "test_case_count": 2528
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 63,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2505,
+      "test_case_count": 2535
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 64,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2490,
+      "test_case_count": 2550
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 65,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2527,
+      "test_case_count": 2513
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 66,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 67,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2551,
+      "test_case_count": 2489
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 68,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2493,
+      "test_case_count": 2547
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 69,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 70,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 71,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2502,
+      "test_case_count": 2538
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 72,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2544,
+      "test_case_count": 2496
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 73,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2526,
+      "test_case_count": 2514
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 74,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2519,
+      "test_case_count": 2521
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 75,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2549,
+      "test_case_count": 2491
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 76,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2541,
+      "test_case_count": 2499
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 77,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 78,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 79,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2498,
+      "test_case_count": 2542
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 80,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2499,
+      "test_case_count": 2541
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 81,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2486,
+      "test_case_count": 2554
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 82,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2545,
+      "test_case_count": 2495
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 83,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2502,
+      "test_case_count": 2538
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 84,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2515,
+      "test_case_count": 2525
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 85,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2532,
+      "test_case_count": 2508
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 86,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2492,
+      "test_case_count": 2548
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 87,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2440,
+      "test_case_count": 2600
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 88,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2565,
+      "test_case_count": 2475
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 89,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 90,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2545,
+      "test_case_count": 2495
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 91,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2526,
+      "test_case_count": 2514
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 92,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2483,
+      "test_case_count": 2557
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 93,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 94,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2554,
+      "test_case_count": 2486
+    },
+    {
+      "graph": "metric_to_relation",
+      "combination_index": 95,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 0,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2510,
+      "test_case_count": 2530
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 1,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 2,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2478,
+      "test_case_count": 2562
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 3,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2514,
+      "test_case_count": 2526
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 4,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2531,
+      "test_case_count": 2509
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 5,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2505,
+      "test_case_count": 2535
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 6,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2527,
+      "test_case_count": 2513
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 7,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2528,
+      "test_case_count": 2512
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 8,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2521,
+      "test_case_count": 2519
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 9,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 10,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2497,
+      "test_case_count": 2543
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 11,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2528,
+      "test_case_count": 2512
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 12,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2470,
+      "test_case_count": 2570
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 13,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2548,
+      "test_case_count": 2492
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 14,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 15,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2490,
+      "test_case_count": 2550
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 16,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2519,
+      "test_case_count": 2521
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 17,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2507,
+      "test_case_count": 2533
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 18,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2519,
+      "test_case_count": 2521
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 19,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2579,
+      "test_case_count": 2461
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 20,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2522,
+      "test_case_count": 2518
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 21,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2554,
+      "test_case_count": 2486
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 22,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2494,
+      "test_case_count": 2546
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 23,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2525,
+      "test_case_count": 2515
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 24,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2508,
+      "test_case_count": 2532
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 25,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2569,
+      "test_case_count": 2471
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 26,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2489,
+      "test_case_count": 2551
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 27,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2565,
+      "test_case_count": 2475
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 28,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2482,
+      "test_case_count": 2558
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 29,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 30,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 31,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2539,
+      "test_case_count": 2501
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 32,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2524,
+      "test_case_count": 2516
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 33,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 34,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 35,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2540,
+      "test_case_count": 2500
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 36,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2506,
+      "test_case_count": 2534
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 37,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2497,
+      "test_case_count": 2543
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 38,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2572,
+      "test_case_count": 2468
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 39,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2504,
+      "test_case_count": 2536
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 40,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2510,
+      "test_case_count": 2530
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 41,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2564,
+      "test_case_count": 2476
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 42,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2482,
+      "test_case_count": 2558
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 43,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2548,
+      "test_case_count": 2492
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 44,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2500,
+      "test_case_count": 2540
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 45,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2501,
+      "test_case_count": 2539
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 46,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2544,
+      "test_case_count": 2496
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 47,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2525,
+      "test_case_count": 2515
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 48,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2503,
+      "test_case_count": 2537
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 49,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2533,
+      "test_case_count": 2507
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 50,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2560,
+      "test_case_count": 2480
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 51,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2522,
+      "test_case_count": 2518
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 52,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2544,
+      "test_case_count": 2496
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 53,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2525,
+      "test_case_count": 2515
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 54,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2583,
+      "test_case_count": 2457
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 55,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2526,
+      "test_case_count": 2514
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 56,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2544,
+      "test_case_count": 2496
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 57,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2548,
+      "test_case_count": 2492
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 58,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 59,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 60,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 61,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2522,
+      "test_case_count": 2518
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 62,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2512,
+      "test_case_count": 2528
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 63,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2509,
+      "test_case_count": 2531
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 64,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2492,
+      "test_case_count": 2548
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 65,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 66,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2558,
+      "test_case_count": 2482
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 67,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2477,
+      "test_case_count": 2563
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 68,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 69,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2486,
+      "test_case_count": 2554
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 70,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2545,
+      "test_case_count": 2495
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 71,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2507,
+      "test_case_count": 2533
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 72,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2568,
+      "test_case_count": 2472
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 73,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2551,
+      "test_case_count": 2489
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 74,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2543,
+      "test_case_count": 2497
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 75,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2515,
+      "test_case_count": 2525
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 76,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2446,
+      "test_case_count": 2594
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 77,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 78,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2556,
+      "test_case_count": 2484
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 79,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2521,
+      "test_case_count": 2519
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 80,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2602,
+      "test_case_count": 2438
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 81,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2530,
+      "test_case_count": 2510
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 82,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2515,
+      "test_case_count": 2525
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 83,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2519,
+      "test_case_count": 2521
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 84,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2520,
+      "test_case_count": 2520
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 85,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2559,
+      "test_case_count": 2481
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 86,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2509,
+      "test_case_count": 2531
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 87,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2496,
+      "test_case_count": 2544
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 88,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2510,
+      "test_case_count": 2530
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 89,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2453,
+      "test_case_count": 2587
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 90,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2518,
+      "test_case_count": 2522
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 91,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2466,
+      "test_case_count": 2574
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 92,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2523,
+      "test_case_count": 2517
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 93,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2541,
+      "test_case_count": 2499
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 94,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2480,
+      "test_case_count": 2560
+    },
+    {
+      "graph": "relation_to_order",
+      "combination_index": 95,
+      "multipliers_exact": true,
+      "coefficient_exact": true,
+      "exact_accuracy": 1.0,
+      "train_case_count": 2552,
+      "test_case_count": 2488
+    }
+  ]
+}

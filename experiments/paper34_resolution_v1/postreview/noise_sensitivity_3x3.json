@@ -1,0 +1,425 @@
+{
+  "status": "postreview_descriptive_noise_sensitivity_not_confirmatory",
+  "seed_label": "TSI-P34-noise-sensitivity-v1",
+  "train_noise_grid": [
+    0.04,
+    0.08,
+    0.16
+  ],
+  "ood_noise_grid": [
+    0.06,
+    0.12,
+    0.24
+  ],
+  "cells": [
+    {
+      "world_count": 120,
+      "train_noise": 0.04,
+      "ood_noise": 0.06,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.4662619371621378,
+          "world_sd": 0.026555676716328278,
+          "standard_error": 0.002424190527891286,
+          "descriptive_95pct_interval": [
+            0.46151061103580776,
+            0.4710132632884679
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.4662619371621378,
+          "world_sd": 0.026555676716328278,
+          "standard_error": 0.002424190527891286,
+          "descriptive_95pct_interval": [
+            0.46151061103580776,
+            0.4710132632884679
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.4721429798525186,
+          "world_sd": 0.024187908584096238,
+          "standard_error": 0.0022080438583970585,
+          "descriptive_95pct_interval": [
+            0.4678152934137755,
+            0.47647066629126167
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.05536509502725931,
+          "world_sd": 0.08596957120243806,
+          "standard_error": 0.007847912234436975,
+          "descriptive_95pct_interval": [
+            0.03998346969393158,
+            0.07074672036058705
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.04,
+      "ood_noise": 0.12,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.3593193173783913,
+          "world_sd": 0.02008158948166298,
+          "standard_error": 0.0018331899249442152,
+          "descriptive_95pct_interval": [
+            0.35572633114867896,
+            0.3629123036081036
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.3593193173783913,
+          "world_sd": 0.02008158948166298,
+          "standard_error": 0.0018331899249442152,
+          "descriptive_95pct_interval": [
+            0.35572633114867896,
+            0.3629123036081036
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.36325592576145305,
+          "world_sd": 0.01843839599792491,
+          "standard_error": 0.0016831875687127419,
+          "descriptive_95pct_interval": [
+            0.3599569387475505,
+            0.36655491277535557
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.0438492973830239,
+          "world_sd": 0.06653490425682378,
+          "standard_error": 0.00607377798715148,
+          "descriptive_95pct_interval": [
+            0.031944911278114815,
+            0.055753683487932984
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.04,
+      "ood_noise": 0.24,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.23336723659184036,
+          "world_sd": 0.01460431599032073,
+          "standard_error": 0.0013331855508053438,
+          "descriptive_95pct_interval": [
+            0.2307542409275527,
+            0.23598023225612802
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.23336723659184036,
+          "world_sd": 0.01460431599032073,
+          "standard_error": 0.0013331855508053438,
+          "descriptive_95pct_interval": [
+            0.2307542409275527,
+            0.23598023225612802
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.2377266420804395,
+          "world_sd": 0.01348706318533691,
+          "standard_error": 0.0012311947901844174,
+          "descriptive_95pct_interval": [
+            0.2353135446337247,
+            0.2401397395271543
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.028561058097914052,
+          "world_sd": 0.045072992430351996,
+          "standard_error": 0.004114582448060565,
+          "descriptive_95pct_interval": [
+            0.0204966246882947,
+            0.0366254915075334
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.08,
+      "ood_noise": 0.06,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.4670317732224676,
+          "world_sd": 0.02538165211528294,
+          "standard_error": 0.002317017235048197,
+          "descriptive_95pct_interval": [
+            0.46249050289021454,
+            0.47157304355472063
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.4670317732224676,
+          "world_sd": 0.02538165211528294,
+          "standard_error": 0.002317017235048197,
+          "descriptive_95pct_interval": [
+            0.46249050289021454,
+            0.47157304355472063
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.47437045632215896,
+          "world_sd": 0.02293052602801491,
+          "standard_error": 0.002093261060167184,
+          "descriptive_95pct_interval": [
+            0.47026774003399113,
+            0.4784731726103268
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.04997624260495686,
+          "world_sd": 0.08019605083841515,
+          "standard_error": 0.007320864344505178,
+          "descriptive_95pct_interval": [
+            0.03562761215402328,
+            0.06432487305589044
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.08,
+      "ood_noise": 0.12,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.35936136392987916,
+          "world_sd": 0.02070429925268951,
+          "standard_error": 0.0018900352896725663,
+          "descriptive_95pct_interval": [
+            0.3556569628326112,
+            0.3630657650271471
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.35936136392987916,
+          "world_sd": 0.02070429925268951,
+          "standard_error": 0.0018900352896725663,
+          "descriptive_95pct_interval": [
+            0.3556569628326112,
+            0.3630657650271471
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.3657103932045637,
+          "world_sd": 0.0167182585272416,
+          "standard_error": 0.0015261612195955536,
+          "descriptive_95pct_interval": [
+            0.36271917217955474,
+            0.3687016142295727
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.03740040754855554,
+          "world_sd": 0.062253251076732935,
+          "standard_error": 0.0056829183154599,
+          "descriptive_95pct_interval": [
+            0.026262092323171102,
+            0.048538722773939974
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.08,
+      "ood_noise": 0.24,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.23376800745289333,
+          "world_sd": 0.014659073856869802,
+          "standard_error": 0.0013381842372569746,
+          "descriptive_95pct_interval": [
+            0.23114521454319045,
+            0.23639080036259622
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.23376800745289333,
+          "world_sd": 0.014659073856869802,
+          "standard_error": 0.0013381842372569746,
+          "descriptive_95pct_interval": [
+            0.23114521454319045,
+            0.23639080036259622
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.23825009789895762,
+          "world_sd": 0.011838596879452316,
+          "standard_error": 0.001080711093347717,
+          "descriptive_95pct_interval": [
+            0.2361319430783032,
+            0.24036825271961204
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.02419756311073263,
+          "world_sd": 0.03914115903078114,
+          "standard_error": 0.003573082621342646,
+          "descriptive_95pct_interval": [
+            0.017194449859115078,
+            0.03120067636235018
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.16,
+      "ood_noise": 0.06,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.4655993733397252,
+          "world_sd": 0.026484308594156795,
+          "standard_error": 0.0024176755394912683,
+          "descriptive_95pct_interval": [
+            0.46086081635601883,
+            0.4703379303234315
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.4655993733397252,
+          "world_sd": 0.026484308594156795,
+          "standard_error": 0.0024176755394912683,
+          "descriptive_95pct_interval": [
+            0.46086081635601883,
+            0.4703379303234315
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.4705086557572314,
+          "world_sd": 0.02677808764844808,
+          "standard_error": 0.0024444937753175804,
+          "descriptive_95pct_interval": [
+            0.4657175359971766,
+            0.4752997755172862
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.05011506550108102,
+          "world_sd": 0.08183696562061582,
+          "standard_error": 0.007470658684697675,
+          "descriptive_95pct_interval": [
+            0.03547284353828221,
+            0.06475728746387983
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.16,
+      "ood_noise": 0.12,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.35887782858776734,
+          "world_sd": 0.020100523195626326,
+          "standard_error": 0.001834918328650061,
+          "descriptive_95pct_interval": [
+            0.35528145474904077,
+            0.3624742024264939
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.35887782858776734,
+          "world_sd": 0.020100523195626326,
+          "standard_error": 0.001834918328650061,
+          "descriptive_95pct_interval": [
+            0.35528145474904077,
+            0.3624742024264939
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.3624780645589254,
+          "world_sd": 0.021171710693901002,
+          "standard_error": 0.0019327039213371552,
+          "descriptive_95pct_interval": [
+            0.3586900344803252,
+            0.3662660946375256
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.039266223270834365,
+          "world_sd": 0.063341634073183,
+          "standard_error": 0.005782273635186693,
+          "descriptive_95pct_interval": [
+            0.027933175197112955,
+            0.050599271344555774
+          ]
+        }
+      }
+    },
+    {
+      "world_count": 120,
+      "train_noise": 0.16,
+      "ood_noise": 0.24,
+      "identification_rate": 1.0,
+      "effect_intervals": {
+        "learned_routing_nll": {
+          "mean": 0.23526885343255144,
+          "world_sd": 0.014574726947740703,
+          "standard_error": 0.0013304844531260003,
+          "descriptive_95pct_interval": [
+            0.23266115182243402,
+            0.23787655504266886
+          ]
+        },
+        "factorized_graph_nll": {
+          "mean": 0.23526885343255144,
+          "world_sd": 0.014574726947740703,
+          "standard_error": 0.0013304844531260003,
+          "descriptive_95pct_interval": [
+            0.23266115182243402,
+            0.23787655504266886
+          ]
+        },
+        "generic_graph_nll": {
+          "mean": 0.23788613252514398,
+          "world_sd": 0.014139115113805861,
+          "standard_error": 0.0012907187151656157,
+          "descriptive_95pct_interval": [
+            0.23535637032924756,
+            0.2404158947210404
+          ]
+        },
+        "large_generic_graph_nll": {
+          "mean": 0.02545712867404285,
+          "world_sd": 0.04158344096946218,
+          "standard_error": 0.0037960314396098217,
+          "descriptive_95pct_interval": [
+            0.01801704376822587,
+            0.03289721357985983
+          ]
+        }
+      }
+    }
+  ],
+  "all_cells_identification_rate": 1.0,
+  "minimum_graph_effect_by_head": {
+    "learned_routing_nll": 0.23336723659184036,
+    "factorized_graph_nll": 0.23336723659184036,
+    "generic_graph_nll": 0.2377266420804395,
+    "large_generic_graph_nll": 0.02419756311073263
+  },
+  "limitations": [
+    "The panel was designed after confirmation and is descriptive.",
+    "It varies coordinate corruption probabilities only.",
+    "It does not sample visual, continuous, neural, or real-world systems."
+  ],
+  "worlds_per_cell": 120
+}

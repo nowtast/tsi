@@ -1,0 +1,146 @@
+\section{결과}
+
+\subsection{Frozen exact-family audit}
+
+Table~\ref{tab:main}은 전체 288-cell audit를 보고한다. TSI가 exact인 이유는
+recovered predictor가 generating equation이기 때문이며, test가 일반적 learning
+advantage를 식별했기 때문이 아니다.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen finite-family audit.}
+\label{tab:main}
+\begin{tabular}{lcc}
+\toprule
+Model & Exact accuracy & Intervention accuracy\\
+\midrule
+TSI graph-discovered factorized & 1.000 & 1.000\\
+Dense polynomial trainable & 0.622 & 0.413\\
+Diagonal trainable & 0.605 & 0.410\\
+Wrong-routed factorized & 0.234 & 0.200\\
+Unstructured lookup & 0.000 & 0.000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Average는 중요한 cell structure를 가린다. Dense intervention accuracy는 33개
+cell에서 exact이고 32개 cell에서 0이다. 따라서 288개 TSI-minus-dense cell
+difference가 모두 양수인 것은 아니다. Wrong-routed accuracy는 192개 cell에서
+정확히 0, 96개 cell에서 0.6이며 lookup은 288개 cell 모두 0이다. 따라서 wrong
+routing은 graph-dependent support point를 보이며, sparsity만으로 불충분하다는
+generic test가 아니다. Lookup은 competitive representation learner가 아니라
+의도적으로 input-disjoint인 structural zero다.
+
+다섯 repeated trainable row를 cell 안에서 평균한 뒤 finite-panel mean
+TSI-minus-dense intervention contrast는 0.587이다. Paired cell bootstrap interval은
+\([0.549,0.624]\), corresponding all-case contrast는 0.378과
+\([0.354,0.401]\)이다. 이 interval은 열거된 cell 사이 variation을 요약할 뿐
+superpopulation을 정의하거나 analytic exact-representability confound를 제거하지
+않는다.
+
+\subsection{Post-review diagnostic panel}
+
+Table~\ref{tab:postreview}은 mean cell accuracy를 보고한다. 모든 model은 원래
+primitive-action training partition에서만 fit했다.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Post-review descriptive diagnostic. ``Original''은 단일 좌표
+magnitude-2 action 두 개, ``Composition''은 two-coordinate binary action 열 개,
+``Misspecified''는 unmodeled action curvature를 사용한다.}
+\label{tab:postreview}
+\begin{tabular}{lrrr}
+\toprule
+Model & Original & Composition & Misspecified\\
+\midrule
+Correct graph, factorized head & 1.000 & 1.000 & 0.869\\
+Wrong graph, factorized head & 0.200 & 0.227 & 0.413\\
+Correct graph, dense head & 0.268 & 0.285 & 0.231\\
+Wrong graph, dense head & 0.501 & 0.463 & 0.485\\
+Graph-unaware dense & 0.413 & 0.426 & 0.392\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+실제 two-coordinate panel은 independent discovery를 제공하지 않는다. Generator와
+TSI head가 모두 action-linear이므로 exact superposition은 분석적으로 함의된다.
+다만 이전 intervention description을 바로잡는다. Unmodeled curvature term 아래
+TSI accuracy는 0.868889로 내려가고 288개 cell 중 exact cell은 하나도 없다. 따라서
+exactness는 선언한 hypothesis family 밖에서 robust하지 않다. 해당 panel에서
+post-review TSI-minus-graph-unaware-dense difference는 양수지만 preregistered가
+아니며 그 자체로 universal advantage를 식별하지 않는다.
+
+Graph-by-head panel도 단순 귀속을 거부한다. Original action에서 correct-minus-wrong
+graph accuracy는 factorized head에서 0.800이지만 지정한 dense head에서는
+-0.233이다. Factorized-minus-dense-head accuracy는 correct graph에서 0.732,
+wrong graph에서 -0.301이다. 이 반전은 operational definition에 묶인 graph--head
+interaction을 보인다. Head-independent graph effect도 graph-independent
+factorization effect도 없다.
+이 diagnostic 반전은 해당 least-squares head, exact-family generator와 accuracy
+endpoint에 한정된다. Prospective stochastic family와 modular dense head에서는 graph
+NLL effect가 양수다.
+
+\subsection{Prospective 귀속 결과}
+
+Train-only selection은 120/120개 world에서 motif와 두 head family를 회수했고,
+multiplicity-adjusted Wilson 하한은 0.941이었다. 표
+~\ref{tab:prospective-attribution}은 complete graph-by-head 결과를 제시한다.
+
+\begin{table}[ht]
+\centering
+\caption{Wrong-minus-correct graph composition NLL. 양수는 correct graph에
+유리하다.}
+\label{tab:prospective-attribution}
+\begin{tabular}{lrrr}
+\toprule
+Head & Parameters & Mean & Simultaneous interval \\
+\midrule
+Factorized typed & 7 & 0.35933 & [0.35431, 0.36435] \\
+Generic sparse & 7 & 0.36160 & [0.35683, 0.36637] \\
+Generic dense & 55 & 0.03893 & [0.02527, 0.05259] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Graph information은 higher-capacity dense sensitivity를 포함한 세 head
+operationalization 모두에서 positive effect를 가진다. Correct graph에서
+factorized-minus-generic-sparse NLL은 모든 world에서 정확히 0.00000이다. 두
+seven-parameter head의 graph-by-head interaction은 -0.00227, simultaneous
+interval은 [-0.00822, 0.00368]이다. 명제는 exact predictive tie를 설명한다. 두
+fitted procedure가 동일한 seven-term function을 회수한다. 따라서 evidence는
+성능을 correct graph information과 minimal-support recovery에 귀속하며 factorized
+notation 자체의 irreducible advantage에 귀속하지 않는다.
+
+Nonlinear head를 하나 이상 사용한 80개 world는 원래 linear world 40개에
+noninferior했다. NLL difference는 -0.00132, simultaneous interval은
+[-0.01031, 0.00766]으로 frozen margin 0.03보다 작았다. Attribution 및 연결된
+Paper~3 gate 아홉 개가 모두 통과했다.
+
+별도 post-review descriptive sensitivity는 train noise 0.04, 0.08, 0.16과
+OOD noise 0.06, 0.12, 0.24를 교차했다. 아홉 cell마다 public-seed world 120개를
+사용했다. Graph와 head 회수율은 모든 cell에서
+1.000이었다. Grid 전체의 minimum mean wrong-minus-correct NLL effect는 factorized
+head 0.23337, generic sparse head 0.23773, generic dense head 0.02420이었고, 가장
+작은 dense-head descriptive 95\% 하한은 0.01719였다. 이 panel은 confirmatory가
+아니며 coordinate-corruption noise만 변화시킨다.
+
+\subsection{Outside-model-family stress 결과}
+
+Nonadditive synergy는 fresh world 120개 모두에서 exact learned prediction을
+깨뜨렸다. Both-mechanisms stratum의 mean noiseless center accuracy는 0.14104였다.
+그럼에도 wrong-minus-learned stochastic composition NLL은 0.18545, world SD는
+0.00879, 95\% interval은 [0.18388, 0.18702]이었다. 따라서 exact
+representability를 의도적으로 제거한 뒤에도 graph effect가 남는다. Synergy는
+모든 training 및 selection case에서 0이었고 frozen stress gate 네 개가 모두
+통과했다.
+
+Python project를 import하지 않는 Node.js 구현이 attribution world 120개 모두의
+learned model과 NLL value를 독립적으로 회수하고 published analysis mean 열 개를
+재계산했다. 공개된 root-seed commitment도 검증했으며 discrepancy는 없었다.
+
+별도 Python audit는 revealed root에서 world seed 120개를 유도하고 보관한 frozen
+generator로 export된 모든 train, selection 및 test transition을 재생성했다. 모든
+case가 portable input과 일치했다. 이는 frozen Python path 내부의 seed derivation과
+export consistency를 해결하지만 Node.js analysis를 독립 generator implementation으로
+바꾸지는 않는다.

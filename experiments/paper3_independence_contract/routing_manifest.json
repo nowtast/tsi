@@ -1,0 +1,1888 @@
+{
+  "families": {
+    "bridge_coupled": [
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "dense_active_matched",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "all_inputs_masked_random_features_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "layer_routed_dense_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "self_source_mask_all_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "strict_factorized_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "strict_self_source_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "topology",
+            "relation"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "signature_routed_oracle",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "topology",
+            "relation"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "declared_source_and_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "metric",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "random_routed_matched_sparsity",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "label",
+            "metric"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "frozen_random_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "relation",
+            "topology"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "bridge_coupled",
+        "identifier": "permuted_or_wrong_routed",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "relation",
+            "topology"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "reversed_declared_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      }
+    ],
+    "context_dependent": [
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "dense_active_matched",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "all_inputs_masked_random_features_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "layer_routed_dense_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "self_source_mask_all_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "strict_factorized_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "strict_self_source_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "topology",
+            "relation"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "signature_routed_oracle",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "order",
+            "metric"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "declared_source_and_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "order",
+            "relation"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "random_routed_matched_sparsity",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "relation",
+            "metric"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "frozen_random_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "relation",
+            "topology"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "context_dependent",
+        "identifier": "permuted_or_wrong_routed",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "metric",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "reversed_declared_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      }
+    ],
+    "separable": [
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "dense_active_matched",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "all_inputs_masked_random_features_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "label",
+            "topology"
+          ],
+          [
+            "label",
+            "metric"
+          ],
+          [
+            "label",
+            "relation"
+          ],
+          [
+            "label",
+            "order"
+          ],
+          [
+            "topology",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "topology",
+            "metric"
+          ],
+          [
+            "topology",
+            "relation"
+          ],
+          [
+            "topology",
+            "order"
+          ],
+          [
+            "metric",
+            "label"
+          ],
+          [
+            "metric",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "metric",
+            "relation"
+          ],
+          [
+            "metric",
+            "order"
+          ],
+          [
+            "relation",
+            "label"
+          ],
+          [
+            "relation",
+            "topology"
+          ],
+          [
+            "relation",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "relation",
+            "order"
+          ],
+          [
+            "order",
+            "label"
+          ],
+          [
+            "order",
+            "topology"
+          ],
+          [
+            "order",
+            "metric"
+          ],
+          [
+            "order",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "layer_routed_dense_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "self_source_mask_all_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "strict_factorized_action",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "strict_self_source_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "signature_routed_oracle",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "declared_source_and_action_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "random_routed_matched_sparsity",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "frozen_random_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      },
+      {
+        "action_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "base_active_parameters": 420,
+        "capacity_adapter_parameters": 0,
+        "estimated_training_macs_per_world": 119805392,
+        "family": "separable",
+        "identifier": "permuted_or_wrong_routed",
+        "input_fields": [
+          "full_exact_structural_state",
+          "full_five_component_action"
+        ],
+        "multiply_adds_per_example": 12928,
+        "optimizer_seeds_per_world": 3,
+        "source_edges": [
+          [
+            "label",
+            "label"
+          ],
+          [
+            "topology",
+            "topology"
+          ],
+          [
+            "metric",
+            "metric"
+          ],
+          [
+            "relation",
+            "relation"
+          ],
+          [
+            "order",
+            "order"
+          ]
+        ],
+        "total_active_parameters": 420,
+        "training_updates": 1000,
+        "transition_parameterization": "reversed_declared_cross_masks_with_delta_softmax_heads",
+        "tuning_candidates": 1
+      }
+    ]
+  }
+}

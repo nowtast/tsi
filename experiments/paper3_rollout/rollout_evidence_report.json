@@ -1,0 +1,28 @@
+{
+  "evidence_level_after": 3,
+  "evidence_level_before": 3,
+  "identifier": "P3-4A-CUMULATIVE-EVIDENCE-v1",
+  "level_3_retained": true,
+  "level_4_attained": false,
+  "level_4_requirements": {
+    "artifact_reproducibility": false,
+    "cross_family_replication": false,
+    "downstream_predictive_validity": false,
+    "learned_routing_or_structure": false,
+    "noisy_perception": false,
+    "open_loop_multihorizon_rollout": true,
+    "public_benchmark": false,
+    "variable_cardinality": false
+  },
+  "newly_satisfied_requirements": [
+    "open_loop_multihorizon_rollout"
+  ],
+  "p3b_evidence_digest": "57f2f7cadc9c7a38f19e79a52dbfb98aec62b111893314c8d6a3e7dbdba78c54",
+  "publication_blocked": true,
+  "publication_floor": 4,
+  "report_digest": "4ffd12cba71a0307332236e86dc197004d0a5c593fc0e3a948a1d89532eefcaf",
+  "rollout_access_audit_digest": "60fe8024e21e9c810c860c136f247411c3408508043e34d2901327222493126c",
+  "rollout_analysis_digest": "cf7b79a79a500f7f76afc3ab239783229ec60c7ccc2f8b668d2f0028cf0c9aec",
+  "rollout_raw_digest": "11532b4d845e8b8fc60fc448c63beda395139eff1543474ab05c6118f592d7b3",
+  "scope_boundary": "exact-state oracle-routing synthetic context family; not learned routing, perception, cardinality, public benchmark, or independent environment-family replication"
+}

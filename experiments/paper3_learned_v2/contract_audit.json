@@ -1,0 +1,24 @@
+{
+  "contract": {
+    "ablation_row_count": 8,
+    "contract_digest": "681cf231971b72662e0905d6975dcc4a942092354c810280df228c1aaaa10dcc",
+    "errors": [],
+    "graph_variant_count": 4,
+    "identifier": "P3-5A-LEARNED-v2",
+    "passed": true,
+    "split_count": 4
+  },
+  "generator_world0": {
+    "errors": [],
+    "graph_variant": "bridge_topology_to_relation",
+    "identifier": "P3-5A-LEARNED-GRAPH-RANDOMIZED-GENERATOR-v1",
+    "partition_counts": {
+      "downstream_evaluation": 248,
+      "routing_selection": 370,
+      "test": 952,
+      "train": 1022
+    },
+    "passed": true,
+    "world_index": 0
+  }
+}

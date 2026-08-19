@@ -1,0 +1,87 @@
+\section{Prospective 라우팅 해소 연구}
+\label{sec:routing-resolution}
+
+\subsection{동결 설계}
+
+새 256-bit root seed를 생성하기 전에 follow-up estimand와 source를 동결했다. 동결,
+seed 생성과 one-shot 실행은 하나의 scripted sequence에서 그 순서대로 진행했다.
+무결성은 경과 시간 간격이 아니라 frozen hash와 seed commitment에서 나온다. 120개
+independent world는 각각 modulo 7인 다섯 coordinate와, 서로 다른 두 source가
+하나의 공통 target으로 들어가는 graph motif 하나를 가진다. 가능한 30개 motif를
+다음 edge head와 교차했다.
+\[
+ a_s(1+x_t),\qquad a_s(1+x_t)^2,\qquad
+ a_s(1+x_s+x_t).
+\]
+World의 1/3은 원래 linear head 두 개를 사용하고, 2/3는 나머지 head를 적어도
+하나 사용한다. Coordinate noise 0.08인 primitive-action transition 800개에서
+direct multiplier와 edge coefficient 두 개를 적합했다. 서로 겹치지 않는 transition
+400개로 graph와 head family를 선택했다. 두 active action coordinate와 coordinate
+noise 0.12를 갖는 OOD transition 1,200개는 어떤 적합에도 사용하지 않았다.
+지정한 composition stratum은 두 causal edge를 동시에 활성화한다.
+
+Criterion 비교는 동일한 learned predictor에 두 routing map을 적용한다. Six-step
+stochastic trajectory의 첫 세 step에서 correct score는 learned source 중 하나가
+활성일 때 target-coordinate discrepancy를 기록하고, negative control은 동일한
+discrepancy field를 고정 shifted graph로 routing한다. 24개 public development
+world에서 적합한 logistic map을 confirmation 전에 동결했다. Outcome은 learned
+target의 terminal mismatch이며 estimand는 wrong-routing Brier score에서
+correct-routing Brier score를 뺀 값이다. 따라서 outcome에는 어느 criterion
+score도 들어가지 않고, diagnostic은 terminal outcome보다 앞서며, 두 arm의
+차이는 routing뿐이다.
+
+여덟 inferential quantity에는 familywise level 0.05의 Bonferroni simultaneous
+two-sided interval을 사용했다. Identification gate는 0.90의 simultaneous Wilson
+하한도 요구한다. Point-effect threshold는 learned composition NLL contrast 0.04,
+rollout Hamming area 0.025, criterion Brier score 0.005이다. 이 point threshold는
+simultaneous interval의 null boundary와 구별된다.
+
+Analysis object는 frozen Bonferroni divisor 8로 interval-bearing quantity 열 개를
+보고한다. 여기에는 exact duplicate pair 하나, sign-flipped pair 하나와 deterministic
+zero 하나가 있어 정보적으로 구별되는 stochastic quantity는 일곱 개다. Frozen v1
+contract는 정수 divisor만 지정하고 구성원을 열거하지 않았다. 이는 reporting
+defect이며 사전등록된 family 정의가 아니다. Post-review sensitivity에서 divisor 10을
+사용해도 모든 decision은 유지된다. Cohort, root seed와 multiplicity family는
+Paper~4와 공유한다. 여기서 보고하는 세 endpoint는 하나의 frozen analysis 중 일부이며
+독립 evidence가 아니다.
+
+Confirmation 전에 120개 world에 대한 power analysis를 동결하지 않았다. Post-review
+retrospective design justification은 development world 24개만 사용한 stratified
+bootstrap 20,000회에서 nine-gate conjunctive power를 0.9694, Monte Carlo interval을
+[0.9670, 0.9718]로 추정한다. 이 계산은 confirmatory result를 사용하지 않으며
+사전등록된 sample-size rationale을 소급 확립할 수 없다.
+
+\subsection{Confirmatory 결과}
+
+120개 world 모두에서 learned motif와 두 head family를 회수했다(rate 1.000;
+simultaneous Wilson 하한 0.941). 표~\ref{tab:resolution}은 Paper~3의 세 endpoint를
+보고한다. 모든 interval은 world 간에 계산했고 case와 rollout은 nested
+observation이다.
+
+\begin{table}[ht]
+\centering
+\caption{Prospective learned-routing effect. 양수는 learned 또는 correct routing에
+유리하다.}
+\label{tab:resolution}
+\begin{tabular}{lrrr}
+\toprule
+Endpoint & Mean & World SD & Simultaneous interval \\
+\midrule
+Composition NLL & 0.35933 & 0.02012 & [0.35431, 0.36435] \\
+Rollout Hamming area & 0.08996 & 0.01162 & [0.08706, 0.09286] \\
+Routing-correct Brier & 0.02402 & 0.02381 & [0.01808, 0.02997] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+세 point effect는 모두 frozen threshold를 넘고 simultaneous 하한도 모두 0보다
+크다. 원래 linear family 밖의 80개 world 성능은 40개 linear world에
+noninferior했다. Outside-minus-linear NLL은 -0.00132, simultaneous interval은
+[-0.01031, 0.00766]이었고 상한은 margin 0.03보다 작다. 이는 direct learned-routing
+criterion 결과이며 이전 four-arm 평균의 재해석이 아니다.
+
+별도 post-review descriptive sensitivity는 train noise 0.04, 0.08, 0.16과
+OOD noise 0.06, 0.12, 0.24를 교차했다. 각 cell에는 public-seed world 120개를
+사용했다. Graph와 head 회수율은 아홉 cell 모두 1.000을
+유지했다. Learned-routing NLL effect의 최소 평균은 0.23337이었다. 이 panel은
+confirmatory가 아니며 선언한 coordinate-corruption process만 변화시킨다.

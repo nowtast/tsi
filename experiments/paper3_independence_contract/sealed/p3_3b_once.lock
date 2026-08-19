@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-07-29T04:26:01.104070+00:00",
+  "confirmatory_analysis_digest": "a00b54c6f788521abf7098e066c768f0fadc28e81f9d06affdf25a03694d57e6",
+  "evidence_level_after": 3,
+  "evidence_report_digest": "57f2f7cadc9c7a38f19e79a52dbfb98aec62b111893314c8d6a3e7dbdba78c54",
+  "frozen_artifact_digests": {
+    "analysis_plan": "fbab7beb00d52b4c3c2653d5af146a8eaaadf1c8da6ddcb2fe32e6ab58d7151e",
+    "constructive_decoder": "33ff3819f902605823ff0cd05a41f01a2eda79018833227bb5d316c5f1a7e7a0",
+    "implementation_source": "73dc51cf0b45b3d3229eb480810fe7bc00fbd9b366d82c12e170bd8a2217d4d1",
+    "multiworld_generator": "1e5c98c4badfa3d37fdfdb3d63f1f2d1697749f88717d949d4843f960724d574",
+    "p3a_gate": "ae388702518e8f482ffdaf0edba1bdf34f048276b7fa2a1c3f748b3e5f205171",
+    "power_report": "8eef0745993997575313207de0ffc82080e472bbb3922af7e1691fd06fde1b92",
+    "routing_controls": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+    "routing_model": "935f49c99fd6870a0bf87951ffd76d1749e6333595107a08211e938c9f09dde0"
+  },
+  "identifier": "P3-3B-ONE-SHOT-LOCK-v1",
+  "p3a_gate_digest": "ae388702518e8f482ffdaf0edba1bdf34f048276b7fa2a1c3f748b3e5f205171",
+  "raw_result_digest": "e9004fa7fe3419888f93a2bf68ae76c43883d0002bdd91cbf3ec280125ca1d6f",
+  "started_at_utc": "2026-07-29T04:21:56.911513+00:00"
+}

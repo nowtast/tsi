@@ -1,0 +1,13 @@
+{
+  "identifier": "P3-5A-DEVELOPMENT-ITERATION-000",
+  "family": "context_dependent",
+  "world_index": 0,
+  "optimizer_seed": 0,
+  "selection_method": "dense_fitted_parameter_norm",
+  "source_cross_edge_f1": 0.0,
+  "action_cross_edge_f1": 1.0,
+  "dense_final_nll": 0.006333652436014725,
+  "learned_final_nll": 0.07384210214393414,
+  "status": "failed_graph_recovery",
+  "failure_boundary": "parameter-norm ranking is confounded by correlated structural input blocks"
+}

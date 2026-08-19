@@ -1,0 +1,17 @@
+{
+  "identifier": "P3-5A-V2-JOINT-GATE-WORLD0-DIAGNOSTIC-v1",
+  "world_index": 0,
+  "graph_variant": "bridge_topology_to_relation",
+  "optimizer_seed": 0,
+  "updates": 1000,
+  "initial_nll": 1.1561487031584659,
+  "final_nll": 0.08015929226085913,
+  "gate_min": 0.0010286539433198637,
+  "gate_max": 0.3712043996235106,
+  "default_threshold": 0.5,
+  "default_inferred_source_edges": [],
+  "default_inferred_action_edges": [],
+  "status": "finite_training_but_threshold_policy_not_yet_validated",
+  "required_followup": "select threshold only on routing_selection split, freeze graph, refit, and evaluate on downstream_evaluation",
+  "evidence_promotion": false
+}

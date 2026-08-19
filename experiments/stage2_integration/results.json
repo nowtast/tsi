@@ -1,0 +1,13 @@
+{
+  "bilingual_parity_errors": [],
+  "contract": {
+    "dependency_edge_count": 16,
+    "errors": [],
+    "label_count": 240,
+    "package_count": 10,
+    "reference_count": 187,
+    "source_file_count": 276,
+    "status": "passed"
+  },
+  "status": "passed"
+}

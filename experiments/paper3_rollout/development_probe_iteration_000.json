@@ -1,0 +1,64 @@
+{
+  "action_block": [
+    "order_step",
+    "metric_step",
+    "topology_step",
+    "relation_step",
+    "label_step",
+    "topology_step",
+    "metric_step",
+    "hold"
+  ],
+  "family": "context_dependent",
+  "horizon": 32,
+  "identifier": "P3-4A-DEVELOPMENT-PROBE-ITERATION-000",
+  "optimizer_seed": 0,
+  "report_digest": "4066b1cd452f97d1ef033b8909f9b7dfd9e6a748b89e01787711aa8643254e34",
+  "runs": [
+    {
+      "model": "dense_active_matched",
+      "open_loop_coordinate_error": 0.0,
+      "teacher_forced_coordinate_error": 0.0,
+      "terminal_exact_rate": 1.0,
+      "training_final_nll": 0.006333652436014725
+    },
+    {
+      "model": "layer_routed_dense_action",
+      "open_loop_coordinate_error": 0.18203125,
+      "teacher_forced_coordinate_error": 0.0671875,
+      "terminal_exact_rate": 0.25,
+      "training_final_nll": 0.07468199745551131
+    },
+    {
+      "model": "strict_factorized_action",
+      "open_loop_coordinate_error": 0.23828125,
+      "teacher_forced_coordinate_error": 0.08281249999999998,
+      "terminal_exact_rate": 0.25,
+      "training_final_nll": 0.15700272509082722
+    },
+    {
+      "model": "signature_routed_oracle",
+      "open_loop_coordinate_error": 0.0,
+      "teacher_forced_coordinate_error": 0.0,
+      "terminal_exact_rate": 1.0,
+      "training_final_nll": 0.001747078507946419
+    },
+    {
+      "model": "random_routed_matched_sparsity",
+      "open_loop_coordinate_error": 0.23359375,
+      "teacher_forced_coordinate_error": 0.08281249999999998,
+      "terminal_exact_rate": 0.125,
+      "training_final_nll": 0.14882814325821733
+    },
+    {
+      "model": "permuted_or_wrong_routed",
+      "open_loop_coordinate_error": 0.23828125,
+      "teacher_forced_coordinate_error": 0.08281249999999998,
+      "terminal_exact_rate": 0.25,
+      "training_final_nll": 0.157129073987872
+    }
+  ],
+  "test_output_used": false,
+  "trajectory_count": 8,
+  "world_index": 0
+}

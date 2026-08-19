@@ -1,0 +1,79 @@
+{
+  "contract": {
+    "identifier": "TSI-PAPER4-COMPARATIVE-v3",
+    "model_families": [
+      "diagonal_trainable",
+      "dense_polynomial_trainable",
+      "unstructured_lookup",
+      "wrong_routed_factorized",
+      "tsi_graph_discovered_factorized"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "primary_metric": "intervention_exact_accuracy",
+    "primary_contrast": "tsi_graph_discovered_factorized - dense_polynomial_trainable",
+    "compute_budget": {
+      "feature_evaluations_per_case": 36,
+      "fit_passes": 1,
+      "prediction_passes": 1,
+      "seed_count": 5
+    },
+    "independent_unit": "graph_mechanism_cell",
+    "nested_unit": "bootstrap_seed",
+    "test_includes_interventions": true
+  },
+  "cells": 288,
+  "same_environment_replay_a": {
+    "path": "experiments/paper4_external_replay_a.json",
+    "sha256": "d6d21ea6e0a6ab6447ea6d1c30ab89a325ee3b641cc7ccdf9da4ca41407082bd",
+    "replay_digest": "4433232a3910b7d39b1b679287991ebdcc6285958b9b516f2b4914dd71c4168e"
+  },
+  "same_environment_replay_b": {
+    "path": "experiments/paper4_external_replay_b.json",
+    "sha256": "d6d21ea6e0a6ab6447ea6d1c30ab89a325ee3b641cc7ccdf9da4ca41407082bd",
+    "replay_digest": "4433232a3910b7d39b1b679287991ebdcc6285958b9b516f2b4914dd71c4168e"
+  },
+  "replay_byte_identical": true,
+  "replay_scope": {
+    "deterministic_same_environment": true,
+    "independent_implementation": false,
+    "independent_research_group": false
+  },
+  "feature_budget": {
+    "matched_across_all_models": false,
+    "control_allocated_width_matched": true,
+    "diagonal_features_per_output": 11,
+    "dense_features_per_output": 36,
+    "tsi_features_per_output": null,
+    "reason": "TSI feature count is undefined in this audit"
+  },
+  "identifiable_parameter_budget": {
+    "matched": false,
+    "diagonal_rank_per_output": [
+      10
+    ],
+    "dense_rank_per_output": [
+      30
+    ],
+    "tsi_structural_parameters": 6
+  },
+  "compute_budget": {
+    "matched": false,
+    "control_feature_evaluations_per_case": 36,
+    "tsi_graph_candidates": 3,
+    "tsi_factorized_parameters_after_selection": 6
+  },
+  "split_and_leakage_checks": {
+    "all_train_test_input_keys_disjoint": true,
+    "graph_discovery_exact_on_training_only": true,
+    "capacity_fit_reads_train_only": true,
+    "tsi_graph_discovery_reads_train_only": true,
+    "evaluation_reads_test_only": true
+  },
+  "interpretation": "The trainable controls share an allocated feature width and the split is isolated, but a feature match to TSI is not established; parameter count and compute are also unmatched. The result must remain a bounded structural comparison, not a universal efficiency or model superiority claim."
+}

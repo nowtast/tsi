@@ -1,0 +1,50 @@
+{
+  "access_audit": {
+    "commitment": "b4af5d120cd748e64af48378df621f04fb06cd9cd8a311d55950ed8f349fbaf0",
+    "errors": [],
+    "escrow_mode_octal": "0o0",
+    "event_count": 6,
+    "event_names": [
+      "seed_commitment_created",
+      "test_seed_revealed",
+      "test_prediction_started",
+      "test_prediction_completed",
+      "test_result_evaluated",
+      "test_report_generated"
+    ],
+    "latest_event_hash": "76cc6ec7aa21232d05d626cf1688d507f27be28dee6e1e0f91277c099d058707",
+    "passed": true,
+    "test_result_evaluations": 1,
+    "test_seed_reveals": 1
+  },
+  "confirmatory_analysis_digest": "a00b54c6f788521abf7098e066c768f0fadc28e81f9d06affdf25a03694d57e6",
+  "evidence_level_after": 3,
+  "evidence_level_before": 2,
+  "identifier": "P3-3B-EVIDENCE-AUDIT-v1",
+  "level_3_attained": true,
+  "publication_blocked": true,
+  "publication_floor": 4,
+  "raw_result_digest": "e9004fa7fe3419888f93a2bf68ae76c43883d0002bdd91cbf3ec280125ca1d6f",
+  "report_digest": "57f2f7cadc9c7a38f19e79a52dbfb98aec62b111893314c8d6a3e7dbdba78c54",
+  "requirements": {
+    "codebook_free_primary_decoder": true,
+    "confirmatory_structural_ood_effect": true,
+    "correct_random_wrong_dependency_controls": true,
+    "independent_layer_information": true,
+    "matched_information_capacity_compute_tuning": true,
+    "nested_uncertainty_analysis": true,
+    "sealed_independent_test": true,
+    "world_level_replication": true
+  },
+  "satisfied_requirements": [
+    "sealed_independent_test",
+    "codebook_free_primary_decoder",
+    "matched_information_capacity_compute_tuning",
+    "correct_random_wrong_dependency_controls",
+    "independent_layer_information",
+    "world_level_replication",
+    "nested_uncertainty_analysis",
+    "confirmatory_structural_ood_effect"
+  ],
+  "sealed_manifest_digest": "bb6ff40aabd8467c7e17e1c577e705c51d4549b595dfb7a87d00767db01ac685"
+}

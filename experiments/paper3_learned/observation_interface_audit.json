@@ -1,0 +1,14 @@
+{
+  "identifier": "P3-5A-OBSERVATION-INTERFACE-v1",
+  "contract_digest": "e44966487dcf22ede16053228c74004efe2e28c402b54b932e1751ceca0156d6",
+  "entity_count_range": [2, 4],
+  "model_facing_entity_feature_width": 4,
+  "model_facing_pair_feature_width": 2,
+  "sample_local_keys_exposed_to_model": false,
+  "presentation_permutation_supported": true,
+  "pair_matrix_reindexed_under_permutation": true,
+  "deterministic_gaussian_noise_supported": true,
+  "focused_tests": 5,
+  "status": "development_interface_only",
+  "evidence_promotion": false
+}

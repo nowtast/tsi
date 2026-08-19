@@ -1,0 +1,70 @@
+{
+  "active_signature_counts": {
+    "bridge_coupled": 36,
+    "context_dependent": 36,
+    "separable": 36
+  },
+  "cohort_family_counts": {
+    "development:bridge_coupled": 24,
+    "development:context_dependent": 24,
+    "development:separable": 24,
+    "validation:bridge_coupled": 12,
+    "validation:context_dependent": 12,
+    "validation:separable": 12
+  },
+  "dependency_witnesses": {
+    "bridge_coupled_requires_topology_to_relation": true,
+    "context_requires_order_to_metric": true,
+    "separable_excludes_topology_to_relation": true
+  },
+  "errors": [],
+  "generator_digest": "1e5c98c4badfa3d37fdfdb3d63f1f2d1697749f88717d949d4843f960724d574",
+  "independent_relation_witnesses": 2,
+  "manifest_world_count": 108,
+  "passed": true,
+  "representative_ood_counts": {
+    "bridge_coupled": {
+      "bridge_consistent_shift": 47,
+      "bridge_violating_control": 47,
+      "unseen_action_composition": 90,
+      "unseen_mechanism_parameter": 88,
+      "unseen_recombination": 264,
+      "unseen_structural_mode": 108
+    },
+    "context_dependent": {
+      "bridge_consistent_shift": 47,
+      "bridge_violating_control": 47,
+      "unseen_action_composition": 90,
+      "unseen_mechanism_parameter": 88,
+      "unseen_recombination": 264,
+      "unseen_structural_mode": 108
+    },
+    "separable": {
+      "bridge_consistent_shift": 47,
+      "bridge_violating_control": 47,
+      "unseen_action_composition": 90,
+      "unseen_mechanism_parameter": 88,
+      "unseen_recombination": 264,
+      "unseen_structural_mode": 108
+    }
+  },
+  "representative_partition_counts": {
+    "bridge_coupled": {
+      "ood": 644,
+      "train": 1308,
+      "validation": 264
+    },
+    "context_dependent": {
+      "ood": 644,
+      "train": 1308,
+      "validation": 264
+    },
+    "separable": {
+      "ood": 644,
+      "train": 1308,
+      "validation": 264
+    }
+  },
+  "sealed_test_worlds_materialized": 0,
+  "state_count": 324
+}

@@ -1,0 +1,106 @@
+\section{형식 체계}
+
+\subsection{Typed relational carrier}
+
+$\FinRel$을 finite set과 binary relation의 category로 사용한다. Object는 finite
+set이고 morphism $R:X\nrightarrow Y$는 $X\times Y$의 subset이다. $R:X\nrightarrow Y$와
+$S:Y\nrightarrow Z$에 대해
+\[
+S\circ R=\{(x,z):\exists y\in Y,
+(x,y)\in R,\ (y,z)\in S\}
+\]
+로 정의한다. $X$의 identity는 $\Delta_X=\{(x,x):x\in X\}$다.
+
+유한 quiver $Q=(Q_0,Q_1,s,t)$와 free path category에서의 parallel path 쌍의
+유한 집합 $\mathcal E$를 고정한다. $\operatorname{Path}(Q)$는 $Q$의 vertex를
+object로, 유한 composable path를 morphism으로 가지며, 길이 0 path가 identity이고
+path concatenation이 composition인 category이다. Schema는
+\[
+\mathcal S=\operatorname{Path}(Q)/\!\equiv_{\mathcal E}
+\]
+로 표시되는 category이며, $\equiv_{\mathcal E}$는 $\mathcal E$를 포함하는
+가장 작은 path congruence이다. $Q$의 arrow가 선언된 generator이고, 모든
+schema morphism은 선언된 방정식을 따르는 path representative를 갖는다.
+Typed relational carrier는 모든 $F(A)$가 nonempty finite set인 functor
+$F:\mathcal S\to\FinRel$이다. Generator $e\in Q_1$는 relation $F([e])$로
+해석한다. Functoriality는 $F(\id_A)=\Delta_{F(A)}$와
+$F(g\circ f)=F(g)\circ F(f)$를 요구한다. Label family는 고정된 typewise
+label set $L_A$로의 map $\lambda_A:F(A)\to L_A$의 모음이다.
+
+\begin{definition}[Integrated structural imagination state]
+Integrated structural imagination state는
+\[
+\Sigma=(F,\lambda,K,d,f,\mu)
+\]
+인 tuple이다. 여기서 $F$는 typed relational carrier, $\lambda$는 label family,
+$K$는 tagged union $|F|=\coprod_A F(A)$를 vertex set으로 갖는 finite abstract
+simplicial complex, $d$는 $|F|$ 위의 metric이다. $f:K\to\mathbb R$는 monotone
+filtration이고 $\mu:|F|\to(0,1]$는 full-support probability mass function이다.
+또한 다음 최소 양립성 조건을 요구한다.
+\[
+(x,y)\in F([e])\Longrightarrow\{x,y\}\in K\qquad(e\in Q_1).
+\]
+이 state의 class를 $\StrState(Q,\mathcal E)$로 쓴다.
+\end{definition}
+
+Common tagged carrier는 범위 결정이다. 이를 통해 relation, simplex, metric
+distance, filtration value, mass가 동일한 typed entity를 가리키게 한다. 양립성
+조건은 이 논문에서 사용하는 최소 층간 제약이다. 선언된 generator relation은
+one-simplex로 나타나야 하지만, 그 역이나 metric 양립성은 가정하지 않는다.
+
+\begin{definition}[Integrated structural isomorphism]
+$\Sigma=(F,\lambda,K,d,f,\mu)$와
+$\Sigma'=(G,\nu,L,\rho,g,\eta)$에 대해 integrated structural isomorphism
+$\varphi:\Sigma\to\Sigma'$는 다음 조건을 만족하는 bijection family
+$\varphi_A:F(A)\to G(A)$다.
+\begin{enumerate}
+\item $\nu_A(\varphi_Ax)=\lambda_A(x)$;
+\item tagged union $\bar\varphi$가 $\bar\varphi[K]=L$을 만족한다;
+\item 모든 $x,y$에 대해 $\rho(\bar\varphi x,\bar\varphi y)=d(x,y)$;
+\item 모든 $\sigma\in K$에 대해 $g(\bar\varphi\sigma)=f(\sigma)$;
+\item 모든 $x\in|F|$에 대해 $\eta(\bar\varphi x)=\mu(x)$;
+\item 모든 generator $e\in Q_1$에 대해
+\[
+((\varphi_{s(e)}\times\varphi_{t(e)})[F([e])])=G([e]).
+\]
+\end{enumerate}
+이런 family가 존재하면 $\Sigma\cong_{\mathrm{str}}\Sigma'$로 쓴다.
+\end{definition}
+
+\begin{definition}[Tracked transition]
+Tracked transition $p:\Sigma\rightharpoonup\Sigma'$는 각 $p_A$가
+$F(A)$의 subset에서 $G(A)$로 가는 injective map인 family이며,
+\[
+\nu_A(p_Ax)=\lambda_A(x)\qquad(x\in\dom p_A)
+\]
+를 만족한다. Domain과 image의 tagged union은 각각 $D_p$, $I_p$이다.
+Identity는 total identity family이다. 두 transition $p$, $q$의 composite는
+두 partial map이 모두 정의되는 source 원소에서의
+$(q_A\circ p_A)$이다.
+\end{definition}
+\begin{definition}[Partial transition의 tagged extension]
+Tracked transition $p=(p_A)_A$의 tagged extension $\bar p$는
+$D_p=\coprod_A\dom(p_A)$ 위에서 $x\in F(A)$이면 $\bar p(x)=p_A(x)$로
+정의한다. 그 image는 $I_p=\coprod_A\im(p_A)$이다.
+\end{definition}
+
+
+\begin{proposition}[Tracked transition의 category]
+Integrated state와 tracked transition은 $\StrTrack(Q,\mathcal E)$라는 category를
+이룬다.
+\end{proposition}
+
+\begin{proof}
+Identity family는 injective이고 label-preserving이며 domain이 전체 carrier이다.
+Composite는 제한된 domain에서 injective이고 $p$, $q$의 label preservation을
+순서대로 적용하므로 label을 보존한다. 세 partial map이 모두 정의되는
+집합은 composite를 어느 순서로 묶어도 같고 값도 같다. 따라서 associativity가
+성립하며 identity는 양쪽 unit이다.
+\end{proof}
+
+\begin{definition}[Action-conditioned transition]
+Action set $\mathcal A$에 대해 action-conditioned transition은
+$a\in\mathcal A$와 tracked transition $p$의 pair $(a,p)$이다. Action label은
+transition을 색인하는 정보이지 $\StrTrack(Q,\mathcal E)$의 morphism에 추가된
+합성 데이터가 아니다. 따라서 합성은 tracked map에 대해 정의한다.
+\end{definition}

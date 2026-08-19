@@ -1,0 +1,87 @@
+\section{동결된 구조 interface}
+\label{sec:interface}
+
+\subsection{Coherent state}
+
+Finite typed schema와 positive signature \(\Theta\)를 고정한다. State는
+\[
+\Sigma=(F,\lambda,K,d,\preceq;\Theta)\in\CState(\Theta)
+\]
+형태다. 여기서 \(F\)는 finite typed relation을 표현하고, \(\lambda\)는 tagged
+label, \(K\)는 tagged carrier 위 simplicial complex, \(d\)는 intrinsic
+metric, \(\preceq\)는 finite preorder다. 선언된 cross-layer bridge는 optional
+penalty가 아니라 \(\CState(\Theta)\)의 membership condition이다.
+
+State \(\Sigma,\Gamma\)에 대한 typed correspondence
+\(C\in\Corr(\Sigma,\Gamma)\)는 양 coordinate projection이 surjective인
+type-preserving relation의 family다. 같은 \(C\)로 label, simplicial,
+normalized metric, relational, order distortion
+\[
+\delta_\lambda(C),\quad \delta_K(C),\quad \delta_d(C),\quad
+\delta_R(C),\quad \delta_P(C)
+\]
+를 계산한다. \(\Theta\)가 고정한 positive weight 아래 quotient discrepancy는
+\[
+\DeltaTheta(\Sigma,\Gamma)
+=
+\min_{C\in\Corr(\Sigma,\Gamma)}
+\left(
+w_\lambda\delta_\lambda(C)
++w_K\delta_K(C)
++w_d\delta_d(C)
++w_R\delta_R(C)
++w_P\delta_P(C)
+\right)
+\]
+이다. Companion theory는 quotient 전에는 pseudometric이고
+structural-isomorphism class 위에서는 metric임을 증명한다. Empirical code는
+finite benchmark에서 exact minimizing correspondence를 계산한다.
+
+\subsection{Fixed-carrier audit}
+
+Benchmark는 stable typed identifier도 유지한다. 이 fixed alignment 아래에서
+\[
+e_{\mathrm{fix}}
+=
+(e_\lambda,e_K,e_d,e_R,e_P)
+\]
+와 signature-weighted total을 기록한다. 이 audit는 quotient equality보다
+강하다. Isomorphic하지만 presented identifier가 일치하지 않는 두 state를
+구별할 수 있다. Quotient quantity와 fixed-carrier quantity를 분리 보고한다.
+
+\subsection{Constructive decoding과 routing}
+
+각 model은 layerwise categorical decision을 출력하며, shared constructive
+operator가 이를 valid state로 바꾼다. Topology closure, metric closure,
+declared relational channel과 reflexive-transitive order closure를 사용한다.
+Primary decoder는 held-out target state의 enumerated list에 projection하지
+않는다.
+
+여섯 control은 다음과 같다.
+\begin{enumerate}[label=(\arabic*)]
+    \item matched active dense model,
+    \item layer-routed dense-action model,
+    \item strict factorized-action model,
+    \item oracle signature-routed model,
+    \item matched sparsity의 random-routed model,
+    \item permuted 또는 wrong-routed model.
+\end{enumerate}
+이들은 같은 observable field를 받고 \(420\)개 active parameter와 동일한
+optimization budget을 사용한다. Oracle signature routing은 upper-bound
+control이며 learned structure discovery가 아니다.
+
+\subsection{Task outcome}
+
+각 criterion-validity task는 두 candidate action plan을 제공한다. Exogenous
+utility는 primary structural predicate와 secondary structural predicate를
+각각 weight 2와 1로 검사한다. Model prediction이 선택한 plan을
+\(\widehat j\), oracle-best plan을 \(j^\star\)라 하면 regret은
+\[
+\mathcal R
+=
+U(\Sigma_{j^\star})-U(\Sigma_{\widehat j}),
+\qquad
+Y=\ind\{\mathcal R>0\}
+\]
+이다. Correspondence discrepancy, fixed-layer loss 또는 fitted predictor는
+generator, utility, regret, failure label에 들어가지 않는다.

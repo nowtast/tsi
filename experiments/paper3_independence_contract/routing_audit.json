@@ -1,0 +1,14 @@
+{
+  "active_parameter_budget": 420,
+  "compute_budgets_matched": true,
+  "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+  "errors": [],
+  "information_fields_matched": true,
+  "max_relative_parameter_difference": 0.0,
+  "model_count_per_family": 6,
+  "passed": true,
+  "random_masks_equal_correct_masks": false,
+  "training_updates_matched": true,
+  "tuning_budgets_matched": true,
+  "wrong_masks_equal_correct_masks": false
+}

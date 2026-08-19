@@ -1,0 +1,32 @@
+\section{Introduction}
+
+TSI proposes that an internal transition model should represent declared
+structural dependencies rather than treat all state coordinates as unrelated
+numbers.  The historical standalone studies in Paper~3 evaluate sealed
+structural OOD, open-loop rollout, and a same-task criterion association in a
+different simulator.  They do not establish the exact factorization studied
+here, estimate the quantities in the historical Paper~4 audit, or constitute
+replications.  The new prospective extension in Paper~3, however, is this
+paper's attribution cohort: the root seed and multiplicity family are shared,
+and overlapping endpoints are not independent evidence.
+
+The original question for this benchmark was whether a discovered structural
+factorization predicts held-out interventions better than diagonal or
+unstructured controls.  That wording is too strong.  The finite generator is
+inside the TSI hypothesis class, and the fitted TSI predictor uses the same
+transition equation.  Once the graph and six parameters are uniquely recovered,
+exact prediction follows analytically.  The primary audit therefore concerns
+exact representability and finite-family identifiability, not an empirical
+causal effect of factorization.
+
+We retain the frozen comparison as a transparent record and add a clearly
+labelled post-review diagnostic.  That diagnostic asks three narrower questions:
+how cell-level averages conceal ties and structural zeroes; whether graph choice
+has the same effect under factorized and untied dense heads; and where exactness
+fails under genuine two-coordinate actions or a transition term outside the
+fitted TSI family.  These diagnostics expose attribution boundaries rather than
+rehabilitate a universal model-superiority claim.  A subsequent prospective
+study then resolves the identified design defects with a fresh stochastic
+family, a complete graph-by-head design, matched seven-parameter controls,
+learned routing, genuine two-mechanism compositions, multiplicity-adjusted
+world-level inference, and a second-language implementation.

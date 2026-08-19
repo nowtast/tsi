@@ -1,0 +1,21 @@
+{
+  "analysis_plan_digest": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+  "confirmatory_analysis_seed_commitment": "d1e876785ba738aee1d17b408a48e443d637d7f851dbea629147d6e12ccc83f1",
+  "contract_digest": "8b22e4ba10e1587a4ab7eff15ca5204cffe8f7e8516d74e1f1bfed9146e073ff",
+  "development_predictor_report_digest": "b80b8d0531ab127cd4a1ef233dcee576693bd12be9a2b8065fc77e80e5b58b96",
+  "frozen_predictor_digest": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+  "hierarchical_model": "world_random_intercept_seed_nested_variance_decomposition",
+  "identifier": "P3-4B-VALIDITY-ANALYSIS-PLAN-v2",
+  "multiplicity": "holm_fwer_two_coprimary_effects",
+  "planned_test_worlds": 69,
+  "predictive_sesoi": 0.0025,
+  "primary_success_effects": [
+    "binary_brier_improvement",
+    "first_failure_integrated_brier_improvement"
+  ],
+  "sealed_predictor_refitting": false,
+  "student_test": "one_sided_world_level_student_t",
+  "test_output_used": false,
+  "world_cluster_bootstrap_iterations": 20000,
+  "world_cluster_bootstrap_tail": "bonferroni_alpha_over_two_simultaneous_lower"
+}

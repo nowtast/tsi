@@ -1,0 +1,117 @@
+\section{Formal Framework}
+
+\subsection{Typed relational carriers}
+
+We use the category $\FinRel$ of finite sets and binary relations. Its objects are
+finite sets, and a morphism $R:X\nrightarrow Y$ is a subset of $X\times Y$.
+For $R:X\nrightarrow Y$ and $S:Y\nrightarrow Z$,
+\[
+S\circ R=\{(x,z):\exists y\in Y,
+(x,y)\in R,\ (y,z)\in S\}.
+\]
+The identity on $X$ is $\Delta_X=\{(x,x):x\in X\}$.
+
+Fix a finite quiver $Q=(Q_0,Q_1,s,t)$ and a finite set $\mathcal E$ of
+pairs of parallel paths in its free path category. The category
+$\operatorname{Path}(Q)$ has the vertices of $Q$ as objects, finite composable
+paths as morphisms, length-zero paths as identities, and concatenation as
+composition. The schema is the presented
+category
+\[
+\mathcal S=\operatorname{Path}(Q)/\!\equiv_{\mathcal E},
+\]
+where $\equiv_{\mathcal E}$ is the smallest path congruence containing
+$\mathcal E$. The arrows of $Q$ are the declared generators, and every schema
+morphism has a path representative subject to the declared equations. A typed
+relational carrier is a functor $F:\mathcal S\to\FinRel$ such that every
+$F(A)$ is nonempty and finite. A generator $e\in Q_1$ is interpreted as the
+relation $F([e])$. Functoriality requires
+$F(\id_A)=\Delta_{F(A)}$ and $F(g\circ f)=F(g)\circ F(f)$.
+A label family is a collection of maps
+$\lambda_A:F(A)\to L_A$ into fixed typewise label sets.
+
+\begin{definition}[Integrated structural imagination state]
+An integrated structural imagination state is a tuple
+\[
+\Sigma=(F,\lambda,K,d,f,\mu),
+\]
+where $F$ is a typed relational carrier, $\lambda$ is a label family,
+$K$ is a finite abstract simplicial complex whose vertex set is the tagged union
+$|F|=\coprod_A F(A)$, and $d$ is a metric on $|F|$. The function
+$f:K\to\mathbb R$ is a monotone filtration and
+$\mu:|F|\to(0,1]$ is a full-support probability mass function. The state also
+obeys the compatibility condition
+\[
+(x,y)\in F([e])\Longrightarrow\{x,y\}\in K\qquad(e\in Q_1).
+\]
+The class of such states is denoted by $\StrState(Q,\mathcal E)$.
+\end{definition}
+
+The common tagged carrier is a scope decision. It permits relations, simplices,
+metric distances, filtration values, and mass to refer to the same typed
+entities. The compatibility condition is the minimal cross-layer constraint
+used in this paper: a declared generator relation must be visible as a
+one-simplex, but no converse or metric compatibility is assumed.
+
+\begin{definition}[Integrated structural isomorphism]
+Let $\Sigma=(F,\lambda,K,d,f,\mu)$ and
+$\Sigma'=(G,\nu,L,\rho,g,\eta)$. An integrated structural isomorphism
+$\varphi:\Sigma\to\Sigma'$ is a family of bijections
+$\varphi_A:F(A)\to G(A)$ such that:
+\begin{enumerate}
+\item $\nu_A(\varphi_Ax)=\lambda_A(x)$ for every $A,x$;
+\item the tagged union $\bar\varphi:|F|\to|G|$ satisfies
+$\bar\varphi[K]=L$;
+\item $\rho(\bar\varphi x,\bar\varphi y)=d(x,y)$ for all $x,y$;
+\item $g(\bar\varphi\sigma)=f(\sigma)$ for every $\sigma\in K$;
+\item $\eta(\bar\varphi x)=\mu(x)$ for every $x\in|F|$;
+\item for every generator $e\in Q_1$,
+\[
+((\varphi_{s(e)}\times\varphi_{t(e)})[F([e])])=G([e]).
+\]
+\end{enumerate}
+We write $\Sigma\cong_{\mathrm{str}}\Sigma'$ when such a family exists.
+\end{definition}
+
+\begin{definition}[Tracked transition]
+A tracked transition $p:\Sigma\rightharpoonup\Sigma'$ is a family
+$p=(p_A)_A$ in which each $p_A$ is an injective map from a subset of $F(A)$
+into $G(A)$ and
+\[
+\nu_A(p_Ax)=\lambda_A(x)\qquad(x\in\dom p_A).
+\]
+Its domain and image tagged unions are written $D_p$ and $I_p$. The identity is
+the total identity family. If
+$p:\Sigma_0\rightharpoonup\Sigma_1$ and
+$q:\Sigma_1\rightharpoonup\Sigma_2$, their composite is the family
+$(q_A\circ p_A)|_{p_A^{-1}(\dom q_A)}$.
+\end{definition}
+
+\begin{definition}[Tagged extension of a partial transition]
+For a tracked transition $p=(p_A)_A$, its tagged extension $\bar p$ is the
+map on $D_p=\coprod_A\dom(p_A)$ defined by $\bar p(x)=p_A(x)$ when
+$x\in F(A)$. Its image is $I_p=\coprod_A\im(p_A)$.
+\end{definition}
+
+\begin{proposition}[The category of tracked transitions]
+Integrated states and tracked transitions form a category
+$\StrTrack(Q,\mathcal E)$.
+\end{proposition}
+
+\begin{proof}
+The identity family is injective, label-preserving, and has the full carrier as
+its domain. A composite is injective on the restricted domain. If $x$ is in
+its domain, label preservation follows successively from $p$ and $q$. The
+domain of a triple composite is the set of elements on which all three partial
+maps are defined, and both parenthesizations have the same value there. Hence
+composition is associative. Restricting either composite by an identity leaves
+the same partial family, proving the unit laws.
+\end{proof}
+
+\begin{definition}[Action-conditioned transition]
+Let $\mathcal A$ be an action set. An action-conditioned transition is a pair
+$(a,p)$ with $a\in\mathcal A$ and $p$ a tracked transition. The action label is
+an index on the transition, not additional data in the morphism of
+$\StrTrack(Q,\mathcal E)$; consequently composition is defined on the tracked
+maps and does not concatenate incompatible single labels.
+\end{definition}

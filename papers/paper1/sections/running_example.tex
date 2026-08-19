@@ -1,0 +1,56 @@
+\section{Running Example: A Four-Surface Star State}
+
+We give one finite state that satisfies all state axioms and can be reused across
+the extensions. Let the presented schema have two objects $B$ (block) and
+$S$ (surface), one generator $e:B\to S$, and no nontrivial path equations.
+Set
+\[
+F(B)=\{b\},\qquad F(S)=\{s_1,s_2,s_3,s_4\},
+\]
+and let $\lambda_B(b)=\mathsf{block}$ and $\lambda_S(s_i)=\mathsf{surface}$ for all $i$. Let $F([e])=\{(b,s_i):1\leq i\leq4\}$. Let $K$ be the star complex whose
+vertices are these five entities and whose nontrivial simplices are the four
+edges $\{b,s_i\}$. The compatibility condition holds by construction.
+
+Define
+\[
+d(x,x)=0,\qquad d(b,s_i)=1,\qquad d(s_i,s_j)=2\quad(i\ne j),
+\]
+with symmetry understood. This is a metric: the only nontrivial triangle
+inequality is $2\leq1+1$. Give every vertex filtration value $0$, every edge
+filtration value $1$, and every entity mass $1/5$. Call the resulting state
+$\Sigma_\star$. The filtration is monotone and the mass has full support.
+
+Let $\Sigma'_\star$ be an isomorphic copy with primed entity names. The
+bijection $b\mapsto b'$ and $s_i\mapsto s_i'$ preserves labels, the star
+complex, distances, filtration values, masses, and the generator relation.
+Consequently,
+\[
+d_B(\Dgm_k(f),\Dgm_k(g))=0\quad(k\leq r),\qquad
+\Delta_{\mathrm{mm},p}((|F|,d,\mu,\lambda),(|G|,\rho,\eta,\nu))=0
+\quad(1\leq p<\infty).
+\]
+The degree-zero persistence diagram has one point $(0,\infty)$ and four points $(0,1)$, one for each component born before the four edges appear; there is no
+positive-degree class for this star filtration.
+
+The same example also exposes the distinction between local preservation and
+temporal identity. Let $p$ map $b,s_1,s_2$ to $b',s_1',s_2'$ and leave
+$s_3,s_4$ unmatched. The survivor subcomplexes and restricted generator
+relations agree, all surviving distances, filtration values, and masses agree,
+so
+\[
+m_K(p)=m_d(p)=m_R(p)=m_f(p)=m_\mu(p)=0.
+\]
+However,
+\[
+b(p)=(4-2)+(4-2)=4,
+\]
+where the first term is source turnover in type $S$ and the second is target
+turnover in type $S$. Thus zero layer defects do not certify full temporal
+identity. If instead all four surfaces and the block are matched by the primed
+copy, then all six quantities, including $b(p)$, vanish and the transition is
+a full structural isomorphism.
+
+This example is deliberately finite and transparent. It does not claim that
+the star complex is a model of cognition; it verifies that the formal state
+class is nonempty and that the defect quantities distinguish survivor-level
+preservation from carrier turnover.

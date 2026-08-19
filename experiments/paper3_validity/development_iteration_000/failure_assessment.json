@@ -1,0 +1,27 @@
+{
+  "identifier": "P3-4B-DEVELOPMENT-ITERATION-000-FAILURE-v1",
+  "sealed_seed_reveals": 0,
+  "sealed_result_evaluations": 0,
+  "development_event_rate": 0.36183449074074076,
+  "development_lowo_mean_effects": {
+    "binary_brier_improvement": 0.00042126796158763733,
+    "first_failure_integrated_brier_improvement": -0.00022118455242337097
+  },
+  "predictive_sesoi": 0.0025,
+  "power_simulation_passed": true,
+  "development_effect_gate_passed": false,
+  "overall_power_report_passed": false,
+  "diagnosis": [
+    "The independent eight-step prefix did not measure the task-local failure mode.",
+    "Mode-equality utility made raw categorical mismatch nearly sufficient.",
+    "A constant unit-level predictor could not resolve first-failure timing.",
+    "Adding all TSI features did not repair the mismatch and sometimes increased held-out Brier loss."
+  ],
+  "nonrepairs": [
+    "The predictive SESOI was not lowered.",
+    "No sealed seed was revealed.",
+    "No sealed result was evaluated.",
+    "The failed development artifacts and source snapshot were retained."
+  ],
+  "successor_contract": "P3-4B-VALIDITY-v2"
+}

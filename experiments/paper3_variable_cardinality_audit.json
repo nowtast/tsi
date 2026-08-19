@@ -1,0 +1,8679 @@
+{
+  "summary": {
+    "contract": "TSI-P3-VARIABLE-CARDINALITY-v1",
+    "panels": 3,
+    "panel_cardinalities": [
+      [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        4,
+        6,
+        4,
+        5
+      ]
+    ],
+    "graphs": 3,
+    "combinations": 64,
+    "cells": 576,
+    "parameter_exact_cells": 576,
+    "transition_exact_cells": 576,
+    "min_exact_accuracy": 1.0,
+    "mean_exact_accuracy": 1.0,
+    "interventions_in_test": true
+  },
+  "cells": [
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 840
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 836
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 834
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 869
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 899
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 889
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 867
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 872
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 839
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 869
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 835
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 850
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 842
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 846
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 895
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 829
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 865
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 861
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 840
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 861
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 839
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 833
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 844
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 830
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 826
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 838
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 842
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 865
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 812
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 873
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 872
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 861
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 834
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 815
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 851
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 829
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 847
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 851
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 827
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 872
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 865
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 844
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 838
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 841
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 830
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 866
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 831
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 877
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 834
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 862
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 868
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 847
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 846
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 835
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 839
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 846
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 828
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 870
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 848
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 880
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 845
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 889
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 845
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 829
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 877
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 826
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 834
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 844
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 872
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 850
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 890
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 825
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 825
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 848
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 844
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 825
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 837
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 828
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 845
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 864
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 862
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 877
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 846
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 845
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 818
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 862
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 849
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 868
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 866
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 853
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 846
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 841
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 849
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 863
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 874
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 829
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 900
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 835
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 870
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 871
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 851
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 828
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 849
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 883
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 868
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 855
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 862
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 841
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 881
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 884
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 865
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 845
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 848
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 864
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 822
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 821
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 841
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 843
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 824
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 830
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 868
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 878
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 864
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 863
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 861
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 840
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 876
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 851
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 849
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 863
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 854
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 839
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 849
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 842
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 867
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 850
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 859
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 860
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 848
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 858
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 818
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 863
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 871
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 852
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 862
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 832
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 848
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 851
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 856
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 867
+    },
+    {
+      "panel_index": 0,
+      "cardinalities": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 857
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2511
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2577
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2498
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2486
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2514
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2502
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2547
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2518
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2539
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2521
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2449
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2481
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2569
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2520
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2510
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2540
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2577
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2493
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2493
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2487
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2513
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2561
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2512
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2507
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2528
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2466
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2525
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2489
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2538
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2491
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2519
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2480
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2527
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2500
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2534
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2490
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2481
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2516
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2560
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2532
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2503
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2555
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2516
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2531
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2569
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2516
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2468
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2560
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2482
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2564
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2472
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2546
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2507
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2506
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2509
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2491
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2486
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2493
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2491
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2497
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2574
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2501
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2484
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2577
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2522
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2549
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2506
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2491
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2513
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2531
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2534
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2478
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2512
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2463
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2541
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2577
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2496
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2560
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2541
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2468
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2515
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2508
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2472
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2538
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2554
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2553
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2507
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2519
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2547
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2535
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2511
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2535
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2475
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2446
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2565
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2513
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2563
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2473
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2496
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2529
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2518
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2462
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2545
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2551
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2532
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2495
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2518
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2567
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2508
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2525
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2540
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2530
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2517
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2498
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2503
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2515
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2536
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2505
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2478
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2483
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2492
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2563
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2504
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2537
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2496
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2556
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2492
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2514
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2492
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2490
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2533
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2549
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2559
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2502
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2543
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2531
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2514
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2512
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2504
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2490
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2573
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2499
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2515
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2532
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2468
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2504
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2563
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2541
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2526
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2458
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2482
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2507
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2520
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2508
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2504
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2508
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2515
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2562
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2538
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2497
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2515
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2542
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2505
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2497
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2524
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2548
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2513
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2560
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2502
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2540
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2524
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2534
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2512
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2513
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2520
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2608
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2533
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2465
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2497
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2489
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2503
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2538
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2524
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2548
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2462
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2501
+    },
+    {
+      "panel_index": 1,
+      "cardinalities": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 2533
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8405
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8362
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8357
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8418
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8430
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8444
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8416
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8477
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8437
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8373
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8437
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8425
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8414
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8361
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8422
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8411
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8427
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8438
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8368
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8398
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8456
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8410
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8367
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8329
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8435
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8399
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8389
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8365
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8297
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8382
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8299
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8389
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8489
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8405
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8439
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8400
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8437
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8444
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8364
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8496
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8408
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8418
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8400
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8380
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8424
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8416
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8489
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8337
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8463
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8340
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8453
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8447
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8385
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8394
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8349
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8369
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8444
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8319
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8393
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8439
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8419
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8390
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8396
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "topology_to_metric",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8407
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8446
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8419
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8403
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8420
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8402
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8328
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8426
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8304
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8420
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8349
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8455
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8547
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8377
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8413
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8375
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8396
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8505
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8396
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8313
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8406
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8400
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8387
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8440
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8410
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8406
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8407
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8436
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8353
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8365
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8424
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8260
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8315
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8358
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8445
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8315
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8418
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8304
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8388
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8391
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8392
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8369
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8446
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8461
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8482
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8385
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8400
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8366
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8430
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8371
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8278
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8379
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8360
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8373
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8401
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8412
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8382
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8379
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8348
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8461
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8366
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8360
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8319
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8421
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "metric_to_relation",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8486
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 0,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8444
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 1,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8447
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 2,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8413
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 3,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8372
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 4,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8380
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 5,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8464
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 6,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8398
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 7,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8395
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 8,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8413
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 9,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8383
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 10,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8446
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 11,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8400
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 12,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8412
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 13,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8358
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 14,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8368
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 15,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8408
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 16,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8438
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 17,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8352
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 18,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8391
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 19,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8417
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 20,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8438
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 21,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8384
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 22,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8408
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 23,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8345
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 24,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8280
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 25,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8454
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 26,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8417
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 27,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8471
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 28,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8372
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 29,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8377
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 30,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8338
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 31,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8336
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 32,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8375
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 33,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8463
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 34,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8323
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 35,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8418
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 36,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8355
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 37,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8406
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 38,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8403
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 39,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8457
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 40,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8384
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 41,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8445
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 42,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8335
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 43,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8472
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 44,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8295
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 45,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8362
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 46,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8416
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 47,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8290
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 48,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8331
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 49,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8312
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 50,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8407
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 51,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8341
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 52,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8357
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 53,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8425
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 54,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8340
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 55,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8476
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 56,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8372
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 57,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8455
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 58,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8301
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 59,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8389
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 60,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8443
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 61,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8444
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 62,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8462
+    },
+    {
+      "panel_index": 2,
+      "cardinalities": [
+        5,
+        4,
+        6,
+        4,
+        5
+      ],
+      "graph": "relation_to_order",
+      "combination_index": 63,
+      "parameter_exact": true,
+      "exact_accuracy": 1.0,
+      "test_case_count": 8355
+    }
+  ]
+}

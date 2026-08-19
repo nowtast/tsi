@@ -1,0 +1,71 @@
+{
+  "access": {
+    "audit_digest": "baded98ab06fc496c4c2933fcd5dbc61ecfc7a90b0890c739e2080397326632f",
+    "commitment": "26bddc90d1ba6b45b779bd04883be0186a094cf1107ea90822cd52e238000828",
+    "errors": [],
+    "escrow_mode_octal": "0o0",
+    "escrow_size": 32,
+    "event_names": [
+      "seed_commitment_created"
+    ],
+    "expected_phase": "zero",
+    "identifier": "P3-4A-ROLLOUT-SEALED-ACCESS-v1",
+    "latest_event_hash": "7f752c2e38d44c1ce629dbd734870cc010a1280daab8817d2e380f4497a028ea",
+    "passed": true,
+    "result_evaluations": 0,
+    "seed_reveals": 0
+  },
+  "contract": {
+    "contract_digest": "9672b5cbedac7c1e17f807ca776d6c358d85295f6cc32bbfcad1f82e2fc116f8",
+    "effect_count": 8,
+    "errors": [],
+    "identifier": "P3-4A-ROLLOUT-v1",
+    "model_count": 6,
+    "passed": true
+  },
+  "fixed_metric_and_lipschitz": {
+    "errors": [],
+    "exact_lipschitz_constants": {
+      "hold": 1.0,
+      "label_step": 1.0,
+      "metric_step": 2.999999999999999,
+      "order_step": 2.0,
+      "relation_step": 2.0,
+      "topology_step": 6.0
+    },
+    "identifier": "P3-4A-ROLLOUT-EVALUATOR-v1",
+    "maximum_triangle_excess": 1.1102230246251565e-16,
+    "passed": true,
+    "positive_off_diagonal_count": 104652,
+    "state_count": 324
+  },
+  "generator": {
+    "development_manifest_digest": "966d68d937065b99eef1a02ad3f80a851d9ee5418c94ac61600bcd594c410045",
+    "development_trajectory_count": 768,
+    "development_world_count": 24,
+    "errors": [],
+    "identifier": "P3-4A-CONTEXT-ROLLOUT-GENERATOR-v1",
+    "maximum_horizon": 32,
+    "passed": true,
+    "sealed_worlds_materialized": 0,
+    "trajectories_per_world": 32
+  },
+  "identifier": "P3-4A-DEVELOPMENT-PREFLIGHT-v1",
+  "passed": true,
+  "report_digest": "9caac9f0d6508155e847e2a379e4469d6040f5fd96f884cff208e29785d468f2",
+  "routing_controls": {
+    "active_parameter_budget": 420,
+    "compute_budgets_matched": true,
+    "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+    "errors": [],
+    "information_fields_matched": true,
+    "max_relative_parameter_difference": 0.0,
+    "model_count_per_family": 6,
+    "passed": true,
+    "random_masks_equal_correct_masks": false,
+    "training_updates_matched": true,
+    "tuning_budgets_matched": true,
+    "wrong_masks_equal_correct_masks": false
+  },
+  "test_output_used": false
+}

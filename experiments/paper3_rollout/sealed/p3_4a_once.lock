@@ -1,0 +1,20 @@
+{
+  "completed_at_utc": "2026-07-29T05:12:53.018326+00:00",
+  "confirmatory_analysis_digest": "cf7b79a79a500f7f76afc3ab239783229ec60c7ccc2f8b668d2f0028cf0c9aec",
+  "confirmatory_passed": true,
+  "evidence_level_after": 3,
+  "evidence_report_digest": "4ffd12cba71a0307332236e86dc197004d0a5c593fc0e3a948a1d89532eefcaf",
+  "frozen_artifact_digests": {
+    "analysis_plan": "d89db588ee6c2a58593f0d245a0e3f0050aa35d43e2357b8db04af0911cc154c",
+    "development_pilot": "3fd29ff027bf38de12b69cc59315220d80afd0748acc29498dcb313b93cb5093",
+    "development_power": "ce329fe545c1f3c88a83d63d6c8cff6ac3ee6344361f0d065e42a0aa19e4923b",
+    "implementation_source": "af7173b2eda8539d3466d2207d5982e5ac892de16010dc84eab7bd992c392d85",
+    "p3b_evidence": "57f2f7cadc9c7a38f19e79a52dbfb98aec62b111893314c8d6a3e7dbdba78c54",
+    "p3b_implementation_source": "73dc51cf0b45b3d3229eb480810fe7bc00fbd9b366d82c12e170bd8a2217d4d1"
+  },
+  "gate_digest": "4943ce2fe37cf093976d6910e398e45245fb88f0ad0015187b997acb88d5476e",
+  "identifier": "P3-4A-ONE-SHOT-LOCK-v1",
+  "manifest_digest": "ee6714c0461ff2c4f9d46c45b6c6dcc5ad650bfc82d42caf39b5589ebdc0e217",
+  "raw_result_digest": "11532b4d845e8b8fc60fc448c63beda395139eff1543474ab05c6118f592d7b3",
+  "started_at_utc": "2026-07-29T05:06:47.478779+00:00"
+}

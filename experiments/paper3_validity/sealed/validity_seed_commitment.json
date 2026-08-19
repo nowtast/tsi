@@ -1,0 +1,10 @@
+{
+  "algorithm": "sha256",
+  "commitment": "81988656e56d0564f0fff3eaf59a201c9c96ed67f9a8407e1e98767a3dac1b28",
+  "descriptor_digest": "bb81908ddc189cd31e2b38f706ddf5a9a354fc0ef129342572e1454ebdb35fa8",
+  "identifier": "P3-4B-VALIDITY-SEALED-ACCESS-v1",
+  "parent_contract": "P3-4B-VALIDITY-v1",
+  "parent_contract_digest": "96477af0207eedb61980eaaa6aa01bf43ffcc49adce775df789ba64be96ca9e8",
+  "revealed": false,
+  "secret_bytes": 32
+}

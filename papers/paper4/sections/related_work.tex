@@ -1,0 +1,65 @@
+\section{Related Work and Scope}
+
+\paragraph{Causal structure learning from interventions.}
+Observational DAG discovery is generally limited by Markov equivalence, while
+known interventions can refine the equivalence class and, under additional
+conditions, identify more of the graph
+\citep{hauser2012interventional,yang2018interventions}.  Score-based and
+continuous methods range from interventional greedy equivalence search to
+differentiable optimization with interventional likelihoods
+\citep{zheng2018notears,brouillard2020dcdi}.  Our task is substantially
+narrower: all five coordinates and intervention targets are observed, the
+candidate graphs are a finite typed motif family, and the data generator lies
+in the declared transition language.  Thus the 120-world result is evidence
+for recovery within that finite family, not a general DAG-discovery result and
+not a claim of causal identification from observational data.
+
+\paragraph{Causal representation learning.}
+Causal representation learning asks when latent causal variables and their
+relations can be recovered from high-dimensional mixtures
+\citep{scholkopf2021causalrep}.  Interventional results establish
+identifiability under assumptions that vary across perfect, imperfect,
+unknown-target, uncoupled, and multi-node interventions
+\citep{ahuja2023interventional,vonkugelgen2023nonparametric,
+bing2024multinode,varici2024general}.  In contrast, this study does not infer
+latent coordinates or a perceptual mixing map: the modular coordinates,
+action target, and action magnitude are supplied.  Its contribution is a
+controlled attribution of graph choice and typed head factorization after
+those representational variables have already been declared.
+
+\paragraph{Sparse support recovery.}
+Exact support recovery by $\ell_1$ methods and greedy pursuit is known to
+depend on design, signal, noise, and incoherence or restricted-curvature
+conditions \citep{tropp2007omp,wainwright2009sharp,
+dyer2013greedy,bahmani2013grasp}.  The seven-sparse embedding used here is an
+algebraic representation over $\mathbb Z_7$, rather than a linear-Gaussian
+Lasso or orthogonal-matching-pursuit problem.  Our population proposition
+identifies the finite motif under full-support primitive interventions, and
+its repeated-input corollary controls coordinatewise modal errors.  Neither
+result proves finite random-design recovery for the implemented greedy
+selector; its 120/120 recovery rate therefore remains empirical.
+
+\paragraph{Structured world models.}
+Interaction networks and graph networks encode object and relation structure
+as an architectural inductive bias
+\citep{battaglia2016interaction,battaglia2018relational}.  Neural relational
+inference, contrastive structured world models, slot-based object discovery,
+and structured exploration learn graphs or object-centric dynamics from
+observations of varying complexity
+\citep{kipf2018nri,kipf2020contrastive,locatello2020slot,
+sancaktar2022curious}.  TSI's finite modular world is a test bed for a more
+specific question: whether declared dependency information and transition-head
+factorization make separately measurable contributions under controlled OOD
+interventions.  The present evidence does not establish visual object
+discovery, scalable graph-neural dynamics, or real-world validity.
+
+\paragraph{Modularity and independent mechanisms.}
+The independent-causal-mechanisms principle motivates decomposing a data
+generating process into autonomous modules, and prior work has sought to learn
+such mechanisms from transformed domains \citep{parascandolo2018independent}.
+Our graph-by-head factorial design operationalizes only a restricted analogue:
+it tests whether routing information still contributes when the prediction
+head is correctly factorized, untied and dense, or deliberately mismatched.
+Consequently, the reported interaction and stress-cohort results delimit
+component attribution inside the benchmark; they do not demonstrate universal
+autonomy or discovery of independent mechanisms.

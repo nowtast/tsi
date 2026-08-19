@@ -1,0 +1,16 @@
+{
+  "identifier": "P3-5A-CONFOUNDED-SUPPORT-DIAGNOSTIC-v1",
+  "family": "context_dependent",
+  "world_index": 0,
+  "optimizer_seed": 0,
+  "training_support_rule": "source.metric_mode == source.topology_mode",
+  "train_count": 420,
+  "source_cross_edge_f1": 1.0,
+  "action_cross_edge_f1": 1.0,
+  "validation": {"dense_i0_error": 0.008333333333333333, "learned_i0_error": 0.0, "improvement": 0.008333333333333333},
+  "bridge_consistent_shift": {"dense_i0_error": 0.025531914893617023, "learned_i0_error": 0.0, "improvement": 0.025531914893617023},
+  "unseen_mechanism_parameter": {"dense_i0_error": 0.1340909090909091, "learned_i0_error": 0.12045454545454547, "improvement": 0.013636363636363627},
+  "status": "utility_improved_but_below_sesoi",
+  "failure_boundary": "support confounding increases the gap but does not reach SESOI 0.05",
+  "evidence_promotion": false
+}

@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\setlength{\emergencystretch}{3em}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}[definition]{Assumption}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\DeclareMathOperator{\Dgm}{Dgm}
+\newcommand{\FinRel}{\mathbf{FinRel}}
+\newcommand{\StrState}{\mathsf{StrState}}
+\newcommand{\StrTrack}{\mathsf{StrTrack}}
+\newcommand{\Dstr}{\Delta_{\mathrm{str}}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\dom}{\operatorname{dom}}
+\newcommand{\im}{\operatorname{im}}
+\title{Structural Imagination Spaces: A Formal Theory of Layered Internal Structure}
+\author{Chulsu Ha\\Independent Researcher\\\texttt{charles.andrew.ha@gmail.com}}
+\date{19 August 2026}
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/formal_framework}
+\input{sections/running_example}
+\input{sections/layer_theorems}
+\input{sections/topological_extension}
+\input{sections/metric_measure_extension}
+\input{sections/category_extension}
+\input{sections/dynamics_extension}
+\input{sections/dynamics}
+\input{sections/interpretation_and_limits}
+\input{sections/conclusion}
+\section*{Acknowledgments}
+We thank the colleagues and acquaintances who reviewed the ideas underlying
+this study.
+
+\section*{Data and Code Availability}
+This theoretical study introduces no new empirical dataset. The bilingual
+manuscript sources and reference implementation are available at
+\url{https://github.com/nowtast/tsi}.
+\end{document}

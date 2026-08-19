@@ -1,0 +1,22 @@
+\section{Open-loop rollout 결과}
+\label{sec:rollout-results}
+
+Rollout gate는 62개 fresh sealed context world의 \(1{,}116\)개 fit 전체를
+완료했다. Oracle signature-routed와 matched dense control의 32-step
+open-loop \(\DeltaTheta\) area는 0이고 unit structural survival은 1이었다.
+Signature control 대비 random-routed와 wrong-routed control의 mean open-loop
+area effect는 각각 \(0.17457\), \(0.17490\)이었다. Frozen family에는 co-primary
+margin 8개가 있었다. 이 중 6개는 between-world SD가 사실상 0인 결정론적
+structural margin으로, 값은 \(0.10\), \(0.15\), 그리고 네 개의 \(0.05\)였다.
+실질적인 확률 변동을 가진 것은 random- 및 wrong-routing 비교 두 개뿐이며
+between-world SD는 각각 \(0.01196\), \(0.01120\)였다. 기록된 여덟 decision은
+multiplicity, cluster-bootstrap, hierarchical processing 뒤 모두 양수였지만, 이는
+독립적이고 정보적인 검정 여덟 개를 뜻하지 않는다. 확률적 정보는 두 routing
+비교에 있다.
+
+Tracking error는 모든 control에서 0이었다. 이는 consistency check이지만
+fixed-cardinality world에서 routing quality를 식별하지 않는다. Exact recursive
+inequality도 finite audit를 통과했지만 failed control의 global worst-case
+bound는 약 \(1.24\times 10^{13}\)까지 증가했다. 따라서 이 bound는
+proof-valid하지만 해당 regime에서 numerically vacuous하다. 어느 결과도
+positive tracking 또는 stability claim으로 바꾸지 않는다.

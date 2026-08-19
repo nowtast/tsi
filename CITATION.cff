@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the archived evidence release used by your work."
+type: software
+title: "Theory of Structural Imagination"
+authors:
+  - family-names: "Ha"
+    given-names: "Chulsu"
+version: "0.1.0"
+date-released: 2026-08-19
+repository-code: "https://github.com/nowtast/tsi"
+license: MIT
+keywords:
+  - "Theory of Structural Imagination"
+  - "structural world models"
+  - "graph recovery"
+  - "reproducibility"
+references:
+  - type: dataset
+    title: "Reproducibility Artifacts for Sealed Evaluation and Prospective Attribution in TSI Transition Models"
+    authors:
+      - family-names: "Ha"
+        given-names: "Chulsu"
+    version: "1.0.0"
+    date-released: 2026-08-19
+    doi: "10.5281/zenodo.22004526"

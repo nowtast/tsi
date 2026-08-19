@@ -1,0 +1,29 @@
+{
+  "interpretation": "Oracle checks falsify finite implementation errors. The learned pilot is a feasibility test and is not evidence of identifiability or a proof of the metric theorem.",
+  "learned_pilot": {
+    "baseline_bridge_defect": 0.02033333333333333,
+    "baseline_coherent_scene_rate": 0.939,
+    "baseline_relation_accuracy": 0.8736666666666667,
+    "baseline_relation_f1": 0.8592647604901597,
+    "decoded_metric_mae": 0.08368924358230063,
+    "seed": 20260727,
+    "structured_bridge_defect": 0.0,
+    "structured_coherent_scene_rate": 1.0,
+    "structured_relation_accuracy": 0.876,
+    "structured_relation_f1": 0.8586626139817629,
+    "test_noise_std": 0.08,
+    "test_scenes": 1000,
+    "train_noise_std": 0.03,
+    "train_scenes": 4000
+  },
+  "oracle": {
+    "identity_checks_passed": 6,
+    "maximum_triangle_violation": 5.551115123125783e-17,
+    "states": 6,
+    "symmetry_checks_passed": 36,
+    "triangle_checks_passed": 216,
+    "unequal_cardinality_distance": 0.6000000000000001,
+    "unequal_cardinality_is_finite": true
+  },
+  "status": "completed"
+}

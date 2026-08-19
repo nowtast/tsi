@@ -1,0 +1,30 @@
+{
+  "evidence_level_after": 3,
+  "evidence_level_before": 3,
+  "identifier": "P3-4B-CUMULATIVE-EVIDENCE-v2",
+  "level_3_retained": true,
+  "level_4_attained": false,
+  "level_4_requirements": {
+    "artifact_reproducibility": false,
+    "cross_family_replication": false,
+    "downstream_predictive_validity": true,
+    "learned_routing_or_structure": false,
+    "noisy_perception": false,
+    "open_loop_multihorizon_rollout": true,
+    "public_benchmark": false,
+    "variable_cardinality": false
+  },
+  "newly_satisfied_requirements": [
+    "downstream_predictive_validity"
+  ],
+  "p3a_evidence_digest": "4ffd12cba71a0307332236e86dc197004d0a5c593fc0e3a948a1d89532eefcaf",
+  "publication_blocked": true,
+  "publication_floor": 4,
+  "report_digest": "0d5fc30d15c38e352470134889142ad42511318c8f22a30baae8a95416dbea32",
+  "satisfied_requirement_count": 2,
+  "scope_boundary": "held-out same-task criterion validity in the exact-state oracle-routing synthetic context family, using oracle endpoint diagnostics and frozen development-fitted predictors; not temporal prognosis, deployment-time prediction, learned routing, perception, cardinality, public benchmark, or independent environment-family replication",
+  "temporal_prognostic_validity_supported": false,
+  "validity_access_audit_digest": "6bd24005be884c7afeb3dba9eb1ff4249e9a553854ec81aab8bd437fcc140dc8",
+  "validity_analysis_digest": "8380318f8ce6c17abb23d415046b57c3a45de458341aee9efb48110db6a7751d",
+  "validity_raw_digest": "1ea70361fae917a05edc12445998d78079597045c55837a2739759674f92426e"
+}

@@ -1,0 +1,86 @@
+\section{Layer Theorems}
+
+\begin{proposition}[Structural equivalence]
+The relation $\cong_{\mathrm{str}}$ on $\StrState(Q,\mathcal E)$ is reflexive,
+symmetric, and transitive.
+\end{proposition}
+
+\begin{proof}
+The identity family preserves labels, simplices, distances, filtration values,
+masses, and generator relations, so reflexivity holds. If $\varphi$ is an
+isomorphism, each $\varphi_A^{-1}$ is a bijection; applying inverse maps to all
+six defining equalities gives the reverse conditions, so symmetry holds. If
+$\varphi$ and $\psi$ are composable, their typewise composites preserve labels.
+The simplex, metric, filtration, mass, and generator-relation equalities compose
+in sequence, giving all six conditions for $\psi\varphi$. Thus transitivity
+holds.
+\end{proof}
+
+\begin{proposition}[Generator preservation extends to paths]
+If an integrated structural isomorphism preserves every generating relation,
+then it transports the relation assigned to every morphism of $\mathcal S$.
+\end{proposition}
+
+\begin{proof}
+For an identity morphism, a bijection transports the diagonal relation to a
+diagonal relation. Suppose the claim holds for paths $u:A\to B$ and $v:B\to C$.
+Membership in $F(v)\circ F(u)$ is witnessed by an intermediate $y\in F(B)$.
+The induction hypotheses transport both relations, and bijectivity of
+$\varphi_B$ transports the witness to and from every element of $G(B)$. Hence
+the transported composite is $G(v)\circ G(u)$. Induction on path length,
+followed by the path equations, proves the claim for every schema morphism.
+\end{proof}
+
+For a tracked transition $p$, write $K|_{D_p}$ for the induced subcomplex on
+surviving tagged entities and $F([e])|_{D_A,D_B}$ for the restriction of a
+generator relation to survivor domains.
+
+\begin{definition}[Survivor-level layer preservation]
+A transition $p:\Sigma\rightharpoonup\Sigma'$ preserves the following layers on
+survivors when
+\begin{align*}
+\bar p[K|_{D_p}]&=L|_{I_p} &&\text{(topology)},\\
+d'(\bar p x,\bar p y)&=d(x,y) &&\text{for all }x,y\in D_p &&\text{(geometry)},\\
+(p_A\times p_B)[F([e])|_{D_A,D_B}]&=G([e])|_{I_A,I_B}
+ &&\text{for every generator }e:A\to B &&\text{(relations)},\\
+g(\bar p\sigma)&=f(\sigma)
+ &&\text{for every surviving simplex }\sigma &&\text{(filtration)},\\
+\eta(\bar p x)&=\mu(x)
+ &&\text{for every }x\in D_p &&\text{(mass)}.
+\end{align*}
+\end{definition}
+
+\begin{theorem}[Composition closure]
+Let $\Sigma_0\xrightarrow{p}\Sigma_1\xrightarrow{q}\Sigma_2$ be tracked
+transitions. If both transitions preserve any chosen subset of topology,
+geometry, relations, filtration, and mass on survivors, then $q\circ p$
+preserves the same subset.
+\end{theorem}
+
+\begin{proof}
+For each type $A$, let
+$E_A=\{x\in\dom(p_A):p_Ax\in\dom(q_A)\}$,
+$J_A=p_A(E_A)$, and $H_A=q_A(J_A)$. These are the domains, intermediate
+survivors, and images of the composite. The first topology and filtration
+equalities restricted to $E=\coprod_AE_A$ give the structures on $J$, and the
+second equalities restricted to $J$ give the structures on $H$; composing gives
+the required equalities. For geometry and mass, applying the two pointwise
+equalities successively gives
+$d_2(\bar q\bar p x,\bar q\bar p y)=d_0(x,y)$ and
+$\eta(\bar q\bar p x)=\mu(x)$. For a generator $e:A\to B$, restrict the first
+relational equality to $E_A\times E_B$, whose image is $J_A\times J_B$, and
+then restrict the second to $J_A\times J_B$. The product maps are bijections on
+the corresponding survivor products, so the relational equality composes.
+\end{proof}
+
+\begin{corollary}[Trajectory preservation]
+Transitions preserving a chosen subset of these five layers form a wide
+subcategory of $\StrTrack(Q,\mathcal E)$. Consequently, a finite trajectory whose
+edges preserve those layers has a composite transition preserving them.
+\end{corollary}
+
+\begin{proof}
+The identity transition preserves every layer. The composition theorem gives
+closure under composition, and induction on the number of trajectory edges
+gives the result.
+\end{proof}

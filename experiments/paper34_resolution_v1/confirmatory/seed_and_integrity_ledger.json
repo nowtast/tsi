@@ -1,0 +1,7 @@
+{
+  "root_seed_hex_revealed_after_execution": "000873de37098a678d4f86a48c3221133fe36395ce717dc2afd8fe01324f2e4c",
+  "root_seed_commitment": "099bcab15af760bdc346f35c61f72d9a9579185b3130d905f7bf9edca32f0d75",
+  "commitment_verified": true,
+  "world_seed_derivation": "sha256(root_seed || uint32_le(world_index))[:8]",
+  "confirmatory_analysis_sha256": "2e6880df054327a56164bad98532dcb22efe7e3e69e3c6426558e5d9bd945501"
+}

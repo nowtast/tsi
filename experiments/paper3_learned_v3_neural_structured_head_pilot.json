@@ -1,0 +1,138 @@
+{
+  "contract": "P3-5A-LEARNED-v3",
+  "train_combination_indices": [
+    0,
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14
+  ],
+  "validation_combination_indices": [
+    2,
+    4,
+    19,
+    26
+  ],
+  "test_combination_indices": [
+    11,
+    16,
+    17,
+    21
+  ],
+  "train_dataset_count": 48,
+  "validation_dataset_count": 16,
+  "test_dataset_count": 16,
+  "evaluation_partitions": {
+    "validation": "downstream_evaluation",
+    "test": "test"
+  },
+  "updates": 800,
+  "conditions": {
+    "conditioned": {
+      "trace": {
+        "initial_loss": 1.1561487031584659,
+        "final_loss": 0.022844414198294936,
+        "updates": 800,
+        "training_case_count": 41980,
+        "finite": true
+      },
+      "validation": {
+        "exact_mean": 0.8705774475797777,
+        "layer_mean": [
+          1.0,
+          1.0,
+          0.9335720024072566,
+          0.9370054451725212,
+          1.0
+        ],
+        "cells_exact_1": 2,
+        "cell_count": 16
+      },
+      "test": {
+        "exact_mean": 0.3766580660054606,
+        "layer_mean": [
+          1.0,
+          0.950239956522808,
+          0.6244702139481818,
+          0.7399232294068185,
+          1.0
+        ],
+        "cells_exact_1": 0,
+        "cell_count": 16
+      }
+    },
+    "no_signature": {
+      "trace": {
+        "initial_loss": 1.1561487031584659,
+        "final_loss": 0.14899950376030033,
+        "updates": 800,
+        "training_case_count": 41980,
+        "finite": true
+      },
+      "validation": {
+        "exact_mean": 0.6951141072273016,
+        "layer_mean": [
+          1.0,
+          0.9872448979591837,
+          0.9158590762576189,
+          0.8427215493688512,
+          0.9263186585644222
+        ],
+        "cells_exact_1": 0,
+        "cell_count": 16
+      },
+      "test": {
+        "exact_mean": 0.20997524278211965,
+        "layer_mean": [
+          1.0,
+          0.9429526170637459,
+          0.6210647967858951,
+          0.5680055058814623,
+          0.9854136236794688
+        ],
+        "cells_exact_1": 0,
+        "cell_count": 16
+      }
+    },
+    "shuffled_signature": {
+      "trace": {
+        "initial_loss": 1.1561487031584659,
+        "final_loss": 0.019762627214613186,
+        "updates": 800,
+        "training_case_count": 41980,
+        "finite": true
+      },
+      "validation": {
+        "exact_mean": 0.8900881051713759,
+        "layer_mean": [
+          1.0,
+          1.0,
+          0.9463202268722598,
+          0.9437678782991161,
+          1.0
+        ],
+        "cells_exact_1": 2,
+        "cell_count": 16
+      },
+      "test": {
+        "exact_mean": 0.3654905258409244,
+        "layer_mean": [
+          1.0,
+          0.9497749093875072,
+          0.6260260981389528,
+          0.7238642887021491,
+          1.0
+        ],
+        "cells_exact_1": 0,
+        "cell_count": 16
+      }
+    }
+  }
+}

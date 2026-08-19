@@ -1,0 +1,163 @@
+\section{Dynamics and Temporal Identity Extension}
+
+A structural transition is a partial identity claim: it says which typed
+entities persist across an update. This section makes finite action histories
+and turnover-aware defects explicit. Endpoint agreement alone is not treated
+as evidence for temporal identity.
+
+\begin{definition}[Finite action-prefix category]
+Let $\mathcal A$ be a nonempty finite action alphabet and let $H\geq0$. The
+category $\mathcal H_{\mathcal A}^H$ has as objects all words
+$u\in\mathcal A^*$ with $|u|\leq H$. There is one morphism $u\to v$ exactly
+when $u$ is a prefix of $v$; its identity is the empty extension and composition
+concatenates suffixes.
+\end{definition}
+
+The prefix relation is a finite poset category. A morphism $u\to v$ represents
+executing the suffix of $v$ that remains after $u$.
+
+\begin{definition}[Tracked action history]
+A tracked action history of horizon $H$ is a functor
+$\mathcal D:\mathcal H_{\mathcal A}^H\to\StrTrack(Q,\mathcal E)$.
+Thus $\mathcal D(u)$ is the state at action word $u$, while
+$\mathcal D(u\to v)$ is the composite tracked transition from the prefix state
+to the descendant state.
+\end{definition}
+
+\begin{theorem}[Unique extension from one-step action edges]
+Suppose a state $\Sigma_u$ is assigned to every word with $|u|\leq H$ and a
+tracked transition $p_{u,a}:\Sigma_u\rightharpoonup\Sigma_{ua}$ is assigned
+whenever $|u|<H$. There is a unique functor $\mathcal D$ taking these one-step
+transitions as prescribed values.
+\end{theorem}
+
+\begin{proof}
+Set $\mathcal D(u)=\Sigma_u$ and map every identity to the identity transition.
+If $v=ua_1\cdots a_k$, define
+\[
+\mathcal D(u\to v)=
+p_{ua_1\cdots a_{k-1},a_k}\circ\cdots\circ p_{u,a_1}.
+\]
+Associativity gives independence of parenthesization, and splitting an edge list
+at any intermediate prefix gives functoriality. The empty list gives identities.
+Any functor with the prescribed one-step values must send every longer prefix
+morphism to this composite, proving uniqueness.
+\end{proof}
+
+\begin{theorem}[Trajectory preservation along action histories]
+Let $u\preceq v$ in a tracked action history. If every one-step edge on the path
+from $u$ to $v$ preserves any chosen subset of topology, geometry, relations,
+filtration, and mass on survivors, then $\mathcal D(u\to v)$ preserves the same
+subset.
+\end{theorem}
+
+\begin{proof}
+The unique extension theorem expresses $\mathcal D(u\to v)$ as the composite of
+the one-step edges. The five-layer composition theorem applies successively.
+\end{proof}
+
+\begin{definition}[Turnover and layer defects]
+For $p:\Sigma\rightharpoonup\Sigma'$ with
+$\Sigma=(F,\lambda,K,d,f,\mu)$ and
+$\Sigma'=(G,\nu,L,\rho,g,\eta)$, let
+\[
+b(p)=\sum_A(|F(A)|-|\dom(p_A)|+|G(A)|-|\im(p_A)|).
+\]
+Define
+\begin{align*}
+m_K(p)&=|\bar p[K|_{D_p}]\mathbin{\triangle}L|_{I_p}|,\\
+m_d(p)&=\max_{x,y\in D_p}|d(x,y)-\rho(\bar p x,\bar p y)|,\\
+m_R(p)&=\sum_{e\in Q_1}|(p_{s(e)}\times p_{t(e)})
+ [F([e])|_{D_{s(e)},D_{t(e)}}]\mathbin{\triangle}
+ G([e])|_{I_{s(e)},I_{t(e)}}|,\\
+m_f(p)&=\max_{\sigma\in K|_{D_p}}
+\begin{cases}
+|f(\sigma)-g(\bar p\sigma)|,&\bar p\sigma\in L,\\
++\infty,&\bar p\sigma\notin L,
+\end{cases}\\
+m_\mu(p)&=\sum_{x\in D_p}|\mu(x)-\eta(\bar p x)|.
+\end{align*}
+If $D_p$ is empty, set $m_d(p)=m_f(p)=m_\mu(p)=0$. Here
+$D_A=\dom(p_A)$ and $I_A=\im(p_A)$. The $+\infty$ convention makes the
+filtration defect defined even when a surviving source simplex is not mapped to
+a target simplex.
+\end{definition}
+
+For $e:A\to B$ and tagged subsets $D_A\subseteq F(A)$ and
+$D_B\subseteq F(B)$, define the ordered simplicial-pair capacity
+\[
+c_e(K;D_A,D_B)=
+\bigl|\{(x,y)\in D_A\times D_B:\{x,y\}\in K\}\bigr|.
+\]
+This convention includes a permitted loop $(x,x)$ through the vertex
+$\{x\}\in K$ and therefore does not silently assume irreflexive relations.
+
+\begin{proposition}[Compatibility bounds the relational defect]
+For every tracked transition $p:\Sigma\rightharpoonup\Sigma'$ between
+compatible states,
+\[
+m_R(p)\leq
+\sum_{e\in Q_1}\bigl(c_e(K;D_{s(e)},D_{t(e)})
++c_e(L;I_{s(e)},I_{t(e)})\bigr).
+\]
+Without the compatibility axiom, this bound need not hold.
+The bound is a capacity bound and is not claimed to be tight.
+\end{proposition}
+
+\begin{proof}
+For each generator $e$, compatibility puts the restricted source relation
+inside the source simplicial-pair set counted by $c_e(K;D_{s(e)},D_{t(e)})$.
+Injectivity of $p_{s(e)}\times p_{t(e)}$ preserves its cardinality. Target
+compatibility likewise puts the restricted target relation inside the set
+counted by $c_e(L;I_{s(e)},I_{t(e)})$. The cardinality of a symmetric
+difference is at most the sum of the cardinalities of its two operands; summing
+over generators proves the bound.
+
+For an explicit failure without compatibility, let $Q$ have distinct objects
+$A,B$ and one generator $e:A\to B$. Take $F(A)=\{x\}$,
+$F(B)=\{y\}$, $G(A)=\{x'\}$, and $G(B)=\{y'\}$, with the displayed
+elements carrying their respective distinct type tags. Let $K$ and $L$ contain
+only their vertices, set $F([e])=\{(x,y)\}$ and $G([e])=\varnothing$, and let
+the total tracked transition map $x\mapsto x'$ and $y\mapsto y'$. Then both
+capacities are zero, while
+\[
+m_R(p)=|\{(x',y')\}\mathbin{\triangle}\varnothing|=1.
+\]
+Thus the bound can fail when the source compatibility axiom is removed.
+\end{proof}
+
+\begin{proposition}[Zero criterion for a tracked transition]
+For every tracked transition $p$, $m_K(p)=0$, $m_d(p)=0$, $m_R(p)=0$,
+$m_f(p)=0$, and $m_\mu(p)=0$ are respectively equivalent to preservation of
+topology, geometry, generator relations, filtration, and mass on survivors.
+Also, $b(p)=0$ is equivalent to every component being a total bijection.
+Consequently, all six quantities vanish exactly when $p$ is a full integrated
+structural isomorphism.
+\end{proposition}
+
+\begin{proof}
+All five layer statements follow because finite symmetric differences, maxima of nonnegative terms, and sums of nonnegative terms vanish
+exactly when all their component conditions hold. The $+\infty$ case ensures
+that $m_f(p)=0$ implies that every surviving simplex has a simplex image. For
+$b(p)$, vanishing forces both the domain and image of every component to equal
+the full finite carrier; injectivity then gives a total bijection. Combining
+these facts with the label-preserving definition of tracked transition gives all
+six conditions of integrated structural isomorphism. The converse follows by
+substitution.
+\end{proof}
+
+\begin{proposition}[Survivor preservation can be vacuous]
+For any two nonempty integrated states, the transition with empty domain and
+empty image preserves topology, geometry, relations, filtration, and mass on
+survivors, while having strictly positive turnover.
+\end{proposition}
+
+\begin{proof}
+All induced survivor structures and all quantified comparisons are empty, while
+nonempty endpoint carriers make the turnover sum positive.
+\end{proof}
+
+The dynamics extension therefore separates local structural preservation,
+temporal identity, and turnover. It does not claim that terminal state
+correctness identifies the tracking map, that a formal action branch is a causal
+counterfactual, or that a learner discovers the correct update mechanism.

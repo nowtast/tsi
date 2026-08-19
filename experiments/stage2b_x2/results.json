@@ -1,0 +1,38 @@
+{
+  "coupling_perturbation": {
+    "maximum_coupling_tv_bound_violation": 0.0,
+    "maximum_objective_bound_violation": 0.0,
+    "trials": 500,
+    "violations": 0
+  },
+  "exact": {
+    "attribute_discrepancy": 0.0,
+    "isometry": {
+      "x0": "y0",
+      "x1": "y1",
+      "x2": "y2"
+    },
+    "zero_iff_witness_found": true
+  },
+  "interpretation": "These simulations audit the executable finite formulas. They do not prove the concentration theorem and do not validate recovery of a noisy carrier, metric, label, or attribute map.",
+  "sampling": {
+    "declared_failure_probability": 0.05,
+    "joint_radius_violations": 0,
+    "maximum_observed_tv_sum": 0.19499999999999995,
+    "observed_joint_violation_rate": 0.0,
+    "sample_size_per_state": 200,
+    "source_tv_radius": 0.17558073340716712,
+    "target_tv_radius": 0.17558073340716712,
+    "trials": 2000
+  },
+  "seed": 20260727,
+  "status": "completed",
+  "support_recovery_counterexample": {
+    "absolute_simulation_error": 0.0055696800871167795,
+    "exact_support_miss_probability": 0.36416968008711675,
+    "observed_support_miss_rate": 0.3586,
+    "rare_population_mass": 0.02,
+    "sample_size": 50,
+    "trials": 5000
+  }
+}

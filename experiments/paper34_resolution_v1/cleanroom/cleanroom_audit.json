@@ -1,0 +1,11 @@
+{
+  "status": "cleanroom_nodejs_reimplementation",
+  "language_runtime": "v24.14.0",
+  "project_imports": 0,
+  "world_count": 120,
+  "seed_commitment_verified": true,
+  "learned_factorized_worlds_reproduced": 120,
+  "effect_means_reproduced": 10,
+  "failures": [],
+  "passed": true
+}

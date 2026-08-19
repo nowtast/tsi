@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "title": "Reproducibility Artifacts for Sealed Evaluation and Prospective Attribution in TSI Transition Models",
+  "version": "1.0.0",
+  "version_doi": "10.5281/zenodo.22004526",
+  "concept_doi": "10.5281/zenodo.22004525",
+  "record_url": "https://zenodo.org/records/22004526",
+  "files": [
+    {
+      "name": "tsi-paper03-04-evidence-v1.0.0.zip",
+      "url": "https://zenodo.org/records/22004526/files/tsi-paper03-04-evidence-v1.0.0.zip?download=1",
+      "size_bytes": 44242790,
+      "sha256": "11e3fd40b623a46c3ebab1ed03e0125329fef087e88191de6b73e6229d141e07",
+      "zenodo_md5": "cad0cb6ba78f70e53858ccae9f5f7acb"
+    }
+  ]
+}

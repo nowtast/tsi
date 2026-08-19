@@ -1,0 +1,118 @@
+\section{Categorical descent 확장}
+
+형식 체계의 relational carrier는 schema category 위의 functor이다. 이 절은
+schema가 generator와 path equation으로 주어질 때 descent 조건을 명시한다.
+목적은 primitive relation 목록만으로 categorical state가 자동으로 정의된다고
+간주하는 오류를 막는 것이다.
+
+
+\begin{definition}[Generator realization]
+generator realization은 각 $A\in Q_0$에 유한 nonempty set $X_A$를, 각
+$e\in Q_1$에 relation
+$R_e\subseteq X_{s(e)}\times X_{t(e)}$를 할당한다. free relational
+extension은
+\[
+ \widetilde F(1_A)=\Delta_{X_A},\qquad
+ \widetilde F(e_n\cdots e_1)
+ =R_{e_n}\circ\cdots\circ R_{e_1}
+\]
+로 정의한다.
+\end{definition}
+
+\begin{proposition}[유한 relation category]
+finite set, binary relation, relational composition, diagonal relation은
+category를 이룬다. 따라서 앞 정의의 path formula는 parenthesization과
+무관하다.
+\end{proposition}
+
+\begin{proof}
+$R:X\nrightarrow Y$, $S:Y\nrightarrow Z$, $T:Z\nrightarrow W$라 하자.
+$(x,w)$가 $T\circ(S\circ R)$에 속한다는 것은
+$(x,y)\in R$, $(y,z)\in S$, $(z,w)\in T$를 만족하는
+$y\in Y,z\in Z$가 존재한다는 뜻이다. $(T\circ S)\circ R$도
+동일한 existential 조건을 준다. 따라서 associativity가 성립한다.
+또한 diagonal relation에서는 중간 원소가 target과 같아야 하므로
+$\Delta_Y\circ R=R$이고, 같은 방식으로
+$R\circ\Delta_X=R$이다. 이것이 category axioms이다.
+\end{proof}
+
+\begin{theorem}[Path equation을 통한 descent]
+generator realization이
+$F:\mathcal S\to\FinRel$ functor로 내려가
+$F([e])=R_e$를 만족할 필요충분조건은 모든 $(p,q)\in\mathcal E$에 대해
+\[
+ \widetilde F(p)=\widetilde F(q)
+ \qquad\text{for every }(p,q)\in\mathcal E.
+\]
+인 것이다. 내려간 functor가 존재하면 유일하다.
+\end{theorem}
+
+\begin{proof}
+먼저 descended functor $F$가 존재하고 $F([e])=R_e$를 만족한다고 하자.
+$\pi:\operatorname{Path}(Q)\to\mathcal S$는 path를 equivalence
+class로 보낸다. 먼저 generator data에서 factorization을 확인한다. 길이 0
+path에 대해서는 functoriality로
+$F([1_A])=\Delta_{X_A}=\widetilde F(1_A)$이다. 길이 $n-1$까지 equality가
+성립하고 $p=e_n\cdots e_1$이면
+\[
+F([p])=F([e_n])\circ F([e_{n-1}\cdots e_1])
+=R_{e_n}\circ\widetilde F(e_{n-1}\cdots e_1)=\widetilde F(p)
+\]
+이다. 따라서 path length induction으로 $\widetilde F=F\circ\pi$이다.
+$(p,q)\in\mathcal E$이면 구성상
+$\pi(p)=\pi(q)$이므로
+$\widetilde F(p)=F(\pi(p))=F(\pi(q))=\widetilde F(q)$이다.
+
+반대로 모든 declared equation에서 equality가 성립한다고 하자. parallel
+path에 대해 $p\sim q$를 $\widetilde F(p)=\widetilde F(q)$로 정의한다.
+이는 equivalence relation이다. $p\sim q$이고 $a,b$가 compatible하게
+합성 가능하면 free extension의 functoriality와 associativity로
+\[
+ \widetilde F(bpa)
+ =\widetilde F(b)\circ\widetilde F(p)\circ\widetilde F(a)
+ =\widetilde F(b)\circ\widetilde F(q)\circ\widetilde F(a)
+ =\widetilde F(bqa)
+\]
+이다. 따라서 $\sim$은 $\mathcal E$를 포함하는 path congruence이고
+minimality로 $\equiv_{\mathcal E}\subseteq\sim$이다. 그러므로
+$F([p])=\widetilde F(p)$는 representative와 무관하게 잘 정의된다.
+identity와 composition law는 free extension에서 상속되므로 $F$는 functor이고
+$\widetilde F=F\circ\pi$이다. 모든 morphism은 path representative를
+가지므로 factorization을 만족하는 functor의 값은 강제되고 유일하다.
+\end{proof}
+
+\begin{proposition}[Natural equivalence의 generator criterion]
+$F,G:\mathcal S\to\FinRel$이 같은 object carrier를 갖고
+$\varphi_A:F(A)\to G(A)$가 bijection이라고 하자.
+graph $\operatorname{Gr}(\varphi_A)$들이 natural isomorphism을 이루는
+필요충분조건은 모든 generator $e:A\to B$와 $x,y$에 대해
+\[
+ (x,y)\in F([e])
+ \Longleftrightarrow
+ (\varphi_A(x),\varphi_B(y))\in G([e])
+\]
+인 것이다.
+\end{proposition}
+
+\begin{proof}
+family가 natural이면 각 generator에서 naturality square는
+$G([e])\circ\operatorname{Gr}(\varphi_A)
+=\operatorname{Gr}(\varphi_B)\circ F([e])$이다. graph composition을 전개하고 $\varphi_A,\varphi_B$의 bijectivity를 사용하면
+두 방향의 biconditional을 얻는다.
+
+반대로 biconditional은 generator relation을 transport한다. identity에 대해서도
+bijection이 diagonal relation을 diagonal relation으로 보내므로 성립한다.
+composable path에서는 relational composite의 membership가 intermediate
+entity로 증명된다. 두 relation에 criterion을 적용하고 bijectivity로 witness를
+옮기면 된다. path length에 대한 induction으로 모든 path에 대해 성립하고,
+두 functor가 같은 path equation을 만족하므로 representative와도 무관하다.
+따라서 모든 schema morphism에서 naturality equality가 성립한다. 각 graph는
+$\FinRel$의 isomorphism이므로 natural isomorphism이다.
+\end{proof}
+
+declared path equation이 generator relation에서 성립하지 않으면 그 할당은
+free path category 위의 functor로는 유효하지만 presented schema 위의 state는
+아니다. 따라서 categorical validity는 prediction 뒤에 붙이는 해석적 label이
+아니라 별도의 수학적 gate이다. 이 확장은 learner가 올바른 schema를 발견한다는
+것이나 equation 확인 없이 generator-level agreement만으로 충분하다는 것을
+주장하지 않는다.

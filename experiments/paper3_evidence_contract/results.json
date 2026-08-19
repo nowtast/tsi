@@ -1,0 +1,34 @@
+{
+  "contract_digest": "0b2f41e4a078aed59160a157a92eed71d9e2428fdd9bb639e51589729f52f419",
+  "current_level": 2,
+  "errors": [],
+  "identifier": "P3-E0-EVIDENCE-v1",
+  "missing_for_target": [
+    "sealed_independent_test",
+    "codebook_free_primary_decoder",
+    "matched_information_capacity_compute_tuning",
+    "correct_random_wrong_dependency_controls",
+    "independent_layer_information",
+    "world_level_replication",
+    "nested_uncertainty_analysis",
+    "confirmatory_structural_ood_effect",
+    "open_loop_multihorizon_rollout",
+    "downstream_predictive_validity",
+    "learned_routing_or_structure",
+    "noisy_perception",
+    "variable_cardinality",
+    "public_benchmark",
+    "cross_family_replication",
+    "artifact_reproducibility"
+  ],
+  "next_phase": "P3-3A-INDEPENDENCE-v1",
+  "passed": true,
+  "publication_blocked": true,
+  "publication_floor": 4,
+  "requirement_counts": {
+    "3": 8,
+    "4": 8,
+    "5": 1
+  },
+  "target_level": 4
+}

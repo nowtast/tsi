@@ -1,0 +1,171 @@
+\section{Metric--Measure 확장}
+
+기하 층에는 불확실하거나 중복된 entity가 포함될 수 있으므로 set-level
+correspondence만으로는 충분하지 않다. 유한 metric carrier에 확률질량을
+부여하고 coupling을 통해 질량을 비교한다. 아래 결과는 exactness theorem이며
+finite-sample convergence theorem이 아니다.
+
+\begin{definition}[완전지지 metric--measure 상태]
+완전지지 metric--measure 상태는 $M=(X,d,\mu,\lambda)$이다. 여기서
+$(X,d)$는 유한 metric space, $\mu:X\to(0,1]$는
+$\sum_{x\in X}\mu(x)=1$을 만족하는 확률질량, $\lambda:X\to\mathcal L$는
+label map이다. 완전지지는 모든 $x\in X$에 대해 $\mu(x)>0$임을 뜻한다.
+\end{definition}
+
+완전지지는 exactness 결과에 필요하다. 질량이 0인 entity는 coupling objective를
+바꾸지 않고 추가되거나 이동될 수 있기 때문이다. 측도는 상태의 일부이지만
+좌표나 목록에 없는 attribute를 기하학적 증거로 암묵적으로 취급하지 않는다.
+
+\begin{definition}[label-compatible coupling]
+$M_X=(X,d_X,\mu_X,\lambda_X)$와
+$M_Y=(Y,d_Y,\mu_Y,\lambda_Y)$에 대해 coupling은
+$\pi:X\times Y\to\R_{\geq0}$ 중
+\[
+ \sum_{y\in Y}\pi(x,y)=\mu_X(x),
+ \qquad
+ \sum_{x\in X}\pi(x,y)=\mu_Y(y)
+\]
+를 만족하는 함수이다. $\pi(x,y)>0$이면
+$\lambda_X(x)=\lambda_Y(y)$일 때 label-compatible이라 한다.
+\end{definition}
+
+\begin{definition}[$p$-metric--measure discrepancy]
+$1\leq p<\infty$와 label-compatible coupling $\pi$에 대해
+\[
+ \mathcal D_p(\pi)^p=
+ \sum_{x,x'\in X}\sum_{y,y'\in Y}
+ |d_X(x,x')-d_Y(y,y')|^p
+ \pi(x,y)\pi(x',y')
+\]
+로 정의한다. 그리고
+\[
+ \Delta_{\mathrm{mm},p}(M_X,M_Y)=\inf_{\pi}\mathcal D_p(\pi)
+\]
+로 둔다. infimum은 label-compatible coupling 전체에 대해 취하며, 그러한
+coupling이 없으면 discrepancy를 $+\infty$로 둔다.
+\end{definition}
+
+이는 hard label constraint를 갖는 유한 Gromov--Wasserstein-type objective이다.
+좌표 비용, soft attribute 비용, 학습된 correspondence는 포함하지 않는다.
+그러한 항을 추가하면 별도의 discrepancy가 되며 식별가능성을 별도로 분석해야 한다.
+
+\begin{theorem}[Metric--measure discrepancy 0의 exactness]
+$M_X,M_Y$가 완전지지 metric--measure 상태라고 하자. 모든
+$1\leq p<\infty$에 대해
+$\Delta_{\mathrm{mm},p}(M_X,M_Y)=0$일 필요충분조건은
+bijection $\varphi:X\to Y$가 존재하여 모든 $x,x'\in X$에 대해
+\[
+ d_Y(\varphi(x),\varphi(x'))=d_X(x,x'),\qquad
+ \lambda_Y(\varphi(x))=\lambda_X(x),\qquad
+ \mu_Y(\varphi(x))=\mu_X(x)
+\]
+를 만족하는 것이다.
+\end{theorem}
+
+\begin{proof}
+먼저 그러한 bijection이 존재한다고 하자. 다음과 같이 둔다.
+\[
+ \pi_\varphi(x,y)=
+ \begin{cases}
+ \mu_X(x),&y=\varphi(x),\\
+ 0,&\text{otherwise}.
+ \end{cases}
+\]
+첫 번째 marginal은 구성상 $\mu_X$이다. $y=\varphi(x)$일 때 bijection과
+measure preservation에 의해 두 번째 marginal은
+$\mu_X(x)=\mu_Y(y)$가 된다. 따라서 이는 coupling이고, label 보존에
+의해 label-compatible이다. 양의 product가 나타나는 항에서는
+$y=\varphi(x)$와 $y'=\varphi(x')$이며 거리 차이는 0이다. 따라서
+$\mathcal D_p(\pi_\varphi)=0$이다.
+
+반대로 discrepancy가 0이라고 하자. 모든 coupling의 집합은 유한차원 공간
+$\R^{X\times Y}$에서 closed and bounded이며, 유한한 label constraint를
+적용한 부분집합도 compact이다. coupling이 존재하면 $\mathcal D_p$의
+연속성으로 최소 coupling $\pi_*$가 존재하고
+$\mathcal D_p(\pi_*)=0$이다.
+
+$C=\{(x,y):\pi_*(x,y)>0\}$라 하자. 양쪽 marginal의 full support로부터
+모든 $x$와 모든 $y$가 $C$의 어떤 pair에 포함되므로 $C$는 correspondence이다.
+$C$의 두 pair $(x,y),(x',y')$에 대해 정의식의 계수는 양수이다. 모든
+summand가 음이 아니고 합이 0이므로
+$d_X(x,x')=d_Y(y,y')$이다.
+
+$(x,y),(x,y')$가 모두 $C$에 있으면 위 등식으로
+$d_Y(y,y')=d_X(x,x)=0$이므로 $y=y'$이다. 같은 방식으로
+$(x,y),(x',y)$가 모두 $C$에 있으면 $x=x'$이다. 따라서 $C$는 bijection
+$\varphi:X\to Y$의 graph이다. 거리 등식은 isometry를, positive support는
+label preservation을 준다. 마지막으로 첫 번째 marginal은
+$\mu_X(x)=\pi_*(x,\varphi(x))$를 주고, graph 성질과 두 번째 marginal은
+$\mu_Y(\varphi(x))=\pi_*(x,\varphi(x))$를 준다. 따라서 bijection은
+measure-preserving이다.
+\end{proof}
+
+
+이 정리는 metric--measure 층의 zero set을 정확히 해석한다. 그러나 sampling
+robustness, empirical convergence rate, 임의 예측 담체에서 좋은 coupling의
+존재, coordinate loss에 대한 우월성은 증명하지 않는다. 이는 별도의 경험적
+주장이다.
+
+
+\begin{proposition}[Label-compatible coupling의 feasibility]
+Label-compatible coupling이 존재하는 필요충분조건은 모든 label의 total mass가
+일치하는 것이다.
+\[
+\sum_{x:\lambda_X(x)=\ell}\mu_X(x)
+=
+\sum_{y:\lambda_Y(y)=\ell}\mu_Y(y)
+\qquad(\ell\in\mathcal L).
+\]
+\end{proposition}
+
+\begin{proof}
+필요성은 앞의 marginal 계산에서 따른다. 충분성을 위해 각 label $\ell$의
+두 label block 안에서 common mass로 정규화한 product coupling을 취하고,
+이를 모든 label에 대해 합한다. 그러면 요구된 marginal을 가지며 cross-label
+mass가 없는 coupling을 얻는다. Common mass가 0인 block은 생략한다.
+\end{proof}
+
+Tagged label map을 $x\in F(A)$에 대해 $\bar\lambda(x)=(A,\lambda_A(x))$로,
+$y\in G(A)$에 대해 $\bar\nu(y)=(A,\nu_A(y))$로 정의한다.
+
+\begin{corollary}[State-level metric--measure invariance]
+$\Sigma\cong_{\mathrm{str}}\Sigma'$이면 induced full-support metric--measure
+state $(|F|,d,\mu,\bar\lambda)$와 $(|G|,\rho,\eta,\bar\nu)$의 metric--measure
+discrepancy는 모든 $1\leq p<\infty$에 대해 0이다.
+\end{corollary}
+
+\begin{proof}
+Structural isomorphism을 measure-preserving, label-preserving isometry로
+사용하고 zero metric--measure discrepancy theorem을 적용한다.
+\end{proof}
+\begin{proposition}[Hard-label discrepancy의 extended pseudometric 성질]
+Tagged label을 갖는 full-support finite metric--measure state에서
+$\Delta_{\mathrm{mm},1}$은 symmetric이고 diagonal에서 0이며 triangle
+inequality를 만족한다. Label-compatible coupling이 없으면 값은 $+\infty$일
+수 있다.
+\end{proposition}
+
+\begin{proof}
+Identity-graph coupling이 diagonal vanishing을 준다. Label-compatible
+coupling을 transpose하면 marginal 순서가 뒤바뀌고 $\mathcal D_1$ 값은
+그대로이므로 infimum을 취해 symmetry를 얻는다. Triangle inequality를 위해
+label-compatible coupling $\pi_{XY}$와 $\pi_{YZ}$를 택한다. Full support로
+$\mu_Y(y)>0$이므로
+\[
+\gamma(x,y,z)=\frac{\pi_{XY}(x,y)\pi_{YZ}(y,z)}{\mu_Y(y)}
+\]
+는 well-defined이다. 직접 합하면 $(X,Y)$와 $(Y,Z)$ marginal이 각각 원래
+coupling임을 알 수 있다. $\pi_{XZ}$를 그 $(X,Z)$ marginal이라 하자.
+$\gamma(x,y,z)>0$이면
+$\lambda_X(x)=\lambda_Y(y)=\lambda_Z(z)$이므로 $\pi_{XZ}$도
+label-compatible이다. $\gamma$에서 뽑은 두 triple에 대해
+\[
+|d_X(x,x')-d_Z(z,z')|
+\leq |d_X(x,x')-d_Y(y,y')|+|d_Y(y,y')-d_Z(z,z')|
+\]
+이다. 이를 $\gamma\otimes\gamma$에 대해 합하면
+$\mathcal D_1(\pi_{XZ})\leq\mathcal D_1(\pi_{XY})+
+\mathcal D_1(\pi_{YZ})$를 얻는다. 두 원래 coupling에 대해 infimum을 취하면 triangle inequality가
+따른다. 어느 한 coupling이 infeasible이면 대응하는 extended value가
+$+\infty$이므로 부등식은 자명하다.
+\end{proof}

@@ -1,0 +1,127 @@
+{
+  "status": "postreview_retrospective_multiplicity_sensitivity",
+  "not_preregistered": true,
+  "frozen_divisor": 8,
+  "sensitivity_divisor": 10,
+  "frozen_contract_named_members": false,
+  "postfreeze_named_gate_quantities": [
+    "routing_identification_rate",
+    "learned_routing_nll",
+    "factorized_graph_nll",
+    "generic_graph_nll",
+    "large_generic_graph_nll",
+    "rollout_hamming",
+    "criterion_brier",
+    "outside_family_nll_difference"
+  ],
+  "reported_interval_quantity_count": 10,
+  "bookkeeping": {
+    "exact_duplicate_pair": [
+      "learned_routing_nll",
+      "factorized_graph_nll"
+    ],
+    "exact_duplicate_verified_worldwise": true,
+    "sign_flipped_pair": [
+      "factorized_head_nll_wrong_graph",
+      "graph_by_head_interaction"
+    ],
+    "sign_flip_verified_worldwise": true,
+    "deterministic_zero": "factorized_head_nll_correct_graph",
+    "deterministic_zero_verified_worldwise": true,
+    "distinct_stochastic_quantity_count": 8,
+    "informationally_distinct_stochastic_quantity_count": 7
+  },
+  "sensitivity_critical": 2.8070337683438114,
+  "sensitivity_effect_intervals": {
+    "learned_routing_nll": {
+      "mean": 0.35932982901626315,
+      "standard_error": 0.0018369021626413156,
+      "simultaneous_lower": 0.3541735826165852,
+      "simultaneous_upper": 0.3644860754159411,
+      "critical": 2.8070337683438114
+    },
+    "factorized_graph_nll": {
+      "mean": 0.35932982901626315,
+      "standard_error": 0.0018369021626413156,
+      "simultaneous_lower": 0.3541735826165852,
+      "simultaneous_upper": 0.3644860754159411,
+      "critical": 2.8070337683438114
+    },
+    "factorized_head_nll_correct_graph": {
+      "mean": 0.0,
+      "standard_error": 0.0,
+      "simultaneous_lower": 0.0,
+      "simultaneous_upper": 0.0,
+      "critical": 2.8070337683438114
+    },
+    "factorized_head_nll_wrong_graph": {
+      "mean": 0.002270513780350723,
+      "standard_error": 0.002177349416303849,
+      "simultaneous_lower": -0.0038413795566978686,
+      "simultaneous_upper": 0.008382407117399314,
+      "critical": 2.8070337683438114
+    },
+    "generic_graph_nll": {
+      "mean": 0.3616003427966138,
+      "standard_error": 0.0017461542865548115,
+      "simultaneous_lower": 0.35669882874951614,
+      "simultaneous_upper": 0.36650185684371145,
+      "critical": 2.8070337683438114
+    },
+    "large_generic_graph_nll": {
+      "mean": 0.03892985085893045,
+      "standard_error": 0.00499714008419607,
+      "simultaneous_lower": 0.024902709897447646,
+      "simultaneous_upper": 0.05295699182041325,
+      "critical": 2.8070337683438114
+    },
+    "graph_by_head_interaction": {
+      "mean": -0.002270513780350723,
+      "standard_error": 0.002177349416303849,
+      "simultaneous_lower": -0.008382407117399314,
+      "simultaneous_upper": 0.0038413795566978686,
+      "critical": 2.8070337683438114
+    },
+    "rollout_hamming": {
+      "mean": 0.08995659722222224,
+      "standard_error": 0.0010609039929649967,
+      "simultaneous_lower": 0.08697860388899871,
+      "simultaneous_upper": 0.09293459055544577,
+      "critical": 2.8070337683438114
+    },
+    "criterion_brier": {
+      "mean": 0.024023859326366827,
+      "standard_error": 0.002173360371145914,
+      "simultaneous_lower": 0.01792316337378001,
+      "simultaneous_upper": 0.030124555278953646,
+      "critical": 2.8070337683438114
+    },
+    "learned_composition_nll": {
+      "mean": 0.5813527316782197,
+      "standard_error": 0.0016468798912227921,
+      "simultaneous_lower": 0.5767298842111509,
+      "simultaneous_upper": 0.5859755791452884,
+      "critical": 2.8070337683438114
+    }
+  },
+  "sensitivity_identification_wilson_lower": 0.9383838507243579,
+  "sensitivity_outside_family_interval": {
+    "mean": -0.0013244663718713356,
+    "standard_error": 0.003286081292600651,
+    "simultaneous_lower": -0.010548607525724243,
+    "simultaneous_upper": 0.007899674781981572,
+    "critical": 2.8070337683438114
+  },
+  "sensitivity_gates": {
+    "learned_graph_and_head_identification": true,
+    "learned_vs_wrong_graph_composition_nll": true,
+    "factorized_graph_effect": true,
+    "generic_head_graph_effect": true,
+    "dense_head_graph_effect": true,
+    "matched_head_predictive_equivalence": true,
+    "learned_vs_wrong_graph_rollout_hamming": true,
+    "correct_vs_wrong_routing_criterion_brier": true,
+    "outside_original_linear_family_noninferiority": true
+  },
+  "all_sensitivity_gates_passed": true
+}

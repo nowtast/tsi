@@ -1,0 +1,545 @@
+{
+  "rows": [
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.1031679827168808,
+      "finite": true,
+      "nll": 1.1031679827168808,
+      "relative_degradation": 0.0,
+      "seed": 0,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.1031679827168808,
+      "finite": true,
+      "nll": 1.1030457036405963,
+      "relative_degradation": -0.00011084356888543202,
+      "seed": 0,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.1031679827168808,
+      "finite": true,
+      "nll": 1.103113741861394,
+      "relative_degradation": -4.91682647941616e-05,
+      "seed": 0,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.1031679827168808,
+      "finite": true,
+      "nll": 1.1022169296151696,
+      "relative_degradation": -0.0008621108630880695,
+      "seed": 0,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.1031679827168808,
+      "finite": true,
+      "nll": 1.102938436413611,
+      "relative_degradation": -0.00020807919271228413,
+      "seed": 0,
+      "world": 0
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.0745497202577168,
+      "finite": true,
+      "nll": 1.0745497202577168,
+      "relative_degradation": 0.0,
+      "seed": 1,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.0745497202577168,
+      "finite": true,
+      "nll": 1.0743471324294798,
+      "relative_degradation": -0.00018853276346153882,
+      "seed": 1,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.0745497202577168,
+      "finite": true,
+      "nll": 1.0743786677052483,
+      "relative_degradation": -0.000159185330602939,
+      "seed": 1,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.0745497202577168,
+      "finite": true,
+      "nll": 1.075577544692126,
+      "relative_degradation": 0.0009565164040643801,
+      "seed": 1,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.0745497202577168,
+      "finite": true,
+      "nll": 1.076536149447694,
+      "relative_degradation": 0.0018486154270281115,
+      "seed": 1,
+      "world": 0
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 0.9353543449015834,
+      "finite": true,
+      "nll": 0.9353543449015834,
+      "relative_degradation": 0.0,
+      "seed": 2,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 0.9353543449015834,
+      "finite": true,
+      "nll": 0.9357702696334599,
+      "relative_degradation": 0.0004446707647680017,
+      "seed": 2,
+      "world": 0
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 0.9353543449015834,
+      "finite": true,
+      "nll": 0.9358093670294322,
+      "relative_degradation": 0.00048647032039674274,
+      "seed": 2,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 0.9353543449015834,
+      "finite": true,
+      "nll": 0.9357949840839758,
+      "relative_degradation": 0.0004710933185847416,
+      "seed": 2,
+      "world": 0
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 0.9353543449015834,
+      "finite": true,
+      "nll": 0.937021048411332,
+      "relative_degradation": 0.0017818952986464096,
+      "seed": 2,
+      "world": 0
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.0196292929430988,
+      "finite": true,
+      "nll": 1.0196292929430988,
+      "relative_degradation": 0.0,
+      "seed": 0,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.0196292929430988,
+      "finite": true,
+      "nll": 1.020304025092484,
+      "relative_degradation": 0.0006617426098436308,
+      "seed": 0,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.0196292929430988,
+      "finite": true,
+      "nll": 1.0203407800361541,
+      "relative_degradation": 0.0006977899693345284,
+      "seed": 0,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.0196292929430988,
+      "finite": true,
+      "nll": 1.0185505174805893,
+      "relative_degradation": -0.001058007522906321,
+      "seed": 0,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.0196292929430988,
+      "finite": true,
+      "nll": 1.018334513037983,
+      "relative_degradation": -0.0012698535772529874,
+      "seed": 0,
+      "world": 1
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.1038854900113462,
+      "finite": true,
+      "nll": 1.1038854900113462,
+      "relative_degradation": 0.0,
+      "seed": 1,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.1038854900113462,
+      "finite": true,
+      "nll": 1.1021158148592067,
+      "relative_degradation": -0.0016031329047737088,
+      "seed": 1,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.1038854900113462,
+      "finite": true,
+      "nll": 1.10172013732908,
+      "relative_degradation": -0.001961573643153871,
+      "seed": 1,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.1038854900113462,
+      "finite": true,
+      "nll": 1.1050336820832283,
+      "relative_degradation": 0.0010401369365497341,
+      "seed": 1,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.1038854900113462,
+      "finite": true,
+      "nll": 1.1023227597506466,
+      "relative_degradation": -0.0014156633770804137,
+      "seed": 1,
+      "world": 1
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 0.9932030360911247,
+      "finite": true,
+      "nll": 0.9932030360911247,
+      "relative_degradation": 0.0,
+      "seed": 2,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 0.9932030360911247,
+      "finite": true,
+      "nll": 0.9939890722241423,
+      "relative_degradation": 0.0007914153546199238,
+      "seed": 2,
+      "world": 1
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 0.9932030360911247,
+      "finite": true,
+      "nll": 0.9941015462575101,
+      "relative_degradation": 0.0009046591016491694,
+      "seed": 2,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 0.9932030360911247,
+      "finite": true,
+      "nll": 0.9923256885583358,
+      "relative_degradation": -0.0008833516420185426,
+      "seed": 2,
+      "world": 1
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 0.9932030360911247,
+      "finite": true,
+      "nll": 0.9941861068359781,
+      "relative_degradation": 0.0009897983686421,
+      "seed": 2,
+      "world": 1
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.175632290223329,
+      "finite": true,
+      "nll": 1.175632290223329,
+      "relative_degradation": 0.0,
+      "seed": 0,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.175632290223329,
+      "finite": true,
+      "nll": 1.1752951410415489,
+      "relative_degradation": -0.00028678115137176566,
+      "seed": 0,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.175632290223329,
+      "finite": true,
+      "nll": 1.1752695577544539,
+      "relative_degradation": -0.0003085424514889564,
+      "seed": 0,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.175632290223329,
+      "finite": true,
+      "nll": 1.1748298908668704,
+      "relative_degradation": -0.0006825257889999863,
+      "seed": 0,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.175632290223329,
+      "finite": true,
+      "nll": 1.1756178480111874,
+      "relative_degradation": -1.2284633776762333e-05,
+      "seed": 0,
+      "world": 2
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.1079877741206619,
+      "finite": true,
+      "nll": 1.1079877741206619,
+      "relative_degradation": 0.0,
+      "seed": 1,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.1079877741206619,
+      "finite": true,
+      "nll": 1.1078805037616282,
+      "relative_degradation": -9.681547174003599e-05,
+      "seed": 1,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.1079877741206619,
+      "finite": true,
+      "nll": 1.107884605514015,
+      "relative_degradation": -9.3113488304245e-05,
+      "seed": 1,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.1079877741206619,
+      "finite": true,
+      "nll": 1.109256303591144,
+      "relative_degradation": 0.0011448948265597254,
+      "seed": 1,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.1079877741206619,
+      "finite": true,
+      "nll": 1.1100080046124026,
+      "relative_degradation": 0.0018233328371732636,
+      "seed": 1,
+      "world": 2
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.0815514481959867,
+      "finite": true,
+      "nll": 1.0815514481959867,
+      "relative_degradation": 0.0,
+      "seed": 2,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.0815514481959867,
+      "finite": true,
+      "nll": 1.0804788414129003,
+      "relative_degradation": -0.000991729783058863,
+      "seed": 2,
+      "world": 2
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.0815514481959867,
+      "finite": true,
+      "nll": 1.0806324260156968,
+      "relative_degradation": -0.0008497258099213476,
+      "seed": 2,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.0815514481959867,
+      "finite": true,
+      "nll": 1.0817806174485678,
+      "relative_degradation": 0.00021188936778120677,
+      "seed": 2,
+      "world": 2
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.0815514481959867,
+      "finite": true,
+      "nll": 1.0843911322553035,
+      "relative_degradation": 0.0026255653987180523,
+      "seed": 2,
+      "world": 2
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.9546256882922644,
+      "finite": true,
+      "nll": 1.9546256882922644,
+      "relative_degradation": 0.0,
+      "seed": 0,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.9546256882922644,
+      "finite": true,
+      "nll": 1.9552448307609582,
+      "relative_degradation": 0.0003167575625360867,
+      "seed": 0,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.9546256882922644,
+      "finite": true,
+      "nll": 1.9553436668510373,
+      "relative_degradation": 0.0003673227887433888,
+      "seed": 0,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.9546256882922644,
+      "finite": true,
+      "nll": 1.9520066621017533,
+      "relative_degradation": -0.0013399118850214414,
+      "seed": 0,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.9546256882922644,
+      "finite": true,
+      "nll": 1.9527276546497079,
+      "relative_degradation": -0.0009710471185993496,
+      "seed": 0,
+      "world": 3
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.9022805374599498,
+      "finite": true,
+      "nll": 1.9022805374599498,
+      "relative_degradation": 0.0,
+      "seed": 1,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.9022805374599498,
+      "finite": true,
+      "nll": 1.900174701121961,
+      "relative_degradation": -0.0011070061941551156,
+      "seed": 1,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.9022805374599498,
+      "finite": true,
+      "nll": 1.8998712988985278,
+      "relative_degradation": -0.0012665001370612925,
+      "seed": 1,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.9022805374599498,
+      "finite": true,
+      "nll": 1.9043490277819821,
+      "relative_degradation": 0.0010873739605170183,
+      "seed": 1,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.9022805374599498,
+      "finite": true,
+      "nll": 1.9032403157890168,
+      "relative_degradation": 0.000504540897184632,
+      "seed": 1,
+      "world": 3
+    },
+    {
+      "condition": "exact_state",
+      "exact_reference_nll": 1.7759483493538002,
+      "finite": true,
+      "nll": 1.7759483493538002,
+      "relative_degradation": 0.0,
+      "seed": 2,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.10",
+      "exact_reference_nll": 1.7759483493538002,
+      "finite": true,
+      "nll": 1.7769728831493092,
+      "relative_degradation": 0.0005768939146692134,
+      "seed": 2,
+      "world": 3
+    },
+    {
+      "condition": "noisy_0.25",
+      "exact_reference_nll": 1.7759483493538002,
+      "finite": true,
+      "nll": 1.7770758080107225,
+      "relative_degradation": 0.0006348487878786335,
+      "seed": 2,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_2",
+      "exact_reference_nll": 1.7759483493538002,
+      "finite": true,
+      "nll": 1.7755521881249012,
+      "relative_degradation": -0.00022307024246685399,
+      "seed": 2,
+      "world": 3
+    },
+    {
+      "condition": "heldout_cardinality_4",
+      "exact_reference_nll": 1.7759483493538002,
+      "finite": true,
+      "nll": 1.7786479197457263,
+      "relative_degradation": 0.0015200725814511517,
+      "seed": 2,
+      "world": 3
+    }
+  ],
+  "status": "development_only_not_sealed"
+}

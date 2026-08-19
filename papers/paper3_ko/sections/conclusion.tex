@@ -1,0 +1,19 @@
+\section{결론}
+\label{sec:conclusion}
+
+기존 exact-state 연구는 sealed OOD와 open-loop routing effect 및 더 좁은 four-arm
+same-task criterion association을 확립했다. Arm-level decomposition은 pooled
+criterion estimand가 routing correctness를 식별할 수 없음을 정확히 보였다.
+
+Prospective stochastic 연구는 기존 결과의 명칭을 바꾸지 않고 그 identification
+문제를 해결한다. 서로 겹치지 않는 noisy training 및 selection partition에서
+routing과 head family를 학습했다. 이어 120개 fresh world에서 correct learned
+routing은 shifted route보다 composition NLL, six-step rollout error와 시간 순서가
+보장된 criterion Brier score를 개선했다. 결과는 원래 linear transition 식 밖에서도
+유지됐고 clean-room Node.js 구현이 learned fit과 analysis mean을 재현했다.
+
+따라서 결론은 다음과 같이 정확하다. 선언한 finite stochastic family 안에서
+train-only structural identification은 active two-edge mechanism을 회수하며, 그
+mechanism의 correct routing은 predictive 및 criterion value를 갖는다. Visual
+perception, unconstrained neural discovery 또는 real-world system은 서로 다른
+estimand이므로 본 결론에 붙은 미해결 조건으로 주장하지 않는다.

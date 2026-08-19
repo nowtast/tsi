@@ -1,0 +1,15 @@
+{
+  "identifier": "P3-5A-LEARNED-v1",
+  "parent_p3_4b_evidence_digest": "0d5fc30d15c38e352470134889142ad42511318c8f22a30baae8a95416dbea32",
+  "contract_digest": "e44966487dcf22ede16053228c74004efe2e28c402b54b932e1751ceca0156d6",
+  "regime_count": 5,
+  "endpoint_count": 4,
+  "evidence_level_before": 3,
+  "evidence_level_after": 3,
+  "sealed_execution": false,
+  "audit": {
+    "errors": [],
+    "passed": true
+  },
+  "status": "development_contract_frozen"
+}

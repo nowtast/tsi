@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\setlength{\emergencystretch}{3em}
+\usepackage[margin=1in]{geometry}
+\usepackage{kotex}
+\setmainhangulfont[ItalicFont=UnBatang]{UnBatang}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{assumption}[definition]{Assumption}
+\newtheorem{lemma}[definition]{Lemma}
+\newtheorem{proposition}[definition]{Proposition}
+\newtheorem{theorem}[definition]{Theorem}
+\newtheorem{corollary}[definition]{Corollary}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\DeclareMathOperator{\Dgm}{Dgm}
+\newcommand{\FinRel}{\mathbf{FinRel}}
+\newcommand{\StrState}{\mathsf{StrState}}
+\newcommand{\StrTrack}{\mathsf{StrTrack}}
+\newcommand{\Dstr}{\Delta_{\mathrm{str}}}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\dom}{\operatorname{dom}}
+\newcommand{\im}{\operatorname{im}}
+\title{Structural Imagination Space: 계층적 내부 구조의 형식 이론}
+\author{하철수\\개인 연구자\\\texttt{charles.andrew.ha@gmail.com}}
+\date{2026년 8월 19일}
+\begin{document}
+\maketitle
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/formal_framework}
+\input{sections/running_example}
+\input{sections/layer_theorems}
+\input{sections/topological_extension}
+\input{sections/metric_measure_extension}
+\input{sections/category_extension}
+\input{sections/dynamics_extension}
+\input{sections/dynamics}
+\input{sections/interpretation_and_limits}
+\input{sections/conclusion}
+\section*{감사의 글}
+본 연구의 아이디어를 검토해준 지인과 동료분들에게 감사합니다.
+
+\section*{데이터 및 코드 가용성}
+이 이론 연구는 새로운 경험적 데이터셋을 도입하지 않는다. 영문·국문 원고
+소스와 참조 구현은 \url{https://github.com/nowtast/tsi}에서 공개한다.
+\end{document}

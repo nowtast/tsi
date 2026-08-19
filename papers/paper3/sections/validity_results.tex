@@ -1,0 +1,95 @@
+\section{Task-Level Criterion-Association Results}
+\label{sec:validity-results}
+
+\subsection{Development freeze}
+
+The first development specification failed before any sealed reveal:
+leave-one-world-out improvements were \(0.000421\) for the terminal Brier score
+and \(-0.000221\) for the integrated score.  The effect floor was not lowered.
+The revised specification changed the exogenous task utility from mode equality
+to structural predicates, used task-varying hazards and scalar
+selected-versus-alternative contrasts, doubled units per world from 16 to 32,
+and retained the stronger layer-aware sensitivity.
+
+Across 24 revised development worlds, the primary event rate was \(0.60384\).
+Leave-one-world-out terminal and integrated improvements were \(0.003124\) and
+\(0.003927\).  An analytic floor and a 20,000-draw conjunctive Holm power
+simulation selected 69 sealed worlds; simulated conjunctive power was
+\(0.9208\), with Monte Carlo 95\% lower bound \(0.91698\).
+
+\subsection{Sealed primary analysis}
+
+All \(1{,}242\) sealed fits completed.  The primary population contained
+\(26{,}496=69\times32\times3\times4\) unit records (worlds, units, nested
+optimizer seeds, and primary arms), with event rate \(0.61632\); both exact controls
+retained event rate zero.  Table~\ref{tab:validity-primary} gives the
+co-primary analysis.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen co-primary criterion-validity results across 69 worlds.
+Bootstrap and hierarchical columns are simultaneous lower bounds against
+zero.}
+\label{tab:validity-primary}
+\begin{tabular}{lrrrrr}
+\toprule
+Effect & Mean & World SD & Holm \(p\) & Bootstrap LB & Hierarchical LB \\
+\midrule
+Terminal Brier
+& 0.003519 & 0.009015 & 0.001230 & 0.001428 & 0.001392 \\
+Integrated first failure
+& 0.003034 & 0.007471 & 0.001230 & 0.001296 & 0.001271 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Both means exceed \(\SESOI=0.0025\).  Mean terminal Brier score decreased from
+\(0.183661\) to \(0.180143\), and integrated Brier score decreased from
+\(0.148317\) to \(0.145283\).  Outcome noncircularity, panel completeness,
+event balance, no-refitting, exact-control structural zero, Holm,
+cluster-bootstrap, and hierarchical requirements all passed.
+
+The pooled estimand averages four heterogeneous arms.  Table~\ref{tab:validity-arms}
+therefore reports the prespecified secondary arm decomposition before any
+routing interpretation.
+
+\begin{table}[ht]
+\centering
+\caption{Arm-level Brier improvements over the frozen scalar model.  These are
+secondary descriptive effects, not separately multiplicity-gated estimands.}
+\label{tab:validity-arms}
+\begin{tabular}{lrr}
+\toprule
+Arm & Terminal & Integrated \\
+\midrule
+Layer-routed dense & 0.005402 & 0.003222 \\
+Strict factorized & 0.003114 & 0.003077 \\
+Random-routed matched sparsity & 0.002445 & 0.002758 \\
+Permuted or wrong-routed & 0.003114 & 0.003077 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The wrong-routed arm exceeds \(\SESOI\) on both outcomes, and the random-routed
+arm exceeds it on the integrated outcome.  Consequently, the pooled criterion
+analysis identifies an association between structural augmentation and the
+same-task outcomes, not the effect of routing correctness.  The larger
+descriptive effects for layer-routed dense than for strict factorization also
+do not isolate factorization as the active component.
+
+\subsection{Sensitivity and temporal boundaries}
+
+When direct raw layer mismatches were added to the generic baseline, structural
+augmentation improved terminal and integrated Brier scores by \(0.002108\) and
+\(0.001467\).  These effects are positive but below \(\SESOI\).  Thus the
+primary result establishes an increment beyond a scalar generic baseline, not
+a practically nontrivial advantage beyond the prespecified layer-aware
+baseline.
+
+Two stronger temporal interpretations were tested only on development data and
+failed.  Using the independent probe to predict later task failures yielded
+\(-0.000539\) and \(-0.000212\).  Using the first four tasks as calibration to
+predict the later four yielded \(-0.002021\) and \(-0.001069\).  Consequently,
+the sealed positive result is a same-task criterion association using oracle
+candidate endpoints.  It is not evidence for future-task prognosis or an
+oracle-free deployment score.

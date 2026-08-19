@@ -1,0 +1,46 @@
+\section{Layer Theorem}
+이 절은 여섯 조건을 모두 반영한 structural equivalence와 survivor layer preservation을 정리한다.
+
+\begin{proposition}[Structural equivalence]
+$\StrState(Q,\mathcal E)$ 위의 $\cong_{\mathrm{str}}$는 reflexive, symmetric, transitive하다.
+\end{proposition}
+
+\begin{proof}
+Identity family는 label, simplex, distance, filtration, mass, generator relation을 모두 보존한다. 역함수 family에 여섯 equality를 적용하면 symmetry가 성립한다. 두 isomorphism의 typewise composite는 여섯 equality를 순서대로 합성하므로 transitivity가 성립한다.
+\end{proof}
+
+\begin{proposition}[Generator preservation extends to paths]
+모든 generator relation을 보존하는 integrated structural isomorphism은 $\mathcal S$의 모든 morphism relation을 transport한다.
+\end{proposition}
+
+\begin{proof}
+Identity는 diagonal relation을 보존한다. 합성 경로의 relation membership은 intermediate witness의 존재로 표현되며, generator 보존과 bijection이 witness를 정확히 transport한다. Path length induction과 schema equation으로 모든 morphism에 대해 성립한다.
+\end{proof}
+
+\begin{definition}[Survivor-level layer preservation]
+Tracked transition $p:\Sigma\rightharpoonup\Sigma'$가 survivor에서 다섯 layer를 보존한다는 것은
+\begin{align*}
+\bar p[K|_{D_p}]&=L|_{I_p} &&\text{(topology)},\\
+d'(\bar p x,\bar p y)&=d(x,y) &&\text{for all }x,y\in D_p &&\text{(geometry)},\\
+(p_A\times p_B)[F([e])|_{D_A,D_B}]&=G([e])|_{I_A,I_B}
+ &&\text{for every generator }e:A\to B &&\text{(relations)},\\
+g(\bar p\sigma)&=f(\sigma) &&\text{for every surviving simplex }\sigma &&\text{(filtration)},\\
+\eta(\bar p x)&=\mu(x) &&\text{for every }x\in D_p &&\text{(mass)}.
+\end{align*}
+\end{definition}
+
+\begin{theorem}[Composition closure]
+두 transition이 topology, geometry, relation, filtration, mass 중 선택한 layer를 survivor에서 보존하면 composite도 같은 layer를 보존한다.
+\end{theorem}
+
+\begin{proof}
+Composite domain을 $E_A=\{x:p_Ax\in\dom(q_A)\}$, intermediate survivor를 $J_A=p_A(E_A)$로 둔다. 첫 transition의 equality를 $E$에, 둘째 equality를 $J$에 제한하면 topology와 filtration이 합성된다. Geometry와 mass는 pointwise equality를 두 번 적용한다. Relation은 첫 equality를 $E_A\times E_B$에 제한하고 그 image $J_A\times J_B$에 둘째 equality를 적용한다.
+\end{proof}
+
+\begin{corollary}[Trajectory preservation]
+선택한 다섯 layer를 보존하는 transition은 $\StrTrack(Q,\mathcal E)$의 wide subcategory를 이루며, 유한 trajectory의 composite도 같은 layer를 보존한다.
+\end{corollary}
+
+\begin{proof}
+Identity와 composition closure, edge 수에 대한 induction으로 따른다.
+\end{proof}

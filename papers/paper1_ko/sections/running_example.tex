@@ -1,0 +1,54 @@
+\section{러닝 예제: 네 surface star 상태}
+
+모든 state 공리를 만족하고 각 확장에서 재사용할 수 있는 하나의 finite state를
+제시한다. Presented schema는 $B$ (block), $S$ (surface) 두 object와 하나의
+generator $e:B\to S$, 그리고 nontrivial path equation이 없다고 하자.
+\[
+F(B)=\{b\},\qquad F(S)=\{s_1,s_2,s_3,s_4\},
+\]
+$\lambda_B(b)=\mathsf{block}$이고 모든 $i$에 대해
+$\lambda_S(s_i)=\mathsf{surface}$라 하자.
+$F([e])=\{(b,s_i):1\leq i\leq4\}$로 둔다.
+$K$는 다섯 entity를 vertex로 하고 네 edge $\{b,s_i\}$를 nontrivial
+simplex로 갖는 star complex이다. 따라서 양립성 조건이 성립한다.
+
+\[
+d(x,x)=0,\qquad d(b,s_i)=1,\qquad d(s_i,s_j)=2\quad(i\ne j)
+\]
+로 두고 symmetry를 이해한다. 유일하게 필요한 nontrivial triangle inequality는
+$2\leq1+1$이므로 이는 metric이다. 모든 vertex의 filtration value를 0,
+모든 edge의 value를 1, 모든 entity의 mass를 $1/5$로 둔다. 이 state를
+$\Sigma_\star$라 하자. Filtration은 monotone이고 mass는 full support이다.
+
+Primed entity name을 사용한 isomorphic copy를 $\Sigma'_\star$라 하자.
+$b\mapsto b'$, $s_i\mapsto s_i'$인 bijection은 label, star complex,
+distance, filtration, mass, generator relation을 모두 보존한다. 따라서
+\[
+d_B(\Dgm_k(f),\Dgm_k(g))=0\quad(k\leq r),\qquad
+\Delta_{\mathrm{mm},p}((|F|,d,\mu,\lambda),(|G|,\rho,\eta,\nu))=0
+\quad(1\leq p<\infty).
+\]
+이 star filtration의 degree-zero persistence diagram은 $(0,\infty)$ 한 점과 $(0,1)$ 네 점을 가지며 degree zero에서 연결 component
+하나이고 양의 degree homology class는 없다.
+
+같은 예제는 local preservation과 temporal identity의 차이도 보여준다.
+$p$가 $b,s_1,s_2$를 $b',s_1',s_2'$로 보내고 $s_3,s_4$를 unmatched로
+남긴다고 하자. Survivor subcomplex와 restricted generator relation은
+일치하고, surviving distance, filtration value, mass도 일치하므로
+\[
+m_K(p)=m_d(p)=m_R(p)=m_f(p)=m_\mu(p)=0.
+\]
+그러나
+\[
+b(p)=(4-2)+(4-2)=4
+\]
+이다. 첫 항은 type $S$의 source turnover이고 둘째 항은 type $S$의 target
+turnover이다. 따라서 zero layer defect가 full temporal identity를
+인증하지는 않는다. 반대로 네 surface와 block을 모두 primed copy에
+match하면 여섯 양, $b(p)$를 포함해 모두 0이고 transition은 full
+structural isomorphism이다.
+
+이 예제는 의도적으로 finite하고 투명하다. Star complex가 cognition을
+모델링한다고 주장하지 않는다. 이 예제의 역할은 formal state class가
+공허하지 않으며 defect quantity가 survivor-level preservation과 carrier
+turnover를 구분한다는 것을 계산으로 확인하는 데 있다.

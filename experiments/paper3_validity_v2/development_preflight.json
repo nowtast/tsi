@@ -1,0 +1,38 @@
+{
+  "contract": {
+    "contract_digest": "8b22e4ba10e1587a4ab7eff15ca5204cffe8f7e8516d74e1f1bfed9146e073ff",
+    "effect_count": 2,
+    "errors": [],
+    "identifier": "P3-4B-VALIDITY-v2",
+    "model_count": 6,
+    "passed": true
+  },
+  "generator": {
+    "development_manifest_digest": "671e74bede3989156f728545f85059860504d6928ccca478c02bda627a40efc7",
+    "development_task_count": 6144,
+    "development_unit_count": 768,
+    "development_world_count": 24,
+    "errors": [],
+    "identifier": "P3-4B-NONCIRCULAR-TASK-GENERATOR-v2",
+    "outcome_definition_uses_tsi_metric": false,
+    "passed": true,
+    "probe_task_hmac_domains_disjoint": true,
+    "sealed_worlds_materialized": 0,
+    "task_generation_imports_tsi_metric": false
+  },
+  "passed": true,
+  "routing_controls": {
+    "active_parameter_budget": 420,
+    "compute_budgets_matched": true,
+    "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+    "errors": [],
+    "information_fields_matched": true,
+    "max_relative_parameter_difference": 0.0,
+    "model_count_per_family": 6,
+    "passed": true,
+    "random_masks_equal_correct_masks": false,
+    "training_updates_matched": true,
+    "tuning_budgets_matched": true,
+    "wrong_masks_equal_correct_masks": false
+  }
+}

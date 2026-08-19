@@ -1,0 +1,79 @@
+{
+  "confirmatory_analysis_seed_commitment": "899a95052f6723e65544cc38b3a82dcc3153cb1098e3d6e4ba51137f3f92b237",
+  "dense_noninferiority_margin": 0.05,
+  "discordant_uncertainty_rule": "use_the_more_conservative_decision",
+  "excluded_from_primary_endpoint": [
+    "bridge_violating_control"
+  ],
+  "failure_preservation_rules": [
+    "all six OOD slices are reported separately",
+    "all failed runs and restarts remain in the ledger",
+    "a failed primary contrast fails the conjunctive primary claim",
+    "no architecture, decoder, threshold, sample size, or endpoint changes are allowed after test reveal",
+    "full-codebook results remain oracle upper bounds and cannot rescue the primary decoder"
+  ],
+  "familywise_alpha": 0.05,
+  "hierarchical_method": "world_random_intercept_seed_nested_variance_decomposition",
+  "identifier": "P3-3B-ANALYSIS-v2",
+  "key_secondary_endpoints": [
+    "fixed_joint_exact_rate",
+    "fixed_layer_error_vector",
+    "bridge_violation_rate",
+    "tracking_exact_rate"
+  ],
+  "multiplicity_rule": "holm_fwer_three_primary_contrasts",
+  "negative_control_role": "structural_specificity_diagnostic_not_prediction_ground_truth",
+  "parent_contract": "P3-3A-INDEPENDENCE-v1",
+  "planned_test_worlds": 50,
+  "positive_control_rules": [
+    "strict_factorized_action mean quotient error must be at most 0.05 and fixed-joint exact rate at least 0.90 on separable-world unseen action composition before test reveal",
+    "a failed separable positive control blocks P3-3B interpretation"
+  ],
+  "power_target": 0.9,
+  "primary_contrasts": [
+    {
+      "adjusted_interval_rule": "holm_adjusted_95pct_upper_bound_lt_margin",
+      "control": "dense_active_matched",
+      "direction": "upper_bounded_establishes_signature_noninferiority",
+      "estimand": "error_signature_routed_minus_error_control_by_world",
+      "minimum_point_effect": null,
+      "noninferiority_margin": 0.05
+    },
+    {
+      "adjusted_interval_rule": "holm_adjusted_95pct_lower_bound_gt_0",
+      "control": "random_routed_matched_sparsity",
+      "direction": "positive_favors_signature_routed",
+      "estimand": "error_control_minus_error_signature_routed_by_world",
+      "minimum_point_effect": 0.05,
+      "noninferiority_margin": null
+    },
+    {
+      "adjusted_interval_rule": "holm_adjusted_95pct_lower_bound_gt_0",
+      "control": "permuted_or_wrong_routed",
+      "direction": "positive_favors_signature_routed",
+      "estimand": "error_control_minus_error_signature_routed_by_world",
+      "minimum_point_effect": 0.05,
+      "noninferiority_margin": null
+    }
+  ],
+  "primary_controls": [
+    "dense_active_matched",
+    "random_routed_matched_sparsity",
+    "permuted_or_wrong_routed"
+  ],
+  "primary_decoder": "constructive_valid_primary",
+  "primary_endpoint": "world_mean_normalized_i0_quotient_error_constructive_valid_primary",
+  "primary_family": "bridge_coupled",
+  "primary_model": "signature_routed_oracle",
+  "primary_ood_slice": "bridge_consistent_shift",
+  "primary_pvalue_method": "one_sided_student_t_on_seed_averaged_world_effects",
+  "routing_contract": "P3-3A-ROUTING-CONTROLS-v2",
+  "simultaneous_interval_method": "world_cluster_bootstrap_bonferroni_alpha_over_3_conservative_for_holm",
+  "smallest_effect_of_interest": 0.05,
+  "test_world_count_status": "frozen_after_p3_3a_power_gate",
+  "uncertainty_methods": [
+    "world_cluster_bootstrap",
+    "hierarchical_world_seed_model"
+  ],
+  "world_seed_aggregation": "average paired optimizer seeds within world, then compare worlds"
+}

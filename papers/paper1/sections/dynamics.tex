@@ -1,0 +1,123 @@
+\section{Dynamics and Rollout Stability}
+
+Static structure alone does not make a transition model well-defined. We require
+updates to respect structural equivalence before measuring their error.
+
+\begin{definition}[Extended structural pseudometric]
+Let $\mathcal X=\StrState(Q,\mathcal E)/\cong_{\mathrm{str}}$. An extended
+structural pseudometric on a subset $\mathcal X_0\subseteq\mathcal X$ is a
+map
+\[
+\Dstr:\mathcal X_0\times\mathcal X_0\to[0,\infty]
+\]
+that is symmetric, vanishes on the diagonal, satisfies the triangle
+inequality, and is allowed to take the value $+\infty$. A finite-distance
+component is a subset on which all pairwise values are finite. The rollout
+theorem below is conditional on these properties; it does not claim that any
+particular layer discrepancy automatically has them.
+\end{definition}
+
+\begin{proposition}[Existence of an admissible discrepancy]
+For every subset $\mathcal X_0$, the discrete discrepancy
+\[
+\Dstr^{\mathrm{disc}}(x,y)=
+\begin{cases}0,&x=y,\\1,&x\ne y,\end{cases}
+\]
+is a structural metric on $\mathcal X_0$. Every map
+$T:\mathcal X_0\to\mathcal X_0$ is $1$-Lipschitz under this metric.
+\end{proposition}
+
+\begin{proof}
+Symmetry and diagonal vanishing are immediate. For the triangle inequality,
+if $x=z$ the result is trivial; otherwise at least one of $x\ne y$ or
+$y\ne z$ holds, so $\Dstr^{\mathrm{disc}}(x,z)=1\leq
+\Dstr^{\mathrm{disc}}(x,y)+\Dstr^{\mathrm{disc}}(y,z)$. A map cannot increase
+a zero distance, and the only positive input distance is $1$, so the
+Lipschitz claim follows.
+\end{proof}
+
+The discrete example is intentionally degenerate for rollout: if the one-step
+tolerance is less than $1$, the predicted and true classes must coincide; if it
+is at least $1$, the resulting bound can be vacuous because the diameter is
+$1$.
+
+The metric--measure result gives a non-discrete admissible instance. For a
+state $\Sigma$, let $M(\Sigma)$ be its induced full-support metric--measure
+state with tagged labels, and define
+\[
+ \Dstr^{\mathrm{mm}}([\Sigma],[\Sigma'])
+ =\Delta_{\mathrm{mm},1}(M(\Sigma),M(\Sigma')).
+\]
+Structural isomorphisms induce label- and measure-preserving isometries, so the
+value is independent of the chosen representatives. Symmetry, diagonal
+vanishing, and the triangle inequality make this an extended structural
+pseudometric on $\mathcal X$. It is not a metric there: zero value identifies
+the metric--measure layer but need not identify the simplicial complex or the
+generator relations.
+
+\begin{assumption}[Quotient-defined Lipschitz action models]
+Let $\mathcal X_0$ be a finite-distance component invariant under true and
+predicted updates. For each action $a$, assume that the updates
+$T_a,\widehat T_a:\mathcal X_0\to\mathcal X_0$ are well-defined, that $T_a$ is
+$L_a$-Lipschitz under an extended structural pseudometric $\Dstr$, and that
+$\Dstr(\widehat T_a z,T_a z)\leq\varepsilon_a$ at every predicted-rollout
+state $z$ where the estimate is invoked.
+\end{assumption}
+
+The well-definedness condition is an equivariance assumption: isomorphic input
+representatives must produce isomorphic outputs. It does not follow from the
+state definition. A pseudometric is sufficient for the recurrence; a genuine
+metric is required only when distinct quotient classes must be separated.
+
+\begin{theorem}[Action-conditioned rollout bound]
+For actions $a_1,\ldots,a_n$ and common initial class $x_0$, define
+$x_i=T_{a_i}x_{i-1}$ and $\widehat x_i=\widehat T_{a_i}\widehat x_{i-1}$. Under
+the assumption above,
+\[
+\Dstr(\widehat x_n,x_n)\leq
+\sum_{i=1}^n\varepsilon_{a_i}\prod_{j=i+1}^nL_{a_j},
+\]
+where an empty product equals $1$.
+\end{theorem}
+
+\begin{proof}
+Let $e_i=\Dstr(\widehat x_i,x_i)$. The triangle inequality gives
+\[
+e_i\leq\Dstr(\widehat T_{a_i}\widehat x_{i-1},T_{a_i}\widehat x_{i-1})+
+\Dstr(T_{a_i}\widehat x_{i-1},T_{a_i}x_{i-1})\leq\varepsilon_{a_i}+L_{a_i}e_{i-1}.
+\]
+Since $e_0=0$, induction on $i$ expands this recurrence into the displayed
+sum. Each induction step multiplies all previous terms by $L_{a_i}$ and adds
+$\varepsilon_{a_i}$, which is exactly the claimed product pattern.
+\end{proof}
+
+\begin{proposition}[No uniform rollout bound without uniform Lipschitz control]
+A common one-step error bound does not imply a nontrivial multi-step bound
+uniform over a family of models whose Lipschitz constants are unbounded.
+\end{proposition}
+
+\begin{proof}
+Take the metric component $[0,1]$ with discrepancy
+$\Dstr(u,v)=c|u-v|$. For $\eta>0$, let
+$T_M(u)=\min\{1,Mu\}$ and $\widehat T_M(u)=\min\{1,Mu+\eta\}$.
+Both maps are well-defined on this component, and $T_M$ is $M$-Lipschitz.
+The one-step discrepancy is at most $c\eta$, independently of $M$. Starting
+at zero, choose $M$ so that $M\eta+\eta\geq1$; the predicted state reaches one
+at step two while the true state remains zero. Thus a fixed two-step error
+survives as $\eta\to0$ when no common Lipschitz bound is imposed.
+\end{proof}
+
+\begin{proposition}[Quotient equivariance is independently necessary]
+A representative-level update that maps isomorphic input states to
+non-isomorphic output states does not induce a well-defined update on
+$\mathcal X=\StrState(Q,\mathcal E)/\cong_{\mathrm{str}}$.
+\end{proposition}
+
+\begin{proof}
+Let $\Sigma\cong_{\mathrm{str}}\Sigma'$ and suppose a representative-level rule
+sends them to $\Theta$ and $\Theta'$ with
+$\Theta\not\cong_{\mathrm{str}}\Theta'$. The quotient class of the input is the
+same whether represented by $\Sigma$ or $\Sigma'$, but the proposed output
+class differs. Therefore no function on input equivalence classes can agree
+with this rule on both representatives.
+\end{proof}

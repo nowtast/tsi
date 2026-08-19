@@ -1,0 +1,21 @@
+{
+  "analysis_plan_digest": "59bb8a7a02814e9594e75febf72c89b2c63135a4d8ca53328c0efe096664b122",
+  "confirmatory_analysis_seed_commitment": "d1e876785ba738aee1d17b408a48e443d637d7f851dbea629147d6e12ccc83f1",
+  "contract_digest": "96477af0207eedb61980eaaa6aa01bf43ffcc49adce775df789ba64be96ca9e8",
+  "development_predictor_report_digest": "636075da7f501dcedbf931e14baf3b6816f264e1ba45ccce34db24c450eece84",
+  "frozen_predictor_digest": "b295efd2d238aee3e1012eaccf8ba68451e5b2a6e31e4ca4b0475efa025a41fa",
+  "hierarchical_model": "world_random_intercept_seed_nested_variance_decomposition",
+  "identifier": "P3-4B-VALIDITY-ANALYSIS-PLAN-v1",
+  "multiplicity": "holm_fwer_two_coprimary_effects",
+  "planned_test_worlds": 50,
+  "predictive_sesoi": 0.0025,
+  "primary_success_effects": [
+    "binary_brier_improvement",
+    "first_failure_integrated_brier_improvement"
+  ],
+  "sealed_predictor_refitting": false,
+  "student_test": "one_sided_world_level_student_t",
+  "test_output_used": false,
+  "world_cluster_bootstrap_iterations": 20000,
+  "world_cluster_bootstrap_tail": "bonferroni_alpha_over_two_simultaneous_lower"
+}

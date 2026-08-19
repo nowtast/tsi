@@ -1,0 +1,56 @@
+\section{관련 연구와 범위}
+
+\paragraph{개입을 이용한 인과 구조 학습.}
+관찰 자료만을 이용한 DAG 발견은 일반적으로 Markov 동치류의 제약을 받지만,
+알려진 개입은 동치류를 세분화하며 추가 조건 아래에서 그래프를 더 많이 식별할
+수 있다 \citep{hauser2012interventional,yang2018interventions}.
+점수 기반 방법과 연속 최적화 방법은 개입 greedy equivalence search부터 개입
+우도를 이용하는 미분 가능한 최적화까지 포함한다
+\citep{zheng2018notears,brouillard2020dcdi}. 본 연구의 과제는 이보다 훨씬
+좁다. 다섯 좌표와 개입 표적을 모두 관측하고, 후보 그래프는 유한한 typed motif
+족이며, 자료 생성기는 선언된 전이 언어 안에 있다. 따라서 120-world 결과는 이
+유한 족 안의 회수에 대한 증거이지, 일반 DAG 발견 결과도 아니고 관찰 자료에서의
+인과 식별 주장도 아니다.
+
+\paragraph{인과 표현학습.}
+인과 표현학습은 고차원 혼합으로부터 잠재 인과 변수와 그 관계를 언제 회수할 수
+있는지를 다룬다 \citep{scholkopf2021causalrep}. 개입을 이용한 기존 결과들은
+완전 개입, 불완전 개입, 표적을 모르는 개입, uncoupled 개입, 다중 노드 개입에
+서로 다른 가정을 두고 식별가능성을 제시한다
+\citep{ahuja2023interventional,vonkugelgen2023nonparametric,
+bing2024multinode,varici2024general}. 반면 본 연구는 잠재 좌표나 지각 혼합
+함수를 추론하지 않는다. modular 좌표, action 표적, action 크기가 주어진다.
+본 연구의 기여는 이러한 표현 변수가 이미 선언된 뒤 graph 선택과 typed head
+factorization의 기여를 통제된 조건에서 귀속하는 데 있다.
+
+\paragraph{희소 support 회수.}
+$\ell_1$ 방법과 greedy pursuit의 정확한 support 회수는 설계, 신호, 잡음,
+incoherence 또는 restricted-curvature 조건에 의존하는 것으로 알려져 있다
+\citep{tropp2007omp,wainwright2009sharp,dyer2013greedy,
+bahmani2013grasp}. 여기서 사용하는 seven-sparse embedding은 선형 Gaussian
+Lasso나 orthogonal matching pursuit 문제가 아니라 $\mathbb Z_7$ 위의 대수적
+표현이다. 본 논문의 population 명제는 full-support primitive intervention 아래
+유한 motif를 식별하고, repeated-input 따름정리는 좌표별 최빈값 오류를 제어한다.
+어느 결과도 구현된 greedy selector의 유한 random-design 회수를 증명하지
+않으므로, 120/120 회수율은 경험적 결과로 남는다.
+
+\paragraph{구조화 world model.}
+Interaction network와 graph network는 객체와 관계 구조를 구조적 귀납 편향으로
+부호화한다 \citep{battaglia2016interaction,battaglia2018relational}.
+Neural relational inference, contrastive structured world model, slot 기반
+객체 발견, 구조화 탐색은 서로 다른 복잡도의 관측으로부터 그래프 또는 객체 중심
+동역학을 학습한다
+\citep{kipf2018nri,kipf2020contrastive,locatello2020slot,
+sancaktar2022curious}. TSI의 유한 modular world는 더 구체적인 질문을 위한
+시험대이다. 즉, 선언된 의존 정보와 transition-head factorization이 통제된 OOD
+개입에서 각각 측정 가능한 기여를 하는지를 묻는다. 현재 증거는 시각적 객체 발견,
+확장 가능한 graph-neural dynamics, 실제 세계 타당성을 확립하지 않는다.
+
+\paragraph{모듈성과 독립 메커니즘.}
+independent causal mechanisms 원리는 자료 생성 과정을 자율적인 모듈로 분해할
+동기를 제공하며, 기존 연구는 변환된 도메인에서 이러한 메커니즘을 학습하고자 했다
+\citep{parascandolo2018independent}. 본 논문의 graph-by-head 요인 설계는 그중
+제한된 유사물만 조작화한다. prediction head가 올바르게 factorized되거나, untied
+dense이거나, 의도적으로 불일치할 때에도 routing 정보가 기여하는지를 검정한다.
+따라서 보고한 interaction과 stress-cohort 결과는 benchmark 내부의 구성 요소
+귀속 경계를 정할 뿐, 독립 메커니즘의 보편적 자율성이나 발견을 입증하지 않는다.

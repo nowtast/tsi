@@ -1,0 +1,184 @@
+\section{Metric--Measure Extension}
+
+The geometric layer can contain uncertain or repeated entities, so a set-level
+correspondence alone is not sufficient. We attach probability mass to the
+finite metric carrier and compare mass through couplings. The result below is
+an exactness theorem, not a finite-sample convergence theorem.
+
+\begin{definition}[Full-support metric--measure state]
+A full-support metric--measure state is a tuple
+$M=(X,d,\mu,\lambda)$, where $(X,d)$ is a finite metric space,
+$\mu:X\to(0,1]$ satisfies $\sum_{x\in X}\mu(x)=1$, and
+$\lambda:X\to\mathcal L$ is a label map. Full support means
+$\mu(x)>0$ for every $x\in X$.
+\end{definition}
+
+Full support is required for the exactness result: a zero-mass entity could be
+added or moved without changing any coupling objective. The measure is part of
+the state, while coordinates or unlisted attributes are not implicitly treated
+as geometric evidence.
+
+\begin{definition}[Label-compatible coupling]
+For full-support states $M_X=(X,d_X,\mu_X,\lambda_X)$ and
+$M_Y=(Y,d_Y,\mu_Y,\lambda_Y)$, a coupling is a function
+$\pi:X\times Y\to\R_{\geq0}$ with
+\[
+ \sum_{y\in Y}\pi(x,y)=\mu_X(x),
+ \qquad
+ \sum_{x\in X}\pi(x,y)=\mu_Y(y).
+\]
+It is label-compatible when
+$\pi(x,y)>0\Rightarrow\lambda_X(x)=\lambda_Y(y)$.
+\end{definition}
+
+\begin{definition}[$p$-metric--measure discrepancy]
+For $1\leq p<\infty$ and a label-compatible coupling $\pi$, put
+\[
+ \mathcal D_p(\pi)^p
+ =
+ \sum_{x,x'\in X}\sum_{y,y'\in Y}
+ |d_X(x,x')-d_Y(y,y')|^p
+ \pi(x,y)\pi(x',y').
+\]
+The metric--measure discrepancy is
+\[
+ \Delta_{\mathrm{mm},p}(M_X,M_Y)
+ =\inf_{\pi}\mathcal D_p(\pi),
+\]
+where the infimum ranges over label-compatible couplings. If no such coupling
+exists, the discrepancy is $+\infty$.
+\end{definition}
+
+This is a finite hard-label-constrained Gromov--Wasserstein-type objective.
+It does not include coordinate costs, soft attribute costs, or a learned
+correspondence. Those additions define a different discrepancy and require
+their own identifiability analysis.
+
+\begin{theorem}[Zero metric--measure discrepancy is exact]
+Let $M_X$ and $M_Y$ be full-support metric--measure states. For every
+$1\leq p<\infty$,
+$\Delta_{\mathrm{mm},p}(M_X,M_Y)=0$ if and only if there is a bijection
+$\varphi:X\to Y$ such that, for every $x,x'\in X$,
+\[
+ d_Y(\varphi(x),\varphi(x'))=d_X(x,x'),\qquad
+ \lambda_Y(\varphi(x))=\lambda_X(x),\qquad
+ \mu_Y(\varphi(x))=\mu_X(x).
+\]
+\end{theorem}
+
+\begin{proof}
+Suppose first that such a bijection exists. Define
+\[
+ \pi_\varphi(x,y)=
+ \begin{cases}
+  \mu_X(x),&y=\varphi(x),\\
+  0,&\text{otherwise}.
+ \end{cases}
+\]
+The first marginal is $\mu_X$. For $y=\varphi(x)$, bijectivity and
+measure preservation make the second marginal equal to
+$\mu_X(x)=\mu_Y(y)$; hence this is a coupling. Label preservation makes
+it label-compatible. A positive product
+$\pi_\varphi(x,y)\pi_\varphi(x',y')$ can occur only with
+$y=\varphi(x)$ and $y'=\varphi(x')$, where the distance difference is
+zero. Thus $\mathcal D_p(\pi_\varphi)=0$ and the discrepancy is zero.
+
+Conversely, suppose the discrepancy is zero. The set of all couplings is a
+closed and bounded subset of the finite-dimensional space
+$\R^{X\times Y}$; imposing the finitely many label constraints keeps a
+closed subset. If it is nonempty, it is compact. Since $\mathcal D_p$ is
+continuous, a minimizing coupling $\pi_*$ exists and satisfies
+$\mathcal D_p(\pi_*)=0$.
+
+Let $C=\{(x,y):\pi_*(x,y)>0\}$. Full support of each marginal implies
+that every $x$ occurs in some pair in $C$ and every $y$ occurs in some pair in
+$C$, so $C$ is a correspondence. For any two pairs
+$(x,y),(x',y')\in C$, their coefficient in the defining sum is positive.
+Every summand is nonnegative and the sum is zero, so
+$d_X(x,x')=d_Y(y,y')$.
+
+If both $(x,y)$ and $(x,y')$ belong to $C$, applying this equality to the two
+pairs gives $d_Y(y,y')=d_X(x,x)=0$, hence $y=y'$. If both $(x,y)$ and
+$(x',y)$ belong to $C$, the same argument gives $d_X(x,x')=0$, hence
+$x=x'$. Therefore $C$ is the graph of a bijection $\varphi:X\to Y$.
+The distance equality makes $\varphi$ an isometry, and positive support
+makes it label-preserving. Finally, the first marginal gives
+$\mu_X(x)=\pi_*(x,\varphi(x))$, while the graph property makes the
+second marginal give
+$\mu_Y(\varphi(x))=\pi_*(x,\varphi(x))$. Thus the bijection is
+measure-preserving.
+\end{proof}
+
+
+The theorem gives a precise zero-set interpretation for the metric--measure
+layer. It does not prove robustness under sampling, rates of empirical
+convergence, existence of a good coupling for arbitrary predicted carriers,
+or superiority over coordinate losses. These are separate empirical claims.
+
+
+\begin{proposition}[Label-compatible coupling feasibility]
+A label-compatible coupling exists if and only if the total mass of every
+label agrees:
+\[
+\sum_{x:\lambda_X(x)=\ell}\mu_X(x)
+=
+\sum_{y:\lambda_Y(y)=\ell}\mu_Y(y)
+\qquad(\ell\in\mathcal L).
+\]
+\end{proposition}
+
+\begin{proof}
+Necessity is the preceding marginal argument. For sufficiency, for each label
+$\ell$ choose the product coupling within its two label blocks, normalized by
+their common mass. Summing these blockwise couplings gives a nonnegative matrix
+with the required marginals and no cross-label mass. If a common label mass is
+zero, its block is omitted.
+\end{proof}
+
+Define the tagged label maps by $\bar\lambda(x)=(A,\lambda_A(x))$ for
+$x\in F(A)$ and $\bar\nu(y)=(A,\nu_A(y))$ for $y\in G(A)$.
+
+\begin{corollary}[State-level metric--measure invariance]
+If $\Sigma\cong_{\mathrm{str}}\Sigma'$ then the induced full-support
+metric--measure states $(|F|,d,\mu,\bar\lambda)$ and
+$(|G|,\rho,\eta,\bar\nu)$ have zero metric--measure discrepancy for every
+$1\leq p<\infty$.
+\end{corollary}
+
+\begin{proof}
+Use the structural isomorphism as the measure-preserving,
+label-preserving isometry in the zero metric--measure discrepancy theorem.
+\end{proof}
+
+\begin{proposition}[Extended pseudometric property of the hard-label discrepancy]
+On full-support finite metric--measure states with tagged labels,
+$\Delta_{\mathrm{mm},1}$ is symmetric, vanishes on the diagonal, and satisfies
+the triangle inequality. It may take the value $+\infty$ when a
+label-compatible coupling does not exist.
+\end{proposition}
+
+\begin{proof}
+The identity-graph coupling gives diagonal vanishing. Transposing any
+label-compatible coupling preserves its marginals in reverse order and leaves
+$\mathcal D_1$ unchanged, which proves symmetry after taking infima. For the
+triangle inequality, let $\pi_{XY}$ and $\pi_{YZ}$ be label-compatible
+couplings. Full support
+gives $\mu_Y(y)>0$, so
+\[
+ \gamma(x,y,z)=\frac{\pi_{XY}(x,y)\pi_{YZ}(y,z)}{\mu_Y(y)}
+\]
+is well-defined. Direct summation shows that its $(X,Y)$ and $(Y,Z)$
+marginals are the original couplings. Let $\pi_{XZ}$ be its $(X,Z)$ marginal.
+Whenever $\gamma(x,y,z)>0$, label compatibility gives
+$\lambda_X(x)=\lambda_Y(y)=\lambda_Z(z)$; hence $\pi_{XZ}$ is
+label-compatible. For two triples sampled from $\gamma$,
+\[
+ |d_X(x,x')-d_Z(z,z')|
+ \leq |d_X(x,x')-d_Y(y,y')|+|d_Y(y,y')-d_Z(z,z')|.
+\]
+Summing this inequality against $\gamma\otimes\gamma$ yields
+$\mathcal D_1(\pi_{XZ})\leq\mathcal D_1(\pi_{XY})+
+\mathcal D_1(\pi_{YZ})$. Taking infima over the two original couplings proves
+the triangle inequality. If either coupling is infeasible, the corresponding
+extended value is $+\infty$ and the inequality is immediate.
+\end{proof}

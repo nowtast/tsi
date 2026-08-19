@@ -1,0 +1,20 @@
+{
+  "layer_generic_vs_split_tsi_mean": [
+    -0.0013423245154536231,
+    -0.0005630234353265999
+  ],
+  "layer_generic_vs_split_tsi_world_seed_sd": [
+    0.003096253363788133,
+    0.001792280959167034
+  ],
+  "outcome_event_rate": 0.3760850694444444,
+  "row_count": 9216,
+  "scalar_generic_vs_split_tsi_mean": [
+    -0.0020214865301173865,
+    -0.0010685516725633783
+  ],
+  "scalar_generic_vs_split_tsi_world_seed_sd": [
+    0.004601698737776186,
+    0.0027291284663731766
+  ]
+}

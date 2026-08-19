@@ -1,0 +1,1174 @@
+{
+  "artifact_status": {
+    "constructive_decoder_and_validity_audit": true,
+    "development_validation_world_manifest": true,
+    "development_variance_and_power_report": true,
+    "frozen_p3_3b_analysis_digest": true,
+    "generator_implementation_and_digest": true,
+    "information_capacity_compute_tuning_ledger": true,
+    "ood_support_and_nonredundancy_audit": true,
+    "sealed_test_seed_commitment": true,
+    "six_model_dependency_mask_manifest": true,
+    "zero_access_test_ledger": true
+  },
+  "combined_digest": "ae388702518e8f482ffdaf0edba1bdf34f048276b7fa2a1c3f748b3e5f205171",
+  "gate_audit": {
+    "artifact_blockers": [],
+    "contract_digest": "0a7223b8069c9d14301f622d5da5a6b7732eca4990d036ce6bc287eba9026cbf",
+    "evidence_level_after": 2,
+    "evidence_level_before": 2,
+    "gate_passed": true,
+    "identifier": "P3-3A-INDEPENDENCE-v1",
+    "static_contract_passed": true,
+    "static_errors": [],
+    "test_result_evaluations": 0,
+    "test_seed_reveals": 0
+  },
+  "subreports": {
+    "analysis_plan_audit": {
+      "analysis_digest": "fbab7beb00d52b4c3c2653d5af146a8eaaadf1c8da6ddcb2fe32e6ab58d7151e",
+      "errors": [],
+      "passed": true,
+      "primary_contrast_count": 3,
+      "primary_controls_match_contract": true,
+      "statistical_constants_match_contract": true,
+      "test_world_count_frozen": true
+    },
+    "decoder_audit": {
+      "adversarial_valid_decodes": 4,
+      "bridge_violations": 0,
+      "decoder_digest": "33ff3819f902605823ff0cd05a41f01a2eda79018833227bb5d316c5f1a7e7a0",
+      "errors": [],
+      "exact_state_decodes": 324,
+      "exact_tracking_decodes": 1944,
+      "global_candidate_states": 0,
+      "layout_dimension": 40,
+      "passed": true,
+      "target_state_collection_parameters": 0
+    },
+    "generator_audit": {
+      "active_signature_counts": {
+        "bridge_coupled": 36,
+        "context_dependent": 36,
+        "separable": 36
+      },
+      "cohort_family_counts": {
+        "development:bridge_coupled": 24,
+        "development:context_dependent": 24,
+        "development:separable": 24,
+        "validation:bridge_coupled": 12,
+        "validation:context_dependent": 12,
+        "validation:separable": 12
+      },
+      "dependency_witnesses": {
+        "bridge_coupled_requires_topology_to_relation": true,
+        "context_requires_order_to_metric": true,
+        "separable_excludes_topology_to_relation": true
+      },
+      "errors": [],
+      "generator_digest": "1e5c98c4badfa3d37fdfdb3d63f1f2d1697749f88717d949d4843f960724d574",
+      "independent_relation_witnesses": 2,
+      "manifest_world_count": 108,
+      "passed": true,
+      "representative_ood_counts": {
+        "bridge_coupled": {
+          "bridge_consistent_shift": 47,
+          "bridge_violating_control": 47,
+          "unseen_action_composition": 90,
+          "unseen_mechanism_parameter": 88,
+          "unseen_recombination": 264,
+          "unseen_structural_mode": 108
+        },
+        "context_dependent": {
+          "bridge_consistent_shift": 47,
+          "bridge_violating_control": 47,
+          "unseen_action_composition": 90,
+          "unseen_mechanism_parameter": 88,
+          "unseen_recombination": 264,
+          "unseen_structural_mode": 108
+        },
+        "separable": {
+          "bridge_consistent_shift": 47,
+          "bridge_violating_control": 47,
+          "unseen_action_composition": 90,
+          "unseen_mechanism_parameter": 88,
+          "unseen_recombination": 264,
+          "unseen_structural_mode": 108
+        }
+      },
+      "representative_partition_counts": {
+        "bridge_coupled": {
+          "ood": 644,
+          "train": 1308,
+          "validation": 264
+        },
+        "context_dependent": {
+          "ood": 644,
+          "train": 1308,
+          "validation": 264
+        },
+        "separable": {
+          "ood": 644,
+          "train": 1308,
+          "validation": 264
+        }
+      },
+      "sealed_test_worlds_materialized": 0,
+      "state_count": 324
+    },
+    "power_audit": {
+      "analysis_plan_digest": "fbab7beb00d52b4c3c2653d5af146a8eaaadf1c8da6ddcb2fe32e6ab58d7151e",
+      "analytic_holm_world_floor": 47,
+      "audit_errors": [],
+      "decision_requirements": {
+        "24_primary_development_worlds": true,
+        "all_development_effects_at_least_0.05": true,
+        "conjunctive_holm_power_and_mc_lower_bound_at_least_0.90": true,
+        "positive_control_passed": true,
+        "zero_failed_runs": true
+      },
+      "development_effects_passed": true,
+      "development_pilot_digest": "063da75d972500f8dbc0d182ed2083f27b41e6f0a339f86c9748fee0ffc5dff0",
+      "development_worlds": 24,
+      "failure_count": 0,
+      "identifier": "P3-3A-POWER-v1",
+      "independent_unit": "world",
+      "minimum_simulation_power": 0.9112,
+      "nested_replicate": "optimizer_seed",
+      "observed_success_transforms": {
+        "dense_noninferiority_success_transform": {
+          "development_readiness_threshold": 0.05,
+          "mean": 0.05000000000000001,
+          "planning_sd": 0.1,
+          "world_sd": 1.4176269004663433e-17
+        },
+        "random_superiority": {
+          "development_readiness_threshold": 0.05,
+          "mean": 0.19421985815602838,
+          "planning_sd": 0.1,
+          "world_sd": 0.001093331304291546
+        },
+        "wrong_superiority": {
+          "development_readiness_threshold": 0.05,
+          "mean": 0.19421985815602838,
+          "planning_sd": 0.1,
+          "world_sd": 0.001093331304291546
+        }
+      },
+      "optimizer_seeds_per_world": 3,
+      "passed": true,
+      "planned_test_worlds": 50,
+      "planning_covariance": [
+        [
+          0.010000000000000002,
+          -3.241530932476287e-17,
+          -3.241530932476288e-17
+        ],
+        [
+          -3.241530932476287e-17,
+          0.010000000000000004,
+          0.009999999900000004
+        ],
+        [
+          -3.241530932476288e-17,
+          0.009999999900000004,
+          0.010000000000000004
+        ]
+      ],
+      "positive_control": {
+        "family": "separable",
+        "maximum_allowed_error": 0.05,
+        "mean_fixed_joint_exact_rate": 1.0,
+        "mean_normalized_i0_quotient_error": 0.0,
+        "minimum_required_exact_rate": 0.9,
+        "model": "strict_factorized_action",
+        "passed": true,
+        "run_count": 72,
+        "slice": "unseen_action_composition"
+      },
+      "primary_family": "bridge_coupled",
+      "primary_ood_slice": "bridge_consistent_shift",
+      "report_digest": "8eef0745993997575313207de0ffc82080e472bbb3922af7e1691fd06fde1b92",
+      "simulation": {
+        "alternative_success_transform_mean": [
+          0.05,
+          0.05,
+          0.05
+        ],
+        "holm_one_sided_normal_criticals": [
+          2.128045234184983,
+          1.959963984540054,
+          1.6448536269514722
+        ],
+        "identifier": "P3-3A-HOLM-NORMAL-SIM-v1",
+        "iterations": 20000,
+        "power_curve": [
+          {
+            "conjunctive_holm_power": 0.76615,
+            "monte_carlo_95pct_lower_bound": 0.7602330056707091,
+            "worlds": 36
+          },
+          {
+            "conjunctive_holm_power": 0.7803,
+            "monte_carlo_95pct_lower_bound": 0.7745082279482512,
+            "worlds": 37
+          },
+          {
+            "conjunctive_holm_power": 0.7942,
+            "monte_carlo_95pct_lower_bound": 0.7885407548923937,
+            "worlds": 38
+          },
+          {
+            "conjunctive_holm_power": 0.80615,
+            "monte_carlo_95pct_lower_bound": 0.8006127641189728,
+            "worlds": 39
+          },
+          {
+            "conjunctive_holm_power": 0.82,
+            "monte_carlo_95pct_lower_bound": 0.8146142364715111,
+            "worlds": 40
+          },
+          {
+            "conjunctive_holm_power": 0.82925,
+            "monte_carlo_95pct_lower_bound": 0.8239718670375807,
+            "worlds": 41
+          },
+          {
+            "conjunctive_holm_power": 0.842,
+            "monte_carlo_95pct_lower_bound": 0.8368794228646012,
+            "worlds": 42
+          },
+          {
+            "conjunctive_holm_power": 0.8514,
+            "monte_carlo_95pct_lower_bound": 0.8464029567667566,
+            "worlds": 43
+          },
+          {
+            "conjunctive_holm_power": 0.86395,
+            "monte_carlo_95pct_lower_bound": 0.8591285951191122,
+            "worlds": 44
+          },
+          {
+            "conjunctive_holm_power": 0.87155,
+            "monte_carlo_95pct_lower_bound": 0.8668414470250944,
+            "worlds": 45
+          },
+          {
+            "conjunctive_holm_power": 0.8804,
+            "monte_carlo_95pct_lower_bound": 0.8758296242552274,
+            "worlds": 46
+          },
+          {
+            "conjunctive_holm_power": 0.88965,
+            "monte_carlo_95pct_lower_bound": 0.8852325551305911,
+            "worlds": 47
+          },
+          {
+            "conjunctive_holm_power": 0.89765,
+            "monte_carlo_95pct_lower_bound": 0.893372560375891,
+            "worlds": 48
+          },
+          {
+            "conjunctive_holm_power": 0.90395,
+            "monte_carlo_95pct_lower_bound": 0.8997883809489081,
+            "worlds": 49
+          },
+          {
+            "conjunctive_holm_power": 0.9112,
+            "monte_carlo_95pct_lower_bound": 0.9071783518685494,
+            "worlds": 50
+          },
+          {
+            "conjunctive_holm_power": 0.91905,
+            "monte_carlo_95pct_lower_bound": 0.9151888658344789,
+            "worlds": 51
+          },
+          {
+            "conjunctive_holm_power": 0.9247,
+            "monte_carlo_95pct_lower_bound": 0.9209608331001025,
+            "worlds": 52
+          },
+          {
+            "conjunctive_holm_power": 0.92995,
+            "monte_carlo_95pct_lower_bound": 0.9263295503445057,
+            "worlds": 53
+          },
+          {
+            "conjunctive_holm_power": 0.9343,
+            "monte_carlo_95pct_lower_bound": 0.9307822424779674,
+            "worlds": 54
+          },
+          {
+            "conjunctive_holm_power": 0.9391,
+            "monte_carlo_95pct_lower_bound": 0.9357005780332988,
+            "worlds": 55
+          },
+          {
+            "conjunctive_holm_power": 0.9436,
+            "monte_carlo_95pct_lower_bound": 0.940316808520121,
+            "worlds": 56
+          },
+          {
+            "conjunctive_holm_power": 0.9482,
+            "monte_carlo_95pct_lower_bound": 0.9450415367205511,
+            "worlds": 57
+          },
+          {
+            "conjunctive_holm_power": 0.95295,
+            "monte_carlo_95pct_lower_bound": 0.9499274165227422,
+            "worlds": 58
+          },
+          {
+            "conjunctive_holm_power": 0.9561,
+            "monte_carlo_95pct_lower_bound": 0.953171996777664,
+            "worlds": 59
+          },
+          {
+            "conjunctive_holm_power": 0.95965,
+            "monte_carlo_95pct_lower_bound": 0.9568333999792709,
+            "worlds": 60
+          },
+          {
+            "conjunctive_holm_power": 0.9627,
+            "monte_carlo_95pct_lower_bound": 0.9599836628000586,
+            "worlds": 61
+          },
+          {
+            "conjunctive_holm_power": 0.9663,
+            "monte_carlo_95pct_lower_bound": 0.9637081466070213,
+            "worlds": 62
+          },
+          {
+            "conjunctive_holm_power": 0.96855,
+            "monte_carlo_95pct_lower_bound": 0.9660397556629301,
+            "worlds": 63
+          },
+          {
+            "conjunctive_holm_power": 0.9704,
+            "monte_carlo_95pct_lower_bound": 0.9679593102793336,
+            "worlds": 64
+          },
+          {
+            "conjunctive_holm_power": 0.9737,
+            "monte_carlo_95pct_lower_bound": 0.9713895744921719,
+            "worlds": 65
+          },
+          {
+            "conjunctive_holm_power": 0.9756,
+            "monte_carlo_95pct_lower_bound": 0.9733686464414402,
+            "worlds": 66
+          },
+          {
+            "conjunctive_holm_power": 0.97675,
+            "monte_carlo_95pct_lower_bound": 0.974568132766763,
+            "worlds": 67
+          },
+          {
+            "conjunctive_holm_power": 0.97805,
+            "monte_carlo_95pct_lower_bound": 0.97592568744867,
+            "worlds": 68
+          },
+          {
+            "conjunctive_holm_power": 0.98005,
+            "monte_carlo_95pct_lower_bound": 0.9780179195593922,
+            "worlds": 69
+          },
+          {
+            "conjunctive_holm_power": 0.98175,
+            "monte_carlo_95pct_lower_bound": 0.9798002691578894,
+            "worlds": 70
+          },
+          {
+            "conjunctive_holm_power": 0.9835,
+            "monte_carlo_95pct_lower_bound": 0.9816394022457927,
+            "worlds": 71
+          },
+          {
+            "conjunctive_holm_power": 0.98365,
+            "monte_carlo_95pct_lower_bound": 0.9817972694023462,
+            "worlds": 72
+          },
+          {
+            "conjunctive_holm_power": 0.98565,
+            "monte_carlo_95pct_lower_bound": 0.9839060194460038,
+            "worlds": 73
+          },
+          {
+            "conjunctive_holm_power": 0.9876,
+            "monte_carlo_95pct_lower_bound": 0.9859699754169379,
+            "worlds": 74
+          },
+          {
+            "conjunctive_holm_power": 0.98775,
+            "monte_carlo_95pct_lower_bound": 0.9861291155299508,
+            "worlds": 75
+          },
+          {
+            "conjunctive_holm_power": 0.98875,
+            "monte_carlo_95pct_lower_bound": 0.9871915911421785,
+            "worlds": 76
+          },
+          {
+            "conjunctive_holm_power": 0.98995,
+            "monte_carlo_95pct_lower_bound": 0.9884704810243778,
+            "worlds": 77
+          },
+          {
+            "conjunctive_holm_power": 0.9907,
+            "monte_carlo_95pct_lower_bound": 0.9892722740712954,
+            "worlds": 78
+          },
+          {
+            "conjunctive_holm_power": 0.99175,
+            "monte_carlo_95pct_lower_bound": 0.9903985281879399,
+            "worlds": 79
+          },
+          {
+            "conjunctive_holm_power": 0.9929,
+            "monte_carlo_95pct_lower_bound": 0.9916379830382978,
+            "worlds": 80
+          },
+          {
+            "conjunctive_holm_power": 0.99355,
+            "monte_carlo_95pct_lower_bound": 0.9923418354439922,
+            "worlds": 81
+          },
+          {
+            "conjunctive_holm_power": 0.99405,
+            "monte_carlo_95pct_lower_bound": 0.9928851632220217,
+            "worlds": 82
+          },
+          {
+            "conjunctive_holm_power": 0.99495,
+            "monte_carlo_95pct_lower_bound": 0.9938680784831043,
+            "worlds": 83
+          },
+          {
+            "conjunctive_holm_power": 0.99565,
+            "monte_carlo_95pct_lower_bound": 0.9946378752462796,
+            "worlds": 84
+          },
+          {
+            "conjunctive_holm_power": 0.99605,
+            "monte_carlo_95pct_lower_bound": 0.9950803146749464,
+            "worlds": 85
+          },
+          {
+            "conjunctive_holm_power": 0.99605,
+            "monte_carlo_95pct_lower_bound": 0.9950803146749464,
+            "worlds": 86
+          },
+          {
+            "conjunctive_holm_power": 0.9962,
+            "monte_carlo_95pct_lower_bound": 0.995246781717087,
+            "worlds": 87
+          },
+          {
+            "conjunctive_holm_power": 0.996,
+            "monte_carlo_95pct_lower_bound": 0.9950248954759672,
+            "worlds": 88
+          },
+          {
+            "conjunctive_holm_power": 0.9966,
+            "monte_carlo_95pct_lower_bound": 0.9956923559047285,
+            "worlds": 89
+          },
+          {
+            "conjunctive_holm_power": 0.99645,
+            "monte_carlo_95pct_lower_bound": 0.9955249668427258,
+            "worlds": 90
+          },
+          {
+            "conjunctive_holm_power": 0.99685,
+            "monte_carlo_95pct_lower_bound": 0.9959722111692749,
+            "worlds": 91
+          },
+          {
+            "conjunctive_holm_power": 0.99705,
+            "monte_carlo_95pct_lower_bound": 0.9961969561309899,
+            "worlds": 92
+          },
+          {
+            "conjunctive_holm_power": 0.9974,
+            "monte_carlo_95pct_lower_bound": 0.9965923580946505,
+            "worlds": 93
+          },
+          {
+            "conjunctive_holm_power": 0.99785,
+            "monte_carlo_95pct_lower_bound": 0.9971054494135774,
+            "worlds": 94
+          },
+          {
+            "conjunctive_holm_power": 0.99805,
+            "monte_carlo_95pct_lower_bound": 0.9973355771743122,
+            "worlds": 95
+          },
+          {
+            "conjunctive_holm_power": 0.9981,
+            "monte_carlo_95pct_lower_bound": 0.9973933437444168,
+            "worlds": 96
+          },
+          {
+            "conjunctive_holm_power": 0.99815,
+            "monte_carlo_95pct_lower_bound": 0.9974512113609938,
+            "worlds": 97
+          },
+          {
+            "conjunctive_holm_power": 0.99855,
+            "monte_carlo_95pct_lower_bound": 0.9979183363699895,
+            "worlds": 98
+          },
+          {
+            "conjunctive_holm_power": 0.99865,
+            "monte_carlo_95pct_lower_bound": 0.998036487964857,
+            "worlds": 99
+          },
+          {
+            "conjunctive_holm_power": 0.99895,
+            "monte_carlo_95pct_lower_bound": 0.9983952643143006,
+            "worlds": 100
+          },
+          {
+            "conjunctive_holm_power": 0.99895,
+            "monte_carlo_95pct_lower_bound": 0.9983952643143006,
+            "worlds": 101
+          },
+          {
+            "conjunctive_holm_power": 0.99895,
+            "monte_carlo_95pct_lower_bound": 0.9983952643143006,
+            "worlds": 102
+          },
+          {
+            "conjunctive_holm_power": 0.999,
+            "monte_carlo_95pct_lower_bound": 0.9984558140624348,
+            "worlds": 103
+          },
+          {
+            "conjunctive_holm_power": 0.99895,
+            "monte_carlo_95pct_lower_bound": 0.9983952643143006,
+            "worlds": 104
+          },
+          {
+            "conjunctive_holm_power": 0.9989,
+            "monte_carlo_95pct_lower_bound": 0.9983349531464094,
+            "worlds": 105
+          },
+          {
+            "conjunctive_holm_power": 0.99875,
+            "monte_carlo_95pct_lower_bound": 0.9981553047535189,
+            "worlds": 106
+          },
+          {
+            "conjunctive_holm_power": 0.99915,
+            "monte_carlo_95pct_lower_bound": 0.9986390788900332,
+            "worlds": 107
+          },
+          {
+            "conjunctive_holm_power": 0.99905,
+            "monte_carlo_95pct_lower_bound": 0.9985166196635774,
+            "worlds": 108
+          },
+          {
+            "conjunctive_holm_power": 0.99905,
+            "monte_carlo_95pct_lower_bound": 0.9985166196635774,
+            "worlds": 109
+          },
+          {
+            "conjunctive_holm_power": 0.9991,
+            "monte_carlo_95pct_lower_bound": 0.9985777005831636,
+            "worlds": 110
+          },
+          {
+            "conjunctive_holm_power": 0.99915,
+            "monte_carlo_95pct_lower_bound": 0.9986390788900332,
+            "worlds": 111
+          },
+          {
+            "conjunctive_holm_power": 0.99925,
+            "monte_carlo_95pct_lower_bound": 0.9987628321888334,
+            "worlds": 112
+          },
+          {
+            "conjunctive_holm_power": 0.99935,
+            "monte_carlo_95pct_lower_bound": 0.9988881316487883,
+            "worlds": 113
+          },
+          {
+            "conjunctive_holm_power": 0.99945,
+            "monte_carlo_95pct_lower_bound": 0.9990153237654903,
+            "worlds": 114
+          },
+          {
+            "conjunctive_holm_power": 0.9994,
+            "monte_carlo_95pct_lower_bound": 0.9989514644540894,
+            "worlds": 115
+          },
+          {
+            "conjunctive_holm_power": 0.99965,
+            "monte_carlo_95pct_lower_bound": 0.9992776515467302,
+            "worlds": 116
+          },
+          {
+            "conjunctive_holm_power": 0.99965,
+            "monte_carlo_95pct_lower_bound": 0.9992776515467302,
+            "worlds": 117
+          },
+          {
+            "conjunctive_holm_power": 0.99965,
+            "monte_carlo_95pct_lower_bound": 0.9992776515467302,
+            "worlds": 118
+          },
+          {
+            "conjunctive_holm_power": 0.9997,
+            "monte_carlo_95pct_lower_bound": 0.9993455788792479,
+            "worlds": 119
+          },
+          {
+            "conjunctive_holm_power": 0.9997,
+            "monte_carlo_95pct_lower_bound": 0.9993455788792479,
+            "worlds": 120
+          },
+          {
+            "conjunctive_holm_power": 0.9998,
+            "monte_carlo_95pct_lower_bound": 0.999485819514368,
+            "worlds": 121
+          },
+          {
+            "conjunctive_holm_power": 0.99985,
+            "monte_carlo_95pct_lower_bound": 0.9995590363727072,
+            "worlds": 122
+          },
+          {
+            "conjunctive_holm_power": 0.99975,
+            "monte_carlo_95pct_lower_bound": 0.9994148495964674,
+            "worlds": 123
+          },
+          {
+            "conjunctive_holm_power": 0.99985,
+            "monte_carlo_95pct_lower_bound": 0.9995590363727072,
+            "worlds": 124
+          },
+          {
+            "conjunctive_holm_power": 0.99985,
+            "monte_carlo_95pct_lower_bound": 0.9995590363727072,
+            "worlds": 125
+          },
+          {
+            "conjunctive_holm_power": 0.99985,
+            "monte_carlo_95pct_lower_bound": 0.9995590363727072,
+            "worlds": 126
+          },
+          {
+            "conjunctive_holm_power": 0.99995,
+            "monte_carlo_95pct_lower_bound": 0.9997168094297738,
+            "worlds": 127
+          },
+          {
+            "conjunctive_holm_power": 0.9999,
+            "monte_carlo_95pct_lower_bound": 0.9996354263863794,
+            "worlds": 128
+          }
+        ],
+        "seed_commitment": "b3e255f4d745ffe18b8705a45f3b359fbfb2f191976bb11ec3a088f2e9c19ddd",
+        "selected_result": {
+          "conjunctive_holm_power": 0.9112,
+          "monte_carlo_95pct_lower_bound": 0.9071783518685494,
+          "worlds": 50
+        },
+        "selected_worlds": 50,
+        "selection_rule": "smallest_n_with_95pct_monte_carlo_lower_bound_at_least_0.90"
+      },
+      "simulation_power_95pct_lower_bound": 0.9071783518685494,
+      "test_output_used": false,
+      "world_level_detail": {
+        "worlds": [
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19574468085106386,
+              "wrong_superiority": 0.19574468085106386
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19574468085106386,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19574468085106386
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19574468085106386,
+              "random_routed_matched_sparsity": 0.19574468085106386,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 0
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 1
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 2
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 3
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 4
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 5
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 6
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 7
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 8
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19574468085106386,
+              "wrong_superiority": 0.19574468085106386
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19574468085106386,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19574468085106386
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19574468085106386,
+              "random_routed_matched_sparsity": 0.19574468085106386,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 9
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19574468085106386,
+              "wrong_superiority": 0.19574468085106386
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19574468085106386,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19574468085106386
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19574468085106386,
+              "random_routed_matched_sparsity": 0.19574468085106386,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 10
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19574468085106386,
+              "wrong_superiority": 0.19574468085106386
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19574468085106386,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19574468085106386
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19574468085106386,
+              "random_routed_matched_sparsity": 0.19574468085106386,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 11
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 12
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 13
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 14
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 15
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 16
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 17
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 18
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 19
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 20
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.1948936170212766,
+              "wrong_superiority": 0.1948936170212766
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.1948936170212766,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.1948936170212766
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.1948936170212766,
+              "random_routed_matched_sparsity": 0.1948936170212766,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 21
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19319148936170213,
+              "wrong_superiority": 0.19319148936170213
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19319148936170213,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19319148936170213
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19319148936170213,
+              "random_routed_matched_sparsity": 0.19319148936170213,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 22
+          },
+          {
+            "positive_success_transforms": {
+              "dense_noninferiority_margin_minus_difference": 0.05,
+              "random_superiority": 0.19574468085106386,
+              "wrong_superiority": 0.19574468085106386
+            },
+            "raw_contrasts": {
+              "random_minus_signature": 0.19574468085106386,
+              "signature_minus_dense": 0.0,
+              "wrong_minus_signature": 0.19574468085106386
+            },
+            "seed_averaged_errors": {
+              "dense_active_matched": 0.0,
+              "permuted_or_wrong_routed": 0.19574468085106386,
+              "random_routed_matched_sparsity": 0.19574468085106386,
+              "signature_routed_oracle": 0.0
+            },
+            "world_index": 23
+          }
+        ]
+      }
+    },
+    "routing_audit": {
+      "active_parameter_budget": 420,
+      "compute_budgets_matched": true,
+      "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+      "errors": [],
+      "information_fields_matched": true,
+      "max_relative_parameter_difference": 0.0,
+      "model_count_per_family": 6,
+      "passed": true,
+      "random_masks_equal_correct_masks": false,
+      "training_updates_matched": true,
+      "tuning_budgets_matched": true,
+      "wrong_masks_equal_correct_masks": false
+    },
+    "sealed_access_audit": {
+      "artifact_digest": "1cd7a9cfd394ff56162dc83a3f60dc3a4d3726bd24c133e2ecc740ada06ffc4b",
+      "commitment": "b4af5d120cd748e64af48378df621f04fb06cd9cd8a311d55950ed8f349fbaf0",
+      "descriptor_digest": "d48de249c81f5c58f899507e1329e47beb3c752e4f3069387b96bd4b21c98e95",
+      "errors": [],
+      "escrow_exists": true,
+      "escrow_mode_octal": "0o0",
+      "escrow_size": 32,
+      "event_count": 1,
+      "identifier": "P3-3A-SEALED-ACCESS-v1",
+      "latest_event_hash": "43b0f94feecd8e0006ebc0829f3d888ba840cae64bea028d02286f4463b5a036",
+      "passed": true,
+      "test_result_evaluations": 0,
+      "test_seed_reveals": 0
+    }
+  }
+}

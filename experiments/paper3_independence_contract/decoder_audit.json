@@ -1,0 +1,12 @@
+{
+  "adversarial_valid_decodes": 4,
+  "bridge_violations": 0,
+  "decoder_digest": "33ff3819f902605823ff0cd05a41f01a2eda79018833227bb5d316c5f1a7e7a0",
+  "errors": [],
+  "exact_state_decodes": 324,
+  "exact_tracking_decodes": 1944,
+  "global_candidate_states": 0,
+  "layout_dimension": 40,
+  "passed": true,
+  "target_state_collection_parameters": 0
+}

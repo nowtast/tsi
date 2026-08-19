@@ -1,0 +1,31 @@
+{
+  "analysis_plan_id": "P3-5A-v2-source-conditioned-robustness",
+  "errors": [
+    "source-conditioned performance gate is unresolved"
+  ],
+  "missing_artifacts": [],
+  "passed": false,
+  "performance_gate_passed": false,
+  "required_artifacts": [
+    "experiments/paper3_learned_v2/contract_audit.json",
+    "experiments/paper3_learned_v2/independent_source_conditioned_validation.json",
+    "experiments/paper3_learned_v2/development_variance_power_report.json",
+    "experiments/paper3_learned_v2/source_conditioned_robustness_development.json"
+  ],
+  "sealed_execution_requested": false,
+  "status": "preseal_blocked",
+  "zero_access_ledger": {
+    "analysis_inputs": [
+      "experiments/paper3_learned_v2/contract_audit.json",
+      "experiments/paper3_learned_v2/independent_source_conditioned_validation.json",
+      "experiments/paper3_learned_v2/development_variance_power_report.json",
+      "experiments/paper3_learned_v2/source_conditioned_robustness_development.json"
+    ],
+    "analysis_plan_id": "P3-5A-v2-source-conditioned-robustness",
+    "input_digest": "50fcad3758682e97537368d34c21deddc42b31a00e3a77c5e27a37874f479e85",
+    "sealed_test_access_count": 0,
+    "sealed_test_evaluation_count": 0,
+    "sealed_test_reveal_count": 0,
+    "status": "zero_access_confirmed"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-07-29T07:08:35.061032+00:00",
+  "confirmatory_analysis_digest": "8380318f8ce6c17abb23d415046b57c3a45de458341aee9efb48110db6a7751d",
+  "confirmatory_passed": true,
+  "evidence_level_after": 3,
+  "evidence_report_digest": "0d5fc30d15c38e352470134889142ad42511318c8f22a30baae8a95416dbea32",
+  "frozen_artifact_digests": {
+    "analysis_plan": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+    "development_benchmark": "6942e22b4ce0dda280d0124b6871ed41a85792be7f33d4ef8d9d50f66a78ed23",
+    "development_power": "0dfd5ed7a816ac1a66b52103f85b06c009735d34813d1d4cbff9ec9e3d124c90",
+    "frozen_predictor_report": "b80b8d0531ab127cd4a1ef233dcee576693bd12be9a2b8065fc77e80e5b58b96",
+    "frozen_predictors": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+    "implementation_source": "0d821fadadf324a6db8d8c4302e04f169d7355fc34c1a42837fb7d5eba82c53a",
+    "p3a_evidence": "4ffd12cba71a0307332236e86dc197004d0a5c593fc0e3a948a1d89532eefcaf",
+    "p3a_implementation_source": "af7173b2eda8539d3466d2207d5982e5ac892de16010dc84eab7bd992c392d85"
+  },
+  "gate_digest": "40d3d2083601f1214e2f26fc9833d22e97d369e3c6471646a3b5390124dc972f",
+  "identifier": "P3-4B-ONE-SHOT-LOCK-v2",
+  "level_4_satisfied_requirement_count": 2,
+  "manifest_digest": "cba91912e7452cdda9857b7055343fd852226546bcd14973e32c06d052f26674",
+  "raw_result_digest": "1ea70361fae917a05edc12445998d78079597045c55837a2739759674f92426e",
+  "started_at_utc": "2026-07-29T06:56:17.568486+00:00"
+}

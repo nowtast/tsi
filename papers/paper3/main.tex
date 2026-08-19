@@ -1,0 +1,47 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\setlength{\emergencystretch}{3em}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+
+\newcommand{\CState}{\mathsf{CState}}
+\newcommand{\Corr}{\mathsf{Corr}}
+\newcommand{\DeltaTheta}{\Delta_{\Theta}}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\SESOI}{\varepsilon_{\mathrm{min}}}
+
+\title{Sealed Evaluation of Structural World Models:\\
+OOD Generalization, Open-Loop Rollout, and Learned-Routing Criterion Validation}
+\author{Chulsu Ha}
+\date{Revised: 18 August 2026}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/interface}
+\input{sections/design}
+\input{sections/ood_results}
+\input{sections/rollout_results}
+\input{sections/validity_results}
+\input{sections/resolution_results}
+\input{sections/limitations}
+\input{sections/reproducibility}
+\input{sections/conclusion}
+
+\begingroup
+\raggedright
+\bibliographystyle{plainnat}
+\bibliography{references}
+\endgroup
+
+\end{document}

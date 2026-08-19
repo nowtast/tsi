@@ -1,0 +1,226 @@
+\section{Audit Contract and Methods}
+
+\subsection{Finite family and analytic representability}
+
+The family has five finite state coordinates with cardinalities
+\((4,3,5,3,4)\), three directed dependency graphs, and 96 multiplier/coupling
+mechanisms, giving 288 graph--mechanism cells.  For graph edge \(s\to r\), the
+generator is
+\[
+x'_j=\left[x_j+m_j a_j+
+\mathbf 1\{j=r\}\,c\,a_s(1+x_r)\right]_{q_j}.
+\]
+The fitted TSI head applies this same equation after recovering the graph,
+\((m_1,\ldots,m_5)\), and \(c\) from training transitions.  Candidate graphs
+are scored only on the training partition, and a graph is accepted only when it
+is the unique candidate with training exact accuracy 1.000.  Exact test
+prediction is therefore guaranteed whenever recovery succeeds; accuracy 1.000
+is not a stochastic discovery after conditioning on recovery.
+
+Training actions are the five magnitude-1 one-hot vectors.  The original test
+partition adds held-out primitive source--action pairs and exactly two
+single-coordinate magnitude-2 actions,
+\((0,2,0,0,0)\) and \((0,0,2,0,0)\).  These are scale extrapolations, not
+two-coordinate compositions.  Across all 720 states they produce 1,440
+intervention cases per cell.  Train/test source--action keys have zero overlap;
+the recorded split audit, train-only discovery audit, test-only evaluation
+audit, and source inspection checks all pass.
+
+\subsection{Frozen controls and units}
+
+The diagonal model estimates coordinate-wise action multipliers.  The
+graph-unaware dense polynomial model uses an intercept, five state values, five
+action values, and 25 source--action interactions, fitted by least squares.  The
+lookup model memorizes training source--action pairs.  The wrong-routed model
+applies the factorized equation under a shifted graph.  The independent unit is
+the graph--mechanism cell.  Five row-permutation seeds are nested within the
+trainable controls and are averaged within cell; TSI, wrong-routed, and lookup
+have one deterministic fit.  The original descriptive contrast is TSI minus
+graph-unaware dense intervention accuracy.
+
+\subsection{Post-review diagnostics}
+
+The following analyses were designed after peer review and are not
+preregistered confirmatory tests.
+
+First, a graph-by-head panel fills four operational cells: correct versus
+shifted graph crossed with the modular factorized head versus an untied
+multi-output least-squares head.  The dense head uses an intercept, all five
+action values, and the graph-selected term \(a_s(1+x_r)\); its output
+coefficients are not tied to the generator parameters.  This is one explicit
+dense-head operationalization, not a universal class of dense models.
+
+Second, a genuine composition panel tests all \(\binom{5}{2}=10\) binary
+actions having two distinct active coordinates, or 7,200 cases per cell.
+Third, a misspecified panel tests all five single-coordinate magnitude-2 actions
+after adding the unmodeled target term
+\[
+a_s(a_s-1)(1+x_r).
+\]
+This term is zero for every magnitude-1 training action, so the original
+training partition and recovery procedure are unchanged, but it is outside the
+fitted action-linear TSI equation at test time.  The panel contains 3,600 cases
+per cell.
+
+The frozen audit is stored in
+\texttt{experiments/paper4\_final\_comparative\_audit.json}; the extension is in
+\texttt{experiments/paper4\_postreview\_diagnostics.json}.  Corrected cell
+distributions and budget/replay declarations are stored in
+\texttt{paper4\_statistical\_analysis\_r2.json} and
+\texttt{paper4\_fairness\_audit\_r2.json}.
+
+\subsection{Prospective attribution contract}
+
+After the diagnostic, a new contract and implementation were frozen before a
+fresh confirmatory seed was generated.  The freeze, seed generation, and
+one-shot execution ran in that order in one scripted sequence; the ordering
+guarantee follows from frozen source hashes and the seed commitment, not elapsed
+time.  A world has five coordinates modulo 7
+and a graph motif with two distinct sources entering one target.  There are 30
+motifs.  Each edge uses one of three typed functions,
+\[
+\phi_L=a_s(1+x_t),\quad
+\phi_Q=a_s(1+x_t)^2,\quad
+\phi_S=a_s(1+x_s+x_t).
+\]
+The last two are outside the original linear equation.  Training and selection
+contain 800 and 400 disjoint noisy primitive-action transitions.  The 1,200
+OOD cases contain two active coordinates; one prespecified stratum activates
+both graph sources and therefore composes two mechanisms.  Coordinate noise
+increases from 0.08 to 0.12 at OOD evaluation.
+
+The complete attribution panel crosses correct versus shifted graph with three
+head operationalizations.  The factorized head has five direct multipliers and
+two typed edge coefficients.  A generic sparse modular head greedily selects
+seven output--feature coefficients from a dictionary containing five direct
+actions and all three functions for each declared edge.  A dense sensitivity
+fits all \(5\times11=55\) modular coefficients by coordinate descent.  Thus the
+factorized and sparse-generic cells match active parameter count at seven;
+the dense cells intentionally give the generic head greater capacity.
+
+\begin{proposition}[Seven-sparse embedding]
+For a fixed graph and selected edge families, every seven-parameter factorized
+transition in the prospective family has an exactly equivalent seven-sparse
+generic modular head.
+\end{proposition}
+\begin{proof}
+For each coordinate \(j\), assign the generic coefficient on direct feature
+\(a_j\) at output \(j\) to \(m_j\), giving five nonzero coefficients.  At the
+common target \(t\), assign the coefficient on selected feature
+\(\phi_{f_e}\) for edge \(e\) to \(c_e\), giving two more.  Set every other
+coefficient to zero.  The generic increment is then
+\[
+\delta_j=m_j a_j+\mathbf 1\{j=t\}\sum_{e=1}^{2}c_e\phi_{f_e},
+\]
+which is the factorized increment coordinate by coordinate.  Adding \(x_j\)
+and reducing modulo 7 preserves equality.  Conversely, restricting generic
+support to these seven positions yields the same factorized equation.
+\end{proof}
+
+\begin{proposition}[Population motif identifiability]
+\label{prop:motif-identifiability}
+Consider the prospective family over \(\mathbb Z_7^5\).  Suppose the primitive
+intervention distribution has full support over every state \(x\) and unit
+action \(e_s\), all multipliers and edge coefficients lie in
+\(\{1,2,3\}\), and each successor coordinate is independently retained with
+probability \(1-p\) or replaced uniformly by one of its other six values with
+probability \(p<6/7\).  Then the joint population distribution of
+\((x,e_s,x')\) uniquely identifies the common-target two-source motif, the
+ordered head family attached to each source, and all seven parameters.
+\end{proposition}
+\begin{proof}
+Conditional on an input and a deterministic center value, the center has
+probability \(1-p\), whereas each other value has probability \(p/6\).
+The inequality \(p<6/7\) is equivalent to \(1-p>p/6\), so the center is the
+unique conditional mode.  The population distribution therefore identifies
+the complete deterministic primitive-action transition map.
+
+For action \(e_j\), output coordinate \(j\) changes by \(m_j\); an edge sourced
+at \(j\) changes only its distinct target coordinate.  Hence the five direct
+multipliers are identified.  After subtracting these direct increments,
+there exists a state at which a primitive action at a nontarget coordinate
+produces a nonzero residual at another coordinate if and only if that action
+coordinate is a graph source.  Indeed, each declared edge feature is nonzero
+for some state and each coefficient is nonzero.  Full state support therefore
+identifies the unique output receiving two such residual families and its two
+sources.
+
+It remains to identify each source's family and coefficient.  The
+source--target feature
+\(\phi_S=1+x_s+x_t\) depends on \(x_s\), whereas
+\(\phi_L=1+x_t\) and \(\phi_Q=(1+x_t)^2\) do not, so \(\phi_S\) cannot equal a
+nonzero multiple of either alternative on full support.  If
+\(c\phi_L=c'\phi_Q\) for every \(x_t\), evaluation at \(x_t=0\) gives \(c=c'\);
+evaluation at \(x_t=1\) then gives \(2c=4c\) in \(\mathbb Z_7\), hence
+\(c=0\), contradicting \(c\in\{1,2,3\}\).  Thus the family is unique.  At
+\(x_s=x_t=0\), every selected feature equals one, so its residual identifies
+the corresponding coefficient.  All components are therefore unique.
+\end{proof}
+
+\begin{corollary}[Repeated-input recovery bound]
+\label{cor:motif-recovery-bound}
+Let \(\mathcal I\) be any finite separating set of primitive input--output
+coordinate pairs sufficient for the preceding proof, and suppose each pair's
+input is repeated independently at least \(n\) times.  Modal reconstruction on
+\(\mathcal I\), and hence motif identification, fails with probability at most
+\[
+  6|\mathcal I|\exp\!\left[
+    -\frac{n}{2}\left(1-\frac{7p}{6}\right)^2
+  \right].
+\]
+\end{corollary}
+\begin{proof}
+For a fixed input, center value, and one wrong value, subtract the wrong-value
+indicator from the center indicator.  This variable lies in \([-1,1]\) and has
+expectation \((1-p)-p/6=1-7p/6>0\).  Hoeffding's inequality bounds the
+probability that the wrong empirical count reaches the center count by
+\(\exp[-n(1-7p/6)^2/2]\).  A union bound over six wrong values and all pairs
+in \(\mathcal I\) gives the displayed result.  When every modal center is
+correct, Proposition~\ref{prop:motif-identifiability} supplies uniqueness.
+\end{proof}
+
+This result is a population/full-support statement and a repeated-input bound;
+it does not prove that the finite random-design greedy selector must recover
+the motif.  Its 120/120 recovery rate remains an empirical result.
+
+The independent unit is world.  The confirmatory cohort has 120 worlds and
+uses Bonferroni simultaneous intervals for eight inferential quantities at
+familywise level 0.05.  The primary graph effects are wrong-minus-correct NLL
+within each head.
+
+The analysis object reports ten interval-bearing quantities at the frozen
+Bonferroni divisor of eight.  They contain one exact duplicate pair, one
+sign-flipped pair, and one deterministic zero, leaving seven informationally
+distinct stochastic quantities.  The frozen v1 contract specified only the
+integer divisor and did not enumerate its members; this is a reporting defect,
+not a preregistered family definition.  The current code labels the eight gate
+quantities as identification, learned-routing NLL, factorized-graph NLL,
+generic-graph NLL, dense-graph NLL, rollout Hamming, criterion Brier, and
+outside-family noninferiority, explicitly as a post-freeze clarification.  A
+post-review sensitivity using divisor ten leaves every decision unchanged.
+This cohort, its root seed, and the multiplicity family are shared with Paper~3;
+overlapping endpoints in the two papers are subsets of one frozen analysis, not
+independent evidence.
+
+No power analysis for 120 worlds was frozen before confirmation.  A
+post-review retrospective design justification uses only the 24 development
+worlds, stratified by original versus outside-linear family.  Across 20,000
+bootstrap draws, estimated conjunctive power for all nine gates at 120 worlds is
+0.9694 with Monte Carlo interval [0.9670, 0.9718].  It treats the
+development-fitted calibration as fixed and inherits the empirical support of
+24 worlds.  It is neither a preregistration record nor a retrospective change
+to the frozen design.
+
+\subsection{Prospective outside-model-family stress contract}
+
+A second source freeze precedes a separate 120-world seed.  Its held-out
+successor adds
+\[
+d\,a_{s_1}a_{s_2}(1+x_u)
+\]
+at the graph target, where \(u\) is not the target or either source and
+\(d\in\{1,2,3\}\).  This nonadditive synergy is zero on every primitive training
+and selection action and is absent from all fitted dictionaries.  It activates
+only when both mechanisms are intervened on together.  The frozen gates require
+nonexact learned prediction in every world and a wrong-minus-learned NLL mean of
+at least 0.03 with a positive 95\% lower bound.

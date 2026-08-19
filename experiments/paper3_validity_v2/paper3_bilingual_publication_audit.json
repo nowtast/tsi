@@ -1,0 +1,48 @@
+{
+  "identifier": "P3-BILINGUAL-PUBLICATION-DRAFT-AUDIT-v1",
+  "status": "draft_not_publication_ready",
+  "evidence_level": 3,
+  "level_4_requirements_satisfied": 2,
+  "level_4_requirements_total": 8,
+  "publication_floor": 4,
+  "publication_blocked": true,
+  "english": {
+    "repository_root": "papers/paper3",
+    "mirror_root": "external-publication-mirror/paper3",
+    "source_file_count": 12,
+    "section_count": 9,
+    "subsection_count": 12,
+    "table_count": 2,
+    "citation_key_count": 10,
+    "source_digest": "9f1dc4b21431868df9d28197a4053dbaa9e7d400c3894cd4b6364c0f95e20831",
+    "pdf_sha256": "884656f5fce97409f68c921fae56d2cf703d41ccbd2a179a47c1e2abd322f389",
+    "pdf_size_bytes": 239400,
+    "build_engine": "latexmk -pdf",
+    "final_log_warning_tokens": 0,
+    "mirror_byte_equal": true
+  },
+  "korean": {
+    "repository_root": "papers/paper3_ko",
+    "mirror_root": "external-publication-mirror/paper3_ko",
+    "source_file_count": 12,
+    "section_count": 9,
+    "subsection_count": 12,
+    "table_count": 2,
+    "citation_key_count": 10,
+    "source_digest": "3242aac935e9e78992ef49b47a3d1878a5fe04ce204edfcbb860590de3e053bf",
+    "pdf_sha256": "aaeee346ee9789f005a28cd9ade8cfb791f14cd27f16141c7ef6d001e4e0a0ce",
+    "pdf_size_bytes": 173577,
+    "build_engine": "latexmk -xelatex",
+    "final_log_warning_tokens": 0,
+    "mirror_byte_equal": true
+  },
+  "parity": {
+    "section_order_equal": true,
+    "section_count_equal": true,
+    "subsection_count_equal": true,
+    "table_count_equal": true,
+    "citation_keys_equal": true,
+    "primary_numbers_and_claim_boundaries_manually_synchronized": true
+  },
+  "remaining_boundary": "This source/build mirror is not independent artifact reproduction and does not satisfy the Level-4 artifact_reproducibility requirement."
+}

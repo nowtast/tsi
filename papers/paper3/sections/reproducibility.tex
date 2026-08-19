@@ -1,0 +1,63 @@
+\section{Reproducibility and Artifact Integrity}
+\label{sec:reproducibility}
+
+The revision bundle contains the implementation, generators, frozen predictors,
+analysis plans, access ledgers, raw results, reports, and the final scope audit
+under package-relative \texttt{src/}, \texttt{experiments/}, and
+\texttt{reproduction/} paths.  No local machine path is needed to locate them.
+The criterion-validity access ledger records one seed reveal and one result
+evaluation.
+
+The freeze value
+\begin{quote}\small
+\texttt{40d3d2083601f1214e2f26fc9833d22e97d369e3c6471646a3b5390124dc972f}
+\end{quote}
+is an internally computed combined digest declared in
+\texttt{artifact\_gate.json} and the access ledger; it is not the SHA-256 of
+either containing file.  The earlier manifest, raw-result, analysis, and report
+digest strings were likewise internal payload digests.  We therefore do not use
+those self-declared fields as an independent integrity check.
+
+Instead, direct SHA-256 hashes of the transferred files are:
+\begin{quote}\small
+manifest:\\ \texttt{0ec0b96685828d84432216a5bc7e10ddccd6f293963f6975117d3d698523c189}\\
+raw result:\\ \texttt{3d6c69af546e311fb15c0c8e521e776eb79a9ba88dc6389e5457c45325b4e734}\\
+confirmatory analysis:\\ \texttt{2cb260a084a6c6175e6b5312bcb32a6dcadafd16035f6c2123abc08c0fe3da0b}\\
+evidence report:\\ \texttt{43d5643c95ecb5cb9268d2f57ccfce19214dc18392e31f399ddd993b01816211}\\
+access ledger:\\ \texttt{8c8651cef755a2a3c8a9be5bf3ddc3a86af382721369cc72902c783fb8fe144b}\\
+scope audit:\\ \texttt{f6151ca50dfdbe50e23558b6f18a9325300bae8c695d52df4145a3d3a6110ab9}.
+\end{quote}
+The six historical files named above are included in the package-relative
+\texttt{experiments/} tree; the reviewer-response README maps each label to its
+file.  The bundle-level \texttt{SHA256SUMS} independently covers every transferred file.
+The final scope audit is retained as a historical, superseded artifact and is
+not used to assign a current grade.
+
+No cumulative ``evidence level'' is assigned.  Within this paper, completed
+obligations are limited to the sealed OOD, sealed rollout, same-task criterion,
+failure-preservation, and artifact-integrity checks described above.  Separate
+supporting artifacts examine algorithmic graph discovery, bounded noisy
+perception, variable cardinality, a packaged benchmark runner, and a second
+finite mechanism family, but they do not convert this study into learned neural
+structure discovery, public-domain validation, or independent replication.
+
+The packaged runner is \texttt{PYTHONPATH=src python3}
+\texttt{tools/run\_paper3\_public\_benchmark.py}.
+Two byte-identical legacy outputs establish deterministic same-environment
+replay only.  The prospective extension adds a separate Node.js implementation
+with zero project imports.  It verified the revealed seed commitment and
+reproduced 120/120 learned graph--head fits and 10/10 analysis means.  Direct
+SHA-256 values for its freeze, raw result, analysis, integrity ledger, portable
+input, clean-room audit, and JavaScript source are, respectively,
+\texttt{bfdc91ec3156}, \texttt{cd89c1ff6055}, \texttt{2e6880df0543},
+\texttt{e0ca28d93c7c}, \texttt{3f438a1cfb7d}, \texttt{8371860c58c8}, and
+\texttt{b648562bc3b8}.  This path consumes exported world data and does not
+re-derive worlds from the committed seed; generator-side errors and world-seed
+derivation are outside its coverage.  A separate Python derivation audit uses
+the archived frozen generator to derive all 120 seeds from the revealed root,
+regenerate every train, selection, and test case, and match the portable export
+without discrepancy.  This verifies seed/export consistency within the frozen
+Python implementation; it is not a second-language generator replication.
+English/Korean section structure,
+mathematical environments, decimal literals, and rendered-text regressions are
+checked together.

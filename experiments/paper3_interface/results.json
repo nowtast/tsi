@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "exact_evaluator_count": 3,
+  "interface": {
+    "carrier_policy": "fixed typed local identifiers for training and tracking",
+    "conditionally_required": [
+      "declared exact bridges"
+    ],
+    "default_objective_weights": {
+      "bridge_surrogate": 1.0,
+      "jepa_latent": 1.0,
+      "label_surrogate": 1.0,
+      "metric_surrogate": 1.0,
+      "order_surrogate": 1.0,
+      "relation_surrogate": 1.0,
+      "simplicial_surrogate": 1.0,
+      "tracking_surrogate": 1.0,
+      "validity_surrogate": 1.0
+    },
+    "excluded_components": [
+      "attributes",
+      "mass",
+      "noisy structural recovery",
+      "causal identification",
+      "continuous motion witnesses"
+    ],
+    "identifier": "P3-I0-FIXED-v1",
+    "input_regime": "exact_oracle",
+    "max_exact_correspondences": 100000,
+    "objective_terms": [
+      {
+        "name": "jepa_latent",
+        "role": "training_surrogate",
+        "stage2_anchor": "not a Stage 2 theorem",
+        "status": "empirical",
+        "target": "future target-encoder representation"
+      },
+      {
+        "name": "label_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "I0 label component",
+        "status": "empirical",
+        "target": "typed labels"
+      },
+      {
+        "name": "simplicial_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Paper 2A and I0 simplicial component",
+        "status": "empirical",
+        "target": "exact simplex membership after decoding"
+      },
+      {
+        "name": "metric_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Paper 2B and I0 metric component",
+        "status": "empirical",
+        "target": "intrinsic metric"
+      },
+      {
+        "name": "relation_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Paper 2C and I0 relation component",
+        "status": "empirical",
+        "target": "typed generator relations"
+      },
+      {
+        "name": "order_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Paper 2A-X1 and I0 order component",
+        "status": "empirical",
+        "target": "finite preorder"
+      },
+      {
+        "name": "bridge_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "I0 bridge defects",
+        "status": "empirical",
+        "target": "every bridge declared by the frozen signature"
+      },
+      {
+        "name": "tracking_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Paper 2D tracking metric",
+        "status": "empirical",
+        "target": "oracle partial-bijection graph"
+      },
+      {
+        "name": "validity_surrogate",
+        "role": "training_surrogate",
+        "stage2_anchor": "Stage 2 well-formedness conditions",
+        "status": "empirical",
+        "target": "decoded membership in the coherent-state domain"
+      },
+      {
+        "name": "fixed_carrier_exact",
+        "role": "exact_evaluator",
+        "stage2_anchor": "identity-aligned specialization of the I0 layers",
+        "status": "theorem_backed",
+        "target": "literal equality on the fixed typed carrier"
+      },
+      {
+        "name": "i0_quotient_metric",
+        "role": "exact_evaluator",
+        "stage2_anchor": "I0 coherent common-correspondence metric",
+        "status": "theorem_backed",
+        "target": "integrated structural isomorphism class"
+      },
+      {
+        "name": "tracking_exact",
+        "role": "exact_evaluator",
+        "stage2_anchor": "Paper 2D tracking graph metric",
+        "status": "theorem_backed",
+        "target": "oracle partial-bijection graph on fixed local identifiers"
+      }
+    ],
+    "prediction_regime": "decoded_valid",
+    "required_layers": [
+      "label",
+      "simplicial",
+      "metric",
+      "relation",
+      "order"
+    ],
+    "state_type": "CoherentStructuralState",
+    "target_regime": "exact_oracle",
+    "transition_type": "typed label-preserving partial bijection conditioned on action"
+  },
+  "status": "passed",
+  "training_surrogate_count": 9
+}

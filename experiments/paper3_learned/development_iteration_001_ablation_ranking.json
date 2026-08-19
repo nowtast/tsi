@@ -1,0 +1,15 @@
+{
+  "identifier": "P3-5A-DEVELOPMENT-ITERATION-001",
+  "family": "context_dependent",
+  "world_index": 0,
+  "optimizer_seed": 0,
+  "selection_method": "validation_loss_increase_under_input_block_ablation",
+  "source_edges": [["label", "label"], ["topology", "topology"], ["metric", "metric"], ["relation", "relation"], ["order", "order"], ["topology", "relation"], ["order", "metric"]],
+  "action_edges": [["label", "label"], ["topology", "topology"], ["metric", "metric"], ["relation", "relation"], ["order", "order"], ["topology", "relation"]],
+  "source_cross_edge_f1": 1.0,
+  "action_cross_edge_f1": 1.0,
+  "dense_final_nll": 0.006333652436014725,
+  "learned_final_nll": 0.001747078507946419,
+  "status": "development_pilot_passed_one_world",
+  "evidence_promotion": false
+}

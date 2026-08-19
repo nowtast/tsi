@@ -1,0 +1,95 @@
+\section{Prospective Routing-Resolution Study}
+\label{sec:routing-resolution}
+
+\subsection{Frozen design}
+
+The follow-up estimand and source were fixed before a fresh 256-bit root seed was
+generated.  The freeze, seed generation, and one-shot execution ran in that order
+in one scripted sequence; integrity follows from the frozen hashes and seed
+commitment, not from elapsed delay.
+Each of 120 independent worlds has five coordinates modulo 7 and one graph
+motif consisting of two distinct sources entering a common target.  The 30
+possible motifs are crossed with edge heads
+\[
+ a_s(1+x_t),\qquad a_s(1+x_t)^2,\qquad
+ a_s(1+x_s+x_t).
+\]
+One third of worlds use two original linear heads; two thirds use at least one
+of the other heads.  Direct multipliers and two edge coefficients are fitted
+from 800 primitive-action transitions with coordinate noise 0.08.  Graph and
+head family are selected using 400 disjoint transitions.  No fitting reads the
+1,200 OOD transitions, all of which have two active action coordinates and
+coordinate noise 0.12.  The designated composition stratum activates both
+causal edges simultaneously.
+
+The criterion comparison uses the same learned predictor under two routing
+maps.  During the first three steps of a six-step stochastic trajectory, the
+correct score records target-coordinate discrepancies when either learned
+source is active; the negative control routes the same discrepancy field
+through a fixed shifted graph.  A logistic map fitted on 24 public development
+worlds was frozen before confirmation.  Its outcome is terminal mismatch at
+the learned target, and its estimand is wrong-routing minus correct-routing
+Brier score.  Thus the outcome does not contain either criterion score, the
+diagnostic precedes the terminal outcome, and the two arms differ only in
+routing.
+
+Eight inferential quantities use Bonferroni simultaneous two-sided intervals
+with familywise level 0.05.  The identification gate additionally requires a
+simultaneous Wilson lower bound of 0.90.  Point-effect thresholds are 0.04 for
+the learned composition NLL contrast, 0.025 for rollout Hamming area, and 0.005
+for criterion Brier score.  These point thresholds are distinct from the null
+boundary used by the simultaneous intervals.
+
+The analysis object reports ten interval-bearing quantities at the frozen
+Bonferroni divisor of eight.  They contain one exact duplicate pair, one
+sign-flipped pair, and one deterministic zero, leaving seven informationally
+distinct stochastic quantities.  The frozen v1 contract specified only the
+integer divisor and did not enumerate its members; this is a reporting defect,
+not a preregistered family definition.  A post-review sensitivity using divisor
+ten leaves every decision unchanged.  The cohort, root seed, and multiplicity
+family are shared with Paper~4; the three endpoints reported here are a subset
+of that single frozen analysis, not independent evidence.
+
+No power analysis for 120 worlds was frozen before confirmation.  A
+post-review retrospective design justification, using only the 24 development
+worlds and 20,000 stratified bootstrap draws, estimates conjunctive nine-gate
+power at 0.9694 with Monte Carlo interval [0.9670, 0.9718].  This calculation
+does not use confirmatory results and cannot retroactively establish a
+preregistered sample-size rationale.
+
+\subsection{Confirmatory results}
+
+The learned motif and both head families were recovered in all 120 worlds
+(rate 1.000; simultaneous Wilson lower bound 0.941).  Table~\ref{tab:resolution}
+reports the three Paper~3 endpoints.  Every interval is computed across worlds;
+cases and rollouts are nested observations.
+
+\begin{table}[ht]
+\centering
+\caption{Prospective learned-routing effects.  Positive values favor learned
+or correct routing.}
+\label{tab:resolution}
+\begin{tabular}{lrrr}
+\toprule
+Endpoint & Mean & World SD & Simultaneous interval \\
+\midrule
+Composition NLL & 0.35933 & 0.02012 & [0.35431, 0.36435] \\
+Rollout Hamming area & 0.08996 & 0.01162 & [0.08706, 0.09286] \\
+Routing-correct Brier & 0.02402 & 0.02381 & [0.01808, 0.02997] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three point effects exceed their frozen thresholds and all simultaneous
+lower bounds exceed zero.  Performance on the 80 worlds outside the original
+linear family was noninferior to the 40 linear worlds: outside-minus-linear NLL
+was -0.00132 with simultaneous interval [-0.01031, 0.00766], whose upper bound
+is below the 0.03 margin.  This is a direct learned-routing criterion result,
+not a reinterpretation of the earlier four-arm average.
+
+In a separate post-review descriptive sensitivity, train noise
+\(\{0.04,0.08,0.16\}\) was crossed with OOD noise
+\(\{0.06,0.12,0.24\}\), with 120 public-seed worlds per cell.  Graph and head
+recovery remained 1.000 in all nine cells.  The minimum mean learned-routing
+NLL effect was 0.23337.  This panel was not confirmatory and varies only the
+declared coordinate-corruption process.

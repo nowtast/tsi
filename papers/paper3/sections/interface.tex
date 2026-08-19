@@ -1,0 +1,89 @@
+\section{Frozen Structural Interface}
+\label{sec:interface}
+
+\subsection{Coherent states}
+
+Fix a finite typed schema and a positive signature \(\Theta\).  A state has the
+form
+\[
+\Sigma=(F,\lambda,K,d,\preceq;\Theta)\in\CState(\Theta),
+\]
+where \(F\) presents finite typed relations, \(\lambda\) gives tagged labels,
+\(K\) is a simplicial complex on the tagged carrier, \(d\) is an intrinsic
+metric, and \(\preceq\) is a finite preorder.  Declared cross-layer bridges are
+membership conditions for \(\CState(\Theta)\), not optional penalties.
+
+For states \(\Sigma\) and \(\Gamma\), a typed correspondence
+\(C\in\Corr(\Sigma,\Gamma)\) is a family of type-preserving relations whose two
+coordinate projections are surjective.  The same \(C\) is used to compute
+label, simplicial, normalized metric, relational, and order distortions,
+denoted
+\[
+\delta_\lambda(C),\quad \delta_K(C),\quad \delta_d(C),\quad
+\delta_R(C),\quad \delta_P(C).
+\]
+With positive weights fixed by \(\Theta\), the quotient discrepancy is
+\[
+\DeltaTheta(\Sigma,\Gamma)
+=
+\min_{C\in\Corr(\Sigma,\Gamma)}
+\left(
+w_\lambda\delta_\lambda(C)
++w_K\delta_K(C)
++w_d\delta_d(C)
++w_R\delta_R(C)
++w_P\delta_P(C)
+\right).
+\]
+The companion theory proves that this is a pseudometric before quotienting
+and a metric on structural-isomorphism classes.  The empirical code computes
+an exact minimizing correspondence on the finite benchmark.
+
+\subsection{Fixed-carrier audit}
+
+The benchmark also retains stable typed identifiers.  Under that fixed
+alignment it records a vector
+\[
+e_{\mathrm{fix}}
+=
+(e_\lambda,e_K,e_d,e_R,e_P)
+\]
+and its signature-weighted total.  This audit is stronger than quotient
+equality: it can distinguish two isomorphic states whose presented identifiers
+do not agree.  Quotient and fixed-carrier quantities are reported separately.
+
+\subsection{Constructive decoding and routing}
+
+Every model emits layerwise categorical decisions that are converted to valid
+states by shared constructive operators: closure for topology, metric closure,
+declared relational channels, and reflexive-transitive order closure.  The
+primary decoder never projects to an enumerated list of held-out target states.
+
+The six controls are
+\begin{enumerate}[label=(\arabic*)]
+    \item a matched active dense model;
+    \item a layer-routed dense-action model;
+    \item a strict factorized-action model;
+    \item an oracle signature-routed model;
+    \item a random-routed model with matched sparsity; and
+    \item a permuted or wrong-routed model.
+\end{enumerate}
+They receive the same observable fields and use \(420\) active parameters and
+the same optimization budget.  Oracle signature routing is an upper-bound
+control, not learned structure discovery.
+
+\subsection{Task outcome}
+
+Each criterion-validity task supplies two candidate action plans.  An
+exogenous utility checks one primary and one secondary structural predicate,
+with weights two and one.  If \(\widehat j\) is the plan selected from model
+predictions and \(j^\star\) is oracle-best, regret is
+\[
+\mathcal R
+=
+U(\Sigma_{j^\star})-U(\Sigma_{\widehat j}),
+\qquad
+Y=\ind\{\mathcal R>0\}.
+\]
+No correspondence discrepancy, fixed-layer loss, or fitted predictor enters
+the generator, utility, regret, or failure label.

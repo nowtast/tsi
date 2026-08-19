@@ -1,0 +1,19 @@
+{
+  "status": "paper34_world_seed_and_export_derivation_audit",
+  "root_seed_commitment_verified": true,
+  "world_seed_derivation": "sha256(root_seed || uint32_le(world_index))[:8]",
+  "generator": "frozen Python benchmark implementation",
+  "world_count": 120,
+  "checks": {
+    "seed_matches": 120,
+    "graph_matches": 120,
+    "families_match": 120,
+    "train_cases_match": 120,
+    "selection_cases_match": 120,
+    "test_cases_match": 120
+  },
+  "failures": [],
+  "passed": true,
+  "portable_inputs_sha256": "3f438a1cfb7d139cfc717730d081178f309102dec92ba7ab88ff36263b4996f2",
+  "ledger_sha256": "e0ca28d93c7cbd689f4a0b208bb8fde35c3ad71d98e6d97d5060ddb2bbb23a28"
+}

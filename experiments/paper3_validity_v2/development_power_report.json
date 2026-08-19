@@ -1,0 +1,289 @@
+{
+  "analysis_plan": {
+    "analysis_plan_digest": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+    "confirmatory_analysis_seed_commitment": "d1e876785ba738aee1d17b408a48e443d637d7f851dbea629147d6e12ccc83f1",
+    "contract_digest": "8b22e4ba10e1587a4ab7eff15ca5204cffe8f7e8516d74e1f1bfed9146e073ff",
+    "development_predictor_report_digest": "b80b8d0531ab127cd4a1ef233dcee576693bd12be9a2b8065fc77e80e5b58b96",
+    "frozen_predictor_digest": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+    "hierarchical_model": "world_random_intercept_seed_nested_variance_decomposition",
+    "identifier": "P3-4B-VALIDITY-ANALYSIS-PLAN-v2",
+    "multiplicity": "holm_fwer_two_coprimary_effects",
+    "planned_test_worlds": 69,
+    "predictive_sesoi": 0.0025,
+    "primary_success_effects": [
+      "binary_brier_improvement",
+      "first_failure_integrated_brier_improvement"
+    ],
+    "sealed_predictor_refitting": false,
+    "student_test": "one_sided_world_level_student_t",
+    "test_output_used": false,
+    "world_cluster_bootstrap_iterations": 20000,
+    "world_cluster_bootstrap_tail": "bonferroni_alpha_over_two_simultaneous_lower"
+  },
+  "analytic_holm_world_floor": 69,
+  "contract_digest": "8b22e4ba10e1587a4ab7eff15ca5204cffe8f7e8516d74e1f1bfed9146e073ff",
+  "design_complete": true,
+  "development_effects_passed": true,
+  "development_event_rate": 0.6038411458333334,
+  "development_predictor_report_digest": "b80b8d0531ab127cd4a1ef233dcee576693bd12be9a2b8065fc77e80e5b58b96",
+  "development_worlds": 24,
+  "event_balance_passed": true,
+  "identifier": "P3-4B-VALIDITY-POWER-v2",
+  "observed_success_transforms": {
+    "binary_brier_improvement": {
+      "development_readiness_threshold": 0.0025,
+      "mean": 0.003124174727940937,
+      "planning_sd": 0.012798257677195009,
+      "world_sd": 0.010238606141756007
+    },
+    "first_failure_integrated_brier_improvement": {
+      "development_readiness_threshold": 0.0025,
+      "mean": 0.0039274448242068655,
+      "planning_sd": 0.011870831941004478,
+      "world_sd": 0.009496665552803582
+    }
+  },
+  "passed": true,
+  "planned_test_worlds": 69,
+  "planning_covariance": [
+    [
+      0.00016379539957188098,
+      0.00011292006597983104
+    ],
+    [
+      0.00011292006597983104,
+      0.00014091665097157213
+    ]
+  ],
+  "power_simulation": {
+    "alternative_success_transform_mean": [
+      0.005,
+      0.005
+    ],
+    "holm_one_sided_normal_criticals": [
+      1.9599639845400536,
+      1.6448536269514715
+    ],
+    "identifier": "P3-4B-HOLM-NORMAL-SIM-v2",
+    "iterations": 20000,
+    "power_curve": [
+      {
+        "conjunctive_holm_power": 0.8208,
+        "monte_carlo_95pct_lower_bound": 0.8154233339949969,
+        "worlds": 50
+      },
+      {
+        "conjunctive_holm_power": 0.82785,
+        "monte_carlo_95pct_lower_bound": 0.8225552284028878,
+        "worlds": 51
+      },
+      {
+        "conjunctive_holm_power": 0.8367,
+        "monte_carlo_95pct_lower_bound": 0.8315125820175273,
+        "worlds": 52
+      },
+      {
+        "conjunctive_holm_power": 0.8417,
+        "monte_carlo_95pct_lower_bound": 0.8365755866512747,
+        "worlds": 53
+      },
+      {
+        "conjunctive_holm_power": 0.8479,
+        "monte_carlo_95pct_lower_bound": 0.8428561928898328,
+        "worlds": 54
+      },
+      {
+        "conjunctive_holm_power": 0.85475,
+        "monte_carlo_95pct_lower_bound": 0.8497985991120067,
+        "worlds": 55
+      },
+      {
+        "conjunctive_holm_power": 0.86075,
+        "monte_carlo_95pct_lower_bound": 0.8558825845028716,
+        "worlds": 56
+      },
+      {
+        "conjunctive_holm_power": 0.86545,
+        "monte_carlo_95pct_lower_bound": 0.8606504639244827,
+        "worlds": 57
+      },
+      {
+        "conjunctive_holm_power": 0.87175,
+        "monte_carlo_95pct_lower_bound": 0.8670444872066185,
+        "worlds": 58
+      },
+      {
+        "conjunctive_holm_power": 0.87655,
+        "monte_carlo_95pct_lower_bound": 0.871918580438652,
+        "worlds": 59
+      },
+      {
+        "conjunctive_holm_power": 0.8812,
+        "monte_carlo_95pct_lower_bound": 0.8766424951344146,
+        "worlds": 60
+      },
+      {
+        "conjunctive_holm_power": 0.88635,
+        "monte_carlo_95pct_lower_bound": 0.8818769430658997,
+        "worlds": 61
+      },
+      {
+        "conjunctive_holm_power": 0.89255,
+        "monte_carlo_95pct_lower_bound": 0.8881824368262383,
+        "worlds": 62
+      },
+      {
+        "conjunctive_holm_power": 0.89685,
+        "monte_carlo_95pct_lower_bound": 0.8925582148101306,
+        "worlds": 63
+      },
+      {
+        "conjunctive_holm_power": 0.9014,
+        "monte_carlo_95pct_lower_bound": 0.8971908796862397,
+        "worlds": 64
+      },
+      {
+        "conjunctive_holm_power": 0.9053,
+        "monte_carlo_95pct_lower_bound": 0.9011638829600618,
+        "worlds": 65
+      },
+      {
+        "conjunctive_holm_power": 0.90955,
+        "monte_carlo_95pct_lower_bound": 0.9054958314184621,
+        "worlds": 66
+      },
+      {
+        "conjunctive_holm_power": 0.91325,
+        "monte_carlo_95pct_lower_bound": 0.909269327685124,
+        "worlds": 67
+      },
+      {
+        "conjunctive_holm_power": 0.91695,
+        "monte_carlo_95pct_lower_bound": 0.9130449501999446,
+        "worlds": 68
+      },
+      {
+        "conjunctive_holm_power": 0.9208,
+        "monte_carlo_95pct_lower_bound": 0.9169760357867605,
+        "worlds": 69
+      },
+      {
+        "conjunctive_holm_power": 0.92475,
+        "monte_carlo_95pct_lower_bound": 0.9210119384244362,
+        "worlds": 70
+      },
+      {
+        "conjunctive_holm_power": 0.9279,
+        "monte_carlo_95pct_lower_bound": 0.9242325425994133,
+        "worlds": 71
+      },
+      {
+        "conjunctive_holm_power": 0.93015,
+        "monte_carlo_95pct_lower_bound": 0.9265341827401457,
+        "worlds": 72
+      },
+      {
+        "conjunctive_holm_power": 0.9341,
+        "monte_carlo_95pct_lower_bound": 0.9305774294838338,
+        "worlds": 73
+      },
+      {
+        "conjunctive_holm_power": 0.9392,
+        "monte_carlo_95pct_lower_bound": 0.9358031032125372,
+        "worlds": 74
+      },
+      {
+        "conjunctive_holm_power": 0.94195,
+        "monte_carlo_95pct_lower_bound": 0.9386235602227923,
+        "worlds": 75
+      },
+      {
+        "conjunctive_holm_power": 0.9449,
+        "monte_carlo_95pct_lower_bound": 0.9416514218784346,
+        "worlds": 76
+      },
+      {
+        "conjunctive_holm_power": 0.94775,
+        "monte_carlo_95pct_lower_bound": 0.9445790512257597,
+        "worlds": 77
+      },
+      {
+        "conjunctive_holm_power": 0.95085,
+        "monte_carlo_95pct_lower_bound": 0.9477663949622687,
+        "worlds": 78
+      },
+      {
+        "conjunctive_holm_power": 0.95255,
+        "monte_carlo_95pct_lower_bound": 0.9495156725248719,
+        "worlds": 79
+      },
+      {
+        "conjunctive_holm_power": 0.95455,
+        "monte_carlo_95pct_lower_bound": 0.951574982715574,
+        "worlds": 80
+      },
+      {
+        "conjunctive_holm_power": 0.95685,
+        "monte_carlo_95pct_lower_bound": 0.9539450895237956,
+        "worlds": 81
+      },
+      {
+        "conjunctive_holm_power": 0.95895,
+        "monte_carlo_95pct_lower_bound": 0.9561110020176717,
+        "worlds": 82
+      },
+      {
+        "conjunctive_holm_power": 0.96165,
+        "monte_carlo_95pct_lower_bound": 0.9588986392038152,
+        "worlds": 83
+      },
+      {
+        "conjunctive_holm_power": 0.96365,
+        "monte_carlo_95pct_lower_bound": 0.9609658330528345,
+        "worlds": 84
+      },
+      {
+        "conjunctive_holm_power": 0.96565,
+        "monte_carlo_95pct_lower_bound": 0.9630351384320834,
+        "worlds": 85
+      },
+      {
+        "conjunctive_holm_power": 0.967,
+        "monte_carlo_95pct_lower_bound": 0.964433202846586,
+        "worlds": 86
+      },
+      {
+        "conjunctive_holm_power": 0.96905,
+        "monte_carlo_95pct_lower_bound": 0.9665583265338665,
+        "worlds": 87
+      },
+      {
+        "conjunctive_holm_power": 0.97065,
+        "monte_carlo_95pct_lower_bound": 0.9682188912210273,
+        "worlds": 88
+      },
+      {
+        "conjunctive_holm_power": 0.97225,
+        "monte_carlo_95pct_lower_bound": 0.9698812975197002,
+        "worlds": 89
+      },
+      {
+        "conjunctive_holm_power": 0.97345,
+        "monte_carlo_95pct_lower_bound": 0.9711294041079368,
+        "worlds": 90
+      }
+    ],
+    "seed_commitment": "c3e767793d998447bab80c23403e9c9301b8d6e1397fae0b22162e731005748c",
+    "selected_result": {
+      "conjunctive_holm_power": 0.9053,
+      "monte_carlo_95pct_lower_bound": 0.9011638829600618,
+      "worlds": 65
+    },
+    "selected_worlds": 65,
+    "selection_rule": "smallest_n_with_95pct_monte_carlo_lower_bound_at_least_0.90"
+  },
+  "report_digest": "0dfd5ed7a816ac1a66b52103f85b06c009735d34813d1d4cbff9ec9e3d124c90",
+  "selected_conjunctive_power": 0.9208,
+  "selected_monte_carlo_95pct_lower_bound": 0.9169760357867605,
+  "test_output_used": false
+}

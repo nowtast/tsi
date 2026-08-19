@@ -1,0 +1,31 @@
+{
+  "analysis_plan_digest": "d89db588ee6c2a58593f0d245a0e3f0050aa35d43e2357b8db04af0911cc154c",
+  "confirmatory_analysis_seed_commitment": "2e8e12d89c6850645450f78a291078bcb1c0b89aaf52595bbf11d9a10ebf69ec",
+  "contract_digest": "9672b5cbedac7c1e17f807ca776d6c358d85295f6cc32bbfcad1f82e2fc116f8",
+  "development_pilot_digest": "3fd29ff027bf38de12b69cc59315220d80afd0748acc29498dcb313b93cb5093",
+  "hierarchical_model": "world_random_intercept_seed_nested_variance_decomposition",
+  "identifier": "P3-4A-ROLLOUT-ANALYSIS-PLAN-v1",
+  "multiplicity": "holm_fwer_eight_coprimary_effects",
+  "planned_test_worlds": 62,
+  "primary_models": [
+    "signature_routed_oracle",
+    "dense_active_matched",
+    "random_routed_matched_sparsity",
+    "permuted_or_wrong_routed"
+  ],
+  "primary_success_effects": [
+    "absolute_open_loop_auc_margin",
+    "terminal_i0_margin",
+    "exposure_gap_noninferiority",
+    "terminal_tracking_margin",
+    "local_law_violation_margin",
+    "dense_noninferiority",
+    "random_routing_superiority",
+    "wrong_routing_superiority"
+  ],
+  "smallest_routing_effect": 0.05,
+  "student_test": "one_sided_world_level_student_t",
+  "test_output_used": false,
+  "world_cluster_bootstrap_iterations": 20000,
+  "world_cluster_bootstrap_tail": "bonferroni_alpha_over_eight_simultaneous_lower"
+}

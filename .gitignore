@@ -1,0 +1,41 @@
+# Local environments and tool caches
+.venv/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.artifacts/
+
+# Generated manuscript build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.xdv
+*.synctex.gz
+
+# Machine-local assistant permissions
+.claude/settings.local.json
+
+# Unrevealed sealed seeds; publish commitments and access ledgers instead
+**/*.escrow
+
+# Large generated results are archived in Zenodo record 22004526
+**/development_validity_results.json
+**/sealed_validity_raw_results.json
+
+# Editor and operating-system metadata
+.DS_Store
+*~
+
+# Submission and review snapshots remain local; canonical sources are in papers/.
+papers/submission/
+
+# Developmental Stage 2 manuscript series and its source-level audit remain local.
+# The public manuscript set is paper1, paper3, and paper4, with Korean counterparts.
+papers/paper2*/
+src/tsi/stage2_contract.py
+tests/test_stage2_contract.py
+tools/check_stage2_integration.py

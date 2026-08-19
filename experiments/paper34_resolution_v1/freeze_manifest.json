@@ -1,0 +1,19 @@
+{
+  "status": "frozen_before_confirmatory_seed_generation",
+  "frozen_at_utc": "2026-08-18T05:40:52.550691+00:00",
+  "contract_digest": "48e6f579f37ab066083e53295a802558db300295b526166622af0c1b66d03a81",
+  "development_report_sha256": "a40228cbaf5812798beb6bbe350008b96d4195b4e77cb79ef0553cf3236f3db8",
+  "criterion_calibration": [
+    -0.21038142000234128,
+    3.655568386394764
+  ],
+  "files": {
+    "src/tsi/paper34_resolution_contract.py": "bb986416778256a6cd4463db4cd04c9554383ec2a552df4370232f14902964d1",
+    "src/tsi/paper34_resolution_benchmark.py": "7762fe9811949cc77a7455c41a58bcaecbddc2b295c4f72289716276626e2e77",
+    "src/tsi/paper34_resolution_analysis.py": "2f047b10eae524a8322e57c49efa204ad429ee4cf0055531e45fe2bf5927507c",
+    "tests/test_paper34_resolution.py": "d53cc8ab7f06a525393578b7faf662de53e48748503a5f79f5d207ff463ad372",
+    "tools/run_paper34_resolution_development.py": "dd69c59f4ecd5450260d1c828011d8eda73205a245f7605f098c0b231488d7f2",
+    "tools/run_paper34_resolution_confirmatory.py": "8ef5c5e18d9e8777d01478b2a4088b6fcbb4be95703b5c8c5e5bc94bc8a67792"
+  },
+  "freeze_digest": "b870b1278c52d8352befef04ff5a3e822fbebbce534cc00c55b0c1342adc2ed8"
+}

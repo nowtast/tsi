@@ -1,0 +1,58 @@
+\section{재현성과 artifact 무결성}
+\label{sec:reproducibility}
+
+개정 bundle은 implementation, generator, frozen predictor, analysis plan,
+access ledger, raw result, report와 final scope audit를 package-relative
+\texttt{src/}, \texttt{experiments/} 및 \texttt{reproduction/} 경로에 포함한다.
+Local machine path 없이 파일을 찾을 수 있다. Criterion-validity access ledger에는
+seed reveal 1회와 result evaluation 1회가 기록되어 있다.
+
+Freeze 값
+\begin{quote}\small
+\texttt{40d3d2083601f1214e2f26fc9833d22e97d369e3c6471646a3b5390124dc972f}
+\end{quote}
+은 \texttt{artifact\_gate.json}과 access ledger 내부에 선언된 combined digest다.
+두 container file 중 하나의 SHA-256이 아니다. 이전 manifest, raw-result,
+analysis 및 report digest 문자열도 internal payload digest였다. 따라서 이
+self-declared field를 독립 무결성 검증으로 사용하지 않는다.
+
+대신 전달 파일 자체의 직접 SHA-256은 다음과 같다.
+\begin{quote}\small
+manifest:\\ \texttt{0ec0b96685828d84432216a5bc7e10ddccd6f293963f6975117d3d698523c189}\\
+raw result:\\ \texttt{3d6c69af546e311fb15c0c8e521e776eb79a9ba88dc6389e5457c45325b4e734}\\
+confirmatory analysis:\\ \texttt{2cb260a084a6c6175e6b5312bcb32a6dcadafd16035f6c2123abc08c0fe3da0b}\\
+evidence report:\\ \texttt{43d5643c95ecb5cb9268d2f57ccfce19214dc18392e31f399ddd993b01816211}\\
+access ledger:\\ \texttt{8c8651cef755a2a3c8a9be5bf3ddc3a86af382721369cc72902c783fb8fe144b}\\
+scope audit:\\ \texttt{f6151ca50dfdbe50e23558b6f18a9325300bae8c695d52df4145a3d3a6110ab9}.
+\end{quote}
+위에서 열거한 historical file 여섯 개는 package-relative \texttt{experiments/}
+tree에 포함하며 reviewer-response README가 각 label과 file을 연결한다. Bundle-level
+\texttt{SHA256SUMS}는 전달 파일 전체를 독립적으로 포괄한다. Final scope
+audit는 historical superseded artifact로 보존할 뿐 현재 grade 부여에 사용하지 않는다.
+
+Cumulative ``evidence level''은 부여하지 않는다. 이 논문에서 완료된 의무는 위에서
+설명한 sealed OOD, sealed rollout, same-task criterion, failure preservation 및
+artifact integrity 검사로 한정된다. 별도 supporting artifact가 algorithmic graph
+discovery, bounded noisy perception, variable cardinality, packaged benchmark
+runner와 두 번째 finite mechanism family를 다루지만, 이를 learned neural
+structure discovery, public-domain validation 또는 independent replication으로
+변환하지 않는다.
+
+Packaged runner는 \texttt{PYTHONPATH=src python3}
+\texttt{tools/run\_paper3\_public\_benchmark.py}다.
+기존 byte-identical output 두 개는 deterministic same-environment replay만
+확립한다. Prospective extension은 project import가 0인 별도 Node.js 구현을
+추가했다. 이 구현은 공개된 seed commitment를 검증하고 learned graph--head fit
+120/120개와 analysis mean 10/10개를 재현했다. Freeze, raw result, analysis,
+integrity ledger, portable input, clean-room audit 및 JavaScript source의 직접
+SHA-256은 각각 \texttt{bfdc91ec3156}, \texttt{cd89c1ff6055},
+\texttt{2e6880df0543}, \texttt{e0ca28d93c7c}, \texttt{3f438a1cfb7d},
+\texttt{8371860c58c8}, \texttt{b648562bc3b8}이다. 이 path는 export한 world data를
+사용하며 committed seed에서 world를 다시 유도하지 않는다. 따라서 generator-side
+error와 world-seed derivation은 검증 범위 밖이다. 별도 Python derivation audit는
+보관한 frozen generator로 revealed root에서 seed 120개를 유도하고 모든 train,
+selection 및 test case를 재생성하여 portable export와 discrepancy 없이 일치시킨다.
+이는 frozen Python implementation 내부의 seed/export consistency를 검증하며
+second-language generator replication은 아니다. 영문/한국어 section 구조,
+mathematical environment, decimal literal 및 rendered text regression을 함께
+검사한다.

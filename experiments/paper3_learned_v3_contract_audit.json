@@ -1,0 +1,80 @@
+{
+  "combination_split_examples": [
+    {
+      "index": 0,
+      "split": "train"
+    },
+    {
+      "index": 128,
+      "split": "validation"
+    },
+    {
+      "index": 132,
+      "split": "test"
+    }
+  ],
+  "contract": {
+    "contract_digest": "23e21bd0b740a8a63a0244fbf07218466d64938b26ebde9d04f2d5b575b0ca7b",
+    "errors": [],
+    "identification_target": "graph_conditional_active_mechanism_signature",
+    "identifier": "P3-5A-LEARNED-v3",
+    "inactive_parameter_policy": "inactive_coefficients_are_not_required_to_be_identified",
+    "mechanism_hypothesis_count": 192,
+    "passed": true,
+    "split_count": 5,
+    "test_combination_count": 48,
+    "train_combination_count": 96,
+    "validation_combination_count": 48
+  },
+  "contract_digest": "23e21bd0b740a8a63a0244fbf07218466d64938b26ebde9d04f2d5b575b0ca7b",
+  "representative_datasets": [
+    {
+      "errors": [],
+      "graph_variant": "bridge_topology_to_relation",
+      "identifier": "P3-5A-LEARNED-GRAPH-MECHANISM-HOLDOUT-GENERATOR-v1",
+      "mechanism_combination_index": 0,
+      "mechanism_split": "train",
+      "partition_counts": {
+        "calibration": 308,
+        "downstream_evaluation": 189,
+        "routing_selection": 385,
+        "test": 799,
+        "train": 911
+      },
+      "passed": true,
+      "world_index": 0
+    },
+    {
+      "errors": [],
+      "graph_variant": "context_order_to_metric",
+      "identifier": "P3-5A-LEARNED-GRAPH-MECHANISM-HOLDOUT-GENERATOR-v1",
+      "mechanism_combination_index": 128,
+      "mechanism_split": "validation",
+      "partition_counts": {
+        "calibration": 354,
+        "downstream_evaluation": 203,
+        "routing_selection": 371,
+        "test": 794,
+        "train": 870
+      },
+      "passed": true,
+      "world_index": 1
+    },
+    {
+      "errors": [],
+      "graph_variant": "independent_relation",
+      "identifier": "P3-5A-LEARNED-GRAPH-MECHANISM-HOLDOUT-GENERATOR-v1",
+      "mechanism_combination_index": 132,
+      "mechanism_split": "test",
+      "partition_counts": {
+        "calibration": 308,
+        "downstream_evaluation": 174,
+        "routing_selection": 414,
+        "test": 800,
+        "train": 896
+      },
+      "passed": true,
+      "world_index": 2
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "artifact_status": {
+    "development_validity_benchmark": true,
+    "development_variance_and_power_report": true,
+    "frozen_baseline_and_tsi_predictors": true,
+    "frozen_confirmatory_analysis_plan": true,
+    "noncircular_task_generator_audit": true,
+    "one_shot_execution_lock": true,
+    "six_control_capacity_and_compute_audit": true,
+    "validity_contract_and_digest": true,
+    "zero_access_validity_seed_ledger": true
+  },
+  "combined_digest": "40d3d2083601f1214e2f26fc9833d22e97d369e3c6471646a3b5390124dc972f",
+  "frozen_artifact_digests": {
+    "analysis_plan": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+    "development_benchmark": "6942e22b4ce0dda280d0124b6871ed41a85792be7f33d4ef8d9d50f66a78ed23",
+    "development_power": "0dfd5ed7a816ac1a66b52103f85b06c009735d34813d1d4cbff9ec9e3d124c90",
+    "frozen_predictor_report": "b80b8d0531ab127cd4a1ef233dcee576693bd12be9a2b8065fc77e80e5b58b96",
+    "frozen_predictors": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+    "implementation_source": "0d821fadadf324a6db8d8c4302e04f169d7355fc34c1a42837fb7d5eba82c53a",
+    "p3a_evidence": "4ffd12cba71a0307332236e86dc197004d0a5c593fc0e3a948a1d89532eefcaf",
+    "p3a_implementation_source": "af7173b2eda8539d3466d2207d5982e5ac892de16010dc84eab7bd992c392d85"
+  },
+  "gate_audit": {
+    "analysis_plan_digest": "d2c67f7eb76d6da876b7c785b2f7e7c9b7d37ec91e39761c054aeb5b0ead1c05",
+    "artifact_blockers": [],
+    "evidence_level_after": 3,
+    "evidence_level_before": 3,
+    "fresh_mechanism_support_valid": true,
+    "frozen_predictor_digest": "cad8b94130be179bcb5beeb717789d0bbc97b1357bddfb994d6a38a4751d3b34",
+    "gate_passed": true,
+    "identifier": "P3-4B-FINAL-FREEZE-v2",
+    "implementation_source_digest": "0d821fadadf324a6db8d8c4302e04f169d7355fc34c1a42837fb7d5eba82c53a",
+    "level_4_requirement_count_after_if_passed": 2,
+    "level_4_requirement_count_before": 1,
+    "p3a_excluded_mechanism_count": 62,
+    "p3a_frozen_source_digest_unchanged": true,
+    "p3a_level_3_and_rollout_requirement_retained": true,
+    "planned_test_worlds": 69,
+    "test_result_evaluations": 0,
+    "test_seed_reveals": 0
+  },
+  "identifier": "P3-4B-FINAL-FREEZE-v2",
+  "subreports": {
+    "access": {
+      "audit_digest": "c64425564e2798372d3998e031a2f0d65186a45779dbfde48b284d9f4c656b4e",
+      "commitment": "213ef34533d6d132c8010b2cb8c44823b8ab70549436b0cb428bf4d8c7998c7d",
+      "errors": [],
+      "escrow_mode_octal": "0o0",
+      "escrow_size": 32,
+      "event_names": [
+        "seed_commitment_created"
+      ],
+      "expected_phase": "zero",
+      "identifier": "P3-4B-VALIDITY-SEALED-ACCESS-v2",
+      "latest_event_hash": "a36741dabd0ca4b298f2987a18574e39f2cd80b415a949fba1c6c8c2f7c3602c",
+      "passed": true,
+      "result_evaluations": 0,
+      "seed_reveals": 0
+    },
+    "contract": {
+      "contract_digest": "8b22e4ba10e1587a4ab7eff15ca5204cffe8f7e8516d74e1f1bfed9146e073ff",
+      "effect_count": 2,
+      "errors": [],
+      "identifier": "P3-4B-VALIDITY-v2",
+      "model_count": 6,
+      "passed": true
+    },
+    "generator": {
+      "development_manifest_digest": "671e74bede3989156f728545f85059860504d6928ccca478c02bda627a40efc7",
+      "development_task_count": 6144,
+      "development_unit_count": 768,
+      "development_world_count": 24,
+      "errors": [],
+      "identifier": "P3-4B-NONCIRCULAR-TASK-GENERATOR-v2",
+      "outcome_definition_uses_tsi_metric": false,
+      "passed": true,
+      "probe_task_hmac_domains_disjoint": true,
+      "sealed_worlds_materialized": 0,
+      "task_generation_imports_tsi_metric": false
+    },
+    "routing_controls": {
+      "active_parameter_budget": 420,
+      "compute_budgets_matched": true,
+      "control_digest": "3917fa68cb7282ff5bb893cc1644db4bee0bc6e507aee76d8b89faefe3aeb443",
+      "errors": [],
+      "information_fields_matched": true,
+      "max_relative_parameter_difference": 0.0,
+      "model_count_per_family": 6,
+      "passed": true,
+      "random_masks_equal_correct_masks": false,
+      "training_updates_matched": true,
+      "tuning_budgets_matched": true,
+      "wrong_masks_equal_correct_masks": false
+    }
+  }
+}

@@ -1,0 +1,149 @@
+\section{Results}
+
+\subsection{Frozen exact-family audit}
+
+Table~\ref{tab:main} reports the complete 288-cell audit.  TSI is exact because
+the recovered predictor is the generating equation, not because the test
+identifies a general learning advantage.
+
+\begin{table}[ht]
+\centering
+\caption{Frozen finite-family audit.}
+\label{tab:main}
+\begin{tabular}{lcc}
+\toprule
+Model & Exact accuracy & Intervention accuracy\\
+\midrule
+TSI graph-discovered factorized & 1.000 & 1.000\\
+Dense polynomial trainable & 0.622 & 0.413\\
+Diagonal trainable & 0.605 & 0.410\\
+Wrong-routed factorized & 0.234 & 0.200\\
+Unstructured lookup & 0.000 & 0.000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The averages conceal important cell structure.  Dense intervention accuracy is
+exact in 33 cells and zero in 32; accordingly, not all 288 TSI-minus-dense cell
+differences are positive.  Wrong-routed accuracy is exactly 0 in 192 cells and
+0.6 in 96 cells, while lookup is 0 in all 288 cells.  Wrong routing therefore
+shows graph-dependent support points; it is not a generic test that sparsity
+alone is insufficient.  Lookup is a deliberate input-disjoint structural zero,
+not a competitive representation learner.
+
+After averaging the five repeated trainable rows within cell, the finite-panel
+mean TSI-minus-dense intervention contrast is 0.587.  A paired cell bootstrap
+gives \([0.549,0.624]\); the corresponding all-case contrast is 0.378 with
+\([0.354,0.401]\).  These intervals summarize variation among the enumerated
+cells.  They neither define a superpopulation nor remove the analytic
+exact-representability confound.
+
+\subsection{Post-review diagnostic panels}
+
+Table~\ref{tab:postreview} reports mean cell accuracy.  All entries use models
+fit only on the original primitive-action training partition.
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Post-review descriptive diagnostics.  ``Original'' is the two
+single-coordinate magnitude-2 actions; ``Composition'' uses ten two-coordinate
+binary actions; ``Misspecified'' adds unmodeled action curvature.}
+\label{tab:postreview}
+\begin{tabular}{lrrr}
+\toprule
+Model & Original & Composition & Misspecified\\
+\midrule
+Correct graph, factorized head & 1.000 & 1.000 & 0.869\\
+Wrong graph, factorized head & 0.200 & 0.227 & 0.413\\
+Correct graph, dense head & 0.268 & 0.285 & 0.231\\
+Wrong graph, dense head & 0.501 & 0.463 & 0.485\\
+Graph-unaware dense & 0.413 & 0.426 & 0.392\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The genuine two-coordinate panel does not provide an independent discovery:
+the generator and TSI head are both action-linear, so exact superposition is
+analytically implied.  It does correct the earlier intervention description.
+Under the unmodeled curvature term, TSI accuracy falls to 0.868889 and none of
+the 288 cells remains exact.  Thus exactness is not robust outside the declared
+hypothesis family.  The post-review TSI-minus-graph-unaware-dense difference is
+positive in that particular panel, but it was not preregistered and does not by
+itself identify a universal advantage.
+
+The graph-by-head panel also rejects a simple attribution.  On the original
+actions, correct minus wrong graph accuracy is 0.800 with the factorized head
+but -0.233 with the specified dense head.  Factorized minus dense-head accuracy
+is 0.732 with the correct graph and -0.301 with the wrong graph.  The reversal
+shows a graph--head interaction tied to these operational definitions; there is
+no head-independent graph effect and no graph-independent factorization effect.
+This diagnostic reversal is specific to that least-squares head, exact-family
+generator, and accuracy endpoint; under the prospective stochastic family and
+modular dense head, the graph NLL effect is positive.
+
+\subsection{Prospective attribution results}
+
+Train-only selection recovered the motif and both head families in 120/120
+worlds; the multiplicity-adjusted Wilson lower bound was 0.941.  Table
+~\ref{tab:prospective-attribution} gives the complete graph-by-head results.
+
+\begin{table}[ht]
+\centering
+\caption{Wrong-minus-correct graph composition NLL. Positive values favor the
+correct graph.}
+\label{tab:prospective-attribution}
+\begin{tabular}{lrrr}
+\toprule
+Head & Parameters & Mean & Simultaneous interval \\
+\midrule
+Factorized typed & 7 & 0.35933 & [0.35431, 0.36435] \\
+Generic sparse & 7 & 0.36160 & [0.35683, 0.36637] \\
+Generic dense & 55 & 0.03893 & [0.02527, 0.05259] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Graph information has a positive effect under all three head
+operationalizations, including the higher-capacity dense sensitivity.  With
+the correct graph, factorized minus generic-sparse NLL is exactly 0.00000 in
+every world.  The graph-by-head interaction for the two seven-parameter heads
+is -0.00227 with simultaneous interval [-0.00822, 0.00368].  The proposition
+explains the exact predictive tie: both fitted procedures recover the same
+seven-term function.  Hence the evidence attributes performance to correct
+graph information and minimal-support recovery, not to an irreducible advantage
+of factorized notation.
+
+The 80 worlds using at least one nonlinear head were noninferior to the 40
+original linear worlds.  Their NLL difference was -0.00132 with simultaneous
+interval [-0.01031, 0.00766], below the frozen margin 0.03.  All nine attribution
+and linked Paper~3 gates passed.
+
+A separate post-review descriptive sensitivity crossed train noise
+\(\{0.04,0.08,0.16\}\) with OOD noise \(\{0.06,0.12,0.24\}\), using 120
+public-seed worlds in each of nine cells.  Graph and head recovery was 1.000 in
+every cell.  Across the grid, the minimum mean wrong-minus-correct NLL effects
+were 0.23337 for factorized, 0.23773 for generic sparse, and 0.02420 for generic
+dense heads; the smallest dense-head descriptive 95\% lower bound was 0.01719.
+The panel was not confirmatory and varies only coordinate-corruption noise.
+
+\subsection{Outside-model-family stress results}
+
+The nonadditive synergy destroyed exact learned prediction in all 120 fresh
+worlds.  Mean noiseless center accuracy in the both-mechanisms stratum was
+0.14104.  Nevertheless, wrong-minus-learned stochastic composition NLL was
+0.18545, with world SD 0.00879 and 95\% interval [0.18388, 0.18702].  Thus the
+graph effect remains after exact representability has been deliberately
+removed.  The synergy was zero in every training and selection case, and all
+four frozen stress gates passed.
+
+A Node.js implementation with no imports from the Python project independently
+recovered the learned model and NLL values for all 120 attribution worlds and
+recomputed all ten published analysis means.  It also verified the revealed
+root-seed commitment; no discrepancy was found.
+
+A separate Python audit derived all 120 world seeds from the revealed root and
+regenerated every exported train, selection, and test transition with the
+archived frozen generator.  All cases matched the portable input.  This closes
+seed-derivation and export consistency within the frozen Python path, but it
+does not turn the Node.js analysis into an independent generator implementation.

@@ -1,0 +1,40 @@
+{
+  "identifier": "P3-4B-DEVELOPMENT-TEMPORAL-BOUNDARY-v1",
+  "test_output_used": false,
+  "development_report_digest": "6942e22b4ce0dda280d0124b6871ed41a85792be7f33d4ef8d9d50f66a78ed23",
+  "development_raw_file_sha256": "e4ab2daef3c68f8c6581b3f5d3bdf1ecf4e8daf11a16ebab1378dc9ae2bcab72",
+  "predictive_sesoi": 0.0025,
+  "diagnostics": {
+    "independent_probe_only_to_later_tasks": {
+      "script": "prefix_only_temporal_lowo.py",
+      "script_sha256": "9f519ac388760203839c1abcb353c40c9c57e98c7fc8291b8016c2d9699c8178",
+      "result": "prefix_only_temporal_lowo_result.json",
+      "result_sha256": "e30573eae8b27bf0476509ef22dd19e53e0fbe58b5551411e1e56214b4124e45",
+      "scalar_generic_binary_brier_improvement": -0.0005385387201438194,
+      "scalar_generic_first_failure_integrated_brier_improvement": -0.00021247670359487606,
+      "passed_sesoi": false
+    },
+    "four_calibration_tasks_to_four_later_tasks": {
+      "script": "split_task_temporal_lowo.py",
+      "script_sha256": "8342bc2c30214d0e5bc691d324b5b15b53833a34f2ecf7c7bcef2dac7f5b383b",
+      "result": "split_task_temporal_lowo_result.json",
+      "result_sha256": "62f38b5ea5e2f2003fab7e0d63529a248d1f2d629d2a406043ae586d70b06b25",
+      "outcome_event_rate": 0.3760850694444444,
+      "scalar_generic_binary_brier_improvement": -0.0020214865301173865,
+      "scalar_generic_first_failure_integrated_brier_improvement": -0.0010685516725633783,
+      "passed_sesoi": false
+    }
+  },
+  "frozen_interpretation": {
+    "supported_if_v2_confirmatory_gate_passes": "held-out same-task incremental criterion validity of structural discrepancy for plan-regret outcomes",
+    "not_supported": [
+      "independent-prefix prediction of future downstream failure",
+      "calibration-task prediction of later downstream failure",
+      "deployment-time prognostic validity without oracle endpoints"
+    ],
+    "level_4_requirement_label": "downstream_predictive_validity",
+    "required_reporting_qualification": "The machine requirement label is retained for contract compatibility, but every manuscript and register must state the narrower criterion-validity estimand and preserve both failed temporal diagnostics."
+  },
+  "sealed_seed_reveals_at_assessment": 0,
+  "sealed_result_evaluations_at_assessment": 0
+}

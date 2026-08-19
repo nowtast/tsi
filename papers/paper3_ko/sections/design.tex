@@ -1,0 +1,107 @@
+\section{봉인된 다중 gate 설계}
+\label{sec:design}
+
+\subsection{Cohort와 one-shot access}
+
+Table~\ref{tab:gates}는 세 confirmatory cohort를 요약한다. 각 gate에는
+development generator, 별도의 encrypted seed commitment, zero-access audit,
+frozen source digest와 atomic one-shot lock이 있다. Sealed result를 threshold,
+feature, model population 또는 sample size 변경에 재사용하지 않는다.
+
+\begin{table}[ht]
+\centering
+\caption{Confirmatory cohort. Run 수는 world 수, 여섯 control과 세 optimizer
+seed의 곱이다.}
+\label{tab:gates}
+\begin{tabular}{lrrrl}
+\toprule
+Gate & Worlds & Runs & 최대 horizon & Primary 목적 \\
+\midrule
+Structural OOD & 50 & 900 & 1 & unseen mechanism과 routing \\
+Open-loop rollout & 62 & 1,116 & 32 & recursive structural error \\
+Criterion validity & 69 & 1,242 & 8 & plan failure와 first failure \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+OOD와 rollout gate는 paired comparison에 여섯 control 전체를 사용한다.
+Criterion-validity gate는 nondegenerate error를 생성하는 네 control에서 hazard
+model을 fit한다. Dense와 oracle-signature control은 mandatory structural-zero
+check로 유지하며 report에서 제거하지 않는다.
+
+\subsection{Structural OOD gate}
+
+Development mechanism과 sealed mechanism은 world level에서 disjoint하다.
+Generator는 unseen recombination, unseen structural mode, unseen mechanism
+parameter, unseen action composition, bridge-consistent shift와
+bridge-violating negative control을 구분한다. Primary comparison은 capacity와
+compute를 유지하면서 correct routing을 random/wrong routing과 pair한다.
+Frozen power rule로 sealed world 50개를 선택했다.
+
+\subsection{Open-loop gate}
+
+Rollout protocol은 horizon \(1,2,4,8,16,32\)에서 teacher-forced prediction과
+recursive prediction을 분리한다. \(\DeltaTheta\) trajectory의 area,
+fixed-layer vector, structural failure 없는 survival, bridge violation과
+tracking diagnostic을 기록한다. 누적 worst-case numerical bound가
+vacuous하더라도 recursive inequality audit를 유지한다.
+
+\subsection{Criterion-validity gate}
+
+각 world는 32개 unit을 가진다. 한 unit에는 domain-separated 8-step probe와
+\[
+(1,2,4,8,1,2,4,8)
+\]
+horizon을 가진 task 8개가 있다. Task utility는 structural predicate만으로
+생성한다. Primary population은 layer-routed, strict-factorized,
+random-routed, wrong-routed control이다.
+
+Scalar baseline은 training negative log likelihood, one-step/open-loop latent
+mean-squared error, endpoint exactness, task horizon과 goal weight, model
+identity, plan-selection margin, selected-versus-alternative scalar error
+contrast를 포함한다. Augmented model은 prespecified task-local
+\(\DeltaTheta\), fixed-total, fixed-layer와 goal-aligned structural contrast를
+추가한다. Mandatory non-gating sensitivity는 baseline에 direct raw layer
+mismatch를 제공한다.
+
+Ridge logistic discrete hazard \(h_i(t)\)를 development world에서 fit한다.
+Cumulative failure probability는
+\[
+\widehat F_i(t)
+=1-\prod_{s=1}^{t}\{1-\widehat h_i(s)\}
+\]
+이다. 모든 coefficient, feature order, mean, scale과 penalty를 sealed seed
+reveal 전에 동결한다.
+
+\subsection{Estimand와 inference}
+
+두 co-primary effect는
+\[
+\begin{split}
+\mathcal E_{\mathrm{bin}}
+&=
+\operatorname{BS}_{\mathrm{scalar}}(8)
+-
+\operatorname{BS}_{\mathrm{TSI}}(8),\\
+\mathcal E_{\mathrm{int}}
+&=
+\frac{1}{8}\sum_{t=1}^{8}
+\left[
+\operatorname{BS}_{\mathrm{scalar}}(t)
+-
+\operatorname{BS}_{\mathrm{TSI}}(t)
+\right].
+\end{split}
+\]
+이다. 여기서 \(\operatorname{BS}(8)\)의 8은 task identifier가 아니라 고정된
+8-step candidate trajectory의 terminal time index \(t=8\)이다. Integrated
+estimand는 이 trajectory의 8개 time index를 평균한다. 양수이면 structural
+augmentation이 우세하다. Unit-level score는
+world 안에서 primary control과 nested optimizer seed에 대해 먼저 평균한다.
+One-sided world-level Student test에는 Holm familywise correction을 적용한다
+\citep{holm1979simple}. 또한 20,000-replicate world-cluster bootstrap과
+world-random-intercept, seed-nested variance decomposition에서 Bonferroni
+simultaneous lower bound가 양수여야 한다. 두 point effect는 prespecified
+smallest effect size of interest \(\SESOI=0.0025\)를 만족해야 한다. Inferential
+null은 nonpositive effect이며 confidence lower bound가 \(\SESOI\)를 넘는다고
+주장하지 않는다.

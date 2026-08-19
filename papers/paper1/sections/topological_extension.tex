@@ -1,0 +1,119 @@
+\section{Persistent Topology Extension}
+
+This section adds a persistent topological observable to the integrated state.
+It is deliberately narrower than a claim that topology identifies structure:
+the carrier is a fixed finite simplicial complex, and the filtration is the
+only varying input in the stability result below.
+
+\begin{definition}[Filtered finite carrier]
+Let $K$ be a finite abstract simplicial complex and let $\F$ be a field. A
+filtration function is a map $f:K\to\R$ satisfying $\sigma\subseteq\tau
+\Rightarrow f(\sigma)\leq f(\tau)$. Its sublevel complex at $a\in\R$ is
+\[
+ K_a^f=\{\sigma\in K:f(\sigma)\leq a\}.
+\]
+The persistent signature in degree $k$ is the persistence diagram
+$\Dgm_k(f)$ of the homology persistence module
+$H_k(K_a^f;\F)$, and the truncated signature is
+$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$.
+\end{definition}
+
+The monotonicity condition makes every $K_a^f$ a simplicial subcomplex: if
+$\tau$ is retained, every face $\sigma$ is retained as well. Thus inclusion
+of sublevel complexes gives the persistence maps used in the definition.
+
+\begin{definition}[Persistent discrepancy]
+For two filtration functions $f,g$ on the same finite carrier $K$, define
+\[
+ \Delta_{\mathrm{pers},r}(f,g)=\max_{0\leq k\leq r}
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr),
+\]
+where $d_B$ is the bottleneck distance. The two filtrations are compared only
+after fixing the field, the carrier, the degree cutoff, and the units of the
+filtration values.
+\end{definition}
+
+\begin{theorem}[Filtered stability; imported theorem]
+For a fixed finite simplicial complex $K$ and monotone filtration functions
+$f,g:K\to\R$,
+\[
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr)\leq \|f-g\|_\infty
+ \quad\text{for every }k.
+\]
+Consequently, $\Delta_{\mathrm{pers},r}(f,g)\leq\|f-g\|_\infty$.
+\end{theorem}
+
+\begin{proof}
+Put $\delta=\|f-g\|_\infty$. For every simplex $\sigma$, the inequalities
+$g(\sigma)\leq f(\sigma)+\delta$ and
+$f(\sigma)\leq g(\sigma)+\delta$ hold. Therefore, for every $a$,
+\[
+ K_a^f\subseteq K_{a+\delta}^g
+ \quad\text{and}\quad
+ K_a^g\subseteq K_{a+\delta}^f.
+\]
+The inclusions commute with the inclusions between sublevel complexes as $a$
+increases. Applying homology gives a $\delta$-interleaving of the two
+persistence modules in degree $k$. The algebraic stability theorem for
+persistence modules gives a bottleneck distance no larger than the
+interleaving distance. Hence $d_B(\Dgm_k(f),\Dgm_k(g))\leq\delta$.
+Taking the maximum over $0\leq k\leq r$ proves the final inequality. The
+only non-elementary step is the imported algebraic stability theorem; the
+sublevel inclusions and interleaving construction are established here.
+\end{proof}
+
+\begin{proposition}[Isomorphism invariance of the persistent signature]
+Let $\varphi:K\to L$ be a simplicial isomorphism and let $f:K\to\R$ and
+$g:L\to\R$ satisfy $g(\varphi(\sigma))=f(\sigma)$ for every simplex
+$\sigma$. Then, for every $k$,
+\[
+ d_B\bigl(\Dgm_k(f),\Dgm_k(g)\bigr)=0.
+\]
+\end{proposition}
+
+\begin{proof}
+Fix $a$. The value-preservation condition implies
+$\varphi(K_a^f)=L_a^g$. Since the restriction
+$\varphi_a:K_a^f\to L_a^g$ is a simplicial isomorphism, functoriality of
+simplicial homology gives $H_k(K_a^f;\F)\cong H_k(L_a^g;\F)$. For
+$a\leq b$, the square formed by these restrictions and the inclusion-induced
+homology maps commutes. Thus the persistence modules are isomorphic and their
+persistence diagrams are identical, so the bottleneck distance is zero.
+\end{proof}
+
+\begin{proposition}[The persistent signature is not complete for a labeled carrier]
+Even on one fixed labeled carrier, equality of all persistence diagrams need
+not determine the filtration as labeled structural data.
+\end{proposition}
+
+\begin{proof}
+Let $K$ consist of two isolated vertices $x,y$ with distinct labels. Set
+$f(x)=0,f(y)=1$ and $g(x)=1,g(y)=0$. Both degree-zero diagrams contain
+$(0,\infty)$ and $(1,\infty)$, and every positive-degree diagram is empty.
+Thus $\Pi_r(K,f)=\Pi_r(K,g)$ for every $r\geq0$. However, the only
+label-preserving bijection fixes both vertices, and it does not preserve the
+filtration values. Hence the persistent signature does not determine the
+labeled filtered state.
+\end{proof}
+
+
+The extension certifies invariance and controlled sensitivity under its stated
+hypotheses. It does not establish completeness, comparison of unrelated
+carriers without a correspondence, or neural discovery of the carrier. Those
+questions require separate assumptions or empirical validation.
+
+
+\begin{proposition}[State-level persistent invariance]
+Let $\Sigma$ and $\Sigma'$ be integrated states and let
+$\varphi:\Sigma\to\Sigma'$ be a structural isomorphism. Then for every
+degree cutoff $r$,
+\[
+d_B(\Dgm_k(f),\Dgm_k(g))=0\quad\text{for every }k\leq r.
+\]
+\end{proposition}
+
+\begin{proof}
+The filtration-preserving component of $\varphi$ satisfies
+$g(\bar\varphi\sigma)=f(\sigma)$ for every simplex. Therefore the
+isomorphism-invariance proposition applies to the two filtered carriers.
+\end{proof}
