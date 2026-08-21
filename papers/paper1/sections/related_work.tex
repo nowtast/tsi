@@ -1,0 +1,41 @@
+\section{Related Work and Positioning}
+
+Structured learning systems commonly impose object- and relation-centered
+inductive biases through interaction networks, graph networks, or structured
+world models \cite{battaglia2016interaction,battaglia2018relational,
+kipf2020contrastive}. These works specify learnable architectures and training
+objectives. TSI instead specifies a mathematical state contract, its
+equivalences, and conditional preservation properties. It neither supplies a
+neural discovery algorithm nor implies that the contract will emerge from an
+unconstrained learner.
+
+Categorical database models treat a schema as a small category and an instance
+as a set-valued functor \cite{maclane1998categories,spivak2012functorial};
+finitely presented schemas
+can be given by directed multigraphs and path equations
+\cite{spivakwisnesky2015relational}. TSI imports this presentation discipline
+but uses finite binary relations as morphisms, following the standard calculus
+of relations \cite{freydscedrov1990categories}. Its additional simplicial,
+metric, filtration, mass, and tracked-transition layers are not part of those
+database formalisms.
+
+The topological extension uses persistence diagrams and their stability theory
+\cite{edelsbrunner2002topological,zomorodian2005computing,
+cohensteiner2007stability,chazal2009proximity,bauerlesnick2015induced,
+crawleyboevey2015decomposition}. The metric--measure extension is
+a finite, hard-label-constrained variant of a Gromov--Wasserstein comparison
+\cite{memoli2011gromov}; it is distinct from formulations that jointly compare
+features and structure \cite{vayer2020fused}. Standard coupling and gluing
+arguments are drawn from optimal transport
+\cite{villani2009optimal,peyre2019computational}.
+
+Bisimulation metrics for Markov decision processes build behavioral distances
+from rewards and transition kernels \cite{ferns2004metrics}. Multi-step model
+error has also been bounded under Lipschitz assumptions in Wasserstein geometry
+\cite{asadi2018lipschitz}, while model-based policy optimization makes the
+practical case for restricting model-generated rollout horizons
+\cite{janner2019trust}. TSI does not identify its structural discrepancy with
+a bisimulation fixed point or a reward-sufficient abstraction. Its rollout
+result is the deterministic error recurrence that follows once a quotient-level
+extended pseudometric, equivariant updates, one-step errors, and Lipschitz
+constants have separately been supplied.

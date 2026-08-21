@@ -27,3 +27,13 @@ learned fit과 analysis mean을 재현했다. 따라서 선언한 finite stochas
 안에서 graph information, minimal structural support, composition,
 misspecification과 post-export fitting/evaluation/analysis implementation
 reproducibility가 각각 분리되어 식별된다.
+
+다음 결정적 비교는 factorized head와 generic sparse head의 비교가 아니다. Entity의
+생성과 삭제, identity 유지 및 relation 재구성 아래에서 동일한 dependency graph를
+회수한 두 model을 비교해야 한다. 이 비교가 어떤 효과를 식별하려면 두 arm이 동일한
+observable information을 받아야 하며 representational commitment만 달라야 한다.
+Identity 또는 typed relation을 한 arm에만 input으로 제공하면 결과는 information
+asymmetry의 산물이 되며, 이는 원래 finite-family audit에서 진단한 것과 같은 종류의
+confound다. Turnover quantity \(b(p)\), 그 zero criterion과 survivor-only preservation의
+vacuity 명제는 companion theory에 이미 formalize되어 있다. 따라서 turnover에 초점을
+둔 연구가 이 설계의 가장 작은 self-contained instance다.

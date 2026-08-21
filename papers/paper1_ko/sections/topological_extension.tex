@@ -14,7 +14,9 @@ $f(\sigma)\leq f(\tau)$를 만족하는 함수이다. $a\in\R$에서의
 \]
 로 둔다. $k$차 지속적 서명은 $H_k(K_a^f;\F)$라는 호몰로지 지속 모듈의
 persistence diagram $\Dgm_k(f)$이며, 절단된 서명은
-$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$이다.
+$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$이다. 이 구성은 표준 finite
+persistence framework를 따른다
+\cite{edelsbrunner2002topological,zomorodian2005computing}.
 \end{definition}
 
 단조성 조건에 의해 모든 $K_a^f$는 단순 부분복합체이다. 따라서 하위수준
@@ -29,6 +31,9 @@ $\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$이다.
 로 둔다. 여기서 $d_B$는 bottleneck distance이다. 두 여과는 체, 담체,
 차수 절단값, 여과값의 단위를 고정한 뒤에만 비교한다.
 \end{definition}
+
+다음 결과는 persistence diagram과 persistence module에 대한 표준 안정성
+정리이다 \cite{cohensteiner2007stability,chazal2009proximity}.
 
 \begin{theorem}[여과 안정성: 외부에서 도입한 정리]
 고정된 유한 단순 복합체 $K$와 단조 여과 함수 $f,g:K\to\R$에 대해
@@ -50,8 +55,11 @@ $f(\sigma)\leq g(\sigma)+\delta$가 성립한다. 그러므로
 \]
 이다. 이 포함들은 하위수준 복합체 포함 사상과 호환된다. 호몰로지를
 적용하면 각 $k$에서 두 지속 모듈 사이에 $\delta$-interleaving이 생긴다.
-algebraic stability 정리는 bottleneck distance가 interleaving distance
-이하임을 보장한다. 따라서 원하는 부등식이 성립한다. 외부에서 도입한
+유한한 $K$ 때문에 두 module의 모든 vector space는 finite-dimensional이며,
+따라서 module은 q-tame이고 interval decomposition과 persistence diagram을
+갖는다 \cite{crawleyboevey2015decomposition}. Algebraic
+stability 정리 \cite{chazal2009proximity,bauerlesnick2015induced}는 bottleneck distance가
+interleaving distance 이하임을 보장한다. 따라서 원하는 부등식이 성립한다. 외부에서 도입한
 비초등적 단계는 algebraic stability 정리이며, 포함과 interleaving 구성은
 이 논문에서 직접 확인했다.
 \end{proof}

@@ -3,6 +3,14 @@
 Static structure alone does not make a transition model well-defined. We require
 updates to respect structural equivalence before measuring their error.
 
+Bisimulation metrics construct task-dependent behavioral distances for Markov
+decision processes from reward and transition information
+\cite{ferns2004metrics}. Lipschitz model analyses propagate one-step error over
+multiple steps in Wasserstein geometry \cite{asadi2018lipschitz}. The
+discrepancy below is neither asserted to be a bisimulation fixed point nor
+derived from rewards. The rollout theorem is instead conditional on a supplied
+structural pseudometric and supplied Lipschitz constants.
+
 \begin{definition}[Extended structural pseudometric]
 Let $\mathcal X=\StrState(Q,\mathcal E)/\cong_{\mathrm{str}}$. An extended
 structural pseudometric on a subset $\mathcal X_0\subseteq\mathcal X$ is a

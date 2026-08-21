@@ -1,7 +1,9 @@
 \documentclass[11pt]{article}
 \setlength{\emergencystretch}{3em}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{assumption}[definition]{Assumption}
 \newtheorem{lemma}[definition]{Lemma}
@@ -20,11 +22,12 @@
 \newcommand{\im}{\operatorname{im}}
 \title{Structural Imagination Spaces: A Formal Theory of Layered Internal Structure}
 \author{Chulsu Ha\\Independent Researcher\\\texttt{charles.andrew.ha@gmail.com}}
-\date{19 August 2026}
+\date{20 August 2026}
 \begin{document}
 \maketitle
 \input{sections/abstract}
 \input{sections/introduction}
+\input{sections/related_work}
 \input{sections/formal_framework}
 \input{sections/running_example}
 \input{sections/layer_theorems}
@@ -43,4 +46,6 @@ this study.
 This theoretical study introduces no new empirical dataset. The bilingual
 manuscript sources and reference implementation are available at
 \url{https://github.com/nowtast/tsi}.
+\bibliographystyle{plainnat}
+\bibliography{references}
 \end{document}

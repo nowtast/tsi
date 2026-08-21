@@ -114,6 +114,13 @@ seven-term function.  Hence the evidence attributes performance to correct
 graph information and minimal-support recovery, not to an irreducible advantage
 of factorized notation.
 
+The equivalence is conditional. It requires that the generic dictionary contain
+the selected edge functions and that the selector recover that support. Where
+the dictionary is misspecified, or where the support is not recoverable at the
+given sample size and noise level, the typed factorization is not equivalent to
+the generic head. That regime is not tested here, and it is the natural place to
+look for a distinct contribution of typed structure.
+
 The 80 worlds using at least one nonlinear head were noninferior to the 40
 original linear worlds.  Their NLL difference was -0.00132 with simultaneous
 interval [-0.01031, 0.00766], below the frozen margin 0.03.  All nine attribution
@@ -147,3 +154,22 @@ regenerated every exported train, selection, and test transition with the
 archived frozen generator.  All cases matched the portable input.  This closes
 seed-derivation and export consistency within the frozen Python path, but it
 does not turn the Node.js analysis into an independent generator implementation.
+
+\subsection{What this audit does and does not establish}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Scope of the established claims.}
+\label{tab:claim-scope}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+Established & Not established \\
+\midrule
+Train-only graph and head recovery in 120/120 worlds & Any advantage of factorized \emph{notation} over a generic head that recovers the same support \\
+Correct graph improves held-out two-mechanism composition NLL under all three head operationalizations & Entity discovery, or identity maintenance from raw observation \\
+The graph effect survives deliberate removal of exact representability (0.18545, 120/120 worlds nonexact) & That the richer structural state adds value beyond a correct minimal support \\
+Factorized and matched generic sparse heads are exactly equivalent once the same support is recovered & Real-world, neural, continuous, or perceptual validity \\
+\bottomrule
+\end{tabular}
+\end{table}

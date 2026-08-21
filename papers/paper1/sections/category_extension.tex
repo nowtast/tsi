@@ -4,6 +4,10 @@ The relational carrier in the formal framework is a functor on a schema
 category. This section makes the descent condition explicit when the schema is
 given by generators and path equations. The purpose is to prevent a list of
 primitive relations from being mistaken for a well-defined categorical state.
+Schemas as categories and graph-and-equation presentations are standard in
+functorial data models \cite{spivak2012functorial,
+spivakwisnesky2015relational}; TSI changes the instance codomain from sets and
+functions to finite sets and binary relations.
 
 
 \begin{definition}[Generator realization]
@@ -20,7 +24,9 @@ every $e\in Q_1$. Its free relational extension is
 \begin{proposition}[The finite-relation category]
 Finite sets, binary relations, relational composition, and diagonal relations
 form a category. In particular, the path formula in the preceding definition
-is independent of parenthesization.
+is independent of parenthesization. This is the standard category of relations
+\cite{freydscedrov1990categories}; the elementary verification is included for
+completeness.
 \end{proposition}
 
 \begin{proof}

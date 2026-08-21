@@ -17,7 +17,10 @@ def main() -> int:
         for error in errors:
             print(f"{error.paper}:{error.location}: {error.message}")
         return 1
-    print("Bilingual TeX structural and display-math parity check passed.")
+    print(
+        "Bilingual TeX structure, display math, citations, and bibliography "
+        "integrity check passed."
+    )
     return 0
 
 

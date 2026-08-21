@@ -1,38 +1,36 @@
 \section{서론}
 
-Representation learning은 내부 상태를 vector나 tensor로 저장한다. 이 선택은
-많은 계산과 양립하지만, 어떤 entity가 지속되는지, 어떤 relation이 compose되는지,
-어떤 metric quantity가 중요한지, action이 상태를 어떻게 바꾸는지를 그 자체로
-정의하지 않는다. TSI는 다음과 같이 더 제한된 질문에서 출발한다. 내부 상태가
-structural simulation, reasoning, action을 지원하려면 어떤 수학적 데이터가
+Representation learning은 내부 상태를 vector나 tensor로 저장한다. 이러한 저장
+방식만으로는 어떤 entity가 지속되는지, 어떤 relation이 합성되는지, 어떤 metric
+quantity가 중요한지, 순서 및 질량 관측량이 어떻게 작동하는지, action이 상태를
+어떻게 바꾸는지가 정해지지 않는다. TSI는 더 제한된 질문에서 출발한다. 내부
+상태가 structural simulation, reasoning, action을 지원하려면 어떤 수학적 데이터가
 명시되어야 하는가?
 
-여기서 제시하는 답은 모든 모델에 대한 주장이 아니라 formal specification이다.
-Structural state는 entity를 위한 common typed carrier, 그 carrier 위의 relational
-structure, qualitative organization을 나타내는 simplicial complex, quantitative
-organization을 나타내는 metric, action으로 index된 transition map을 갖는다. 이
-layer들은 상호작용할 수 있지만 서로 혼동하지 않는다. Vector는 이 데이터를
-encoding할 수 있으나, coordinate 자체가 전체 specification은 아니다.
+이 논문에서 전개하는 형식적 대상은 finite presented schema, common tagged
+carrier, typed relation, simplicial complex, metric, filtration, full-support
+mass, action-conditioned tracked transition으로 구성된다. 이 layer들은 상호작용할
+수 있지만 서로 동일시되지는 않는다. Vector가 이 데이터를 encode할 수는 있으나,
+그 좌표만으로 전체 structural specification이 정해지지는 않는다.
 
-이 논문의 기여는 다섯 가지다. 첫째, TSI state object를 통합하고 relational,
-topological, geometric layer가 tagged carrier를 공유한다는 범위 결정을 명시한다.
-둘째, exact structural isomorphism을 정의하고 그 기본 대수 property를 증명한다.
-셋째, partial transition의 survivor에 대한 preservation을 정의하고 composition
-closure를 증명한다. 넷째, filtration과 mass를 포함한 다섯 survivor layer의 보존 및 composition closure를 증명한다. 다섯째, 구조적 discrepancy에 대한 quotient-level rollout bound를
-제시하여 equivariance와 stability 조건을 명시한다.
+이 논문은 다섯 구성요소를 하나의 통합된 기여로 제시한다. (1) 선언된 cross-layer
+compatibility axiom을 갖는 state contract, (2) exact structural isomorphism과
+그 동치관계 증명, (3) 다섯 observable에 대한 survivor-level preservation과 그
+합성 증명, (4) local preservation과 turnover를 분리하는 six-defect zero
+criterion, (5) metric--measure comparison과 rollout stability를 포함한 category
+및 quotient-level 확장이다.
 
-이 논문은 여섯 성분이 intelligence에 필요충분하다는 주장, human mathematical
-imagery를 기술한다는 주장, neural model이 inductive constraint 없이 이를 발견한다는
-주장을 하지 않는다. 이는 별도의 empirical 또는 cognitive hypothesis다. 여기서는
-그 hypothesis를 testable하게 만드는 formal core를 제시한다.
-
-
-이 논문은 imported mathematics와 TSI 고유의 구성을 구분한다. Finite-relation
-category, presented-category descent, filtered persistence stability, discrete
-rollout recurrence는 표준적인 재료이며 가정을 드러낸 채 사용한다. 이
-framework에 특유한 결과는 common-carrier state contract, generator relation과
-simplex 사이의 compatibility condition, label-preserving partial tracked
-transition의 category, turnover를 포함한 여섯 성분 zero criterion, 그리고
-survivor preservation과 temporal identity의 분리다. 따라서 기여는 각 재료가
-새로운 정리라는 주장이 아니라, 이를 하나의 형식적 통합과 검증 가능한
-계약으로 구성하는 데 있다.
+Finite-relation category와 presented-category descent는 relation calculus 및
+categorical data formalism에서 도입한다
+\cite{freydscedrov1990categories,spivak2012functorial,
+spivakwisnesky2015relational}. Filtered persistence stability는 persistent
+homology에서 도입한다 \cite{cohensteiner2007stability,chazal2009proximity}.
+Metric--measure coupling과 gluing은 Gromov--Wasserstein 및 optimal-transport
+이론에서 도입한다 \cite{memoli2011gromov,peyre2019computational}. Rollout
+recurrence는 표준 Lipschitz error-propagation pattern을 사용한다
+\cite{asadi2018lipschitz}. TSI 고유의 기여는 이들을 common tagged state
+contract 아래 통합하고, compatibility invariant와 label-preserving partial
+transition category를 정의하며, survivor preservation과 temporal identity를
+명시적으로 분리한 데 있다. 이 논문은 이러한 layer가 intelligence에 필요충분하다고,
+human mathematical imagery를 기술한다고, 또는 neural model이 inductive
+constraint 없이 이를 발견한다고 주장하지 않는다.

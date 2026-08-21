@@ -3,6 +3,14 @@
 Static structure만으로 transition model이 well-defined해지지는 않는다. Error를
 측정하기 전에 update가 structural equivalence를 존중해야 한다.
 
+Bisimulation metric은 reward와 transition information에서 Markov decision
+process의 task-dependent behavioral distance를 구성한다
+\cite{ferns2004metrics}. Lipschitz model 분석은 Wasserstein geometry에서
+one-step error를 여러 단계로 전파한다 \cite{asadi2018lipschitz}. 아래
+discrepancy는 bisimulation fixed point라고 주장하지 않으며 reward에서 유도되지도
+않는다. Rollout theorem은 별도로 주어진 structural pseudometric과 Lipschitz
+constant를 전제로 하는 조건부 결과이다.
+
 \begin{definition}[Extended structural pseudometric]
 $\mathcal X=\StrState(Q,\mathcal E)/\cong_{\mathrm{str}}$라 하자. Extended
 structural pseudometric은 $\mathcal X_0\subseteq\mathcal X$ 위의

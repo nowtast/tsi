@@ -97,8 +97,8 @@ from empirical hypotheses. Open claims remain explicitly open.
 ## Bilingual Rule
 
 Every paper is maintained as paired English and Korean TeX packages with the same
-section order, formal-environment order, and citation keys. Check this invariant
-with:
+section order, formal-environment order, citation keys, and byte-identical
+bibliographies. The checker also rejects missing and uncited bibliography keys:
 
 ```bash
 PYTHONPATH=src python3 tools/check_bilingual_parity.py

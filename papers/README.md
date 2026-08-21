@@ -20,5 +20,7 @@ section files are authoritative. Structural parity between each English/Korean
 pair is checked by `tools/check_bilingual_parity.py`.
 
 The canonical Paper 01 source is the formal manuscript closed after review
-round 4 on 11 August 2026. The earlier position-paper draft is retained only in
-the ignored local submission archive and is not part of the public release.
+round 4 on 11 August 2026 and bibliographically corrected on 20 August 2026.
+The correction adds a dedicated positioning section and 20 fully cited
+references. The earlier position-paper draft is retained only in the ignored
+local submission archive and is not part of the public release.

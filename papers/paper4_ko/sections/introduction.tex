@@ -17,6 +17,13 @@ exact prediction은 분석적으로 따라온다. 따라서 primary audit는 fac
 empirical causal effect가 아니라 exact representability와 finite-family
 identifiability를 다룬다.
 
+Structural prediction에는 raw observation에서 entity discovery, 시간에 걸친
+identity, relation, structural variable과 dependency graph를 거쳐 prediction에
+이르는 chain이 필요하다. 본 연구는 이 chain의 후반 단계를 다룬다. Entity set과
+cross-time identity는 generator가 제공하며, 이들이 주어진 뒤의 graph recovery와
+prediction을 검정한다. Raw observation에서 entity를 발견하고 그 identity를
+유지하는 문제는 이 audit의 estimand 밖에 있다.
+
 Frozen comparison은 투명한 기록으로 유지하고, 명확히 표시한 post-review
 diagnostic을 추가한다. 이 확장은 cell-level average가 tie와 structural zero를 어떻게
 가리는지, graph choice의 효과가 factorized head와 untied dense head에서 같은지,

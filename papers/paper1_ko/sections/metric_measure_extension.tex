@@ -3,7 +3,9 @@
 기하 층에는 불확실하거나 중복된 entity가 포함될 수 있으므로 set-level
 correspondence만으로는 충분하지 않다. 유한 metric carrier에 확률질량을
 부여하고 coupling을 통해 질량을 비교한다. 아래 결과는 exactness theorem이며
-finite-sample convergence theorem이 아니다.
+finite-sample convergence theorem이 아니다. Coupling과 Gromov--Wasserstein의
+배경은 표준 이론을 따른다
+\cite{memoli2011gromov,villani2009optimal,peyre2019computational}.
 
 \begin{definition}[완전지지 metric--measure 상태]
 완전지지 metric--measure 상태는 $M=(X,d,\mu,\lambda)$이다. 여기서
@@ -45,9 +47,12 @@ $1\leq p<\infty$와 label-compatible coupling $\pi$에 대해
 coupling이 없으면 discrepancy를 $+\infty$로 둔다.
 \end{definition}
 
-이는 hard label constraint를 갖는 유한 Gromov--Wasserstein-type objective이다.
+이는 hard label constraint를 갖는 유한 Gromov--Wasserstein-type objective이다
+\cite{memoli2011gromov}.
 좌표 비용, soft attribute 비용, 학습된 correspondence는 포함하지 않는다.
-그러한 항을 추가하면 별도의 discrepancy가 되며 식별가능성을 별도로 분석해야 한다.
+예를 들어 feature--structure joint cost는 fused Gromov--Wasserstein 정식화로
+이어진다 \cite{vayer2020fused}. 그러한 항을 추가하면 별도의 discrepancy가 되며
+식별가능성을 별도로 분석해야 한다.
 
 \begin{theorem}[Metric--measure discrepancy 0의 exactness]
 $M_X,M_Y$가 완전지지 metric--measure 상태라고 하자. 모든
@@ -154,8 +159,9 @@ $\mu_Y(y)>0$이므로
 \[
 \gamma(x,y,z)=\frac{\pi_{XY}(x,y)\pi_{YZ}(y,z)}{\mu_Y(y)}
 \]
-는 well-defined이다. 직접 합하면 $(X,Y)$와 $(Y,Z)$ marginal이 각각 원래
-coupling임을 알 수 있다. $\pi_{XZ}$를 그 $(X,Z)$ marginal이라 하자.
+는 well-defined이다. 이는 optimal transport의 표준 gluing construction이다
+\cite{villani2009optimal,peyre2019computational}. 직접 합하면 $(X,Y)$와 $(Y,Z)$ marginal이 각각
+원래 coupling임을 알 수 있다. $\pi_{XZ}$를 그 $(X,Z)$ marginal이라 하자.
 $\gamma(x,y,z)>0$이면
 $\lambda_X(x)=\lambda_Y(y)=\lambda_Z(z)$이므로 $\pi_{XZ}$도
 label-compatible이다. $\gamma$에서 뽑은 두 triple에 대해

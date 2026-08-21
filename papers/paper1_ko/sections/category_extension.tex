@@ -3,7 +3,10 @@
 형식 체계의 relational carrier는 schema category 위의 functor이다. 이 절은
 schema가 generator와 path equation으로 주어질 때 descent 조건을 명시한다.
 목적은 primitive relation 목록만으로 categorical state가 자동으로 정의된다고
-간주하는 오류를 막는 것이다.
+간주하는 오류를 막는 것이다. Schema를 category로 보고 graph와 equation으로
+제시하는 방식은 functorial data model의 표준 구성이다
+\cite{spivak2012functorial,spivakwisnesky2015relational}. TSI는 instance의
+codomain을 set과 function에서 finite set과 binary relation으로 바꾼다.
 
 
 \begin{definition}[Generator realization]
@@ -22,7 +25,9 @@ extension은
 \begin{proposition}[유한 relation category]
 finite set, binary relation, relational composition, diagonal relation은
 category를 이룬다. 따라서 앞 정의의 path formula는 parenthesization과
-무관하다.
+무관하다. 이는 표준 relation category이다
+\cite{freydscedrov1990categories}. 완결성을 위해 elementary verification을
+아래에 포함한다.
 \end{proposition}
 
 \begin{proof}

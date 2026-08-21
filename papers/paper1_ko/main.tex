@@ -3,7 +3,9 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{kotex}
 \setmainhangulfont[ItalicFont=UnBatang]{UnBatang}
-\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
 \newtheorem{definition}{Definition}[section]
 \newtheorem{assumption}[definition]{Assumption}
 \newtheorem{lemma}[definition]{Lemma}
@@ -22,11 +24,12 @@
 \newcommand{\im}{\operatorname{im}}
 \title{Structural Imagination Space: 계층적 내부 구조의 형식 이론}
 \author{하철수\\개인 연구자\\\texttt{charles.andrew.ha@gmail.com}}
-\date{2026년 8월 19일}
+\date{2026년 8월 20일}
 \begin{document}
 \maketitle
 \input{sections/abstract}
 \input{sections/introduction}
+\input{sections/related_work}
 \input{sections/formal_framework}
 \input{sections/running_example}
 \input{sections/layer_theorems}
@@ -43,4 +46,6 @@
 \section*{데이터 및 코드 가용성}
 이 이론 연구는 새로운 경험적 데이터셋을 도입하지 않는다. 영문·국문 원고
 소스와 참조 구현은 \url{https://github.com/nowtast/tsi}에서 공개한다.
+\bibliographystyle{plainnat}
+\bibliography{references}
 \end{document}

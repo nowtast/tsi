@@ -1,0 +1,38 @@
+\section{관련 연구와 이론적 위치}
+
+구조적 학습 시스템은 interaction network, graph network, structured world
+model을 통해 object- 및 relation-centered inductive bias를 부여해 왔다
+\cite{battaglia2016interaction,battaglia2018relational,
+kipf2020contrastive}. 이 연구들은 학습 가능한 architecture와 training
+objective를 제시한다. 반면 TSI는 수학적 state contract, 그 동치관계, 조건부
+보존 성질을 명시한다. TSI는 neural discovery algorithm을 제공하지 않으며,
+unconstrained learner에서 이 contract가 저절로 나타난다고 함의하지도 않는다.
+
+Categorical database model은 schema를 small category로, instance를
+set-valued functor로 다룬다 \cite{maclane1998categories,spivak2012functorial}.
+Finitely presented
+schema는 directed multigraph와 path equation으로 제시할 수 있다
+\cite{spivakwisnesky2015relational}. TSI는 이 presentation discipline을
+도입하지만, 표준 relation calculus를 따라 finite binary relation을 morphism으로
+사용한다 \cite{freydscedrov1990categories}. TSI의 simplicial, metric,
+filtration, mass, tracked-transition layer는 이러한 database formalism에
+포함되지 않는다.
+
+위상 확장은 persistence diagram과 그 안정성 이론을 사용한다
+\cite{edelsbrunner2002topological,zomorodian2005computing,
+cohensteiner2007stability,chazal2009proximity,bauerlesnick2015induced,
+crawleyboevey2015decomposition}. Metric--measure 확장은 유한하고
+hard label constraint를 갖는 Gromov--Wasserstein 비교의 변형이다
+\cite{memoli2011gromov}. 이는 feature와 structure를 함께 비교하는 정식화와
+구별된다 \cite{vayer2020fused}. 표준 coupling 및 gluing 논법은 optimal
+transport에서 가져온다 \cite{villani2009optimal,peyre2019computational}.
+
+Markov decision process의 bisimulation metric은 reward와 transition kernel에서
+behavioral distance를 구성한다 \cite{ferns2004metrics}. Wasserstein geometry에서
+Lipschitz 가정 아래 multi-step model error를 제한한 연구도 있다
+\cite{asadi2018lipschitz}. Model-based policy optimization은 model-generated
+rollout horizon을 제한할 실용적 근거도 제시한다 \cite{janner2019trust}. TSI는
+structural discrepancy를 bisimulation fixed
+point나 reward-sufficient abstraction과 동일시하지 않는다. TSI의 rollout 결과는
+quotient-level extended pseudometric, equivariant update, one-step error,
+Lipschitz constant가 별도로 주어졌을 때 따르는 deterministic error recurrence이다.

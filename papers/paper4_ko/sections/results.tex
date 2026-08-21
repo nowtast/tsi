@@ -112,6 +112,12 @@ fitted procedure가 동일한 seven-term function을 회수한다. 따라서 evi
 성능을 correct graph information과 minimal-support recovery에 귀속하며 factorized
 notation 자체의 irreducible advantage에 귀속하지 않는다.
 
+이 등가성은 조건부다. Generic dictionary가 선택된 edge 함수를 포함하고 selector가
+그 support를 회수해야 성립한다. Dictionary가 오설정되었거나 주어진 표본 크기와 잡음
+수준에서 support가 회수되지 않는 영역에서는 typed factorization이 generic head와
+등가가 아니다. 그 영역은 본 연구에서 시험되지 않았으며, typed structure의 고유
+기여를 찾는다면 그곳이 자연스러운 출발점이다.
+
 Nonlinear head를 하나 이상 사용한 80개 world는 원래 linear world 40개에
 noninferior했다. NLL difference는 -0.00132, simultaneous interval은
 [-0.01031, 0.00766]으로 frozen margin 0.03보다 작았다. Attribution 및 연결된
@@ -144,3 +150,22 @@ generator로 export된 모든 train, selection 및 test transition을 재생성�
 case가 portable input과 일치했다. 이는 frozen Python path 내부의 seed derivation과
 export consistency를 해결하지만 Node.js analysis를 독립 generator implementation으로
 바꾸지는 않는다.
+
+\subsection{이 audit이 확립하는 것과 확립하지 않는 것}
+
+\begin{table}[H]
+\centering
+\small
+\caption{확립된 claim의 범위.}
+\label{tab:claim-scope}
+\begin{tabular}{@{}p{0.46\textwidth}p{0.46\textwidth}@{}}
+\toprule
+확립됨 & 확립되지 않음 \\
+\midrule
+World 120/120에서 train-only graph와 head 회수 & 동일한 support를 회수하는 generic head 대비 factorized \emph{notation}의 우위 \\
+세 head operationalization 모두에서 correct graph가 held-out two-mechanism composition NLL을 개선 & Raw observation에서 entity discovery 또는 identity maintenance \\
+Exact representability를 의도적으로 제거한 뒤에도 graph effect가 유지됨(0.18545, 120/120 world nonexact) & Correct minimal support를 넘어서는 richer structural state의 추가 가치 \\
+동일한 support를 회수하면 factorized head와 matched generic sparse head가 정확히 동등함 & Real-world, neural, continuous 또는 perceptual validity \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -80,4 +80,26 @@ intervention, turnover case는 정확한 assumption과 counterexample을 함께 
 - Running example에서 비공허성, 양립성, 불변성, survivor defect와 turnover의 차이를 계산했다.
 - 표준 imported mathematics와 framework-specific construction을 구분했다.
 
-빌드 상태: 영문 PDF 15쪽, 한국어 PDF 14쪽(XeLaTeX). 남은 작업은 proof-by-proof audit과 표기 정리다.
+참고문헌 보정 전 빌드 상태(2026-08-11): 영문 PDF 15쪽, 한국어 PDF
+14쪽(XeLaTeX). 이 과거 page count는 아래 감사 결과로 대체된다.
+
+## 참고문헌 귀속 감사 (2026-08-20)
+
+- 원고에 related-work 및 positioning 절과 실제 인용된 참고문헌 20개를 추가했다.
+  미인용 bibliography entry와 bibliography에 없는 citation key는 없다.
+- Finite-relation 및 presented-schema 재료를 relation calculus와 functorial data
+  문헌에 귀속했다. TSI의 `FinRel`-valued carrier 및 추가 structural layer와
+  set-valued categorical database instance의 차이를 명시했다.
+- Filtered-stability 증명에서 외부 의존성을 실제 사용 지점에 표시했다. Algebraic
+  stability를 적용하기 전에 유한 담체로부터 pointwise finite-dimensionality와
+  q-tameness가 성립함을 확인했다.
+- Hard-label discrepancy를 constrained Gromov--Wasserstein-type objective로
+  위치시켰다. Exactness 결과는 원고 내부에서 증명하고 coupling 및 gluing 배경은
+  원전에 귀속했다.
+- Quotient rollout 결과를 reward 및 transition으로 정의되는 bisimulation metric과
+  policy-performance claim에서 명시적으로 분리했다.
+- 영문·국문의 citation key를 구조적으로 검사하고 두 `references.bib`가 byte-identical
+  이어야 통과하도록 했다. 누락, 불일치, 미인용 key가 있으면 checker가 실패한다.
+
+게이트 결과: 참고문헌 부재 blocker를 해소했다. Clean build 결과는 영문 18쪽,
+국문 17쪽이다.

@@ -79,4 +79,29 @@ Gate result: Stage 2D dynamics is admitted. Stage 2A--2D mathematical extensions
 - Running example: nonempty compatible state, invariance, and survivor-defect/turnover distinction.
 - Standard imported mathematics is separated from framework-specific construction.
 
-Build status: English PDF 15 pages; Korean PDF 14 pages with XeLaTeX. Remaining work: proof-by-proof audit and notation cleanup.
+Pre-attribution build status (2026-08-11): English PDF 15 pages; Korean PDF 14
+pages with XeLaTeX. This historical count is superseded by the audit below.
+
+## Bibliographic attribution audit (2026-08-20)
+
+- The manuscript now contains a dedicated related-work and positioning section
+  and 20 cited references; there are no uncited bibliography entries or missing
+  citation keys.
+- The finite-relation and presented-schema ingredients are attributed to the
+  calculus of relations and functorial data literature. The text distinguishes
+  TSI's `FinRel`-valued carrier and added structural layers from set-valued
+  categorical database instances.
+- The filtered-stability proof identifies its external dependency at the exact
+  proof step. Finiteness of the carrier is used to establish pointwise finite
+  dimensionality and q-tameness before algebraic stability is invoked.
+- The hard-label discrepancy is positioned as a constrained
+  Gromov--Wasserstein-type objective. Its exactness result remains proved
+  internally, while the coupling and gluing background is attributed.
+- The quotient rollout result is explicitly separated from reward- and
+  transition-defined bisimulation metrics and from policy-performance claims.
+- English and Korean citation keys are structurally checked, and the two
+  `references.bib` files must be byte-identical. The checker now fails on
+  missing, unmatched, or uncited bibliography keys.
+
+Gate result: the missing-attribution blocker is closed. The clean English PDF
+builds to 18 pages and the matched Korean PDF to 17 pages.

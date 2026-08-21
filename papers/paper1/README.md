@@ -23,4 +23,7 @@ and separating Lipschitz and quotient-equivariance failures. M7/M8 are addressed
 by separating standard imported mathematics from framework-specific construction
 and adding a finite running example.
 
-The English build passes at 15 pages.
+The English build passes at 18 pages. A 2026-08-20 attribution pass added a
+dedicated related-work section and 20 verified, fully cited references. The
+English/Korean parity gate now also requires byte-identical bibliographies and
+rejects missing or uncited citation keys.

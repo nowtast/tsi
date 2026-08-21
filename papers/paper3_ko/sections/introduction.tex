@@ -45,6 +45,13 @@ assessment 뒤 sealed evaluation 전에 동결하며, model development data와
 evaluation data를 분리하는 일반 원칙을 따른다
 \citep{varma2006bias,collins2024tripod}.
 
+Structural prediction에는 raw observation에서 entity discovery, 시간에 걸친
+identity, relation, structural variable과 dependency graph를 거쳐 prediction에
+이르는 chain이 필요하다. 본 연구는 이 chain의 후반 단계를 다룬다. Entity set과
+cross-time identity는 generator가 제공하며, 이들이 주어진 뒤의 graph recovery와
+prediction을 검정한다. Raw observation에서 entity를 발견하고 그 identity를
+유지하는 문제는 본 논문의 estimand 밖에 있다.
+
 셋째 gate는 prespecified primary analysis를 통과하지만 해석 범위는
 의도적으로 제한한다. Discrepancy와 regret label은 동일한 held-out candidate
 trajectory를 공유하므로, oracle endpoint 없이 사용할 수 있는

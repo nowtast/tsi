@@ -15,7 +15,9 @@ filtration function is a map $f:K\to\R$ satisfying $\sigma\subseteq\tau
 The persistent signature in degree $k$ is the persistence diagram
 $\Dgm_k(f)$ of the homology persistence module
 $H_k(K_a^f;\F)$, and the truncated signature is
-$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$.
+$\Pi_r(K,f)=(\Dgm_0(f),\ldots,\Dgm_d(f))$. This construction follows the
+standard finite persistence framework
+\cite{edelsbrunner2002topological,zomorodian2005computing}.
 \end{definition}
 
 The monotonicity condition makes every $K_a^f$ a simplicial subcomplex: if
@@ -32,6 +34,10 @@ where $d_B$ is the bottleneck distance. The two filtrations are compared only
 after fixing the field, the carrier, the degree cutoff, and the units of the
 filtration values.
 \end{definition}
+
+The following result is the standard stability theorem for persistence
+diagrams and persistence modules
+\cite{cohensteiner2007stability,chazal2009proximity}.
 
 \begin{theorem}[Filtered stability; imported theorem]
 For a fixed finite simplicial complex $K$ and monotone filtration functions
@@ -54,9 +60,12 @@ $f(\sigma)\leq g(\sigma)+\delta$ hold. Therefore, for every $a$,
 \]
 The inclusions commute with the inclusions between sublevel complexes as $a$
 increases. Applying homology gives a $\delta$-interleaving of the two
-persistence modules in degree $k$. The algebraic stability theorem for
-persistence modules gives a bottleneck distance no larger than the
-interleaving distance. Hence $d_B(\Dgm_k(f),\Dgm_k(g))\leq\delta$.
+persistence modules in degree $k$. Because $K$ is finite, every vector space
+in either module is finite-dimensional; in particular, the modules are
+q-tame and admit interval decompositions and persistence diagrams
+\cite{crawleyboevey2015decomposition}. The algebraic stability theorem
+\cite{chazal2009proximity,bauerlesnick2015induced} gives a bottleneck distance no larger than
+the interleaving distance. Hence $d_B(\Dgm_k(f),\Dgm_k(g))\leq\delta$.
 Taking the maximum over $0\leq k\leq r$ proves the final inequality. The
 only non-elementary step is the imported algebraic stability theorem; the
 sublevel inclusions and interleaving construction are established here.

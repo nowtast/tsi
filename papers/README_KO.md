@@ -18,6 +18,7 @@ journal submission 패키지도 정본이 아니라 venue별 snapshot이므로 �
 삼는다. 각 영문·한국어 원고 쌍의 구조 일치는 `tools/check_bilingual_parity.py`로
 검사한다.
 
-Paper 01 정본은 2026년 8월 11일 4차 심사를 마친 형식 논문이다. 이전의
-position-paper 초안은 무시되는 로컬 submission archive에만 보존하며 공개
-릴리스에는 포함하지 않는다.
+Paper 01 정본은 2026년 8월 11일 4차 심사를 마치고 2026년 8월 20일
+참고문헌 보정을 완료한 형식 논문이다. 보정본에는 별도 positioning 절과 모두
+인용된 참고문헌 20개가 포함된다. 이전 position-paper 초안은 무시되는 로컬
+submission archive에만 보존하며 공개 릴리스에는 포함하지 않는다.

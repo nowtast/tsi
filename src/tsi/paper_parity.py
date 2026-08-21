@@ -13,6 +13,7 @@ _ENVIRONMENT_PATTERN = re.compile(
     r"\\begin\{(definition|assumption|lemma|proposition|theorem|corollary)\}"
 )
 _CITATION_PATTERN = re.compile(r"\\cite[a-zA-Z]*\{([^}]+)\}")
+_BIB_ENTRY_PATTERN = re.compile(r"@\w+\s*\{\s*([^,\s]+)\s*,")
 _LABEL_PATTERN = re.compile(r"\\label\{([^}]+)\}")
 _REFERENCE_PATTERN = re.compile(r"\\(?:eqref|ref)\{([^}]+)\}")
 _DISPLAY_PATTERN = re.compile(
@@ -51,6 +52,10 @@ def _citation_keys(path: Path) -> set[str]:
         for group in _CITATION_PATTERN.findall(path.read_text())
         for key in group.split(",")
     }
+
+
+def _bibliography_keys(path: Path) -> set[str]:
+    return set(_BIB_ENTRY_PATTERN.findall(path.read_text()))
 
 
 def _labels(path: Path) -> list[str]:
@@ -201,6 +206,48 @@ def check_bilingual_parity(
                         "decimal literals differ: "
                         f"English-only={english_decimals - korean_decimals!r}, "
                         f"Korean-only={korean_decimals - english_decimals!r}",
+                    )
+                )
+
+        english_bib = english / "references.bib"
+        korean_bib = korean / "references.bib"
+        if english_bib.exists() or korean_bib.exists():
+            if not english_bib.exists() or not korean_bib.exists():
+                errors.append(
+                    ParityError(paper, "references.bib", "paired bibliography is missing")
+                )
+                continue
+            if english_bib.read_bytes() != korean_bib.read_bytes():
+                errors.append(
+                    ParityError(
+                        paper,
+                        "references.bib",
+                        "English and Korean bibliographies are not byte-identical",
+                    )
+                )
+
+            cited_keys = _citation_keys(english / "main.tex")
+            for section in english_inputs:
+                section_path = english / "sections" / f"{section}.tex"
+                if section_path.exists():
+                    cited_keys.update(_citation_keys(section_path))
+            bibliography_keys = _bibliography_keys(english_bib)
+            missing = cited_keys - bibliography_keys
+            uncited = bibliography_keys - cited_keys
+            if missing:
+                errors.append(
+                    ParityError(
+                        paper,
+                        "references.bib",
+                        f"citation keys missing from bibliography: {sorted(missing)!r}",
+                    )
+                )
+            if uncited:
+                errors.append(
+                    ParityError(
+                        paper,
+                        "references.bib",
+                        f"uncited bibliography entries: {sorted(uncited)!r}",
                     )
                 )
     return errors

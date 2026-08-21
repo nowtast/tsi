@@ -3,7 +3,9 @@
 The geometric layer can contain uncertain or repeated entities, so a set-level
 correspondence alone is not sufficient. We attach probability mass to the
 finite metric carrier and compare mass through couplings. The result below is
-an exactness theorem, not a finite-sample convergence theorem.
+an exactness theorem, not a finite-sample convergence theorem. Coupling and
+Gromov--Wasserstein background is standard
+\cite{memoli2011gromov,villani2009optimal,peyre2019computational}.
 
 \begin{definition}[Full-support metric--measure state]
 A full-support metric--measure state is a tuple
@@ -49,10 +51,12 @@ where the infimum ranges over label-compatible couplings. If no such coupling
 exists, the discrepancy is $+\infty$.
 \end{definition}
 
-This is a finite hard-label-constrained Gromov--Wasserstein-type objective.
+This is a finite hard-label-constrained Gromov--Wasserstein-type objective
+\cite{memoli2011gromov}.
 It does not include coordinate costs, soft attribute costs, or a learned
-correspondence. Those additions define a different discrepancy and require
-their own identifiability analysis.
+correspondence. Joint feature--structure costs, for example, lead to fused
+Gromov--Wasserstein formulations \cite{vayer2020fused}; such additions define a
+different discrepancy and require their own identifiability analysis.
 
 \begin{theorem}[Zero metric--measure discrepancy is exact]
 Let $M_X$ and $M_Y$ be full-support metric--measure states. For every
@@ -167,8 +171,10 @@ gives $\mu_Y(y)>0$, so
 \[
  \gamma(x,y,z)=\frac{\pi_{XY}(x,y)\pi_{YZ}(y,z)}{\mu_Y(y)}
 \]
-is well-defined. Direct summation shows that its $(X,Y)$ and $(Y,Z)$
-marginals are the original couplings. Let $\pi_{XZ}$ be its $(X,Z)$ marginal.
+is well-defined. This is the standard gluing construction in optimal transport
+\cite{villani2009optimal,peyre2019computational}. Direct summation shows that its $(X,Y)$ and
+$(Y,Z)$ marginals are the original couplings. Let $\pi_{XZ}$ be its $(X,Z)$
+marginal.
 Whenever $\gamma(x,y,z)>0$, label compatibility gives
 $\lambda_X(x)=\lambda_Y(y)=\lambda_Z(z)$; hence $\pi_{XZ}$ is
 label-compatible. For two triples sampled from $\gamma$,

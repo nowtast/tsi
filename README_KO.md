@@ -52,8 +52,9 @@ counterexample과 경험 검증 의무를 분리한다.
 
 ## 이중언어 원칙
 
-모든 논문은 동일한 절 순서, formal environment 순서, citation key를 갖는 영문·한국어
-TeX 쌍으로 유지한다.
+모든 논문은 동일한 절 순서, formal environment 순서, citation key와 byte-identical
+bibliography를 갖는 영문·한국어 TeX 쌍으로 유지한다. Checker는 bibliography에 없는
+citation과 미인용 bibliography entry도 거부한다.
 
 ```bash
 PYTHONPATH=src python3 tools/check_bilingual_parity.py
