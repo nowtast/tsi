@@ -1,7 +1,7 @@
 # 재현성 자산
 
-이 디렉터리는 Paper 03/04 prospective 증거를 감사하는 데 필요한 두 자산을 보존한다.
-논문 초안이나 일반 개발 산출물이 아니라 최종 재현성 자료다.
+이 디렉터리는 Paper 03/04 prospective 증거와 Research A1의 구현 독립 audit 경로를
+보존한다. 논문 초안이나 일반 개발 산출물이 아니라 재현성 자료다.
 
 ## 구성
 
@@ -10,6 +10,8 @@
   `experiments/paper34_resolution_v1/freeze_manifest.json`에 고정되어 있다.
 - `paper34_resolution_cleanroom.mjs`: graph/head search, factorized fitting, NLL
   evaluation 및 보고된 effect mean을 project import 없이 재구현한 Node.js 코드다.
+- `research_a1_cleanroom.mjs`: A1 selector 3개와 primary endpoint decision 16개를
+  project import 없이 재구현한 Node.js 코드다.
 
 Node.js 경로는 export된 world를 입력으로 사용하며 root seed에서 world를 독립적으로
 재생성하지 않는다. 별도의 Python derivation audit가 seed-to-export 계보를 검사한다.
@@ -27,6 +29,15 @@ node reproduction/paper34_resolution_cleanroom.mjs \
   experiments/paper34_resolution_v1/confirmatory/confirmatory_analysis.json \
   experiments/paper34_resolution_v1/confirmatory/seed_and_integrity_ledger.json \
   /tmp/paper34_cleanroom_audit.json
+```
+
+Research A1 명령은 다음과 같다.
+
+```bash
+node reproduction/research_a1_cleanroom.mjs \
+  experiments/research_a_v1/confirmatory/portable_replay.json \
+  experiments/research_a_v1/confirmatory/confirmatory_analysis.json \
+  /tmp/research_a1_cleanroom_audit.json
 ```
 
 ## 취급 규칙

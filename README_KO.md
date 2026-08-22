@@ -31,13 +31,14 @@ endpoint는 독립 replication이 아니다.
 | Correct graph information이 held-out two-mechanism composition NLL을 개선한다 | 동결 attribution cohort에서 확립 | Wrong-minus-correct NLL: factorized 0.35933 [0.35431, 0.36435], generic sparse 0.36160 [0.35683, 0.36637], generic dense 0.03893 [0.02527, 0.05259] | Train-only graph/head selection을 사용하는 선언한 finite stochastic population | 새 generator, continuous state, perceptual input 및 독립 replication |
 | Exact representability를 제거해도 graph effect가 생존한다 | 동결 stress cohort에서 확립 | 0.18545 [0.18388, 0.18702]; 120/120 world nonexact | 사전등록한 하나의 nonadditive-synergy stress family | 추가 misspecification family와 독립 구현 generator |
 | 동일 support를 회수하면 factorized head와 matched generic-sparse head가 predictively equivalent하다 | 조건부로 증명되고 attribution cohort에서 관측 | Seven-sparse embedding 명제; 모든 world에서 correct-graph NLL 차이 0.00000 | Generic dictionary가 선택된 edge function을 포함하고 support recovery에 성공해야 함 | Misspecified dictionary와 finite-sample support-recovery regime |
-| Typed structure가 sample 또는 search complexity를 줄인다 | 미검 | Confirmatory evidence 없음 | Representational equivalence 결과에서 함의되지 않음 | Research A1: source-frozen matched sample-size 연구; A2 width 방향은 기록했지만 numeric freeze 전 |
+| Typed support restriction이 finite-sample recovery efficiency를 개선한다 | 봉인 A1 cohort에서 확립 | n=10, 15, 20, 25에서 joint advantage; n=25에서 NLL 0.05263 [0.01584, 0.08943], recovery difference 0.11905 [0.03345, 0.20465]; transition band [25, 50] | Supplied correct graph, matched 55-position dictionary, modulo-7 primitive intervention 및 선언한 selector에 한정; independent replication 아님 | A2 width/noise/misspecification 및 external replay |
 | Richer five-layer state가 correct minimal support를 넘어 predictive value를 더한다 | 미검 | Confirmatory evidence 없음 | 현재 attribution은 graph information과 minimal support를 식별 | Information-symmetric arm을 사용하는 turnover 및 model-audit 연구 |
 | Raw observation에서 entity discovery와 cross-time identity maintenance | 현재 estimand 밖 | Generator가 entity set과 identity를 제공 | Visual 또는 perceptual population을 표집하지 않음 | 선행 gate 이후 별도로 동결한 perception 연구 |
 
-현재 원고는 release candidate다. 2026년 8월 22일 기준 arXiv 제출의 유일한
+현재 Paper 01/03/04 원고는 release candidate다. 2026년 8월 22일 기준 arXiv 제출의 유일한
 blocker는 endorsement이며 과학적·패키징 결함은 없다. Research A와 model-audit
 연구는 별도 후속 산출물이며, 현재 Paper 01·03·04의 최초 공개판에 합치지 않는다.
+Research A1은 별도의 봉인 cohort이며 후속 원고로 다룬다.
 
 ## 공개 원고 세트
 

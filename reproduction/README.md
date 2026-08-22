@@ -1,8 +1,8 @@
 # Reproduction Assets
 
-This directory preserves two assets required to audit the Paper 03/04
-prospective evidence. These are final reproducibility materials, not manuscript
-drafts or general development outputs.
+This directory preserves implementation-independent audit paths for the
+Paper 03/04 prospective evidence and Research A1. These are reproducibility
+materials, not manuscript drafts or general development outputs.
 
 ## Contents
 
@@ -12,6 +12,8 @@ drafts or general development outputs.
 - `paper34_resolution_cleanroom.mjs`: a zero-project-import Node.js
   reimplementation of graph/head search, factorized fitting, NLL evaluation,
   and reported effect means.
+- `research_a1_cleanroom.mjs`: a zero-project-import Node.js reimplementation
+  of all three A1 selectors and the 16 primary endpoint decisions.
 
 The Node.js path consumes exported worlds. It does not independently regenerate
 those worlds from the root seed. The separate Python derivation audit checks the
@@ -30,6 +32,15 @@ node reproduction/paper34_resolution_cleanroom.mjs \
   experiments/paper34_resolution_v1/confirmatory/confirmatory_analysis.json \
   experiments/paper34_resolution_v1/confirmatory/seed_and_integrity_ledger.json \
   /tmp/paper34_cleanroom_audit.json
+```
+
+Research A1 uses:
+
+```bash
+node reproduction/research_a1_cleanroom.mjs \
+  experiments/research_a_v1/confirmatory/portable_replay.json \
+  experiments/research_a_v1/confirmatory/confirmatory_analysis.json \
+  /tmp/research_a1_cleanroom_audit.json
 ```
 
 ## Handling Rule

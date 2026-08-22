@@ -13,6 +13,8 @@ rule pass review.
 - `preregistration_draft.json`: machine-readable design draft.
 - `DESIGN_HISTORY.md`: transparent development-grid correction and power basis.
 - `ROBUSTNESS_PLAN.md`: A2 directions recorded before the A1 confirmatory seed.
+- `RESULTS.md`: sealed A1 decision, simultaneous intervals, and scope boundary.
+- `EXTERNAL_REPLAY.md`: package integrity, execution, and independence rules.
 - `README_KO.md` and `theory_KO.md`: structurally matched Korean documents.
 
 The development pilot is written to

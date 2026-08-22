@@ -1,0 +1,12 @@
+{
+  "status": "ready_for_external_distribution_not_yet_independently_replayed",
+  "file": "research-a1-external-replay-v1.zip",
+  "size_bytes": 2336178,
+  "sha256": "807253ae94063777a6d83ba061537e1e5eb7ea16bb1067595f10b1c5f2176286",
+  "archive_test": "passed",
+  "archive_root": "research-a1-external-replay-v1-20260822",
+  "contains_unrevealed_secret": false,
+  "root_seed_status": "revealed after one-shot execution in seed_and_integrity_ledger.json",
+  "distribution_target": "external reviewer or a future versioned Zenodo/GitHub release",
+  "independence_rule": "Do not mark independent replay complete until an external person returns an audit produced without private assistance or modified inputs."
+}

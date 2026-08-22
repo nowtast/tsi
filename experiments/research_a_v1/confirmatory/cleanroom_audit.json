@@ -1,0 +1,133 @@
+{
+  "status": "cleanroom_nodejs_reimplementation",
+  "language_runtime": "v24.14.0",
+  "project_imports": 0,
+  "world_count": 126,
+  "primary_endpoint_count": 16,
+  "portable_sha256": "c0de0594f9febc318a1edcca84341c2af541e44fa77d9862e9a22b55fd66bd3e",
+  "summaries": [
+    {
+      "sample_size": 5,
+      "nll": {
+        "mean": 0.5318888763228942,
+        "lower": 0.4460919888140595,
+        "upper": 0.6176857638317288
+      },
+      "recovery": {
+        "mean": 0.015873015873015872,
+        "lower": -0.01716259141558131,
+        "upper": 0.048908623161613055
+      },
+      "advantage": false,
+      "equivalence": false
+    },
+    {
+      "sample_size": 10,
+      "nll": {
+        "mean": 0.3242740172673256,
+        "lower": 0.255471201060336,
+        "upper": 0.39307683347431516
+      },
+      "recovery": {
+        "mean": 0.16666666666666666,
+        "lower": 0.06816110508340541,
+        "upper": 0.2651722282499279
+      },
+      "advantage": true,
+      "equivalence": false
+    },
+    {
+      "sample_size": 15,
+      "nll": {
+        "mean": 0.17772676870620102,
+        "lower": 0.10812311731073379,
+        "upper": 0.24733042010166825
+      },
+      "recovery": {
+        "mean": 0.16666666666666666,
+        "lower": 0.0681611050834054,
+        "upper": 0.2651722282499279
+      },
+      "advantage": true,
+      "equivalence": false
+    },
+    {
+      "sample_size": 20,
+      "nll": {
+        "mean": 0.09686724576134921,
+        "lower": 0.04405801863942903,
+        "upper": 0.1496764728832694
+      },
+      "recovery": {
+        "mean": 0.15079365079365079,
+        "lower": 0.056208024533474094,
+        "upper": 0.24537927705382748
+      },
+      "advantage": true,
+      "equivalence": false
+    },
+    {
+      "sample_size": 25,
+      "nll": {
+        "mean": 0.05263327248762934,
+        "lower": 0.01583656387644275,
+        "upper": 0.08942998109881593
+      },
+      "recovery": {
+        "mean": 0.11904761904761904,
+        "lower": 0.033449627758384004,
+        "upper": 0.20464561033685408
+      },
+      "advantage": true,
+      "equivalence": false
+    },
+    {
+      "sample_size": 30,
+      "nll": {
+        "mean": 0.020472666141170295,
+        "lower": -0.003968339621173378,
+        "upper": 0.04491367190351397
+      },
+      "recovery": {
+        "mean": 0.047619047619047616,
+        "lower": -0.008669844714244618,
+        "upper": 0.10390793995233985
+      },
+      "advantage": false,
+      "equivalence": false
+    },
+    {
+      "sample_size": 40,
+      "nll": {
+        "mean": 0.006597304150137701,
+        "lower": -0.00469396613319667,
+        "upper": 0.01788857443347207
+      },
+      "recovery": {
+        "mean": 0.023809523809523808,
+        "lower": -0.016487190604381398,
+        "upper": 0.06410623822342901
+      },
+      "advantage": false,
+      "equivalence": false
+    },
+    {
+      "sample_size": 50,
+      "nll": {
+        "mean": -0.000020022167375227928,
+        "lower": -0.00007919101261755424,
+        "upper": 0.00003914667786709838
+      },
+      "recovery": {
+        "mean": 0,
+        "lower": 0,
+        "upper": 0
+      },
+      "advantage": false,
+      "equivalence": true
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "independent_replication": false
+}

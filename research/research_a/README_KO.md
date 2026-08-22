@@ -13,6 +13,8 @@ estimand, SESOI, multiplicity family, power calculation과 stopping rule이 revi
 - `theory_KO.md`: 동일 구조의 한국어 증명
 - `DESIGN_HISTORY_KO.md`: development grid 수정 및 power 근거
 - `ROBUSTNESS_PLAN_KO.md`: A1 confirmatory seed 전에 기록한 A2 방향
+- `RESULTS_KO.md`: 봉인 A1 판정, simultaneous interval 및 범위 경계
+- `EXTERNAL_REPLAY_KO.md`: package 무결성, 실행 및 독립성 규칙
 
 Development pilot은 `experiments/research_a_v1/development_report.json`에
 기록한다. 이 자료는 power와 decision threshold를 보정할 수 있지만 confirmatory

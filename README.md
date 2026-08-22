@@ -35,14 +35,15 @@ their overlapping endpoints are not independent replications.
 | Correct graph information improves held-out two-mechanism composition NLL | Established in the frozen attribution cohort | Wrong-minus-correct NLL: factorized 0.35933 [0.35431, 0.36435], generic sparse 0.36160 [0.35683, 0.36637], generic dense 0.03893 [0.02527, 0.05259] | Declared finite stochastic population with train-only graph/head selection | New generators, continuous states, perceptual inputs, and independent replication |
 | The graph effect survives removal of exact representability | Established in the frozen stress cohort | 0.18545 [0.18388, 0.18702]; 120/120 worlds nonexact | One preregistered nonadditive-synergy stress family | Additional misspecification families and independently implemented generators |
 | Factorized and matched generic-sparse heads are predictively equivalent after recovery of the same support | Proved conditionally and observed in the attribution cohort | Seven-sparse embedding proposition; correct-graph NLL difference 0.00000 in every world | Requires a generic dictionary containing the selected edge functions and successful support recovery | Misspecified dictionaries and finite-sample support-recovery regimes |
-| Typed structure reduces sample or search complexity | Untested | No confirmatory evidence | Not implied by the representational-equivalence result | Research A1: source-frozen matched sample-size study; A2 width direction recorded but not numerically frozen |
+| Typed support restriction improves finite-sample recovery efficiency | Established in the sealed A1 cohort | Joint advantage at n=10, 15, 20, 25; at n=25 NLL 0.05263 [0.01584, 0.08943] and recovery difference 0.11905 [0.03345, 0.20465]; transition band [25, 50] | Supplied correct graph, matched 55-position dictionary, modulo-7 primitive interventions, declared selectors; not an independent replication | A2 width/noise/misspecification and external replay |
 | The richer five-layer state adds predictive value beyond the correct minimal support | Untested | No confirmatory evidence | Current attribution isolates graph information and minimal support | Turnover and model-audit studies with information-symmetric arms |
 | Entity discovery and cross-time identity maintenance from raw observation | Outside current estimands | Entity sets and identities are supplied by the generators | No visual or perceptual population is sampled | A separately frozen perception study after the preceding gates |
 
-The manuscripts are release candidates. As of 22 August 2026, arXiv submission
+The current Paper 01/03/04 manuscripts are release candidates. As of 22 August 2026, arXiv submission
 is blocked by endorsement only, not by a scientific or packaging defect.
 Research A and the model-audit study are separate future outputs and will not be
 folded into the current Papers 01, 03, or 04 before their first public versions.
+Research A1 is a separate sealed cohort and future manuscript.
 
 ## Public Manuscript Set
 

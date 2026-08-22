@@ -1,0 +1,7 @@
+{
+  "root_seed_hex_revealed_after_execution": "6bed74942403114898552584ebd47a35d63b515639f144026ca709ab65e4038b",
+  "root_seed_commitment": "49956b58a7cb4e129304cbb621596946c0175c165607758cbe30a33c9053da0e",
+  "commitment_verified": true,
+  "commitment_git_commit": "cc99dfc05614084ecd89460d24d5f5a958f3e8c0",
+  "confirmatory_analysis_sha256": "0cca53e69c63ffacaccbf7a66064eedc84bb6bf6479c0a9eada4e4cf2b4c1e5d"
+}

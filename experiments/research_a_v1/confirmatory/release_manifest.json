@@ -1,0 +1,53 @@
+{
+  "status": "sealed_confirmatory_result_external_replay_pending",
+  "contract_id": "TSI-RESEARCH-A1-MATCHED-SAMPLE-EFFICIENCY-v1",
+  "contract_digest": "9a37d3f2d9e424dd9e6a00f1235b4f3fa07b2dfc8d26633f06dd632cba04cdee",
+  "freeze_digest": "9ea1b9b75cea3d51dcf401f62fee812cea4c9e374569df5161433c389b234339",
+  "seed_commitment": "49956b58a7cb4e129304cbb621596946c0175c165607758cbe30a33c9053da0e",
+  "commitment_git_commit": "cc99dfc05614084ecd89460d24d5f5a958f3e8c0",
+  "decision": {
+    "a1_supported": true,
+    "last_joint_advantage_n": 25,
+    "first_later_equivalence_n": 50,
+    "point_n_star_claimed": false
+  },
+  "files": [
+    {
+      "path": "confirmatory/ONE_SHOT.lock",
+      "size": 33,
+      "sha256": "cd816a7d41941964d3b3f49282986433ebd116cdee52a8dd07fbf900a8c496fe"
+    },
+    {
+      "path": "confirmatory/confirmatory_analysis.json",
+      "size": 10609,
+      "sha256": "0cca53e69c63ffacaccbf7a66064eedc84bb6bf6479c0a9eada4e4cf2b4c1e5d"
+    },
+    {
+      "path": "confirmatory/raw_results.json",
+      "size": 453864,
+      "sha256": "5fec965b5708c131bd6ab4cb2bf27514afdd0174b9701b5284e93dfba7872bfc",
+      "distribution": "external replay package, not Git-tracked"
+    },
+    {
+      "path": "confirmatory/portable_replay.json",
+      "size": 24996068,
+      "sha256": "c0de0594f9febc318a1edcca84341c2af541e44fa77d9862e9a22b55fd66bd3e",
+      "distribution": "external replay package, not Git-tracked"
+    },
+    {
+      "path": "confirmatory/seed_and_integrity_ledger.json",
+      "size": 413,
+      "sha256": "91be49a84b04c1f164f378b4f1ef65c488990d6158fe89e3875152cf12c458f2"
+    },
+    {
+      "path": "confirmatory/cleanroom_audit.json",
+      "size": 3248,
+      "sha256": "b0072f7921a17613aa90be0c9b01e45d53c4c534535769a4e3f40965989fc93d"
+    },
+    {
+      "path": "reproduction/research_a1_cleanroom.mjs",
+      "size": 11906,
+      "sha256": "45ae1069543dabbdd883098f87f61b542a824649bc8612268c174b07bbe72998"
+    }
+  ]
+}
