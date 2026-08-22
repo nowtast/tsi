@@ -1,0 +1,9 @@
+{
+  "status": "seed_committed_before_one_shot_execution",
+  "committed_at_utc": "2026-08-22T03:41:59.986296+00:00",
+  "contract_digest": "9a37d3f2d9e424dd9e6a00f1235b4f3fa07b2dfc8d26633f06dd632cba04cdee",
+  "freeze_digest": "9ea1b9b75cea3d51dcf401f62fee812cea4c9e374569df5161433c389b234339",
+  "root_seed_commitment": "49956b58a7cb4e129304cbb621596946c0175c165607758cbe30a33c9053da0e",
+  "escrow_path_not_public": "experiments/research_a_v1/confirmatory/root_seed.escrow",
+  "execution_policy": "commit and push this file before one-shot execution"
+}
