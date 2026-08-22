@@ -26,6 +26,9 @@ __pycache__/
 experiments/research_a_v1/confirmatory/raw_results.json
 experiments/research_a_v1/confirmatory/portable_replay.json
 experiments/research_a_v1/*.zip
+experiments/research_a2_v1/confirmatory/raw_results.json
+experiments/research_a2_v1/confirmatory/portable_replay.json
+experiments/research_a2_v1/*.zip
 
 # Large generated results are archived in Zenodo record 22004526
 **/development_validity_results.json

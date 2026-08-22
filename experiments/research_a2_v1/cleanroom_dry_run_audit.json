@@ -1,0 +1,21 @@
+{
+  "status": "cleanroom_nodejs_reimplementation",
+  "fixture_only": true,
+  "language_runtime": "v24.14.0",
+  "project_imports": 0,
+  "world_count_per_axis_or_scope_condition": 45,
+  "endpoint_counts": {
+    "candidate_width": 36,
+    "training_noise": 48,
+    "scope": 6
+  },
+  "portable_sha256": "fb8521edaef4716f37d2e379671ab8e501411b03eb5ccbbbb0eac4cbd7a6c549",
+  "gates": {
+    "candidate_width": true,
+    "training_noise": true,
+    "scope": true
+  },
+  "failures": [],
+  "passed": true,
+  "independent_replication": false
+}

@@ -1,0 +1,78 @@
+{
+  "contract_id": "TSI-RESEARCH-A2-ROBUSTNESS-AND-SCOPE-v1",
+  "status": "numeric_draft_ready_for_review_not_frozen_no_confirmatory_seed",
+  "contract_digest_at_draft": "fb4247528af568aaddd12c2e38b972cf84c7044d8992e92e17d3f541b5326f58",
+  "confirmatory_seed_created": false,
+  "direction_recorded_before_a1_confirmatory_seed": true,
+  "development": {
+    "seed_label": "TSI-RESEARCH-A2-DEVELOPMENT-v1",
+    "report": "experiments/research_a2_v1/development_report.json",
+    "role": "implementation audit, numeric calibration, and power only"
+  },
+  "prospective_power": {
+    "seed_label": "TSI-RESEARCH-A2-PROSPECTIVE-POWER-v1",
+    "report": "experiments/research_a2_v1/prospective_power.json",
+    "iterations": 20000,
+    "selected_world_count_per_axis_or_scope_condition": 135,
+    "selection_reason": "smallest candidate at or above 126 divisible by both 9 and 5",
+    "estimated_all_width_gate_power": 1.0,
+    "estimated_any_noise_gate_power": 1.0,
+    "estimated_scope_gate_power": 1.0,
+    "estimated_noise_0.80_group_power": 0.0
+  },
+  "sample_sizes": {
+    "candidate_width_prefixes": [10, 15, 20, 25, 30, 40],
+    "training_noise_prefixes": [15, 20, 30, 40, 80, 160],
+    "scope_confirmatory_prefix": 320,
+    "test_cases_per_world": 1200
+  },
+  "candidate_width": {
+    "output_feature_positions": [55, 100, 300],
+    "generic_move_budget": 7,
+    "typed_class_unchanged": true,
+    "true_support_in_every_dictionary": true,
+    "nuisance_features": "a_r*x_j^d mod 7 in frozen lexicographic order",
+    "endpoint_count": 36,
+    "gate": "at least one joint SESOI-qualified advantage at every width"
+  },
+  "training_noise": {
+    "probabilities": [0.08, 0.3, 0.6, 0.8],
+    "held_out_probability": 0.12,
+    "unique_mode_boundary": 0.8571428571428571,
+    "coupling": "nested masks from shared clean rows, uniforms, and shifts",
+    "endpoint_count": 48,
+    "gate": "at least one joint SESOI-qualified advantage anywhere on the fixed grid"
+  },
+  "misspecification_scope": {
+    "typed_catalog": ["linear_target", "quadratic_target", "source_target"],
+    "alternative_generic_catalog": ["linear_target", "cubic_target", "source_target"],
+    "conditions": ["matched", "typed_misspecified", "generic_misspecified"],
+    "positions_per_catalog": 55,
+    "endpoint_count": 6,
+    "role": "scope and falsification only; cannot rescue efficiency"
+  },
+  "multiplicity": {
+    "method": "three separate Bonferroni simultaneous two-sided normal-interval families",
+    "familywise_alpha_per_family": 0.05,
+    "width_divisor": 36,
+    "noise_divisor": 48,
+    "scope_divisor": 6
+  },
+  "thresholds": {
+    "efficiency_nll_sesoi": 0.01,
+    "efficiency_recovery_sesoi": 0.1,
+    "efficiency_nll_equivalence_margin": 0.01,
+    "efficiency_recovery_equivalence_margin": 0.05,
+    "scope_nll_sesoi": 0.1,
+    "scope_accuracy_sesoi": 0.1,
+    "scope_nll_equivalence_margin": 0.01,
+    "scope_accuracy_equivalence_margin": 0.025
+  },
+  "required_before_seed": [
+    "external review of numeric draft",
+    "clean-room implementation and fixed-seed dry run",
+    "full regression test",
+    "source freeze",
+    "commit and public record of freeze digest"
+  ]
+}

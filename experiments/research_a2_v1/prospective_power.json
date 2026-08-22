@@ -1,0 +1,156 @@
+{
+  "status": "prospective_power_from_a2_development_only",
+  "uses_confirmatory_results": false,
+  "confirmatory_seed_created": false,
+  "development_seed_label": "TSI-RESEARCH-A2-DEVELOPMENT-v1",
+  "power_seed_label": "TSI-RESEARCH-A2-PROSPECTIVE-POWER-v1",
+  "bootstrap_iterations": 20000,
+  "familywise_alpha_per_axis": 0.05,
+  "multiplicity": {
+    "candidate_width_endpoint_count": 36,
+    "training_noise_endpoint_count": 48,
+    "scope_endpoint_count": 6,
+    "families_are_separate": true
+  },
+  "thresholds": {
+    "efficiency_nll_sesoi": 0.01,
+    "efficiency_recovery_sesoi": 0.1,
+    "efficiency_nll_equivalence_margin": 0.01,
+    "efficiency_recovery_equivalence_margin": 0.05,
+    "scope_nll_sesoi": 0.1,
+    "scope_accuracy_sesoi": 0.1,
+    "scope_nll_equivalence_margin": 0.01,
+    "scope_accuracy_equivalence_margin": 0.025
+  },
+  "scope_sample_size": 320,
+  "power_curve": [
+    {
+      "world_count": 90,
+      "matched_worlds_per_family_pair": 10,
+      "misspecified_worlds_per_special_pair": 18,
+      "width_all_catalogs_any_joint_advantage_power": 1.0,
+      "width_power_by_position_count": {
+        "55": 1.0,
+        "100": 1.0,
+        "300": 1.0
+      },
+      "noise_any_joint_advantage_power": 1.0,
+      "noise_power_by_probability": {
+        "0.08": 0.99185,
+        "0.3": 1.0,
+        "0.6": 1.0,
+        "0.8": 0.0
+      },
+      "world_count_per_condition": 90,
+      "critical": 2.638257273476751,
+      "scope_gate_power": 1.0,
+      "matched_equivalence_power": 1.0,
+      "typed_misspecified_direction_power": 1.0,
+      "generic_misspecified_direction_power": 1.0
+    },
+    {
+      "world_count": 135,
+      "matched_worlds_per_family_pair": 15,
+      "misspecified_worlds_per_special_pair": 27,
+      "width_all_catalogs_any_joint_advantage_power": 1.0,
+      "width_power_by_position_count": {
+        "55": 1.0,
+        "100": 1.0,
+        "300": 1.0
+      },
+      "noise_any_joint_advantage_power": 1.0,
+      "noise_power_by_probability": {
+        "0.08": 0.9994,
+        "0.3": 1.0,
+        "0.6": 1.0,
+        "0.8": 0.0
+      },
+      "world_count_per_condition": 135,
+      "critical": 2.638257273476751,
+      "scope_gate_power": 1.0,
+      "matched_equivalence_power": 1.0,
+      "typed_misspecified_direction_power": 1.0,
+      "generic_misspecified_direction_power": 1.0
+    },
+    {
+      "world_count": 180,
+      "matched_worlds_per_family_pair": 20,
+      "misspecified_worlds_per_special_pair": 36,
+      "width_all_catalogs_any_joint_advantage_power": 1.0,
+      "width_power_by_position_count": {
+        "55": 1.0,
+        "100": 1.0,
+        "300": 1.0
+      },
+      "noise_any_joint_advantage_power": 1.0,
+      "noise_power_by_probability": {
+        "0.08": 0.99985,
+        "0.3": 1.0,
+        "0.6": 1.0,
+        "0.8": 0.0
+      },
+      "world_count_per_condition": 180,
+      "critical": 2.638257273476751,
+      "scope_gate_power": 1.0,
+      "matched_equivalence_power": 1.0,
+      "typed_misspecified_direction_power": 1.0,
+      "generic_misspecified_direction_power": 1.0
+    },
+    {
+      "world_count": 270,
+      "matched_worlds_per_family_pair": 30,
+      "misspecified_worlds_per_special_pair": 54,
+      "width_all_catalogs_any_joint_advantage_power": 1.0,
+      "width_power_by_position_count": {
+        "55": 1.0,
+        "100": 1.0,
+        "300": 1.0
+      },
+      "noise_any_joint_advantage_power": 1.0,
+      "noise_power_by_probability": {
+        "0.08": 1.0,
+        "0.3": 1.0,
+        "0.6": 1.0,
+        "0.8": 0.0
+      },
+      "world_count_per_condition": 270,
+      "critical": 2.638257273476751,
+      "scope_gate_power": 1.0,
+      "matched_equivalence_power": 1.0,
+      "typed_misspecified_direction_power": 1.0,
+      "generic_misspecified_direction_power": 1.0
+    }
+  ],
+  "selected_world_count_per_axis_or_scope_condition": 135,
+  "selected_operating_characteristics": {
+    "world_count": 135,
+    "matched_worlds_per_family_pair": 15,
+    "misspecified_worlds_per_special_pair": 27,
+    "width_all_catalogs_any_joint_advantage_power": 1.0,
+    "width_power_by_position_count": {
+      "55": 1.0,
+      "100": 1.0,
+      "300": 1.0
+    },
+    "noise_any_joint_advantage_power": 1.0,
+    "noise_power_by_probability": {
+      "0.08": 0.9994,
+      "0.3": 1.0,
+      "0.6": 1.0,
+      "0.8": 0.0
+    },
+    "world_count_per_condition": 135,
+    "critical": 2.638257273476751,
+    "scope_gate_power": 1.0,
+    "matched_equivalence_power": 1.0,
+    "typed_misspecified_direction_power": 1.0,
+    "generic_misspecified_direction_power": 1.0
+  },
+  "selection_reason": "135 is the smallest candidate at or above the pre-A1 minimum of 126 that exactly balances both nine matched family pairs and five special-family pairs.",
+  "limitations": [
+    "Power is a stratified bootstrap of 36 matched and 45 scope development worlds.",
+    "The width gate requires an advantage somewhere on the fixed n-grid for every width.",
+    "The noise gate requires an advantage somewhere on the fixed probability-by-n grid; it does not require advantage at p=0.80.",
+    "The scope gate is a falsification boundary and cannot rescue an efficiency failure."
+  ]
+}
