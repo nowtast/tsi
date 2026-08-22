@@ -1,0 +1,36 @@
+{
+  "benchmark_id": "tsi-structural-attribution",
+  "version": "0.1.0",
+  "status": "frozen_reference_results",
+  "attribution": {
+    "world_count": 120,
+    "identification_rate": 1.0,
+    "identification_simultaneous_wilson_lower": 0.9413479608503768,
+    "factorized_wrong_minus_correct_composition_nll": {
+      "mean": 0.35932982901626315,
+      "simultaneous_lower": 0.35430706107882143,
+      "simultaneous_upper": 0.36435259695370487
+    },
+    "generic_sparse_wrong_minus_correct_composition_nll": {
+      "mean": 0.3616003427966138,
+      "simultaneous_lower": 0.3568257130189872,
+      "simultaneous_upper": 0.3663749725742404
+    },
+    "generic_dense_wrong_minus_correct_composition_nll": {
+      "mean": 0.03892985085893045,
+      "simultaneous_lower": 0.02526582699077095,
+      "simultaneous_upper": 0.05259387472708995
+    },
+    "factorized_minus_generic_sparse_correct_graph_nll": 0.0
+  },
+  "outside_family_stress": {
+    "world_count": 120,
+    "worlds_with_nonexact_learned_center": 120,
+    "wrong_minus_learned_composition_nll": {
+      "mean": 0.18545157115665745,
+      "lower_95": 0.18387946648901965,
+      "upper_95": 0.18702367582429524
+    }
+  },
+  "scope": "These are reference values from the existing frozen cohorts, not independent benchmark evidence."
+}

@@ -1,0 +1,118 @@
+{
+  "status": "freeze_candidate_no_confirmatory_seed",
+  "contract_id": "TSI-RESEARCH-A1-MATCHED-SAMPLE-EFFICIENCY-v1",
+  "contract_digest_at_draft": "9a37d3f2d9e424dd9e6a00f1235b4f3fa07b2dfc8d26633f06dd632cba04cdee",
+  "confirmatory_seed_generated": false,
+  "research_question": "Does a typed support restriction improve finite-sample support recovery and held-out composition prediction after conditioning on the same supplied graph?",
+  "population": {
+    "state": "five coordinates over Z_7",
+    "graph_condition": "one of 30 common-target two-source graphs is assigned per world and supplied identically to every arm",
+    "head_families": ["linear_target", "quadratic_target", "source_target"],
+    "head_family_assignment": "exactly 14 worlds in each of the nine ordered family-pair strata",
+    "nonzero_coefficients": "generator values lie in {1,2,3}; selectors search all six nonzero Z_7 values",
+    "train_actions": "uniform primitive action coordinate with magnitude 1 or 2",
+    "train_noise": 0.08,
+    "ood_noise": 0.12,
+    "independent_unit": "world"
+  },
+  "arms": [
+    {
+      "id": "typed_structured_search",
+      "support_search": "nine ordered edge-family support pairs",
+      "parameter_count": 7
+    },
+    {
+      "id": "generic_isomorphic_search",
+      "support_search": "the same nine supports represented in generic dictionary coordinates",
+      "parameter_count": 7,
+      "role": "deterministic notation control"
+    },
+    {
+      "id": "generic_unstructured_greedy",
+      "support_search": "seven greedy terms over 55 output-feature positions",
+      "parameter_count": 7
+    }
+  ],
+  "information_symmetry": {
+    "observable_inputs_identical": true,
+    "shared_graph_identical": true,
+    "train_cases_identical": true,
+    "test_cases_identical": true,
+    "test_used_for_fit_or_selection": false,
+    "difference": "support-search restriction and fitting algorithm only"
+  },
+  "theory_audit": {
+    "status": "proved_for_declared_population",
+    "noise_gap_at_train_noise": 0.9066666666666667,
+    "failure_probability_for_reported_envelopes": 0.05,
+    "known_support_sufficient_n": 263,
+    "typed_support_and_coefficient_sufficient_n": 861,
+    "generic_greedy_sufficient_n": 10163,
+    "interpretation": "conservative sufficient upper envelopes, not lower bounds or a point prediction of an empirical crossing"
+  },
+  "development_history": {
+    "high_grid_report": {
+      "path": "experiments/research_a_v1/development_report.json",
+      "sha256": "b88d88fa8496b9da4f5450a059b8f7dc8cb6c746241273f2c06173a0a032ea6d",
+      "finding": "all three arms recovered exactly in all 36 worlds from n=50 onward; the original grid had a ceiling defect"
+    },
+    "low_grid_report": {
+      "path": "experiments/research_a_v1/development_report_low_grid.json",
+      "sha256": "90c2fafc673999c8fca59c91726de0c40f2472640a32adbcc1c081bc8a9375fc",
+      "role": "grid selection and prospective power only"
+    },
+    "prospective_power": {
+      "path": "experiments/research_a_v1/prospective_power.json",
+      "sha256": "9162ac76f07b09f5181d8e46d180f1034cad52c20bf7ea44bca82294b85ac04c",
+      "selected_world_count": 126,
+      "estimated_ordered_transition_power": 1.0,
+      "limitation": "stratified bootstrap estimate from 36 development worlds"
+    }
+  },
+  "confirmatory_design": {
+    "world_count": 126,
+    "test_cases_per_world": 1200,
+    "sample_size_grid": [5, 10, 15, 20, 25, 30, 40, 50],
+    "primary_endpoint_count": 16,
+    "multiplicity": "Bonferroni simultaneous two-sided normal intervals, familywise alpha 0.05",
+    "nll_sesoi": 0.01,
+    "nll_equivalence_margin": 0.01,
+    "exact_recovery_difference_sesoi": 0.1,
+    "exact_recovery_equivalence_margin": 0.05
+  },
+  "primary_estimands": [
+    "world_mean generic_unstructured_greedy minus typed_structured_search composition NLL at each of eight n values",
+    "world_mean typed minus generic exact support-recovery indicator at each of eight n values"
+  ],
+  "regions": {
+    "joint_advantage": "both simultaneous lower bounds exceed zero and both point estimates meet their endpoint-specific SESOI",
+    "joint_equivalence": "both simultaneous intervals are contained in their endpoint-specific equivalence margins",
+    "transition_band": "largest joint-advantage n through the smallest later joint-equivalence n; no point n-star is estimated"
+  },
+  "mechanism_controls": [
+    "typed_structured_search and generic_isomorphic_search must have exactly equal predictions and composition NLL",
+    "world-level exact support recovery is reported beside composition NLL"
+  ],
+  "cleanroom_and_external_replay": {
+    "portable_scope": "world specifications, train prefixes, and held-out inputs/targets sufficient to recompute every primary row",
+    "independent_status_rule": "the result is not called independently reproduced until a person outside the author workflow executes the replay",
+    "external_replay_required_before_journal_submission": true
+  },
+  "separate_robustness_estimands": [
+    "A2 candidate-width expansion",
+    "A2 dictionary misspecification in both directions",
+    "A2 noise-boundary degradation"
+  ],
+  "program_stopping_rule": "If neither A1 nor the separately frozen A2 width/noise conditions show a joint SESOI-qualified advantage, predictive-efficiency development stops and turnover/perception studies do not begin. Misspecification results characterize scope and cannot rescue the efficiency claim.",
+  "unresolved_before_freeze": [
+    "source freeze manifest",
+    "publicly timestamped seed commitment before execution"
+  ],
+  "forbidden_claims": [
+    "universal representational superiority",
+    "a point prediction for n star from log binomial 55 choose 7",
+    "real-world or perceptual validity",
+    "a blind benchmark result from public reference answers",
+    "independent replication before an external replay is completed"
+  ]
+}

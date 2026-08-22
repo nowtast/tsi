@@ -1,0 +1,79 @@
+{
+  "benchmark_id": "tsi-structural-attribution",
+  "version": "0.1.0",
+  "release_status": "public_audit_benchmark_not_blind",
+  "world_count": 120,
+  "independent_unit": "world",
+  "evidence_doi": "10.5281/zenodo.22004526",
+  "contracts": {
+    "attribution": "48e6f579f37ab066083e53295a802558db300295b526166622af0c1b66d03a81",
+    "outside_family_stress": "c7448c759df22d29b4ce6e8100b01d5b0bf113569fec3d338d443b0666e1a072"
+  },
+  "tasks": [
+    "graph_head_recovery",
+    "held_out_composition_prediction"
+  ],
+  "information_policy": {
+    "fit_partition": "train",
+    "selection_partition": "selection",
+    "evaluation_partition": "test",
+    "forbidden_during_fit_or_selection": [
+      "test targets",
+      "graph",
+      "families",
+      "expected_row",
+      "reference results"
+    ],
+    "participant_loader": "tsi.structural_attribution_benchmark.load_participant_worlds"
+  },
+  "artifacts": [
+    {
+      "role": "portable_inputs",
+      "path": "experiments/paper34_resolution_v1/cleanroom/portable_inputs.json",
+      "size": 13965083,
+      "sha256": "3f438a1cfb7d139cfc717730d081178f309102dec92ba7ab88ff36263b4996f2"
+    },
+    {
+      "role": "attribution_analysis",
+      "path": "experiments/paper34_resolution_v1/confirmatory/confirmatory_analysis.json",
+      "size": 70434,
+      "sha256": "2e6880df054327a56164bad98532dcb22efe7e3e69e3c6426558e5d9bd945501"
+    },
+    {
+      "role": "attribution_ledger",
+      "path": "experiments/paper34_resolution_v1/confirmatory/seed_and_integrity_ledger.json",
+      "size": 420,
+      "sha256": "e0ca28d93c7cbd689f4a0b208bb8fde35c3ad71d98e6d97d5060ddb2bbb23a28"
+    },
+    {
+      "role": "attribution_freeze",
+      "path": "experiments/paper34_resolution_v1/freeze_manifest.json",
+      "size": 1180,
+      "sha256": "bfdc91ec3156ab6444b69460639d37011e988267b205de4463b0ce78a776ef52"
+    },
+    {
+      "role": "stress_analysis",
+      "path": "experiments/paper4_misspecified_resolution_v1/confirmatory/confirmatory_analysis.json",
+      "size": 45939,
+      "sha256": "41aad07bd68baa225ee8948058233578e91476b0ed558bee2af8b6ace9036139"
+    },
+    {
+      "role": "stress_ledger",
+      "path": "experiments/paper4_misspecified_resolution_v1/confirmatory/seed_and_integrity_ledger.json",
+      "size": 342,
+      "sha256": "ec2a2ec66022aba0afd7ca308b510540a1f6a188bfa831c1304d9a5c51ae964e"
+    },
+    {
+      "role": "stress_freeze",
+      "path": "experiments/paper4_misspecified_resolution_v1/freeze_manifest.json",
+      "size": 1110,
+      "sha256": "f694a5c46cf57182839b88e19d6eeda4b1342d95ce32dfbe19fda55c9051aa38"
+    },
+    {
+      "role": "cleanroom_implementation",
+      "path": "reproduction/paper34_resolution_cleanroom.mjs",
+      "size": 6985,
+      "sha256": "b648562bc3b8af8ab9d5f53044e2e033439a9528174f3f6eaddb0bc589e2e465"
+    }
+  ]
+}

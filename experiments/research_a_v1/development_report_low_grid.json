@@ -1,0 +1,5131 @@
+{
+  "status": "development_only_not_confirmatory",
+  "seed_label": "TSI-RESEARCH-A-DEVELOPMENT-v1",
+  "seed_label_sha256": "5234a7e8f05da865f48f681fabc01838a56d1cdfbaeee1004f38c14b07a8c54e",
+  "world_count": 36,
+  "sample_sizes": [
+    5,
+    8,
+    10,
+    12,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50
+  ],
+  "test_case_count_per_world": 1200,
+  "train_prefixes_nested": true,
+  "test_used_for_fit_or_selection": false,
+  "summaries": [
+    {
+      "sample_size": 5,
+      "typed_exact_rate": 0.027777777777777776,
+      "isomorphic_exact_rate": 0.027777777777777776,
+      "generic_exact_rate": 0.0,
+      "generic_minus_typed_nll": {
+        "mean": 0.49982838081331593,
+        "world_sd": 0.3193446341312377,
+        "standard_error": 0.053224105688539615,
+        "minimum": -0.020182344714227973,
+        "maximum": 1.1163359420057657
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.027777777777777776,
+        "world_sd": 0.16666666666666666,
+        "standard_error": 0.027777777777777776,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 8,
+      "typed_exact_rate": 0.027777777777777776,
+      "isomorphic_exact_rate": 0.027777777777777776,
+      "generic_exact_rate": 0.0,
+      "generic_minus_typed_nll": {
+        "mean": 0.45193035090992445,
+        "world_sd": 0.2720820711255907,
+        "standard_error": 0.04534701185426512,
+        "minimum": -0.005045586178557215,
+        "maximum": 1.1163359420057657
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.027777777777777776,
+        "world_sd": 0.16666666666666666,
+        "standard_error": 0.027777777777777776,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 10,
+      "typed_exact_rate": 0.25,
+      "isomorphic_exact_rate": 0.25,
+      "generic_exact_rate": 0.08333333333333333,
+      "generic_minus_typed_nll": {
+        "mean": 0.3691161638750662,
+        "world_sd": 0.28653307919851406,
+        "standard_error": 0.047755513199752346,
+        "minimum": -0.010091172357114542,
+        "maximum": 0.9403711240285544
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.16666666666666666,
+        "world_sd": 0.37796447300922725,
+        "standard_error": 0.06299407883487121,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 12,
+      "typed_exact_rate": 0.4166666666666667,
+      "isomorphic_exact_rate": 0.4166666666666667,
+      "generic_exact_rate": 0.16666666666666666,
+      "generic_minus_typed_nll": {
+        "mean": 0.28956058458052836,
+        "world_sd": 0.2686212738627998,
+        "standard_error": 0.044770212310466635,
+        "minimum": -0.009460474084794779,
+        "maximum": 0.9290185551268296
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.25,
+        "world_sd": 0.43915503282683993,
+        "standard_error": 0.07319250547113999,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 15,
+      "typed_exact_rate": 0.5555555555555556,
+      "isomorphic_exact_rate": 0.5555555555555556,
+      "generic_exact_rate": 0.19444444444444445,
+      "generic_minus_typed_nll": {
+        "mean": 0.2588841213907647,
+        "world_sd": 0.25084265409267814,
+        "standard_error": 0.041807109015446355,
+        "minimum": 0.0,
+        "maximum": 0.7107969529042596
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.3611111111111111,
+        "world_sd": 0.4871361075732195,
+        "standard_error": 0.08118935126220325,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 20,
+      "typed_exact_rate": 0.7222222222222222,
+      "isomorphic_exact_rate": 0.7222222222222222,
+      "generic_exact_rate": 0.5833333333333334,
+      "generic_minus_typed_nll": {
+        "mean": 0.08340984651427558,
+        "world_sd": 0.15500039032093502,
+        "standard_error": 0.0258333983868225,
+        "minimum": -0.01765955162495003,
+        "maximum": 0.6155615137839927
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.1388888888888889,
+        "world_sd": 0.35073618720610084,
+        "standard_error": 0.058456031201016806,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 25,
+      "typed_exact_rate": 0.8611111111111112,
+      "isomorphic_exact_rate": 0.8611111111111112,
+      "generic_exact_rate": 0.8055555555555556,
+      "generic_minus_typed_nll": {
+        "mean": 0.03149987482307666,
+        "world_sd": 0.11816166283628239,
+        "standard_error": 0.019693610472713733,
+        "minimum": -0.01765955162495003,
+        "maximum": 0.6155615137839927
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.05555555555555555,
+        "world_sd": 0.2323106841457232,
+        "standard_error": 0.03871844735762053,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 30,
+      "typed_exact_rate": 0.8611111111111112,
+      "isomorphic_exact_rate": 0.8611111111111112,
+      "generic_exact_rate": 0.8333333333333334,
+      "generic_minus_typed_nll": {
+        "mean": 0.0067449676345300545,
+        "world_sd": 0.0401466842254183,
+        "standard_error": 0.006691114037569716,
+        "minimum": 0.0,
+        "maximum": 0.24092674002612346
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.027777777777777776,
+        "world_sd": 0.16666666666666666,
+        "standard_error": 0.027777777777777776,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 40,
+      "typed_exact_rate": 0.9722222222222222,
+      "isomorphic_exact_rate": 0.9722222222222222,
+      "generic_exact_rate": 0.9722222222222222,
+      "generic_minus_typed_nll": {
+        "mean": 0.0,
+        "world_sd": 0.0,
+        "standard_error": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.0,
+        "world_sd": 0.0,
+        "standard_error": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    },
+    {
+      "sample_size": 50,
+      "typed_exact_rate": 1.0,
+      "isomorphic_exact_rate": 1.0,
+      "generic_exact_rate": 1.0,
+      "generic_minus_typed_nll": {
+        "mean": 0.0,
+        "world_sd": 0.0,
+        "standard_error": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "typed_minus_generic_exact": {
+        "mean": 0.0,
+        "world_sd": 0.0,
+        "standard_error": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0
+      },
+      "maximum_absolute_notation_nll_difference": 0.0
+    }
+  ],
+  "rows": [
+    {
+      "world_index": 0,
+      "graph": [
+        0,
+        [
+          1,
+          3
+        ]
+      ],
+      "families": [
+        "source_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1829915811007539,
+          "isomorphic_nll": 1.1829915811007539,
+          "generic_nll": 1.6572766818850841,
+          "generic_minus_typed_nll": 0.4742851007843303,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8613354622177339,
+          "isomorphic_nll": 0.8613354622177339,
+          "generic_nll": 1.2416465204264802,
+          "generic_minus_typed_nll": 0.3803110582087462,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 1.229663253252408,
+          "generic_minus_typed_nll": 0.6616024876633274,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 1.229663253252408,
+          "generic_minus_typed_nll": 0.6616024876633274,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 1.229663253252408,
+          "generic_minus_typed_nll": 0.6616024876633274,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 0.5680607655890807,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 0.5680607655890807,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 0.5680607655890807,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 0.5680607655890807,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5680607655890807,
+          "isomorphic_nll": 0.5680607655890807,
+          "generic_nll": 0.5680607655890807,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 1,
+      "graph": [
+        3,
+        [
+          1,
+          4
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1382120037660597,
+          "isomorphic_nll": 1.1382120037660597,
+          "generic_nll": 2.1069645500490366,
+          "generic_minus_typed_nll": 0.9687525462829769,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8052033159812866,
+          "isomorphic_nll": 0.8052033159812866,
+          "generic_nll": 1.3848150282430367,
+          "generic_minus_typed_nll": 0.5796117122617501,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8052033159812866,
+          "isomorphic_nll": 0.8052033159812866,
+          "generic_nll": 1.745574440009841,
+          "generic_minus_typed_nll": 0.9403711240285544,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5838282223970744,
+          "isomorphic_nll": 0.5838282223970744,
+          "generic_nll": 0.5838282223970744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 2,
+      "graph": [
+        2,
+        [
+          1,
+          3
+        ]
+      ],
+      "families": [
+        "source_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9319736687175356,
+          "isomorphic_nll": 0.9319736687175356,
+          "generic_nll": 0.9389113497130516,
+          "generic_minus_typed_nll": 0.006937680995515949,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8581819708561367,
+          "isomorphic_nll": 0.8581819708561367,
+          "generic_nll": 0.8714266345748495,
+          "generic_minus_typed_nll": 0.013244663718712801,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6021184722943473,
+          "isomorphic_nll": 0.6021184722943473,
+          "generic_nll": 0.6021184722943473,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 3,
+      "graph": [
+        3,
+        [
+          2,
+          4
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9420648410746494,
+          "isomorphic_nll": 0.9420648410746494,
+          "generic_nll": 1.826934517139082,
+          "generic_minus_typed_nll": 0.8848696760644327,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9326043669898549,
+          "isomorphic_nll": 0.9326043669898549,
+          "generic_nll": 1.4920337345373533,
+          "generic_minus_typed_nll": 0.5594293675474984,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.855028479494538,
+          "isomorphic_nll": 0.855028479494538,
+          "generic_nll": 1.145780383033896,
+          "generic_minus_typed_nll": 0.290751903539358,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.855028479494538,
+          "isomorphic_nll": 0.855028479494538,
+          "generic_nll": 1.145780383033896,
+          "generic_minus_typed_nll": 0.290751903539358,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.855028479494538,
+          "isomorphic_nll": 0.855028479494538,
+          "generic_nll": 1.145780383033896,
+          "generic_minus_typed_nll": 0.290751903539358,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8070954107982452,
+          "isomorphic_nll": 0.8070954107982452,
+          "generic_nll": 0.8152944883383999,
+          "generic_minus_typed_nll": 0.008199077540154698,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5743677483122764,
+          "isomorphic_nll": 0.5743677483122764,
+          "generic_nll": 0.8152944883383999,
+          "generic_minus_typed_nll": 0.24092674002612346,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5743677483122764,
+          "isomorphic_nll": 0.5743677483122764,
+          "generic_nll": 0.8152944883383999,
+          "generic_minus_typed_nll": 0.24092674002612346,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5743677483122764,
+          "isomorphic_nll": 0.5743677483122764,
+          "generic_nll": 0.5743677483122764,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5743677483122764,
+          "isomorphic_nll": 0.5743677483122764,
+          "generic_nll": 0.5743677483122764,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 4,
+      "graph": [
+        4,
+        [
+          0,
+          1
+        ]
+      ],
+      "families": [
+        "source_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.283903304671896,
+          "isomorphic_nll": 1.283903304671896,
+          "generic_nll": 1.5778086995728178,
+          "generic_minus_typed_nll": 0.2939053949009218,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9603550909719182,
+          "isomorphic_nll": 0.9603550909719182,
+          "generic_nll": 1.5740245099389012,
+          "generic_minus_typed_nll": 0.613669418966983,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.830431246874071,
+          "isomorphic_nll": 0.830431246874071,
+          "generic_nll": 1.479419769090963,
+          "generic_minus_typed_nll": 0.648988522216892,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.830431246874071,
+          "isomorphic_nll": 0.830431246874071,
+          "generic_nll": 1.160917141569566,
+          "generic_minus_typed_nll": 0.33048589469549505,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.830431246874071,
+          "isomorphic_nll": 0.830431246874071,
+          "generic_nll": 1.4352708900285966,
+          "generic_minus_typed_nll": 0.6048396431545257,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265092,
+          "isomorphic_nll": 0.5945500930265092,
+          "generic_nll": 0.5945500930265092,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265092,
+          "isomorphic_nll": 0.5945500930265092,
+          "generic_nll": 0.5945500930265092,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265092,
+          "isomorphic_nll": 0.5945500930265092,
+          "generic_nll": 0.5945500930265092,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265092,
+          "isomorphic_nll": 0.5945500930265092,
+          "generic_nll": 0.5945500930265092,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265092,
+          "isomorphic_nll": 0.5945500930265092,
+          "generic_nll": 0.5945500930265092,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 5,
+      "graph": [
+        0,
+        [
+          3,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.6200654838182396,
+          "isomorphic_nll": 1.6200654838182396,
+          "generic_nll": 2.127777593035593,
+          "generic_minus_typed_nll": 0.5077121092173535,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2082195119935402,
+          "isomorphic_nll": 1.2082195119935402,
+          "generic_nll": 1.5033863034391115,
+          "generic_minus_typed_nll": 0.29516679144557134,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2082195119935402,
+          "isomorphic_nll": 1.2082195119935402,
+          "generic_nll": 1.5033863034391115,
+          "generic_minus_typed_nll": 0.29516679144557134,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9206210998157826,
+          "isomorphic_nll": 0.9206210998157826,
+          "generic_nll": 1.4598681226490562,
+          "generic_minus_typed_nll": 0.5392470228332736,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.8474601002267024,
+          "generic_minus_typed_nll": 0.2705695588251452,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.8474601002267024,
+          "generic_minus_typed_nll": 0.2705695588251452,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.5768905414015572,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.5768905414015572,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.5768905414015572,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015572,
+          "isomorphic_nll": 0.5768905414015572,
+          "generic_nll": 0.5768905414015572,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 6,
+      "graph": [
+        4,
+        [
+          2,
+          3
+        ]
+      ],
+      "families": [
+        "source_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1899292620962687,
+          "isomorphic_nll": 1.1899292620962687,
+          "generic_nll": 1.7708023709026275,
+          "generic_minus_typed_nll": 0.5808731088063588,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.8663810483962899,
+          "generic_minus_typed_nll": 0.2901212052670542,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.8663810483962899,
+          "generic_minus_typed_nll": 0.2901212052670542,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5762598431292357,
+          "isomorphic_nll": 0.5762598431292357,
+          "generic_nll": 0.5762598431292357,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 7,
+      "graph": [
+        0,
+        [
+          3,
+          4
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1281208314089448,
+          "isomorphic_nll": 1.1281208314089448,
+          "generic_nll": 1.4031052781403004,
+          "generic_minus_typed_nll": 0.2749844467313556,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.116768262507191,
+          "isomorphic_nll": 1.116768262507191,
+          "generic_nll": 1.3955368988724668,
+          "generic_minus_typed_nll": 0.2787686363652757,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5661686707721213,
+          "isomorphic_nll": 0.5661686707721213,
+          "generic_nll": 0.5661686707721213,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 8,
+      "graph": [
+        2,
+        [
+          3,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.5620412427648254,
+          "isomorphic_nll": 1.5620412427648254,
+          "generic_nll": 1.8408098791301135,
+          "generic_minus_typed_nll": 0.27876863636528815,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.5620412427648254,
+          "isomorphic_nll": 1.5620412427648254,
+          "generic_nll": 1.9228006545316734,
+          "generic_minus_typed_nll": 0.360759411766848,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1792073914668357,
+          "isomorphic_nll": 1.1792073914668357,
+          "generic_nll": 1.4724820880954461,
+          "generic_minus_typed_nll": 0.2932746966286104,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.859443367400776,
+          "isomorphic_nll": 0.859443367400776,
+          "generic_nll": 1.1407347968553376,
+          "generic_minus_typed_nll": 0.28129142945456165,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8979159620122744,
+          "isomorphic_nll": 0.8979159620122744,
+          "generic_nll": 0.8979159620122744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8979159620122744,
+          "isomorphic_nll": 0.8979159620122744,
+          "generic_nll": 0.8979159620122744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8979159620122744,
+          "isomorphic_nll": 0.8979159620122744,
+          "generic_nll": 0.8979159620122744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8979159620122744,
+          "isomorphic_nll": 0.8979159620122744,
+          "generic_nll": 0.8979159620122744,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5781519379461977,
+          "isomorphic_nll": 0.5781519379461977,
+          "generic_nll": 0.5781519379461977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5781519379461977,
+          "isomorphic_nll": 0.5781519379461977,
+          "generic_nll": 0.5781519379461977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 9,
+      "graph": [
+        3,
+        [
+          0,
+          2
+        ]
+      ],
+      "families": [
+        "source_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9483718237978472,
+          "isomorphic_nll": 0.9483718237978472,
+          "generic_nll": 1.539336104961322,
+          "generic_minus_typed_nll": 0.5909642811634747,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 0.8726880311194891,
+          "generic_minus_typed_nll": 0.008829775812475238,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 0.8726880311194891,
+          "generic_minus_typed_nll": 0.008829775812475238,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 1.1590250467526075,
+          "generic_minus_typed_nll": 0.29516679144559366,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 1.1590250467526075,
+          "generic_minus_typed_nll": 0.29516679144559366,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 1.1590250467526075,
+          "generic_minus_typed_nll": 0.29516679144559366,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 1.1590250467526075,
+          "generic_minus_typed_nll": 0.29516679144559366,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070139,
+          "isomorphic_nll": 0.8638582553070139,
+          "generic_nll": 0.8657503501239724,
+          "generic_minus_typed_nll": 0.0018920948169585117,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077955,
+          "isomorphic_nll": 0.5813054293077955,
+          "generic_nll": 0.5813054293077955,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077955,
+          "isomorphic_nll": 0.5813054293077955,
+          "generic_nll": 0.5813054293077955,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 10,
+      "graph": [
+        1,
+        [
+          0,
+          2
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2681358478639049,
+          "isomorphic_nll": 1.2681358478639049,
+          "generic_nll": 2.208506971892518,
+          "generic_minus_typed_nll": 0.940371124028613,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2681358478639049,
+          "isomorphic_nll": 1.2681358478639049,
+          "generic_nll": 2.2167060494326747,
+          "generic_minus_typed_nll": 0.9485702015687698,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.931342970445215,
+          "isomorphic_nll": 0.931342970445215,
+          "generic_nll": 1.644032018166382,
+          "generic_minus_typed_nll": 0.7126890477211669,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.931342970445215,
+          "isomorphic_nll": 0.931342970445215,
+          "generic_nll": 1.644032018166382,
+          "generic_minus_typed_nll": 0.7126890477211669,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5749984465845989,
+          "isomorphic_nll": 0.5749984465845989,
+          "generic_nll": 1.2006511327257032,
+          "generic_minus_typed_nll": 0.6256526861411044,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5749984465845989,
+          "isomorphic_nll": 0.5749984465845989,
+          "generic_nll": 0.5749984465845989,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5749984465845989,
+          "isomorphic_nll": 0.5749984465845989,
+          "generic_nll": 0.5749984465845989,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8581819708561362,
+          "isomorphic_nll": 0.8581819708561362,
+          "generic_nll": 0.8581819708561362,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8581819708561362,
+          "isomorphic_nll": 0.8581819708561362,
+          "generic_nll": 0.8581819708561362,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5749984465845989,
+          "isomorphic_nll": 0.5749984465845989,
+          "generic_nll": 0.5749984465845989,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 11,
+      "graph": [
+        1,
+        [
+          3,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 1.1602864432972464,
+          "generic_minus_typed_nll": 0.5903335828912057,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.8935010741060369,
+          "generic_minus_typed_nll": 0.3235482136999962,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.8935010741060369,
+          "generic_minus_typed_nll": 0.3235482136999962,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 1.214526494716735,
+          "generic_minus_typed_nll": 0.6445736343106943,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5699528604060407,
+          "isomorphic_nll": 0.5699528604060407,
+          "generic_nll": 0.5699528604060407,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 12,
+      "graph": [
+        1,
+        [
+          0,
+          3
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2441693135157597,
+          "isomorphic_nll": 1.2441693135157597,
+          "generic_nll": 1.5790700961174589,
+          "generic_minus_typed_nll": 0.3349007826016992,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2000204344533845,
+          "isomorphic_nll": 1.2000204344533845,
+          "generic_nll": 1.4781583725463243,
+          "generic_minus_typed_nll": 0.27813793809293985,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2000204344533845,
+          "isomorphic_nll": 1.2000204344533845,
+          "generic_nll": 1.4781583725463243,
+          "generic_minus_typed_nll": 0.27813793809293985,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.8663810483962925,
+          "generic_minus_typed_nll": 0.2686774640081846,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.8663810483962925,
+          "generic_minus_typed_nll": 0.2686774640081846,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.5977035843881079,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.5977035843881079,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.5977035843881079,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.5977035843881079,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5977035843881079,
+          "isomorphic_nll": 0.5977035843881079,
+          "generic_nll": 0.5977035843881079,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 13,
+      "graph": [
+        2,
+        [
+          0,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.8918964391880086,
+          "isomorphic_nll": 1.8918964391880086,
+          "generic_nll": 1.9587504560538982,
+          "generic_minus_typed_nll": 0.06685401686588954,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4737434846400888,
+          "isomorphic_nll": 1.4737434846400888,
+          "generic_nll": 2.244456773414741,
+          "generic_minus_typed_nll": 0.7707132887746524,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4737434846400888,
+          "isomorphic_nll": 1.4737434846400888,
+          "generic_nll": 2.1050724552320745,
+          "generic_minus_typed_nll": 0.6313289705919858,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4737434846400888,
+          "isomorphic_nll": 1.4737434846400888,
+          "generic_nll": 1.7966610000677334,
+          "generic_minus_typed_nll": 0.3229175154276447,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1552408571186898,
+          "isomorphic_nll": 1.1552408571186898,
+          "generic_nll": 1.4781583725463268,
+          "generic_minus_typed_nll": 0.3229175154276369,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8398917209588674,
+          "isomorphic_nll": 0.8398917209588674,
+          "generic_nll": 0.8222321693339174,
+          "generic_minus_typed_nll": -0.01765955162495003,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8398917209588674,
+          "isomorphic_nll": 0.8398917209588674,
+          "generic_nll": 0.8222321693339174,
+          "generic_minus_typed_nll": -0.01765955162495003,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5939193947541915,
+          "isomorphic_nll": 0.5939193947541915,
+          "generic_nll": 0.5939193947541915,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5939193947541915,
+          "isomorphic_nll": 0.5939193947541915,
+          "generic_nll": 0.5939193947541915,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5939193947541915,
+          "isomorphic_nll": 0.5939193947541915,
+          "generic_nll": 0.5939193947541915,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 14,
+      "graph": [
+        0,
+        [
+          2,
+          4
+        ]
+      ],
+      "families": [
+        "source_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2851647012165361,
+          "isomorphic_nll": 1.2851647012165361,
+          "generic_nll": 1.2649823565023082,
+          "generic_minus_typed_nll": -0.020182344714227973,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9471104272532079,
+          "isomorphic_nll": 0.9471104272532079,
+          "generic_nll": 1.2927330804843722,
+          "generic_minus_typed_nll": 0.34562265323116426,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8619661604900553,
+          "isomorphic_nll": 0.8619661604900553,
+          "generic_nll": 0.8525056864052607,
+          "generic_minus_typed_nll": -0.009460474084794557,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8619661604900553,
+          "isomorphic_nll": 0.8619661604900553,
+          "generic_nll": 0.8525056864052607,
+          "generic_minus_typed_nll": -0.009460474084794557,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.5813054293077977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.8739494276641286,
+          "generic_minus_typed_nll": 0.2926439983563309,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.5813054293077977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.5813054293077977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.5813054293077977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5813054293077977,
+          "isomorphic_nll": 0.5813054293077977,
+          "generic_nll": 0.5813054293077977,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 15,
+      "graph": [
+        2,
+        [
+          0,
+          3
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8871940913828406,
+          "isomorphic_nll": 0.8871940913828406,
+          "generic_nll": 1.628895259630702,
+          "generic_minus_typed_nll": 0.7417011682478615,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8871940913828406,
+          "isomorphic_nll": 0.8871940913828406,
+          "generic_nll": 0.9742304529629525,
+          "generic_minus_typed_nll": 0.08703636158011196,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8871940913828406,
+          "isomorphic_nll": 0.8871940913828406,
+          "generic_nll": 0.8777336172980458,
+          "generic_minus_typed_nll": -0.009460474084794779,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8871940913828406,
+          "isomorphic_nll": 0.8871940913828406,
+          "generic_nll": 0.8777336172980458,
+          "generic_minus_typed_nll": -0.009460474084794779,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.883409901748923,
+          "isomorphic_nll": 0.883409901748923,
+          "generic_nll": 0.883409901748923,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6122096446514611,
+          "isomorphic_nll": 0.6122096446514611,
+          "generic_nll": 0.6122096446514611,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6122096446514611,
+          "isomorphic_nll": 0.6122096446514611,
+          "generic_nll": 0.6122096446514611,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6122096446514611,
+          "isomorphic_nll": 0.6122096446514611,
+          "generic_nll": 0.6122096446514611,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6122096446514611,
+          "isomorphic_nll": 0.6122096446514611,
+          "generic_nll": 0.6122096446514611,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6122096446514611,
+          "isomorphic_nll": 0.6122096446514611,
+          "generic_nll": 0.6122096446514611,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 16,
+      "graph": [
+        0,
+        [
+          2,
+          3
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2138957964444166,
+          "isomorphic_nll": 1.2138957964444166,
+          "generic_nll": 2.181386946182767,
+          "generic_minus_typed_nll": 0.9674911497383505,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8821485052042829,
+          "isomorphic_nll": 0.8821485052042829,
+          "generic_nll": 1.4983407172605476,
+          "generic_minus_typed_nll": 0.6161922120562647,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9004387551015524,
+          "isomorphic_nll": 0.9004387551015524,
+          "generic_nll": 1.5166309671578189,
+          "generic_minus_typed_nll": 0.6161922120562665,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1388427020383785,
+          "isomorphic_nll": 1.1388427020383785,
+          "generic_nll": 1.7436823451928816,
+          "generic_minus_typed_nll": 0.6048396431545031,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.7970042384411301,
+          "isomorphic_nll": 0.7970042384411301,
+          "generic_nll": 1.4018438815956558,
+          "generic_minus_typed_nll": 0.6048396431545257,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.557338894959644,
+          "isomorphic_nll": 0.557338894959644,
+          "generic_nll": 0.557338894959644,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.557338894959644,
+          "isomorphic_nll": 0.557338894959644,
+          "generic_nll": 0.557338894959644,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.557338894959644,
+          "isomorphic_nll": 0.557338894959644,
+          "generic_nll": 0.557338894959644,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.557338894959644,
+          "isomorphic_nll": 0.557338894959644,
+          "generic_nll": 0.557338894959644,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.557338894959644,
+          "isomorphic_nll": 0.557338894959644,
+          "generic_nll": 0.557338894959644,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 17,
+      "graph": [
+        1,
+        [
+          2,
+          3
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8285391520571137,
+          "isomorphic_nll": 0.8285391520571137,
+          "generic_nll": 1.4251797176714853,
+          "generic_minus_typed_nll": 0.5966405656143716,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8285391520571137,
+          "isomorphic_nll": 0.8285391520571137,
+          "generic_nll": 1.4251797176714842,
+          "generic_minus_typed_nll": 0.5966405656143705,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8285391520571137,
+          "isomorphic_nll": 0.8285391520571137,
+          "generic_nll": 1.1634399346588453,
+          "generic_minus_typed_nll": 0.3349007826017316,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.8285391520571134,
+          "generic_minus_typed_nll": 0.23146626594132547,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157879,
+          "isomorphic_nll": 0.5970728861157879,
+          "generic_nll": 0.5970728861157879,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 18,
+      "graph": [
+        0,
+        [
+          2,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4560839330151412,
+          "isomorphic_nll": 1.4560839330151412,
+          "generic_nll": 2.1479599377498175,
+          "generic_minus_typed_nll": 0.6918760047346764,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1186603573241505,
+          "isomorphic_nll": 1.1186603573241505,
+          "generic_nll": 2.1258854982186257,
+          "generic_minus_typed_nll": 1.0072251408944752,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.7925893505348929,
+          "isomorphic_nll": 0.7925893505348929,
+          "generic_nll": 1.4075201660465388,
+          "generic_minus_typed_nll": 0.614930815511646,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.7925893505348929,
+          "isomorphic_nll": 0.7925893505348929,
+          "generic_nll": 1.4075201660465388,
+          "generic_minus_typed_nll": 0.614930815511646,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5724756534953184,
+          "isomorphic_nll": 0.5724756534953184,
+          "generic_nll": 1.188037167279311,
+          "generic_minus_typed_nll": 0.6155615137839927,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5724756534953184,
+          "isomorphic_nll": 0.5724756534953184,
+          "generic_nll": 1.188037167279311,
+          "generic_minus_typed_nll": 0.6155615137839927,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5724756534953184,
+          "isomorphic_nll": 0.5724756534953184,
+          "generic_nll": 1.188037167279311,
+          "generic_minus_typed_nll": 0.6155615137839927,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8834099017489234,
+          "isomorphic_nll": 0.8834099017489234,
+          "generic_nll": 0.8834099017489234,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5724756534953184,
+          "isomorphic_nll": 0.5724756534953184,
+          "generic_nll": 0.5724756534953184,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5724756534953184,
+          "isomorphic_nll": 0.5724756534953184,
+          "generic_nll": 0.5724756534953184,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 19,
+      "graph": [
+        0,
+        [
+          1,
+          2
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1861450724623523,
+          "isomorphic_nll": 1.1861450724623523,
+          "generic_nll": 2.1454371446605394,
+          "generic_minus_typed_nll": 0.959292072198187,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.184883675917713,
+          "isomorphic_nll": 1.184883675917713,
+          "generic_nll": 2.0836287139732046,
+          "generic_minus_typed_nll": 0.8987450380554916,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9054843412801118,
+          "isomorphic_nll": 0.9054843412801118,
+          "generic_nll": 1.7537735175499989,
+          "generic_minus_typed_nll": 0.8482891762698871,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 1.5090625878899864,
+          "generic_minus_typed_nll": 0.9290185551268296,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 1.2227255722568917,
+          "generic_minus_typed_nll": 0.642681539493735,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 0.5800440327631567,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 0.5800440327631567,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 0.5800440327631567,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 0.5800440327631567,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5800440327631567,
+          "isomorphic_nll": 0.5800440327631567,
+          "generic_nll": 0.5800440327631567,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 20,
+      "graph": [
+        4,
+        [
+          1,
+          2
+        ]
+      ],
+      "families": [
+        "source_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.6068208200995242,
+          "isomorphic_nll": 1.6068208200995242,
+          "generic_nll": 2.2103990667094755,
+          "generic_minus_typed_nll": 0.6035782466099513,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.276334925404061,
+          "isomorphic_nll": 1.276334925404061,
+          "generic_nll": 1.5815928892067377,
+          "generic_minus_typed_nll": 0.30525796380267667,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9527867117040836,
+          "isomorphic_nll": 0.9527867117040836,
+          "generic_nll": 1.2567832789621518,
+          "generic_minus_typed_nll": 0.30399656725806823,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9527867117040836,
+          "isomorphic_nll": 0.9527867117040836,
+          "generic_nll": 1.2567832789621518,
+          "generic_minus_typed_nll": 0.30399656725806823,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9521560134317643,
+          "isomorphic_nll": 0.9521560134317643,
+          "generic_nll": 1.2567832789621518,
+          "generic_minus_typed_nll": 0.30462726553038755,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.836107531324949,
+          "isomorphic_nll": 0.836107531324949,
+          "generic_nll": 1.1634399346588453,
+          "generic_minus_typed_nll": 0.32733240333389635,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.592657998209549,
+          "isomorphic_nll": 0.592657998209549,
+          "generic_nll": 0.592657998209549,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.592657998209549,
+          "isomorphic_nll": 0.592657998209549,
+          "generic_nll": 0.592657998209549,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.592657998209549,
+          "isomorphic_nll": 0.592657998209549,
+          "generic_nll": 0.592657998209549,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.592657998209549,
+          "isomorphic_nll": 0.592657998209549,
+          "generic_nll": 0.592657998209549,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 21,
+      "graph": [
+        2,
+        [
+          0,
+          1
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9086378326417087,
+          "isomorphic_nll": 0.9086378326417087,
+          "generic_nll": 1.9354146199780702,
+          "generic_minus_typed_nll": 1.0267767873363614,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9086378326417087,
+          "isomorphic_nll": 0.9086378326417087,
+          "generic_nll": 1.5216765533363756,
+          "generic_minus_typed_nll": 0.6130387206946669,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.8562898760391779,
+          "generic_minus_typed_nll": 0.27561514500370266,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.8562898760391779,
+          "generic_minus_typed_nll": 0.27561514500370266,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.8562898760391779,
+          "generic_minus_typed_nll": 0.27561514500370266,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.8562898760391779,
+          "generic_minus_typed_nll": 0.27561514500370266,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.5806747310354753,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.5806747310354753,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.5806747310354753,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354753,
+          "isomorphic_nll": 0.5806747310354753,
+          "generic_nll": 0.5806747310354753,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 22,
+      "graph": [
+        1,
+        [
+          0,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2006511327257037,
+          "isomorphic_nll": 1.2006511327257037,
+          "generic_nll": 1.7632339916347912,
+          "generic_minus_typed_nll": 0.5625828589090875,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9162062119095445,
+          "isomorphic_nll": 0.9162062119095445,
+          "generic_nll": 1.5166309671578169,
+          "generic_minus_typed_nll": 0.6004247552482723,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 1.5166309671578169,
+          "generic_minus_typed_nll": 0.9094669086849104,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6071640584729064,
+          "isomorphic_nll": 0.6071640584729064,
+          "generic_nll": 0.6071640584729064,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 23,
+      "graph": [
+        4,
+        [
+          0,
+          3
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8966545654676361,
+          "isomorphic_nll": 0.8966545654676361,
+          "generic_nll": 2.012990507473402,
+          "generic_minus_typed_nll": 1.1163359420057657,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8966545654676361,
+          "isomorphic_nll": 0.8966545654676361,
+          "generic_nll": 2.012990507473402,
+          "generic_minus_typed_nll": 1.1163359420057657,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 1.406258769501894,
+          "generic_minus_typed_nll": 0.8375673056404934,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 1.173531107015959,
+          "generic_minus_typed_nll": 0.6048396431545585,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 1.173531107015959,
+          "generic_minus_typed_nll": 0.6048396431545585,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 0.5686914638614006,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 0.5686914638614006,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 0.5686914638614006,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 0.5686914638614006,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5686914638614006,
+          "isomorphic_nll": 0.5686914638614006,
+          "generic_nll": 0.5686914638614006,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 24,
+      "graph": [
+        4,
+        [
+          0,
+          2
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.6030366304655979,
+          "isomorphic_nll": 1.6030366304655979,
+          "generic_nll": 2.004160731660916,
+          "generic_minus_typed_nll": 0.40112410119531816,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8525056864052596,
+          "isomorphic_nll": 0.8525056864052596,
+          "generic_nll": 0.9792760391415092,
+          "generic_minus_typed_nll": 0.1267703527362496,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8525056864052596,
+          "isomorphic_nll": 0.8525056864052596,
+          "generic_nll": 0.842414514048145,
+          "generic_minus_typed_nll": -0.010091172357114542,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.842414514048145,
+          "generic_minus_typed_nll": 0.23146626594132247,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.842414514048145,
+          "generic_minus_typed_nll": 0.23146626594132247,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.6109482481068226,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.6109482481068226,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.6109482481068226,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.6109482481068226,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6109482481068226,
+          "isomorphic_nll": 0.6109482481068226,
+          "generic_nll": 0.6109482481068226,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 25,
+      "graph": [
+        1,
+        [
+          2,
+          4
+        ]
+      ],
+      "families": [
+        "source_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4907723379927138,
+          "isomorphic_nll": 1.4907723379927138,
+          "generic_nll": 1.9480285854244612,
+          "generic_minus_typed_nll": 0.4572562474317474,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1647013312034853,
+          "isomorphic_nll": 1.1647013312034853,
+          "generic_nll": 1.5311370274211655,
+          "generic_minus_typed_nll": 0.36643569621768024,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8468294019543837,
+          "isomorphic_nll": 0.8468294019543837,
+          "generic_nll": 1.275704227131741,
+          "generic_minus_typed_nll": 0.4288748251773572,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8468294019543837,
+          "isomorphic_nll": 0.8468294019543837,
+          "generic_nll": 1.5033863034391066,
+          "generic_minus_typed_nll": 0.6565569014847229,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 1.275704227131741,
+          "generic_minus_typed_nll": 0.7107969529042596,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 0.8480907984990231,
+          "generic_minus_typed_nll": 0.2831835242715418,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 0.5649072742274813,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 0.5649072742274813,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 0.5649072742274813,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5649072742274813,
+          "isomorphic_nll": 0.5649072742274813,
+          "generic_nll": 0.5649072742274813,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 26,
+      "graph": [
+        0,
+        [
+          1,
+          4
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.502755605166788,
+          "isomorphic_nll": 1.502755605166788,
+          "generic_nll": 2.01551330056267,
+          "generic_minus_typed_nll": 0.5127576953958821,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.502755605166788,
+          "isomorphic_nll": 1.502755605166788,
+          "generic_nll": 2.01551330056267,
+          "generic_minus_typed_nll": 0.5127576953958821,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1672241242927632,
+          "isomorphic_nll": 1.1672241242927632,
+          "generic_nll": 1.4592374243767403,
+          "generic_minus_typed_nll": 0.2920133000839771,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1672241242927632,
+          "isomorphic_nll": 1.1672241242927632,
+          "generic_nll": 1.420134131492928,
+          "generic_minus_typed_nll": 0.2529100072001649,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1672241242927632,
+          "isomorphic_nll": 1.1672241242927632,
+          "generic_nll": 1.420134131492928,
+          "generic_minus_typed_nll": 0.2529100072001649,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9262973842666589,
+          "isomorphic_nll": 0.9262973842666589,
+          "generic_nll": 1.2403851238818413,
+          "generic_minus_typed_nll": 0.31408773961518244,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265096,
+          "isomorphic_nll": 0.5945500930265096,
+          "generic_nll": 0.5945500930265096,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265096,
+          "isomorphic_nll": 0.5945500930265096,
+          "generic_nll": 0.5945500930265096,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265096,
+          "isomorphic_nll": 0.5945500930265096,
+          "generic_nll": 0.5945500930265096,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5945500930265096,
+          "isomorphic_nll": 0.5945500930265096,
+          "generic_nll": 0.5945500930265096,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 27,
+      "graph": [
+        3,
+        [
+          0,
+          1
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8897168844721202,
+          "isomorphic_nll": 0.8897168844721202,
+          "generic_nll": 1.2593060720514306,
+          "generic_minus_typed_nll": 0.3695891875793105,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.798896333258091,
+          "isomorphic_nll": 0.798896333258091,
+          "generic_nll": 1.1747925035605984,
+          "generic_minus_typed_nll": 0.37589617030250744,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.798896333258091,
+          "isomorphic_nll": 0.798896333258091,
+          "generic_nll": 1.1747925035605984,
+          "generic_minus_typed_nll": 0.37589617030250744,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.798896333258091,
+          "isomorphic_nll": 0.798896333258091,
+          "generic_nll": 1.4415778727517878,
+          "generic_minus_typed_nll": 0.6426815394936969,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.798896333258091,
+          "isomorphic_nll": 0.798896333258091,
+          "generic_nll": 1.1211831504134293,
+          "generic_minus_typed_nll": 0.32228681715533836,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.798896333258091,
+          "isomorphic_nll": 0.798896333258091,
+          "generic_nll": 1.1211831504134293,
+          "generic_minus_typed_nll": 0.32228681715533836,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5712142569506817,
+          "isomorphic_nll": 0.5712142569506817,
+          "generic_nll": 0.5712142569506817,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5712142569506817,
+          "isomorphic_nll": 0.5712142569506817,
+          "generic_nll": 0.5712142569506817,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5712142569506817,
+          "isomorphic_nll": 0.5712142569506817,
+          "generic_nll": 0.5712142569506817,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5712142569506817,
+          "isomorphic_nll": 0.5712142569506817,
+          "generic_nll": 0.5712142569506817,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 28,
+      "graph": [
+        2,
+        [
+          1,
+          4
+        ]
+      ],
+      "families": [
+        "source_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.6112357080057567,
+          "isomorphic_nll": 1.6112357080057567,
+          "generic_nll": 1.8319801033176326,
+          "generic_minus_typed_nll": 0.22074439531187595,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2851647012165364,
+          "isomorphic_nll": 1.2851647012165364,
+          "generic_nll": 1.8338721981345898,
+          "generic_minus_typed_nll": 0.5487074969180534,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2851647012165364,
+          "isomorphic_nll": 1.2851647012165364,
+          "generic_nll": 1.5525807686800317,
+          "generic_minus_typed_nll": 0.26741606746349533,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8266470572401539,
+          "isomorphic_nll": 0.8266470572401539,
+          "generic_nll": 0.943956935891609,
+          "generic_minus_typed_nll": 0.11730987865145515,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9553095047933631,
+          "isomorphic_nll": 0.9553095047933631,
+          "generic_nll": 0.955940203065683,
+          "generic_minus_typed_nll": 0.000630698272319874,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157886,
+          "isomorphic_nll": 0.5970728861157886,
+          "generic_nll": 0.5970728861157886,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157886,
+          "isomorphic_nll": 0.5970728861157886,
+          "generic_nll": 0.5970728861157886,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157886,
+          "isomorphic_nll": 0.5970728861157886,
+          "generic_nll": 0.5970728861157886,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157886,
+          "isomorphic_nll": 0.5970728861157886,
+          "generic_nll": 0.5970728861157886,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5970728861157886,
+          "isomorphic_nll": 0.5970728861157886,
+          "generic_nll": 0.5970728861157886,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 29,
+      "graph": [
+        0,
+        [
+          1,
+          4
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.4680672001892148,
+          "isomorphic_nll": 1.4680672001892148,
+          "generic_nll": 1.7512507244607212,
+          "generic_minus_typed_nll": 0.2831835242715064,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1331664175875023,
+          "isomorphic_nll": 1.1331664175875023,
+          "generic_nll": 1.4195034332206071,
+          "generic_minus_typed_nll": 0.2863370156331049,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1331664175875023,
+          "isomorphic_nll": 1.1331664175875023,
+          "generic_nll": 1.4195034332206071,
+          "generic_minus_typed_nll": 0.2863370156331049,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.1331664175875023,
+          "isomorphic_nll": 1.1331664175875023,
+          "generic_nll": 1.4195034332206071,
+          "generic_minus_typed_nll": 0.2863370156331049,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.810879600432163,
+          "isomorphic_nll": 0.810879600432163,
+          "generic_nll": 1.4195034332206071,
+          "generic_minus_typed_nll": 0.6086238327884441,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.810879600432163,
+          "isomorphic_nll": 0.810879600432163,
+          "generic_nll": 0.810879600432163,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.810879600432163,
+          "isomorphic_nll": 0.810879600432163,
+          "generic_nll": 0.810879600432163,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.563015179410523,
+          "isomorphic_nll": 0.563015179410523,
+          "generic_nll": 0.563015179410523,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.563015179410523,
+          "isomorphic_nll": 0.563015179410523,
+          "generic_nll": 0.563015179410523,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.563015179410523,
+          "isomorphic_nll": 0.563015179410523,
+          "generic_nll": 0.563015179410523,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 30,
+      "graph": [
+        0,
+        [
+          1,
+          2
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.261828865140709,
+          "isomorphic_nll": 1.261828865140709,
+          "generic_nll": 1.3085005372923624,
+          "generic_minus_typed_nll": 0.046671672151653354,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.878995013842685,
+          "isomorphic_nll": 0.878995013842685,
+          "generic_nll": 1.2933637787566918,
+          "generic_minus_typed_nll": 0.41436876491400687,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.878995013842685,
+          "isomorphic_nll": 0.878995013842685,
+          "generic_nll": 0.9830602287754271,
+          "generic_minus_typed_nll": 0.10406521493274212,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.878995013842685,
+          "isomorphic_nll": 0.878995013842685,
+          "generic_nll": 0.878995013842685,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.878995013842685,
+          "isomorphic_nll": 0.878995013842685,
+          "generic_nll": 0.878995013842685,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6033798688389863,
+          "isomorphic_nll": 0.6033798688389863,
+          "generic_nll": 0.6033798688389863,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6033798688389863,
+          "isomorphic_nll": 0.6033798688389863,
+          "generic_nll": 0.6033798688389863,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6033798688389863,
+          "isomorphic_nll": 0.6033798688389863,
+          "generic_nll": 0.6033798688389863,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6033798688389863,
+          "isomorphic_nll": 0.6033798688389863,
+          "generic_nll": 0.6033798688389863,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6033798688389863,
+          "isomorphic_nll": 0.6033798688389863,
+          "generic_nll": 0.6033798688389863,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 31,
+      "graph": [
+        4,
+        [
+          1,
+          3
+        ]
+      ],
+      "families": [
+        "quadratic_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.464913708827614,
+          "isomorphic_nll": 1.464913708827614,
+          "generic_nll": 2.1580511101069395,
+          "generic_minus_typed_nll": 0.6931374012793254,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9168369101818639,
+          "isomorphic_nll": 0.9168369101818639,
+          "generic_nll": 1.5134774757962202,
+          "generic_minus_typed_nll": 0.5966405656143563,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 1.170377615654361,
+          "generic_minus_typed_nll": 0.5966405656144019,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5737370500399591,
+          "isomorphic_nll": 0.5737370500399591,
+          "generic_nll": 0.5737370500399591,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 32,
+      "graph": [
+        3,
+        [
+          1,
+          2
+        ]
+      ],
+      "families": [
+        "source_target",
+        "quadratic_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2662437530469457,
+          "isomorphic_nll": 1.2662437530469457,
+          "generic_nll": 1.2782270202210189,
+          "generic_minus_typed_nll": 0.011983267174073164,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.2000204344533836,
+          "isomorphic_nll": 1.2000204344533836,
+          "generic_nll": 1.4781583725463223,
+          "generic_minus_typed_nll": 0.27813793809293874,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070131,
+          "isomorphic_nll": 0.8638582553070131,
+          "generic_nll": 1.1419961933999767,
+          "generic_minus_typed_nll": 0.2781379380929636,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8638582553070131,
+          "isomorphic_nll": 0.8638582553070131,
+          "generic_nll": 1.1419961933999767,
+          "generic_minus_typed_nll": 0.2781379380929636,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8625968587623737,
+          "isomorphic_nll": 0.8625968587623737,
+          "generic_nll": 1.1388427020383787,
+          "generic_minus_typed_nll": 0.276245843276005,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8625968587623737,
+          "isomorphic_nll": 0.8625968587623737,
+          "generic_nll": 0.8625968587623737,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8625968587623737,
+          "isomorphic_nll": 0.8625968587623737,
+          "generic_nll": 0.8625968587623737,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8625968587623737,
+          "isomorphic_nll": 0.8625968587623737,
+          "generic_nll": 0.8625968587623737,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015579,
+          "isomorphic_nll": 0.5768905414015579,
+          "generic_nll": 0.5768905414015579,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5768905414015579,
+          "isomorphic_nll": 0.5768905414015579,
+          "generic_nll": 0.5768905414015579,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 33,
+      "graph": [
+        3,
+        [
+          0,
+          4
+        ]
+      ],
+      "families": [
+        "linear_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9073764360970697,
+          "isomorphic_nll": 0.9073764360970697,
+          "generic_nll": 1.463652312282976,
+          "generic_minus_typed_nll": 0.5562758761859063,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9073764360970697,
+          "isomorphic_nll": 0.9073764360970697,
+          "generic_nll": 1.463652312282976,
+          "generic_minus_typed_nll": 0.5562758761859063,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9073764360970697,
+          "isomorphic_nll": 0.9073764360970697,
+          "generic_nll": 1.463652312282976,
+          "generic_minus_typed_nll": 0.5562758761859063,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.8619661604900548,
+          "generic_minus_typed_nll": 0.2812914294545801,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": false,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.8619661604900548,
+          "generic_minus_typed_nll": 0.2812914294545801,
+          "typed_minus_generic_exact": 1,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.5806747310354747,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.5806747310354747,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.5806747310354747,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.5806747310354747,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5806747310354747,
+          "isomorphic_nll": 0.5806747310354747,
+          "generic_nll": 0.5806747310354747,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 34,
+      "graph": [
+        0,
+        [
+          1,
+          3
+        ]
+      ],
+      "families": [
+        "source_target",
+        "linear_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8588126691284568,
+          "isomorphic_nll": 0.8588126691284568,
+          "generic_nll": 1.2706586409531846,
+          "generic_minus_typed_nll": 0.4118459718247278,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8575512725838172,
+          "isomorphic_nll": 0.8575512725838172,
+          "generic_nll": 1.1823608828284347,
+          "generic_minus_typed_nll": 0.3248096102446174,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.5693221621337203,
+          "isomorphic_nll": 0.5693221621337203,
+          "generic_nll": 0.5693221621337203,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    },
+    {
+      "world_index": 35,
+      "graph": [
+        0,
+        [
+          2,
+          3
+        ]
+      ],
+      "families": [
+        "source_target",
+        "source_target"
+      ],
+      "estimates": [
+        {
+          "sample_size": 5,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 1.6156505959120022,
+          "isomorphic_nll": 1.6156505959120022,
+          "generic_nll": 1.6042980270102476,
+          "generic_minus_typed_nll": -0.011352568901754623,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 8,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.9691848667843936,
+          "isomorphic_nll": 0.9691848667843936,
+          "generic_nll": 0.9641392806058364,
+          "generic_minus_typed_nll": -0.005045586178557215,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 10,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8707959363025276,
+          "isomorphic_nll": 0.8707959363025276,
+          "generic_nll": 0.8865633931105196,
+          "generic_minus_typed_nll": 0.015767456807991964,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 12,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8707959363025276,
+          "isomorphic_nll": 0.8707959363025276,
+          "generic_nll": 0.8865633931105196,
+          "generic_minus_typed_nll": 0.015767456807991964,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 15,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8707959363025276,
+          "isomorphic_nll": 0.8707959363025276,
+          "generic_nll": 0.8865633931105196,
+          "generic_minus_typed_nll": 0.015767456807991964,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 20,
+          "typed_exact": false,
+          "isomorphic_exact": false,
+          "generic_exact": false,
+          "typed_nll": 0.8707959363025276,
+          "isomorphic_nll": 0.8707959363025276,
+          "generic_nll": 0.8865633931105196,
+          "generic_minus_typed_nll": 0.015767456807991964,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 25,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6008570757497058,
+          "isomorphic_nll": 0.6008570757497058,
+          "generic_nll": 0.6008570757497058,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 30,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6008570757497058,
+          "isomorphic_nll": 0.6008570757497058,
+          "generic_nll": 0.6008570757497058,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 40,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6008570757497058,
+          "isomorphic_nll": 0.6008570757497058,
+          "generic_nll": 0.6008570757497058,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        },
+        {
+          "sample_size": 50,
+          "typed_exact": true,
+          "isomorphic_exact": true,
+          "generic_exact": true,
+          "typed_nll": 0.6008570757497058,
+          "isomorphic_nll": 0.6008570757497058,
+          "generic_nll": 0.6008570757497058,
+          "generic_minus_typed_nll": 0.0,
+          "typed_minus_generic_exact": 0,
+          "typed_minus_isomorphic_nll": 0.0
+        }
+      ]
+    }
+  ]
+}

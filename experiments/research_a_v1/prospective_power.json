@@ -1,0 +1,147 @@
+{
+  "status": "prospective_power_from_development_only",
+  "uses_confirmatory_results": false,
+  "development_seed_label": "TSI-RESEARCH-A-DEVELOPMENT-v1",
+  "power_seed_label": "TSI-RESEARCH-A-PROSPECTIVE-POWER-v1",
+  "bootstrap_iterations": 20000,
+  "familywise_alpha": 0.05,
+  "bonferroni_endpoint_count": 16,
+  "critical": 2.9551668474978343,
+  "primary_sample_sizes": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    40,
+    50
+  ],
+  "thresholds": {
+    "nll_sesoi": 0.01,
+    "nll_equivalence_margin": 0.01,
+    "recovery_sesoi": 0.1,
+    "recovery_equivalence_margin": 0.05
+  },
+  "power_curve": [
+    {
+      "world_count": 90,
+      "per_family_pair_stratum": 10,
+      "any_joint_advantage_power": 1.0,
+      "any_joint_equivalence_power": 1.0,
+      "ordered_transition_power": 1.0,
+      "ordered_transition_monte_carlo_se": 0.0,
+      "joint_advantage_probability_by_n": {
+        "5": 0.0,
+        "10": 0.98455,
+        "15": 1.0,
+        "20": 0.9083,
+        "25": 0.0382,
+        "30": 5e-05,
+        "40": 0.0,
+        "50": 0.0
+      },
+      "joint_equivalence_probability_by_n": {
+        "5": 0.0,
+        "10": 0.0,
+        "15": 0.0,
+        "20": 0.0,
+        "25": 0.00045,
+        "30": 0.0544,
+        "40": 1.0,
+        "50": 1.0
+      }
+    },
+    {
+      "world_count": 126,
+      "per_family_pair_stratum": 14,
+      "any_joint_advantage_power": 1.0,
+      "any_joint_equivalence_power": 1.0,
+      "ordered_transition_power": 1.0,
+      "ordered_transition_monte_carlo_se": 0.0,
+      "joint_advantage_probability_by_n": {
+        "5": 0.0,
+        "10": 0.99045,
+        "15": 1.0,
+        "20": 0.9204,
+        "25": 0.0104,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0
+      },
+      "joint_equivalence_probability_by_n": {
+        "5": 0.0,
+        "10": 0.0,
+        "15": 0.0,
+        "20": 0.0,
+        "25": 0.0001,
+        "30": 0.098,
+        "40": 1.0,
+        "50": 1.0
+      }
+    },
+    {
+      "world_count": 180,
+      "per_family_pair_stratum": 20,
+      "any_joint_advantage_power": 1.0,
+      "any_joint_equivalence_power": 1.0,
+      "ordered_transition_power": 1.0,
+      "ordered_transition_monte_carlo_se": 0.0,
+      "joint_advantage_probability_by_n": {
+        "5": 0.0,
+        "10": 0.9982,
+        "15": 1.0,
+        "20": 0.96245,
+        "25": 0.00495,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0
+      },
+      "joint_equivalence_probability_by_n": {
+        "5": 0.0,
+        "10": 0.0,
+        "15": 0.0,
+        "20": 0.0,
+        "25": 0.0,
+        "30": 0.0918,
+        "40": 1.0,
+        "50": 1.0
+      }
+    },
+    {
+      "world_count": 270,
+      "per_family_pair_stratum": 30,
+      "any_joint_advantage_power": 1.0,
+      "any_joint_equivalence_power": 1.0,
+      "ordered_transition_power": 1.0,
+      "ordered_transition_monte_carlo_se": 0.0,
+      "joint_advantage_probability_by_n": {
+        "5": 0.0,
+        "10": 1.0,
+        "15": 1.0,
+        "20": 0.98505,
+        "25": 0.0008,
+        "30": 0.0,
+        "40": 0.0,
+        "50": 0.0
+      },
+      "joint_equivalence_probability_by_n": {
+        "5": 0.0,
+        "10": 0.0,
+        "15": 0.0,
+        "20": 0.0,
+        "25": 0.0,
+        "30": 0.09595,
+        "40": 1.0,
+        "50": 1.0
+      }
+    }
+  ],
+  "selected_world_count": 126,
+  "selected_ordered_transition_power": 1.0,
+  "limitations": [
+    "Power is a stratified bootstrap of 36 development worlds.",
+    "Normal simultaneous intervals are the frozen analysis target.",
+    "The development grid was expanded below n=50 after a documented ceiling result."
+  ]
+}

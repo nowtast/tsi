@@ -13,6 +13,8 @@ prospective 연구 실행 코드, 개발 과정과 부정 결과를 보존하는
 | Paper 03/04 prospective resolution | `paper34_*` | 최종 graph-information/head-factorization cohort, multiplicity audit, noise sensitivity, retrospective power, world-derivation audit |
 | Paper 04 귀속 및 stress 연구 | `paper4_*` | comparator, capacity matching, misspecification, diagnostic, statistical analysis |
 | 출판 정합성 검사 | `paper_parity.py` | 영문·한국어 TeX 구조와 display-math parity |
+| 공개 benchmark 지원 | `structural_attribution_benchmark.py` | Artifact 무결성, leakage-reduced participant view 및 portable submission 검사 |
+| 후속 Research A | `research_a_*` | 충분 envelope, selector audit, development-only calibration, freeze-candidate contract, confirmatory 구성 및 analysis |
 
 `paper3_learned_*`에는 탐색 단계에 머물거나 실패한 neural/routing 설계도 포함된다.
 이 파일들의 존재는 해당 설계를 확증 증거로 승격하지 않으며 unconstrained neural

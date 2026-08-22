@@ -1,0 +1,32 @@
+{
+  "benchmark_id": "tsi-structural-attribution",
+  "benchmark_version": "0.1.0",
+  "submission_id": "reference-format-smoke",
+  "method": {
+    "name": "format-only reference example",
+    "version": "0.1.0"
+  },
+  "coverage": {
+    "kind": "smoke",
+    "world_count": 1
+  },
+  "information_policy": {
+    "fit_partitions": ["train"],
+    "selection_partitions": ["selection"],
+    "test_targets_used_for_fit_or_selection": false,
+    "reference_answers_used": false
+  },
+  "tasks": [
+    "graph_head_recovery",
+    "held_out_composition_prediction"
+  ],
+  "worlds": [
+    {
+      "world_index": 0,
+      "selected_graph": [0, [1, 2]],
+      "selected_head_families": ["example_head_a", "example_head_b"],
+      "composition_nll": 1.0
+    }
+  ],
+  "scope_note": "This smoke file tests format only and is not an independent result."
+}

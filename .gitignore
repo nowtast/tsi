@@ -22,6 +22,10 @@ __pycache__/
 # Unrevealed sealed seeds; publish commitments and access ledgers instead
 **/*.escrow
 
+# Research A one-shot payloads are packaged separately after confirmation
+experiments/research_a_v1/confirmatory/raw_results.json
+experiments/research_a_v1/confirmatory/portable_replay.json
+
 # Large generated results are archived in Zenodo record 22004526
 **/development_validity_results.json
 **/sealed_validity_raw_results.json

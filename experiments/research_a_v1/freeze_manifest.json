@@ -1,0 +1,24 @@
+{
+  "status": "frozen_before_confirmatory_seed_generation",
+  "frozen_at_utc": "2026-08-22T03:40:43.621272+00:00",
+  "contract_digest": "9a37d3f2d9e424dd9e6a00f1235b4f3fa07b2dfc8d26633f06dd632cba04cdee",
+  "development_report_sha256": "90c2fafc673999c8fca59c91726de0c40f2472640a32adbcc1c081bc8a9375fc",
+  "prospective_power_sha256": "9162ac76f07b09f5181d8e46d180f1034cad52c20bf7ea44bca82294b85ac04c",
+  "files": {
+    "research/research_a/preregistration_draft.json": "b576c23daeca76f528fd28f1e6aaa035e8746ab7bbcca674a568414f726bf3e1",
+    "research/research_a/theory.md": "a3146879e35af4ba0c901bb4e8ef4009332b24d6991a2ddef9b880e3bc71a7e1",
+    "research/research_a/theory_KO.md": "c91a30ef2843814bbaf049411f82da9e33aa5028ade16f5ba32dbf519d93dbc6",
+    "src/tsi/research_a_sample_complexity.py": "f3e89edcc9e7a11d6ed2227c99cec107bd1f7f7ee26cd94c62c01c253a7ded58",
+    "src/tsi/research_a_contract.py": "63b6c0e3d11351a2886627b0c938e6cc5dd81f1b64483b9a940027fd1384e7dc",
+    "src/tsi/research_a_design.py": "3d3215461d2c937ea54959126a280ed5ebc390ca26409618575dceee1875314c",
+    "src/tsi/research_a_confirmatory.py": "18da8a136a065f1cb4f76765abc7f9432a48ba6bd8be2915c2982e97b05c706a",
+    "src/tsi/research_a_analysis.py": "7fdbaab26d94527404c4e9eb67053a37111746594ba41a35cf8a0d949398a0ff",
+    "tests/test_research_a_sample_complexity.py": "727207a0cea405e1bba3b13a0787f94a1351afbff5495f0ca1f75bd40997a3d0",
+    "tests/test_research_a_contract.py": "5c50281ba5e2f36db02aede8c4a837dbd88da2908faade2ef524768a315b9f9c",
+    "tests/test_research_a_design.py": "ff2edfb3d954b6e1ec6b4e47e18f6904264df30f88e6c7cb6068dbe3e905251d",
+    "tests/test_research_a_confirmatory.py": "7af433f284b5c12996ad34c48849ed99638786c182f0185468fb3024f63d1143",
+    "tests/test_research_a_analysis.py": "35ef601f799cb00d7c7607400300d8537a1ad08c5a4fc3766d50b1dadbc02c2d",
+    "tools/run_research_a1_confirmatory.py": "b2436b841be56a24df1299153d7f40adfbd89bd3f3707d406ca28fc16501de92"
+  },
+  "freeze_digest": "9ea1b9b75cea3d51dcf401f62fee812cea4c9e374569df5161433c389b234339"
+}

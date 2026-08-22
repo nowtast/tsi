@@ -1,0 +1,46 @@
+{
+  "status": "pre_A1_direction_frozen_numeric_A2_contract_pending",
+  "recorded_before_A1_confirmatory_seed": true,
+  "purpose": "Prevent result-adaptive choice of Research A2 robustness directions while keeping A2 numerics subject to implementation and development power review.",
+  "shared_rules": {
+    "independent_unit": "world",
+    "information_symmetry": "all arms receive identical raw state, action, train rows, supplied graph, and test rows",
+    "primary_effect_orientation": "generic minus typed composition NLL and typed minus generic exact recovery",
+    "confirmatory_independence": "A2 uses a new root seed and cannot alter or repair the A1 estimand",
+    "minimum_world_count_candidate": 126,
+    "sesoi_source": "A1 endpoint-specific SESOI unless A2 development establishes a stricter value before A2 freeze"
+  },
+  "candidate_width_axis": {
+    "generic_output_feature_position_counts": [55, 100, 300],
+    "candidate_train_sizes": [10, 15, 20, 25, 30, 40],
+    "typed_function_class_unchanged": true,
+    "generic_true_support_included": true,
+    "nuisance_feature_rule": "deterministic observable modular functions frozen before A2 seed generation",
+    "claim_boundary": "tests search-width sensitivity, not representational superiority"
+  },
+  "training_noise_axis": {
+    "train_noise_probabilities": [0.08, 0.3, 0.6, 0.8],
+    "candidate_train_sizes": [15, 20, 30, 40, 80, 160],
+    "ood_noise_probability": 0.12,
+    "mathematical_boundary": "all levels remain below 6/7, where the true center ceases to be the unique mode",
+    "claim_boundary": "tests degradation as the q-ary mode gap closes"
+  },
+  "misspecification_axis": {
+    "conditions": [
+      "matched declared three-family population",
+      "typed-misspecified fourth-family generator included only in the generic dictionary",
+      "generic-misspecified generator family retained by typed search but removed from the generic dictionary"
+    ],
+    "symmetric_direction_requirement": true,
+    "claim_boundary": "scope and falsification audit only; cannot rescue an A1 or A2 efficiency failure"
+  },
+  "program_stopping_rule": "If A1 and the separately frozen A2 candidate-width and training-noise axes show no joint SESOI-qualified advantage, stop predictive-efficiency development and do not begin turnover or perception studies. Continue Research D because its diagnostic estimand is independent.",
+  "required_before_A2_freeze": [
+    "exact nuisance feature library and collision audit",
+    "fourth-family separation or nonidentifiability proof",
+    "development-only power and world count",
+    "explicit multiplicity members for each axis",
+    "clean-room replay implementation",
+    "source freeze and public seed commitment"
+  ]
+}

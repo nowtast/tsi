@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nowtast/tsi/benchmarks/structural_attribution_v0_1/submission_schema.json",
+  "title": "TSI Structural Attribution Benchmark Submission",
+  "type": "object",
+  "required": [
+    "benchmark_id",
+    "benchmark_version",
+    "submission_id",
+    "method",
+    "coverage",
+    "information_policy",
+    "tasks",
+    "worlds"
+  ],
+  "properties": {
+    "benchmark_id": {"const": "tsi-structural-attribution"},
+    "benchmark_version": {"const": "0.1.0"},
+    "submission_id": {"type": "string", "minLength": 1},
+    "method": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1}
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["kind", "world_count"],
+      "properties": {
+        "kind": {"enum": ["smoke", "full"]},
+        "world_count": {"type": "integer", "minimum": 1, "maximum": 120}
+      }
+    },
+    "information_policy": {
+      "type": "object",
+      "required": [
+        "fit_partitions",
+        "selection_partitions",
+        "test_targets_used_for_fit_or_selection",
+        "reference_answers_used"
+      ]
+    },
+    "tasks": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "uniqueItems": true,
+      "items": {"enum": ["graph_head_recovery", "held_out_composition_prediction"]}
+    },
+    "worlds": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 120,
+      "items": {
+        "type": "object",
+        "required": ["world_index", "selected_graph", "selected_head_families", "composition_nll"]
+      }
+    }
+  }
+}
