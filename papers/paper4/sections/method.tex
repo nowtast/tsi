@@ -188,16 +188,26 @@ uses Bonferroni simultaneous intervals for eight inferential quantities at
 familywise level 0.05.  The primary graph effects are wrong-minus-correct NLL
 within each head.
 
+The complete nine-gate conjunction consists of graph--head identification,
+learned-routing NLL, factorized-head graph NLL, generic-head graph NLL,
+dense-head graph NLL, matched-head predictive equivalence, rollout Hamming,
+criterion Brier, and outside-family noninferiority.  The matched-head gate
+applies the frozen equivalence margin $0.01$ to its simultaneous interval;
+exact functional equivalence makes the observed contrast zero when the matched
+support is recovered.
+
 The analysis object reports ten interval-bearing quantities at the frozen
 Bonferroni divisor of eight.  They contain one exact duplicate pair, one
 sign-flipped pair, and one deterministic zero, leaving seven informationally
 distinct stochastic quantities.  The frozen v1 contract specified only the
 integer divisor and did not enumerate its members; this is a reporting defect,
-not a preregistered family definition.  The current code labels the eight gate
-quantities as identification, learned-routing NLL, factorized-graph NLL,
-generic-graph NLL, dense-graph NLL, rollout Hamming, criterion Brier, and
-outside-family noninferiority, explicitly as a post-freeze clarification.  A
-post-review sensitivity using divisor ten leaves every decision unchanged.
+not a preregistered family definition.  The current code labels the eight
+inferential quantities as identification, learned-routing NLL,
+factorized-graph NLL, generic-graph NLL, dense-graph NLL, rollout Hamming,
+criterion Brier, and outside-family noninferiority, explicitly as a post-freeze
+clarification; matched-head equivalence is the separately named ninth decision
+gate.  A post-review sensitivity using divisor ten leaves every decision
+unchanged.
 This cohort, its root seed, and the multiplicity family are shared with Paper~3;
 overlapping endpoints in the two papers are subsets of one frozen analysis, not
 independent evidence.

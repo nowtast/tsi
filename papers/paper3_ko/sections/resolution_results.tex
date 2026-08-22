@@ -36,6 +36,15 @@ two-sided interval을 사용했다. Identification gate는 0.90의 simultaneous 
 rollout Hamming area 0.025, criterion Brier score 0.005이다. 이 point threshold는
 simultaneous interval의 null boundary와 구별된다.
 
+전체 nine-gate conjunction은 graph--head identification, learned-routing NLL,
+factorized-head graph NLL, generic-head graph NLL, dense-head graph NLL,
+matched-head predictive equivalence, rollout Hamming, criterion Brier,
+outside-family noninferiority로 구성된다. Post-freeze reporting clarification은
+나머지 여덟 항을 inferential quantity로 열거하고, matched-head equivalence는
+별도의 아홉 번째 decision gate로 둔다. 이 gate는 보고된 simultaneous interval에
+frozen equivalence margin $0.01$을 적용한다. Matched support를 회수하면 정확한
+함수적 동치에 의해 관측 contrast는 0이 된다.
+
 Analysis object는 frozen Bonferroni divisor 8로 interval-bearing quantity 열 개를
 보고한다. 여기에는 exact duplicate pair 하나, sign-flipped pair 하나와 deterministic
 zero 하나가 있어 정보적으로 구별되는 stochastic quantity는 일곱 개다. Frozen v1

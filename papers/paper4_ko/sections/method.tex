@@ -172,14 +172,22 @@ Independent unit은 world다. Confirmatory cohort는 120개 world이며 familywi
 0.05에서 여덟 inferential quantity에 Bonferroni simultaneous interval을 사용한다.
 Primary graph effect는 각 head 안의 wrong-minus-correct NLL이다.
 
+전체 nine-gate conjunction은 graph--head identification, learned-routing NLL,
+factorized-head graph NLL, generic-head graph NLL, dense-head graph NLL,
+matched-head predictive equivalence, rollout Hamming, criterion Brier,
+outside-family noninferiority로 구성된다. Matched-head gate는 해당 simultaneous
+interval에 frozen equivalence margin $0.01$을 적용한다. Matched support를
+회수하면 정확한 함수적 동치에 의해 관측 contrast는 0이 된다.
+
 Analysis object는 frozen Bonferroni divisor 8로 interval-bearing quantity 열 개를
 보고한다. 여기에는 exact duplicate pair 하나, sign-flipped pair 하나와 deterministic
 zero 하나가 있어 정보적으로 구별되는 stochastic quantity는 일곱 개다. Frozen v1
 contract는 정수 divisor만 지정하고 구성원을 열거하지 않았다. 이는 reporting
 defect이며 사전등록된 family 정의가 아니다. 현재 code는 identification,
 learned-routing NLL, factorized-graph NLL, generic-graph NLL, dense-graph NLL,
-rollout Hamming, criterion Brier 및 outside-family noninferiority를 여덟 gate
-quantity로 열거하되 post-freeze clarification임을 명시한다. Post-review
+rollout Hamming, criterion Brier 및 outside-family noninferiority를 여덟
+inferential quantity로 열거하되 post-freeze clarification임을 명시한다.
+Matched-head equivalence는 별도로 이름 붙인 아홉 번째 decision gate다. Post-review
 sensitivity에서 divisor 10을 사용해도 모든 decision은 유지된다. 이 cohort, root
 seed와 multiplicity family는 Paper~3과 공유한다. 두 논문의 겹치는 endpoint는 하나의
 frozen analysis 중 일부이며 독립 evidence가 아니다.

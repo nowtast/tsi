@@ -10,7 +10,20 @@ Completion gate: matching theorem structure and notation in English/Korean, comp
 
 ## Current status
 
-The bilingual integrated core draft is present in `main.tex` and `sections/`, builds to 6-page PDFs, and has a paired proof-audit record. Stage 2A persistent topology has now been integrated as sections/topological_extension.tex; both language versions build to 6-page PDFs. The filtered stability theorem is explicitly imported, while the levelwise inclusion, isomorphism-invariance proof, tolerance corollary, and Betti-number counterexample are checked locally. Stage 2B metric-measure is now integrated as sections/metric_measure_extension.tex; both language versions build to 8-page PDFs. The zero-discrepancy exactness theorem and label-mass necessary condition are audited with full-support and coupling assumptions. Stage 2C categorical descent is now integrated as sections/category_extension.tex; both language versions build to 9-page PDFs. Path-equation descent and the generator natural-equivalence criterion are audited. Stage 2D dynamics is now integrated as sections/dynamics_extension.tex; both language versions build to 11-page PDFs. Action-history extension, trajectory preservation, turnover defects, and the empty-tracking counterexample are audited. Stage 2A--2D are complete; the next workstream is empirical-validation integration.
+The integrated manuscript defines a common tagged carrier, presented relational
+schema, simplicial complex, metric, filtration, full-support mass, and tracked
+transition in one state contract. It includes persistent topology,
+metric--measure exactness, categorical descent, action history, turnover
+defects, and quotient-level rollout stability with explicit assumptions and
+failure boundaries.
+
+A 2026-08-20 attribution audit added a related-work and positioning section and
+20 verified references. Every bibliography entry is cited, and the English and
+Korean `references.bib` files are byte-identical. The parity gate checks formal
+environments, labels, cross-references, display mathematics, decimal literals,
+citation keys, and bibliography integrity.
+
+The current clean builds are 18 pages in English and 17 pages in Korean.
 
 
 ## Reviewer-driven revision status (2026-08-11)

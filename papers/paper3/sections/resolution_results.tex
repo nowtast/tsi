@@ -40,6 +40,16 @@ the learned composition NLL contrast, 0.025 for rollout Hamming area, and 0.005
 for criterion Brier score.  These point thresholds are distinct from the null
 boundary used by the simultaneous intervals.
 
+The full nine-gate conjunction consists of graph--head identification,
+learned-routing NLL, factorized-head graph NLL, generic-head graph NLL,
+dense-head graph NLL, matched-head predictive equivalence, rollout Hamming,
+criterion Brier, and outside-family noninferiority.  The post-freeze reporting
+clarification names the other eight as inferential quantities, while
+matched-head equivalence remains the separate ninth decision gate.  That gate
+applies the frozen equivalence margin $0.01$ to the reported simultaneous interval;
+exact functional equivalence makes its observed contrast zero when the matched
+support is recovered.
+
 The analysis object reports ten interval-bearing quantities at the frozen
 Bonferroni divisor of eight.  They contain one exact duplicate pair, one
 sign-flipped pair, and one deterministic zero, leaving seven informationally
