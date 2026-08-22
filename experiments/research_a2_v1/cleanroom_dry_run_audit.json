@@ -9,7 +9,7 @@
     "training_noise": 48,
     "scope": 6
   },
-  "portable_sha256": "fb8521edaef4716f37d2e379671ab8e501411b03eb5ccbbbb0eac4cbd7a6c549",
+  "portable_sha256": "e54159df98ff42a9a897911ae046a8d7ca9dc72c07f8ab384a9703adfa2846ab",
   "gates": {
     "candidate_width": true,
     "training_noise": true,

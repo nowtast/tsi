@@ -13,6 +13,8 @@ from .paper34_resolution_benchmark import (
     coordinate_nll,
 )
 from .research_a2_contract import (
+    NOISE_ADVANTAGE_PROBABILITIES,
+    NOISE_BOUNDARY_STRESS_PROBABILITY,
     NOISE_PROBABILITIES,
     NOISE_SAMPLE_SIZES,
     OOD_NOISE,
@@ -181,6 +183,10 @@ def run_a2_cohort(
             "width_position_counts": list(WIDTH_POSITION_COUNTS),
             "width_sample_sizes": list(width_sizes),
             "noise_probabilities": list(noise_levels),
+            "noise_advantage_probabilities": list(
+                NOISE_ADVANTAGE_PROBABILITIES
+            ),
+            "noise_boundary_stress_probability": NOISE_BOUNDARY_STRESS_PROBABILITY,
             "noise_sample_sizes": list(noise_sizes),
             "scope_sample_size": scope_sample_size,
         },

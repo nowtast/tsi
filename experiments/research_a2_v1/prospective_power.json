@@ -23,6 +23,15 @@
     "scope_accuracy_equivalence_margin": 0.025
   },
   "scope_sample_size": 320,
+  "noise_gate": {
+    "advantage_required_at_each_probability": [
+      0.08,
+      0.3,
+      0.6
+    ],
+    "boundary_stress_probability": 0.8,
+    "boundary_stress_excluded_from_advantage_gate": true
+  },
   "power_curve": [
     {
       "world_count": 90,
@@ -34,7 +43,7 @@
         "100": 1.0,
         "300": 1.0
       },
-      "noise_any_joint_advantage_power": 1.0,
+      "noise_required_probabilities_joint_advantage_power": 0.99185,
       "noise_power_by_probability": {
         "0.08": 0.99185,
         "0.3": 1.0,
@@ -58,7 +67,7 @@
         "100": 1.0,
         "300": 1.0
       },
-      "noise_any_joint_advantage_power": 1.0,
+      "noise_required_probabilities_joint_advantage_power": 0.9994,
       "noise_power_by_probability": {
         "0.08": 0.9994,
         "0.3": 1.0,
@@ -82,7 +91,7 @@
         "100": 1.0,
         "300": 1.0
       },
-      "noise_any_joint_advantage_power": 1.0,
+      "noise_required_probabilities_joint_advantage_power": 0.99985,
       "noise_power_by_probability": {
         "0.08": 0.99985,
         "0.3": 1.0,
@@ -106,7 +115,7 @@
         "100": 1.0,
         "300": 1.0
       },
-      "noise_any_joint_advantage_power": 1.0,
+      "noise_required_probabilities_joint_advantage_power": 1.0,
       "noise_power_by_probability": {
         "0.08": 1.0,
         "0.3": 1.0,
@@ -132,7 +141,7 @@
       "100": 1.0,
       "300": 1.0
     },
-    "noise_any_joint_advantage_power": 1.0,
+    "noise_required_probabilities_joint_advantage_power": 0.9994,
     "noise_power_by_probability": {
       "0.08": 0.9994,
       "0.3": 1.0,
@@ -150,7 +159,7 @@
   "limitations": [
     "Power is a stratified bootstrap of 36 matched and 45 scope development worlds.",
     "The width gate requires an advantage somewhere on the fixed n-grid for every width.",
-    "The noise gate requires an advantage somewhere on the fixed probability-by-n grid; it does not require advantage at p=0.80.",
+    "The noise gate requires an advantage at each of p=0.08, p=0.30, and p=0.60; all p=0.80 intervals are mandatory boundary-stress outputs but do not enter that gate.",
     "The scope gate is a falsification boundary and cannot rescue an efficiency failure."
   ]
 }

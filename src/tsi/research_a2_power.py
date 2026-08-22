@@ -11,6 +11,8 @@ import numpy as np
 
 from .research_a2_development import (
     MISSPECIFICATION_SAMPLE_SIZES,
+    NOISE_ADVANTAGE_PROBABILITIES,
+    NOISE_BOUNDARY_STRESS_PROBABILITY,
     NOISE_PROBABILITIES,
     NOISE_SAMPLE_SIZES,
     WIDTH_SAMPLE_SIZES,
@@ -119,8 +121,13 @@ def _efficiency_power(
     iterations: int,
     batch_size: int,
     rng: np.random.Generator,
-    require_every_group: bool,
+    required_group_indices: Sequence[int],
 ) -> dict[str, object]:
+    required_indices = tuple(int(index) for index in required_group_indices)
+    if not required_indices or any(
+        index < 0 or index >= group_count for index in required_indices
+    ):
+        raise ValueError("required group indices must be a nonempty valid subset")
     critical = NormalDist().inv_cdf(1.0 - FAMILYWISE_ALPHA / (2.0 * endpoint_count))
     group_successes = np.zeros(group_count, dtype=np.int64)
     gate_successes = 0
@@ -141,11 +148,7 @@ def _efficiency_power(
         )
         by_group = np.any(advantage, axis=2)
         group_successes += np.sum(by_group, axis=0)
-        gate = (
-            np.all(by_group, axis=1)
-            if require_every_group
-            else np.any(by_group, axis=1)
-        )
+        gate = np.all(by_group[:, required_indices], axis=1)
         gate_successes += int(np.sum(gate))
         completed += current
     return {
@@ -153,6 +156,7 @@ def _efficiency_power(
         "critical": critical,
         "gate_power": gate_successes / iterations,
         "group_power": (group_successes / iterations).tolist(),
+        "required_group_indices": list(required_indices),
     }
 
 
@@ -339,7 +343,7 @@ def estimate_a2_prospective_power(
             iterations=iterations,
             batch_size=batch_size,
             rng=rng,
-            require_every_group=True,
+            required_group_indices=tuple(range(len(WIDTH_POSITION_COUNTS))),
         )
         noise = _efficiency_power(
             noise_matrix,
@@ -351,7 +355,10 @@ def estimate_a2_prospective_power(
             iterations=iterations,
             batch_size=batch_size,
             rng=rng,
-            require_every_group=False,
+            required_group_indices=tuple(
+                NOISE_PROBABILITIES.index(probability)
+                for probability in NOISE_ADVANTAGE_PROBABILITIES
+            ),
         )
         scope = _scope_power(
             report,
@@ -373,7 +380,9 @@ def estimate_a2_prospective_power(
                         strict=True,
                     )
                 ),
-                "noise_any_joint_advantage_power": noise["gate_power"],
+                "noise_required_probabilities_joint_advantage_power": noise[
+                    "gate_power"
+                ],
                 "noise_power_by_probability": dict(
                     zip(
                         map(str, NOISE_PROBABILITIES),
@@ -413,6 +422,13 @@ def estimate_a2_prospective_power(
             "scope_accuracy_equivalence_margin": SCOPE_ACCURACY_EQUIVALENCE_MARGIN,
         },
         "scope_sample_size": SCOPE_SAMPLE_SIZE,
+        "noise_gate": {
+            "advantage_required_at_each_probability": list(
+                NOISE_ADVANTAGE_PROBABILITIES
+            ),
+            "boundary_stress_probability": NOISE_BOUNDARY_STRESS_PROBABILITY,
+            "boundary_stress_excluded_from_advantage_gate": True,
+        },
         "power_curve": curve,
         "selected_world_count_per_axis_or_scope_condition": selected_world_count,
         "selected_operating_characteristics": selected,
@@ -423,7 +439,7 @@ def estimate_a2_prospective_power(
         "limitations": [
             "Power is a stratified bootstrap of 36 matched and 45 scope development worlds.",
             "The width gate requires an advantage somewhere on the fixed n-grid for every width.",
-            "The noise gate requires an advantage somewhere on the fixed probability-by-n grid; it does not require advantage at p=0.80.",
+            "The noise gate requires an advantage at each of p=0.08, p=0.30, and p=0.60; all p=0.80 intervals are mandatory boundary-stress outputs but do not enter that gate.",
             "The scope gate is a falsification boundary and cannot rescue an efficiency failure.",
         ],
     }

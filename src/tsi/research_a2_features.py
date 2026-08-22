@@ -71,12 +71,19 @@ class NuisanceFeature:
         ) % STATE_CARDINALITY
 
 
-NUISANCE_FEATURES = tuple(
+NUISANCE_FEATURE_ORDER = (
+    "state_coordinate",
+    "degree",
+    "action_coordinate",
+)
+ALL_NUISANCE_FEATURES = tuple(
     NuisanceFeature(action, state, degree)
     for state in range(LAYER_COUNT)
     for degree in (1, 2)
     for action in range(LAYER_COUNT)
-)[:49]
+)
+NUISANCE_FEATURES = ALL_NUISANCE_FEATURES[:49]
+EXCLUDED_NUISANCE_FEATURES = ALL_NUISANCE_FEATURES[49:]
 
 
 def augmented_generic_features(
@@ -172,7 +179,12 @@ def audit_width_feature_libraries() -> dict[str, object]:
     return {
         "state_count": len(states),
         "graph_count": len(GRAPH_MANIFEST),
+        "nuisance_feature_order": list(NUISANCE_FEATURE_ORDER),
+        "nuisance_feature_pool_count": len(ALL_NUISANCE_FEATURES),
         "nuisance_features": [asdict(item) for item in NUISANCE_FEATURES],
+        "excluded_nuisance_features": [
+            asdict(item) for item in EXCLUDED_NUISANCE_FEATURES
+        ],
         "widths": width_audits,
         "errors": errors,
         "passed": not errors,

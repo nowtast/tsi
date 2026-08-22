@@ -18,6 +18,8 @@ confirmatory seed has been generated.
 - `A2_PREREGISTRATION_DRAFT.md`: review-ready A2 numeric design.
 - `research_a2_preregistration_draft.json`: machine-readable A2 draft.
 - `A2_CLEANROOM_REPLAY_SPEC.md`: required independent-software replay behavior.
+- `A2_SEED_CUSTODIAN_PROTOCOL.md`: externally generated single-seed protocol.
+- `A2_SEED_CUSTODIAN_ATTESTATION_TEMPLATE.json`: freeze-bound custodian record.
 - `README_KO.md` and `theory_KO.md`: structurally matched Korean documents.
 
 The development pilot is written to
@@ -27,6 +29,10 @@ decision thresholds but cannot enter the confirmatory cohort.
 The A2 development and power artifacts are under
 `experiments/research_a2_v1/`. They are nonconfirmatory and cannot be pooled
 with a later A2 cohort.
+
+The A2 confirmatory seed cannot be author-generated. After a public source
+freeze, the named external custodian supplies one attested 32-byte draw. No A2
+seed exists at the current draft stage.
 
 The main comparison is not notation versus notation. It is a structured search
 over the nine generator-compatible edge-family supports versus an unstructured

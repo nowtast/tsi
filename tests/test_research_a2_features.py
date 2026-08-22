@@ -3,7 +3,10 @@ import unittest
 from tsi.paper34_resolution_benchmark import generic_features
 from tsi.research_a2_features import (
     ALTERNATIVE_FAMILY_CATALOG,
+    ALL_NUISANCE_FEATURES,
+    EXCLUDED_NUISANCE_FEATURES,
     NUISANCE_FEATURES,
+    NUISANCE_FEATURE_ORDER,
     TYPED_FAMILY_CATALOG,
     WIDTH_FEATURE_COUNTS,
     WIDTH_POSITION_COUNTS,
@@ -27,6 +30,45 @@ class ResearchA2FeatureTests(unittest.TestCase):
                 features,
             )
         self.assertEqual(len(NUISANCE_FEATURES), 49)
+
+    def test_nuisance_order_and_width_300_cutoff_are_explicit(self) -> None:
+        self.assertEqual(
+            NUISANCE_FEATURE_ORDER,
+            ("state_coordinate", "degree", "action_coordinate"),
+        )
+        self.assertEqual(len(ALL_NUISANCE_FEATURES), 50)
+        self.assertEqual(
+            [
+                (
+                    item.action_coordinate,
+                    item.state_coordinate,
+                    item.degree,
+                )
+                for item in NUISANCE_FEATURES[:9]
+            ],
+            [
+                (0, 0, 1),
+                (1, 0, 1),
+                (2, 0, 1),
+                (3, 0, 1),
+                (4, 0, 1),
+                (0, 0, 2),
+                (1, 0, 2),
+                (2, 0, 2),
+                (3, 0, 2),
+            ],
+        )
+        self.assertEqual(
+            [
+                (
+                    item.action_coordinate,
+                    item.state_coordinate,
+                    item.degree,
+                )
+                for item in EXCLUDED_NUISANCE_FEATURES
+            ],
+            [(4, 4, 2)],
+        )
 
     def test_width_55_is_exactly_the_a1_dictionary(self) -> None:
         source = (6, 5, 4, 3, 2)

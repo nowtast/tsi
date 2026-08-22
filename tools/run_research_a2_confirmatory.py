@@ -16,6 +16,7 @@ from tsi.research_a2_contract import (
     WORLD_COUNT_PER_AXIS_OR_SCOPE_CONDITION,
     contract_digest,
 )
+from tsi.research_a2_seed import validate_custodian_attestation
 
 
 def digest(path: Path) -> str:
@@ -42,6 +43,22 @@ def _commit_containing(path: Path, root: Path) -> str:
     return commit
 
 
+def _require_public(commit: str, root: Path, label: str) -> None:
+    remote = subprocess.run(
+        ["git", "rev-parse", "--verify", "origin/main"],
+        cwd=root,
+        capture_output=True,
+        text=True,
+    )
+    if remote.returncode != 0:
+        raise RuntimeError("origin/main is unavailable for A2 provenance checks")
+    published = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", commit, "origin/main"], cwd=root
+    )
+    if published.returncode != 0:
+        raise RuntimeError(f"A2 {label} commit is not published on origin/main")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("output_dir", type=Path)
@@ -59,10 +76,32 @@ def main() -> None:
     for relative, expected in freeze["files"].items():
         if digest(root / relative) != expected:
             raise RuntimeError(f"frozen A2 source changed: {relative}")
+    freeze_commit = _commit_containing(args.freeze, root)
     commitment_commit = _commit_containing(args.commitment, root)
+    _require_public(freeze_commit, root, "freeze")
+    _require_public(commitment_commit, root, "seed commitment")
+    ancestry = subprocess.run(
+        ["git", "merge-base", "--is-ancestor", freeze_commit, commitment_commit],
+        cwd=root,
+    )
+    if ancestry.returncode != 0:
+        raise RuntimeError("A2 seed commitment does not descend from its freeze")
     root_seed = args.escrow.read_bytes()
     if sha256(root_seed).hexdigest() != commitment.get("root_seed_commitment"):
         raise RuntimeError("A2 seed escrow does not match the public commitment")
+    freeze_git_commit = commitment.get("freeze_git_commit")
+    if not isinstance(freeze_git_commit, str):
+        raise RuntimeError("A2 commitment has no public freeze commit")
+    if freeze_git_commit != freeze_commit:
+        raise RuntimeError("A2 commitment names the wrong public freeze commit")
+    attestation = commitment.get("custodian_attestation")
+    if not isinstance(attestation, dict):
+        raise RuntimeError("A2 commitment has no custodian attestation")
+    selection = validate_custodian_attestation(
+        root_seed, attestation, freeze, freeze_git_commit
+    )
+    if commitment.get("seed_selection_control") != selection:
+        raise RuntimeError("A2 commitment seed-selection record changed")
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     with (args.output_dir / "ONE_SHOT.lock").open("x", encoding="utf-8") as handle:
@@ -75,6 +114,7 @@ def main() -> None:
         "freeze_digest": freeze["freeze_digest"],
         "root_seed_commitment": commitment["root_seed_commitment"],
         "commitment_git_commit": commitment_commit,
+        "seed_selection_control": selection,
         "derivation_audit": derivation_audit,
         "axes": axes,
     }
@@ -89,6 +129,7 @@ def main() -> None:
         "root_seed_commitment": commitment["root_seed_commitment"],
         "raw_results_sha256": digest(raw_path),
         "portable_replay_sha256": digest(portable_path),
+        "seed_selection_control": selection,
         "analysis": analysis,
     }
     report_path = args.output_dir / "confirmatory_analysis.json"
@@ -99,6 +140,8 @@ def main() -> None:
         "commitment_verified": sha256(root_seed).hexdigest()
         == commitment["root_seed_commitment"],
         "commitment_git_commit": commitment_commit,
+        "freeze_git_commit": freeze_git_commit,
+        "seed_selection_control": selection,
         "confirmatory_analysis_sha256": digest(report_path),
     }
     (args.output_dir / "seed_and_integrity_ledger.json").write_text(

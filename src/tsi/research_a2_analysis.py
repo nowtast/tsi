@@ -10,6 +10,7 @@ import numpy as np
 
 from .research_a2_contract import (
     FAMILYWISE_ALPHA,
+    NOISE_ADVANTAGE_PROBABILITIES,
     NOISE_ENDPOINTS,
     SCOPE_ENDPOINTS,
     WIDTH_ENDPOINTS,
@@ -77,8 +78,11 @@ def _efficiency_axis(
     group_values: Sequence[object],
     sample_sizes: Sequence[int],
     endpoint_count: int,
-    require_every_group: bool,
+    required_advantage_groups: Sequence[object],
 ) -> dict[str, object]:
+    required = tuple(required_advantage_groups)
+    if not required or any(value not in group_values for value in required):
+        raise ValueError("required advantage groups must be a nonempty grid subset")
     groups = _record_groups(records, (group_key, "sample_size"))
     summaries = []
     advantage_by_group = {}
@@ -138,19 +142,22 @@ def _efficiency_axis(
         equivalence_by_group[str(group_value)] = equivalence_sizes
     if len(world_counts) != 1:
         raise ValueError("efficiency endpoint groups have unequal world counts")
-    group_gate_values = [bool(advantage_by_group[str(value)]) for value in group_values]
-    gate = all(group_gate_values) if require_every_group else any(group_gate_values)
+    group_gate_values = {
+        str(value): bool(advantage_by_group[str(value)]) for value in group_values
+    }
+    gate = all(group_gate_values[str(value)] for value in required)
     return {
         "world_count": world_counts.pop(),
         "bonferroni_endpoint_count": endpoint_count,
         "summaries": summaries,
         "joint_advantage_sample_sizes_by_group": advantage_by_group,
         "joint_equivalence_sample_sizes_by_group": equivalence_by_group,
-        "gate_rule": (
-            "at_least_one_joint_advantage_for_every_group"
-            if require_every_group
-            else "at_least_one_joint_advantage_anywhere_on_grid"
-        ),
+        "required_advantage_groups": list(required),
+        "descriptive_only_groups": [
+            value for value in group_values if value not in required
+        ],
+        "group_gate_passed": group_gate_values,
+        "gate_rule": "at_least_one_joint_advantage_for_each_required_group",
         "gate_passed": gate,
     }
 
@@ -236,7 +243,7 @@ def analyze_a2_axes(
         group_values=WIDTH_POSITION_COUNTS,
         sample_sizes=WIDTH_SAMPLE_SIZES,
         endpoint_count=len(WIDTH_ENDPOINTS),
-        require_every_group=True,
+        required_advantage_groups=WIDTH_POSITION_COUNTS,
     )
     noise = _efficiency_axis(
         axes["training_noise"],
@@ -244,7 +251,7 @@ def analyze_a2_axes(
         group_values=NOISE_PROBABILITIES,
         sample_sizes=NOISE_SAMPLE_SIZES,
         endpoint_count=len(NOISE_ENDPOINTS),
-        require_every_group=False,
+        required_advantage_groups=NOISE_ADVANTAGE_PROBABILITIES,
     )
     scope = _scope_axis(axes["misspecification"])
     return {

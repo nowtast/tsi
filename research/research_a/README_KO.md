@@ -19,6 +19,8 @@ Development와 power 단계는 완료했지만 frozen 상태가 아니며 A2 con
 - `A2_PREREGISTRATION_DRAFT_KO.md`: review-ready A2 numeric design
 - `research_a2_preregistration_draft.json`: machine-readable A2 draft
 - `A2_CLEANROOM_REPLAY_SPEC_KO.md`: independent-software replay 필수 동작
+- `A2_SEED_CUSTODIAN_PROTOCOL_KO.md`: 외부 생성 single-seed protocol
+- `A2_SEED_CUSTODIAN_ATTESTATION_TEMPLATE.json`: freeze-bound custodian 기록
 
 Development pilot은 `experiments/research_a_v1/development_report.json`에
 기록한다. 이 자료는 power와 decision threshold를 보정할 수 있지만 confirmatory
@@ -26,6 +28,10 @@ cohort에 들어갈 수 없다.
 
 A2 development 및 power artifact는 `experiments/research_a2_v1/` 아래에 있다. 이들은
 nonconfirmatory이며 이후 A2 cohort와 합칠 수 없다.
+
+A2 confirmatory seed는 저자가 생성할 수 없다. 공개 source freeze 이후 이름을 고정한
+외부 custodian이 attestation을 포함한 32-byte draw 하나를 제공한다. 현재 draft 단계에는
+A2 seed가 존재하지 않는다.
 
 주 비교는 notation 대 notation이 아니다. Generator-compatible edge-family support 9개를
 대상으로 하는 structured search와 55개 output-feature position을 대상으로 하는

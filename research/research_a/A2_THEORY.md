@@ -17,13 +17,25 @@ two-action composition transition.
 
 The A1 generic dictionary has eleven observable features: five direct action
 coordinates and three head features for each of two graph edges. Research A2
-retains these eleven features in the first eleven positions. It then appends,
-in lexicographic order, the modular monomials
+retains these eleven features in the first eleven positions. It then appends the
+modular monomials
 
 \[
   \nu_{rjd}(x,a)=a_r x_j^d,
   \qquad r,j\in\{0,\ldots,4\},\quad d\in\{1,2\}.
 \]
+
+in the exact nested-loop order \(j=0,\ldots,4\), then \(d=1,2\), then
+\(r=0,\ldots,4\). Thus the descriptor order is
+
+\[
+  (j,d,r)=(0,1,0),(0,1,1),\ldots,(0,1,4),(0,2,0),\ldots,(4,2,4).
+\]
+
+There are 50 such monomials. The width-100 dictionary uses the first nine. The
+width-300 dictionary requires 49 and therefore omits only the final descriptor,
+\(a_4x_4^2\). This truncation is part of the candidate dictionary, not an
+implementation accident.
 
 The 55-, 100-, and 300-position searches therefore use 11, 20, and 60
 features, respectively, crossed with five output coordinates. Every search
@@ -82,6 +94,16 @@ coverage.
 This proposition identifies a population boundary, not a finite-sample
 guarantee. Near \(6/7\), neither selector is guaranteed to recover the center
 at the largest declared prefix.
+
+The confirmatory noise claim is narrower than the population-mode proposition.
+For each of \(p=0.08,0.30,0.60\), the noise gate requires at least one declared
+sample size at which both simultaneous lower bounds exceed zero and both point
+effects meet their endpoint SESOI. All \(p=0.80\) intervals remain mandatory
+boundary-stress outputs, but that probability is excluded from the advantage
+gate because development-only estimated power there was zero. Consequently,
+passing the gate supports finite-family robustness only through \(p=0.60\);
+performance at \(p=0.80\) is characterized by the complete reported curve and
+cannot rescue or defeat the through-0.60 decision.
 
 ## 4. Fourth-family separation
 

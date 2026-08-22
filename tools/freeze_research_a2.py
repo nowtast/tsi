@@ -25,6 +25,7 @@ FROZEN_FILES = (
     "src/tsi/research_a2_design.py",
     "src/tsi/research_a2_development.py",
     "src/tsi/research_a2_power.py",
+    "src/tsi/research_a2_seed.py",
     "src/tsi/research_a2_contract.py",
     "src/tsi/research_a2_confirmatory.py",
     "src/tsi/research_a2_analysis.py",
@@ -33,11 +34,17 @@ FROZEN_FILES = (
     "tests/test_research_a2_design.py",
     "tests/test_research_a2_development.py",
     "tests/test_research_a2_power.py",
+    "tests/test_research_a2_seed.py",
     "tests/test_research_a2_contract.py",
     "tests/test_research_a2_confirmatory.py",
     "tests/test_research_a2_analysis.py",
     "tools/run_research_a2_confirmatory.py",
+    "tools/commit_research_a2_seed.py",
+    "tools/freeze_research_a2.py",
     "tools/replay_research_a2_cleanroom.mjs",
+    "research/research_a/A2_SEED_CUSTODIAN_PROTOCOL.md",
+    "research/research_a/A2_SEED_CUSTODIAN_PROTOCOL_KO.md",
+    "research/research_a/A2_SEED_CUSTODIAN_ATTESTATION_TEMPLATE.json",
 )
 
 
@@ -72,7 +79,18 @@ def main() -> None:
         action="store_true",
         help="validate freeze prerequisites without writing a manifest",
     )
+    parser.add_argument(
+        "--seed-custodian-id",
+        required=True,
+        help="external custodian identifier fixed in the public freeze manifest",
+    )
     args = parser.parse_args()
+    custodian_id = args.seed_custodian_id.strip()
+    if not custodian_id or any(
+        marker in custodian_id.upper()
+        for marker in ("REPLACE", "PLACEHOLDER", "PENDING")
+    ):
+        raise RuntimeError("a non-placeholder external seed custodian is required")
     contract_audit = audit_contract()
     if not contract_audit["passed"]:
         raise RuntimeError(f"contract audit failed: {contract_audit['errors']}")
@@ -104,6 +122,7 @@ def main() -> None:
                     "contract_digest": contract_digest(),
                     "file_count": len(files),
                     "confirmatory_seed_created": False,
+                    "seed_custodian_id": custodian_id,
                 }
             )
         )
@@ -115,6 +134,8 @@ def main() -> None:
         "development_report_sha256": digest(args.development),
         "prospective_power_sha256": digest(args.power),
         "cleanroom_dry_run_audit_sha256": digest(args.cleanroom_audit),
+        "seed_custodian_id": custodian_id,
+        "seed_selection_policy": "exactly one externally generated 32-byte draw after this freeze commit is public; author generation, selection, and reroll are forbidden",
         "files": files,
     }
     canonical = json.dumps(payload, sort_keys=True, separators=(",", ":")).encode()

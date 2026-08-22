@@ -17,13 +17,23 @@ composition transition이다.
 
 A1 generic dictionary는 11개 observable feature, 즉 5개 direct action coordinate와
 두 graph edge 각각의 3개 head feature를 가진다. Research A2는 이 11개 feature를 앞
-11개 position에 그대로 유지한다. 그 뒤 다음 modular monomial을 lexicographic order로
-추가한다.
+11개 position에 그대로 유지한다. 그 뒤 다음 modular monomial을 추가한다.
 
 \[
   \nu_{rjd}(x,a)=a_r x_j^d,
   \qquad r,j\in\{0,\ldots,4\},\quad d\in\{1,2\}.
 \]
+
+정확한 nested-loop 순서는 \(j=0,\ldots,4\), 그 안에서 \(d=1,2\), 그 안에서
+\(r=0,\ldots,4\)이다. 따라서 descriptor 순서는 다음과 같다.
+
+\[
+  (j,d,r)=(0,1,0),(0,1,1),\ldots,(0,1,4),(0,2,0),\ldots,(4,2,4).
+\]
+
+이 monomial은 모두 50개다. Width-100 dictionary는 앞의 9개를 사용한다.
+Width-300 dictionary는 49개가 필요하므로 마지막 descriptor \(a_4x_4^2\) 하나만
+제외한다. 이 절단은 구현상 우연이 아니라 candidate dictionary 정의의 일부다.
 
 따라서 55, 100, 300-position search는 각각 11, 20, 60개 feature를 5개 output
 coordinate와 교차한다. 모든 search는 정확히 7번의 nonzero-coefficient greedy move를
@@ -77,6 +87,14 @@ uniform을 threshold하므로 corruption mask가 중첩된다. 따라서 level �
 이 명제는 population boundary를 식별하지만 finite-sample guarantee는 아니다.
 \(6/7\) 근처에서는 가장 큰 선언 prefix에서도 어느 selector도 center를 복원한다고
 보장할 수 없다.
+
+Confirmatory noise 주장은 population-mode 명제보다 좁다. \(p=0.08,0.30,0.60\)
+각각에서 noise gate는 선언한 sample size 중 하나 이상에서 두 simultaneous lower
+bound가 모두 0보다 크고 두 point effect가 endpoint SESOI를 만족할 것을 요구한다.
+\(p=0.80\)의 모든 interval은 필수 boundary-stress output으로 보고하지만,
+development-only estimated power가 0이었으므로 advantage gate에서는 제외한다. 따라서
+gate 통과는 이 finite family에서 \(p=0.60\)까지의 robustness만 지지한다. \(p=0.80\)의
+성능은 전체 curve로 기술하며 through-0.60 판정을 구제하거나 무효화할 수 없다.
 
 ## 4. Fourth-family 분리
 

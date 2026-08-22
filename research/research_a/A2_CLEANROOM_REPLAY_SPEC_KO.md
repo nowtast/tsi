@@ -25,9 +25,11 @@ Generic selector는 zero increment에서 시작한다. 정확히 7번의 각 mov
 feature, coefficient order에서 lexicographically first minimum을 선택하며 같은
 output-feature position을 재사용하지 않는다.
 
-Width feature order, nuisance descriptor order, typed catalog 및 alternative catalog는
+Width feature order, typed catalog 및 alternative catalog는
 `research_a2_features.py`와 `research_a2_preregistration_draft.json`에 선언된 순서와
-정확히 같아야 한다.
+정확히 같아야 한다. Nuisance descriptor는 state coordinate, degree 1 다음 2, action
+coordinate 순으로 순회한다. 50개 descriptor 중 width 300은 앞의 49개를 사용하며
+\(a_4x_4^2\) 하나만 제외한다.
 
 ## 4. 필수 Replay 출력
 
@@ -35,6 +37,9 @@ Replay는 모든 world-level endpoint를 absolute tolerance `1e-12` 이내에서
 exact-recovery Boolean을 정확히, 세 simultaneous-interval analysis를 `1e-12` 이내에서,
 모든 gate decision을 정확히 재현해야 한다. Row count, family-pair balance,
 composition-stratum cycle 및 paired misspecification metadata도 검증해야 한다.
+
+Replay는 0.08, 0.30, 0.60 각각에 noise gate를 적용해야 한다. 0.80의 모든
+boundary-stress interval도 재현하되 이를 gate에는 사용하지 않는다.
 
 ## 5. Freeze 전 Dry Run
 

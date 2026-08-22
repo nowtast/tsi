@@ -27,9 +27,11 @@ moves, it evaluates every still-available output-feature position and every
 coefficient 1 through 6. It chooses the lexicographically first minimum in
 output, feature, coefficient order and never reuses an output-feature position.
 
-The width feature order, nuisance descriptor order, typed catalog, and
-alternative catalog are exactly those in `research_a2_features.py` and
-`research_a2_preregistration_draft.json`.
+The width feature order, typed catalog, and alternative catalog are exactly
+those in `research_a2_features.py` and
+`research_a2_preregistration_draft.json`. Nuisance descriptors iterate state
+coordinate first, degree 1 then 2, and action coordinate last. Of the 50
+descriptors, width 300 uses the first 49 and excludes only \(a_4x_4^2\).
 
 ## 4. Required replay outputs
 
@@ -38,6 +40,9 @@ The replay must reproduce every world-level endpoint within absolute tolerance
 analyses within `1e-12`, and all gate decisions exactly. It must also verify row
 counts, family-pair balance, composition-stratum cycling, and paired
 misspecification metadata.
+
+The replay must enforce the noise gate at each of 0.08, 0.30, and 0.60 while
+reproducing every 0.80 boundary-stress interval without using 0.80 in that gate.
 
 ## 5. Pre-freeze dry run
 

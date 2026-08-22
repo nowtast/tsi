@@ -29,6 +29,14 @@ class ResearchA2PowerTests(unittest.TestCase):
         self.assertEqual(
             report["selected_world_count_per_axis_or_scope_condition"], 135
         )
+        self.assertEqual(
+            report["noise_gate"]["advantage_required_at_each_probability"],
+            [0.08, 0.3, 0.6],
+        )
+        self.assertIn(
+            "noise_required_probabilities_joint_advantage_power",
+            report["selected_operating_characteristics"],
+        )
 
 
 if __name__ == "__main__":

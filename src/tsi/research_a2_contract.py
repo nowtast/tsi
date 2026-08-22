@@ -7,11 +7,19 @@ import json
 
 from .research_a2_development import (
     MISSPECIFICATION_SAMPLE_SIZES,
+    NOISE_ADVANTAGE_PROBABILITIES,
+    NOISE_BOUNDARY_STRESS_PROBABILITY,
     NOISE_PROBABILITIES,
     NOISE_SAMPLE_SIZES,
     WIDTH_SAMPLE_SIZES,
 )
-from .research_a2_features import WIDTH_POSITION_COUNTS
+from .research_a2_features import (
+    ALL_NUISANCE_FEATURES,
+    EXCLUDED_NUISANCE_FEATURES,
+    NUISANCE_FEATURE_ORDER,
+    NUISANCE_FEATURES,
+    WIDTH_POSITION_COUNTS,
+)
 from .research_a2_power import (
     FAMILYWISE_ALPHA,
     NLL_EQUIVALENCE_MARGIN,
@@ -71,11 +79,13 @@ POLICIES = (
     "Held-out composition cases remain at noise probability 0.12 and are never used for fitting or selection.",
     "The width, noise, and scope endpoints are three separate Bonferroni families, each at familywise alpha 0.05.",
     "Width robustness requires at least one joint SESOI-qualified advantage at every declared width.",
-    "Noise robustness requires at least one joint SESOI-qualified advantage on the declared probability-by-n grid; no advantage is required at p=0.80.",
+    "Noise robustness through p=0.60 requires at least one joint SESOI-qualified advantage at each of p=0.08, p=0.30, and p=0.60.",
+    "The p=0.80 level is a required boundary-stress curve with all simultaneous intervals reported, but it is excluded from the advantage gate.",
     "The cubic and quadratic misspecification conditions share graph, coefficients, and raw random streams in aligned world pairs.",
     "The scope gate requires matched equivalence and both prespecified directional reversals at n=320.",
     "Misspecification is a scope and falsification audit only and cannot rescue a width or noise efficiency failure.",
     "No confirmatory seed may be generated until review, source freeze, and public recording of the freeze digest are complete.",
+    "The author may not generate or choose the A2 confirmatory seed; one external custodian named in the public freeze manifest supplies exactly one attested 32-byte draw after that freeze is public.",
     "A failed endpoint or gate is reported without within-cohort repair or threshold revision.",
 )
 
@@ -106,6 +116,17 @@ def contract_payload() -> dict[str, object]:
             "generic_move_budget": GENERIC_MOVE_BUDGET,
             "typed_class_unchanged": True,
             "true_support_in_every_dictionary": True,
+            "nuisance_descriptor_order": list(NUISANCE_FEATURE_ORDER),
+            "nuisance_pool_count": len(ALL_NUISANCE_FEATURES),
+            "nuisance_included_count_at_width_300": len(NUISANCE_FEATURES),
+            "excluded_nuisance_descriptors_at_width_300": [
+                {
+                    "action_coordinate": item.action_coordinate,
+                    "state_coordinate": item.state_coordinate,
+                    "degree": item.degree,
+                }
+                for item in EXCLUDED_NUISANCE_FEATURES
+            ],
         },
         "noise": {
             "width_and_scope_train": TRAIN_NOISE_FOR_WIDTH_AND_SCOPE,
@@ -113,6 +134,11 @@ def contract_payload() -> dict[str, object]:
             "held_out": OOD_NOISE,
             "unique_mode_boundary": 6 / 7,
             "coupling": "same clean rows, shifts, and uniforms; thresholded nested masks",
+            "advantage_required_at_each_probability": list(
+                NOISE_ADVANTAGE_PROBABILITIES
+            ),
+            "boundary_stress_probability": NOISE_BOUNDARY_STRESS_PROBABILITY,
+            "boundary_stress_role": "required simultaneous curve; excluded from advantage gate",
         },
         "misspecification": {
             "typed_catalog": [
@@ -149,6 +175,12 @@ def contract_payload() -> dict[str, object]:
             "scope_nll_equivalence_margin": SCOPE_NLL_EQUIVALENCE_MARGIN,
             "scope_accuracy_equivalence_margin": SCOPE_ACCURACY_EQUIVALENCE_MARGIN,
         },
+        "seed_selection": {
+            "author_generated_or_selected_seed_allowed": False,
+            "source": "single 32-byte draw from the external custodian named in the public freeze manifest",
+            "timing": "after the freeze manifest commit is public",
+            "required_attestation": True,
+        },
         "policies": list(POLICIES),
     }
 
@@ -174,8 +206,20 @@ def audit_contract() -> dict[str, object]:
         errors.append("a noise level reaches or exceeds the unique-mode boundary")
     if SCOPE_SAMPLE_SIZE != 320:
         errors.append("scope confirmatory prefix changed")
-    if len(POLICIES) != 15:
-        errors.append("the 15 A2 safeguards are incomplete")
+    if tuple(NOISE_ADVANTAGE_PROBABILITIES) != (0.08, 0.3, 0.6):
+        errors.append("the nontrivial noise advantage gate changed")
+    if NOISE_BOUNDARY_STRESS_PROBABILITY != 0.8:
+        errors.append("the boundary-stress probability changed")
+    if len(ALL_NUISANCE_FEATURES) != 50 or len(NUISANCE_FEATURES) != 49:
+        errors.append("the nuisance pool or width-300 truncation changed")
+    if len(EXCLUDED_NUISANCE_FEATURES) != 1 or (
+        EXCLUDED_NUISANCE_FEATURES[0].action_coordinate,
+        EXCLUDED_NUISANCE_FEATURES[0].state_coordinate,
+        EXCLUDED_NUISANCE_FEATURES[0].degree,
+    ) != (4, 4, 2):
+        errors.append("the declared a_4*x_4^2 exclusion changed")
+    if len(POLICIES) != 17:
+        errors.append("the 17 A2 safeguards are incomplete")
     return {
         "contract_id": CONTRACT_ID,
         "status": STATUS,

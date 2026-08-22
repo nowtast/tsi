@@ -1,0 +1,12 @@
+{
+  "status": "external_custodian_single_seed_attestation",
+  "custodian_id": "REPLACE_WITH_FREEZE_MANIFEST_CUSTODIAN_ID",
+  "freeze_digest": "REPLACE_WITH_FREEZE_DIGEST",
+  "freeze_git_commit": "REPLACE_WITH_PUBLIC_FREEZE_COMMIT",
+  "generated_at_utc": "REPLACE_WITH_ISO_8601_TIMESTAMP_AFTER_PUBLIC_FREEZE",
+  "seed_sha256": "REPLACE_WITH_SHA256_OF_THE_32_BYTE_SEED",
+  "generation_method": "operating-system CSPRNG",
+  "single_draw": true,
+  "author_generated_seed": false,
+  "author_selected_seed": false
+}

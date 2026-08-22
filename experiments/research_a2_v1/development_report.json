@@ -11,6 +11,12 @@
     "width_feature_library": {
       "state_count": 16807,
       "graph_count": 30,
+      "nuisance_feature_order": [
+        "state_coordinate",
+        "degree",
+        "action_coordinate"
+      ],
+      "nuisance_feature_pool_count": 50,
       "nuisance_features": [
         {
           "action_coordinate": 0,
@@ -254,6 +260,13 @@
         },
         {
           "action_coordinate": 3,
+          "state_coordinate": 4,
+          "degree": 2
+        }
+      ],
+      "excluded_nuisance_features": [
+        {
+          "action_coordinate": 4,
           "state_coordinate": 4,
           "degree": 2
         }
@@ -671,6 +684,200 @@
           ]
         }
       ],
+      "reverse_generic_span_audit": {
+        "truth": "quadratic_target",
+        "candidate_span": [
+          "direct_action",
+          "linear_target",
+          "cubic_target",
+          "source_target"
+        ],
+        "coefficient_vectors_exhausted": 2401,
+        "minimum_disagreement_count": 28,
+        "minimum_disagreement_fraction": 0.5714285714285714,
+        "minimizing_coefficient_vectors": [
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            5,
+            0
+          ],
+          [
+            0,
+            2,
+            4,
+            0
+          ],
+          [
+            0,
+            2,
+            6,
+            0
+          ],
+          [
+            0,
+            3,
+            4,
+            0
+          ],
+          [
+            0,
+            3,
+            5,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            4,
+            3,
+            0
+          ],
+          [
+            0,
+            5,
+            1,
+            0
+          ],
+          [
+            0,
+            5,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            6,
+            0
+          ],
+          [
+            1,
+            2,
+            5,
+            0
+          ],
+          [
+            1,
+            3,
+            4,
+            0
+          ],
+          [
+            1,
+            4,
+            3,
+            0
+          ],
+          [
+            1,
+            5,
+            2,
+            0
+          ],
+          [
+            2,
+            1,
+            3,
+            0
+          ],
+          [
+            2,
+            2,
+            6,
+            0
+          ],
+          [
+            2,
+            5,
+            1,
+            0
+          ],
+          [
+            2,
+            6,
+            4,
+            0
+          ],
+          [
+            3,
+            1,
+            4,
+            0
+          ],
+          [
+            3,
+            6,
+            3,
+            0
+          ],
+          [
+            4,
+            1,
+            5,
+            0
+          ],
+          [
+            4,
+            3,
+            1,
+            0
+          ],
+          [
+            4,
+            4,
+            6,
+            0
+          ],
+          [
+            4,
+            6,
+            2,
+            0
+          ],
+          [
+            5,
+            2,
+            2,
+            0
+          ],
+          [
+            5,
+            5,
+            5,
+            0
+          ],
+          [
+            6,
+            3,
+            6,
+            0
+          ],
+          [
+            6,
+            4,
+            1,
+            0
+          ]
+        ]
+      },
       "errors": [],
       "passed": true
     },

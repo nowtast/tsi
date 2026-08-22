@@ -1,7 +1,7 @@
 {
   "contract_id": "TSI-RESEARCH-A2-ROBUSTNESS-AND-SCOPE-v1",
   "status": "numeric_draft_ready_for_review_not_frozen_no_confirmatory_seed",
-  "contract_digest_at_draft": "fb4247528af568aaddd12c2e38b972cf84c7044d8992e92e17d3f541b5326f58",
+  "contract_digest_at_draft": "c3c07798ef01406974640b743603b8e49174879b5e466c386fae249c141a967b",
   "confirmatory_seed_created": false,
   "direction_recorded_before_a1_confirmatory_seed": true,
   "development": {
@@ -16,7 +16,7 @@
     "selected_world_count_per_axis_or_scope_condition": 135,
     "selection_reason": "smallest candidate at or above 126 divisible by both 9 and 5",
     "estimated_all_width_gate_power": 1.0,
-    "estimated_any_noise_gate_power": 1.0,
+    "estimated_through_0.60_noise_gate_power": 0.9994,
     "estimated_scope_gate_power": 1.0,
     "estimated_noise_0.80_group_power": 0.0
   },
@@ -31,7 +31,19 @@
     "generic_move_budget": 7,
     "typed_class_unchanged": true,
     "true_support_in_every_dictionary": true,
-    "nuisance_features": "a_r*x_j^d mod 7 in frozen lexicographic order",
+    "nuisance_features": {
+      "formula": "a_r*x_j^d mod 7",
+      "nested_order": ["state_coordinate_j", "degree_1_then_2", "action_coordinate_r"],
+      "pool_count": 50,
+      "width_100_included_count": 9,
+      "width_300_included_count": 49,
+      "width_300_excluded_descriptor": {
+        "action_coordinate": 4,
+        "state_coordinate": 4,
+        "degree": 2,
+        "formula": "a_4*x_4^2"
+      }
+    },
     "endpoint_count": 36,
     "gate": "at least one joint SESOI-qualified advantage at every width"
   },
@@ -41,7 +53,10 @@
     "unique_mode_boundary": 0.8571428571428571,
     "coupling": "nested masks from shared clean rows, uniforms, and shifts",
     "endpoint_count": 48,
-    "gate": "at least one joint SESOI-qualified advantage anywhere on the fixed grid"
+    "gate": "at least one joint SESOI-qualified advantage at each of p=0.08, p=0.30, and p=0.60",
+    "advantage_required_at_each_probability": [0.08, 0.3, 0.6],
+    "boundary_stress_probability": 0.8,
+    "boundary_stress_role": "all intervals mandatory; excluded from the advantage gate"
   },
   "misspecification_scope": {
     "typed_catalog": ["linear_target", "quadratic_target", "source_target"],
@@ -73,6 +88,18 @@
     "clean-room implementation and fixed-seed dry run",
     "full regression test",
     "source freeze",
-    "commit and public record of freeze digest"
-  ]
+    "commit and public record of freeze digest",
+    "name one external seed custodian in the public freeze manifest",
+    "obtain exactly one post-freeze attested 32-byte draw from that custodian"
+  ],
+  "seed_selection_control": {
+    "author_generated_seed_allowed": false,
+    "author_selected_seed_allowed": false,
+    "author_reroll_allowed": false,
+    "source": "one external custodian named before the public freeze",
+    "draw_count": 1,
+    "seed_bytes": 32,
+    "attestation_required": true,
+    "protocol": "A2_SEED_CUSTODIAN_PROTOCOL.md"
+  }
 }

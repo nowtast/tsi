@@ -402,7 +402,7 @@ function analyzeEfficiency(
   groupValues,
   sizes,
   critical,
-  requireEveryGroup,
+  requiredAdvantageGroups,
   expected,
   failures,
 ) {
@@ -457,9 +457,20 @@ function analyzeEfficiency(
     }
     groupPassed.push(anyAdvantage);
   }
-  const gate = requireEveryGroup
-    ? groupPassed.every(Boolean)
-    : groupPassed.some(Boolean);
+  const gate = requiredAdvantageGroups.every((required) => {
+    const index = groupValues.indexOf(required);
+    if (index < 0) {
+      failures.push({ groupKey, required, reason: "required gate group absent" });
+      return false;
+    }
+    return groupPassed[index];
+  });
+  compareValue(
+    requiredAdvantageGroups,
+    expected.required_advantage_groups,
+    `${groupKey}.required_advantage_groups`,
+    failures,
+  );
   if (gate !== expected.gate_passed) failures.push({ groupKey, reason: "axis gate mismatch", actual: gate, expected: expected.gate_passed });
   return gate;
 }
@@ -578,7 +589,7 @@ const widthGate = analyzeEfficiency(
   design.width_position_counts,
   design.width_sample_sizes,
   WIDTH_CRITICAL,
-  true,
+  design.width_position_counts,
   published.analysis.candidate_width,
   failures,
 );
@@ -588,7 +599,7 @@ const noiseGate = analyzeEfficiency(
   design.noise_probabilities,
   design.noise_sample_sizes,
   NOISE_CRITICAL,
-  false,
+  design.noise_advantage_probabilities,
   published.analysis.training_noise,
   failures,
 );

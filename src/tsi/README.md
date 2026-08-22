@@ -15,7 +15,7 @@ prospective studies, and some preserve development and negative-result paths.
 | Paper 04 attribution and stress studies | `paper4_*` | Comparator, capacity-matching, misspecification, diagnostic, and statistical-analysis components |
 | Publication checks | `paper_parity.py` | English/Korean TeX structure and display-math parity |
 | Public benchmark support | `structural_attribution_benchmark.py` | Artifact integrity, leakage-reduced participant views, and portable submission validation |
-| Prospective Research A | `research_a_*` | Sufficient envelopes, selector audits, development-only calibration, frozen-candidate contract, confirmatory construction, and analysis |
+| Prospective Research A | `research_a_*` | Sufficient envelopes, selector audits, development-only calibration, frozen-candidate contract, externally custodied seed validation, confirmatory construction, and analysis |
 
 The `paper3_learned_*` modules include exploratory and failed neural or routing
 designs. Their presence does not promote those designs to confirmatory evidence
